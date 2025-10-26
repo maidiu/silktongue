@@ -30,41 +30,39 @@ export default function Header({ onSearch }: HeaderProps) {
       <div className="px-2 sm:px-4 lg:px-6 py-2 sm:py-3">
         {/* Mobile: Compact horizontal layout */}
         <div className="flex items-center justify-between gap-2 mb-2 lg:hidden">
-          {/* Left: Compact stats */}
-          <div className="flex items-center gap-3">
-            <div className="bg-gray-900 border border-yellow-500 rounded px-2 py-1">
-              <div className="text-yellow-400 text-[10px] font-bold">💎</div>
-              <div className="text-white text-sm font-bold">{user?.silkBalance || 0}</div>
-            </div>
-            <div className="text-xs">
-              <div className="text-red-500">{"❤️".repeat(Math.min(user?.healthPoints || 0, 3))}</div>
-              <div className="text-gray-500 text-[10px]">{user?.healthPoints || 0}/{user?.maxHealthPoints || 3}</div>
-            </div>
+          {/* Left: Title with "Laleo Knight:" above */}
+          <div className="flex flex-col leading-tight">
+            <div className="text-xs sm:text-sm text-gray-400 font-display tracking-wide">Laleo Knight:</div>
+            <Link to="/">
+              <h1 className="text-xl sm:text-2xl font-display font-bold text-white tracking-wide">
+                SILKTONGUE
+              </h1>
+            </Link>
           </div>
           
-          {/* Center: Compact title */}
-          <Link to="/" className="flex-1 text-center">
-            <h1 className="text-lg sm:text-xl font-display font-bold text-white tracking-wide">
-              Silktongue
-            </h1>
-          </Link>
-          
-          {/* Right: Avatar menu */}
-          <div className="relative">
+          {/* Right: Avatar above dropdown */}
+          <div className="relative flex flex-col items-end">
+            {/* Avatar */}
+            <div className="mb-1">
+              <AvatarDisplay config={user?.avatarConfig} size={32} />
+            </div>
+            
+            {/* Dropdown button */}
             <button
               onClick={() => setShowUserMenu(!showUserMenu)}
               className="flex items-center gap-1 px-2 py-1 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded transition-colors"
             >
-              <AvatarDisplay config={user?.avatarConfig} size={24} />
+              <span className="text-xs uppercase font-medium">{user?.username}</span>
               <span className="text-xs">▼</span>
             </button>
             
-            {/* Mobile Menu Dropdown */}
+            {/* Menu Dropdown (overlays below) */}
             {showUserMenu && (
-              <div className="absolute right-0 top-full mt-2 w-56 bg-gray-800 border border-gray-700 rounded-lg shadow-xl z-[100]">
+              <div className="absolute right-0 top-full mt-2 w-48 bg-gray-800 border border-gray-700 rounded-lg shadow-xl z-[100]">
                 <div className="p-3 border-b border-gray-700">
                   <div className="text-white text-sm font-medium">{user?.username}</div>
-                  <div className="text-gray-400 text-xs mt-1">Silk: {user?.silkBalance || 0}</div>
+                  <div className="text-yellow-400 text-xs mt-1">💎 Silk: {user?.silkBalance || 0}</div>
+                  <div className="text-red-500 text-xs mt-1">{"❤️".repeat(user?.healthPoints || 0)} {user?.healthPoints || 0}/{user?.maxHealthPoints || 3}</div>
                 </div>
                 <div className="py-2">
                   <Link
@@ -288,24 +286,24 @@ export default function Header({ onSearch }: HeaderProps) {
         {/* Second row: Tower/Asketereion */}
         <div className="flex items-center text-white space-x-2 sm:space-x-3 justify-center mb-2 sm:mb-3">
           {isOnMaps ? (
-            <h2 className="text-base sm:text-lg md:text-xl font-bold text-white tracking-wide">
-              THE TOWER OF WORDS
+            <h2 className="text-sm sm:text-base font-bold text-white tracking-wide">
+              TOWER OF WORDS
             </h2>
           ) : (
             <Link to="/">
-              <h2 className="text-base sm:text-lg md:text-xl font-bold text-white hover:text-gray-300 transition-colors">
-                THE TOWER OF WORDS
+              <h2 className="text-xs sm:text-sm font-bold text-gray-400 hover:text-gray-300 transition-colors">
+                TOWER OF WORDS
               </h2>
             </Link>
           )}
-          <span className="text-gray-500 text-sm sm:text-base">/</span>
+          <span className="text-gray-500 text-xs sm:text-sm">/</span>
           {isOnHome ? (
-            <h2 className="text-base sm:text-lg md:text-xl font-bold text-white tracking-wide">
+            <h2 className="text-sm sm:text-base font-bold text-white tracking-wide">
               ASKETEREION
             </h2>
           ) : (
             <Link to="/home">
-              <h2 className="text-base sm:text-lg md:text-xl font-bold text-gray-300 hover:text-white transition-colors">
+              <h2 className="text-xs sm:text-sm font-bold text-gray-400 hover:text-gray-300 transition-colors">
                 ASKETEREION
               </h2>
             </Link>
