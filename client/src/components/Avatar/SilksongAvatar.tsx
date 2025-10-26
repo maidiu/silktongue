@@ -1,4 +1,4 @@
-import React from 'react';
+// No imports needed
 import type { AvatarConfig } from './types';
 
 interface SilksongAvatarProps {

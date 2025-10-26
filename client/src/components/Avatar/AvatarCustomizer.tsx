@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import SilksongAvatar, { defaultAvatarConfigs } from './SilksongAvatar';
 import type { AvatarConfig } from './types';
 
