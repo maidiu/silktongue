@@ -297,6 +297,121 @@ CREATE TABLE IF NOT EXISTS user_floor_boss_attempts (
 );
 
 -- =============================================================================
+-- ADDITIONAL TABLES FROM FULL SCHEMA
+-- =============================================================================
+
+CREATE TABLE IF NOT EXISTS citations (
+    id SERIAL PRIMARY KEY,
+    event_id INTEGER NOT NULL REFERENCES word_timeline_events(id) ON DELETE CASCADE,
+    source TEXT NOT NULL,
+    url TEXT,
+    quote TEXT,
+    added_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_citations_event ON citations(event_id);
+
+CREATE TABLE IF NOT EXISTS derivations (
+    id SERIAL PRIMARY KEY,
+    parent_vocab_id INTEGER NOT NULL REFERENCES vocab_entries(id) ON DELETE CASCADE,
+    child_vocab_id INTEGER NOT NULL REFERENCES vocab_entries(id) ON DELETE CASCADE,
+    relation_type TEXT NOT NULL,
+    notes TEXT,
+    UNIQUE (parent_vocab_id, child_vocab_id, relation_type),
+    CHECK (parent_vocab_id <> child_vocab_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_derivations_child ON derivations(child_vocab_id);
+CREATE INDEX IF NOT EXISTS idx_derivations_parent ON derivations(parent_vocab_id);
+
+CREATE TABLE IF NOT EXISTS purchases (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+    token_id INTEGER REFERENCES tokens(id) ON DELETE CASCADE,
+    purchased_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_purchases_user_id ON purchases(user_id);
+
+CREATE TABLE IF NOT EXISTS quiz_questions (
+    id SERIAL PRIMARY KEY,
+    word_id INTEGER REFERENCES vocab_entries(id) ON DELETE CASCADE,
+    level INTEGER NOT NULL,
+    question_type TEXT NOT NULL,
+    prompt TEXT NOT NULL,
+    options JSONB,
+    correct_answer TEXT,
+    correct_answers JSONB,
+    variant_data JSONB,
+    reward_amount INTEGER DEFAULT 10,
+    difficulty TEXT DEFAULT 'normal',
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    UNIQUE(word_id, level)
+);
+
+CREATE INDEX IF NOT EXISTS idx_quiz_questions_level ON quiz_questions(level);
+CREATE INDEX IF NOT EXISTS idx_quiz_questions_word_id ON quiz_questions(word_id);
+
+CREATE TRIGGER update_quiz_questions_updated_at
+BEFORE UPDATE ON quiz_questions
+FOR EACH ROW
+EXECUTE FUNCTION set_updated_at();
+
+CREATE TABLE IF NOT EXISTS quizzes (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+    word_id INTEGER REFERENCES vocab_entries(id) ON DELETE CASCADE,
+    current_level INTEGER DEFAULT 1,
+    is_active BOOLEAN DEFAULT true,
+    started_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    completed_at TIMESTAMP WITH TIME ZONE,
+    hard_mode BOOLEAN DEFAULT false,
+    wager_amount INTEGER DEFAULT 0,
+    hard_mode_completed BOOLEAN DEFAULT false,
+    CHECK (current_level >= 1 AND current_level <= 5),
+    CHECK (wager_amount >= 0)
+);
+
+CREATE INDEX IF NOT EXISTS idx_quizzes_user_id ON quizzes(user_id);
+CREATE INDEX IF NOT EXISTS idx_quizzes_word_id ON quizzes(word_id);
+
+CREATE TABLE IF NOT EXISTS semantic_domains (
+    id SERIAL PRIMARY KEY,
+    name TEXT UNIQUE NOT NULL,
+    description TEXT
+);
+
+CREATE TABLE IF NOT EXISTS silk_transactions (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+    quiz_id INTEGER REFERENCES quizzes(id) ON DELETE CASCADE,
+    amount INTEGER NOT NULL,
+    transaction_type TEXT,
+    description TEXT,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    CHECK (transaction_type IN ('earn', 'spend', 'wager_win', 'wager_loss'))
+);
+
+CREATE TABLE IF NOT EXISTS tokens (
+    id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL,
+    description TEXT,
+    silk_cost INTEGER NOT NULL,
+    image_url TEXT,
+    CHECK (silk_cost >= 0)
+);
+
+CREATE TABLE IF NOT EXISTS vocab_domain_links (
+    vocab_id INTEGER NOT NULL REFERENCES vocab_entries(id) ON DELETE CASCADE,
+    domain_id INTEGER NOT NULL REFERENCES semantic_domains(id) ON DELETE CASCADE,
+    PRIMARY KEY (vocab_id, domain_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_vocab_domain_dom ON vocab_domain_links(domain_id);
+CREATE INDEX IF NOT EXISTS idx_vocab_domain_vocab ON vocab_domain_links(vocab_id);
+
+-- =============================================================================
 -- USER DEFINITIONS & STORY COMPREHENSION
 -- =============================================================================
 
