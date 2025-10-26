@@ -40,12 +40,8 @@ const clientBuildPath = path.join(__dirname, '../../client/dist');
 app.use(express.static(clientBuildPath));
 app.use('/silktongue', express.static(clientBuildPath));
 
-// Serve React app for all non-API routes
-app.get('*', (req, res, next) => {
-  // Skip API routes
-  if (req.path.startsWith('/api') || req.path.startsWith('/silktongue/api')) {
-    return next();
-  }
+// Serve React app for all routes not matched by previous middleware (catch-all)
+app.use((req, res) => {
   res.sendFile(path.join(clientBuildPath, 'index.html'));
 });
 
