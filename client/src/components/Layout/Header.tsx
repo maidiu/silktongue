@@ -57,9 +57,9 @@ export default function Header({ onSearch }: HeaderProps) {
             </button>
             
             {/* Silk and Hearts - always visible below button */}
-            <div className="flex flex-col items-end text-xs gap-0.5">
-              <div className="text-yellow-400">💎 Silk: {user?.silkBalance || 0}</div>
-              <div className="text-red-500">{"❤️".repeat(user?.healthPoints || 0)} {user?.healthPoints || 0}/{user?.maxHealthPoints || 3}</div>
+            <div className="flex flex-col items-end text-[10px] gap-0 leading-tight">
+              <div className="text-yellow-400">💎: {user?.silkBalance || 0}</div>
+              <div className="text-red-500">❤️: {user?.healthPoints || 0}/{user?.maxHealthPoints || 3}</div>
             </div>
             
             {/* Menu Dropdown (overlays over stats when open) */}
