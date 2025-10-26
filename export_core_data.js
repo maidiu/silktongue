@@ -20,11 +20,18 @@ async function exportCoreData() {
     
     for (const row of vocabData) {
       const columns = Object.keys(row).filter(c => !['created_at'].includes(c));
+      const arrayCols = ['synonyms', 'antonyms', 'variant_forms', 'english_synonyms', 'english_antonyms', 'french_synonyms', 'french_root_cognates', 'russian_synonyms', 'russian_root_cognates', 'common_collocations', 'common_phrases', 'sibling_words'];
+      
       const values = columns.map(col => {
         const val = row[col];
         if (val === null) return 'NULL';
         if (val && typeof val === 'object' && val.constructor && val.constructor.name === 'Date') {
           return `'${val.toISOString()}'`;
+        }
+        // Handle arrays (text[])
+        if (Array.isArray(val)) {
+          const escaped = val.map(v => `"${String(v).replace(/"/g, '""')}"`).join(',');
+          return `ARRAY[${escaped}]`;
         }
         if (typeof val === 'object' && val !== null) {
           return `'${JSON.stringify(val).replace(/'/g, "''")}'::jsonb`;
