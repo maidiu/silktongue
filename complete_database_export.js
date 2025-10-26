@@ -51,21 +51,21 @@ async function completeExport() {
                 const val = row[col];
                 if (val === null) return 'NULL';
                 
-                // Handle Date objects
-                if (val instanceof Date) return `'${val.toISOString()}'`;
+                // Handle Date objects from PostgreSQL
+                if (val && typeof val === 'object' && val.constructor && val.constructor.name === 'Date') {
+                  return `'${val.toISOString()}'`;
+                }
                 
-                // Handle objects (JSONB)
-                if (typeof val === 'object') return `'${JSON.stringify(val).replace(/'/g, "''")}'::jsonb`;
+                // Handle other objects (JSONB)
+                if (typeof val === 'object' && val !== null) {
+                  return `'${JSON.stringify(val).replace(/'/g, "''")}'::jsonb`;
+                }
                 
                 // Handle boolean
                 if (typeof val === 'boolean') return val;
                 
                 // Handle string
                 if (typeof val === 'string') {
-                  // If it looks like an ISO date string, treat as timestamp
-                  if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}/.test(val)) {
-                    return `'${val}'`;
-                  }
                   return `'${String(val).replace(/'/g, "''")}'`;
                 }
                 
