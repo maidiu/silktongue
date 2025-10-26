@@ -61,8 +61,8 @@ async function upsertQuizQuestion(question) {
     reward_amount = 10
   } = question;
   
-  // Get word_id
-  const word_id = await getWordId(question.word_id || question.word);
+  // Always look up by word name to avoid hardcoded ID mismatches
+  const word_id = await getWordId(question.word || question.word_id);
   
   const { rows } = await pool.query(
     `INSERT INTO quiz_materials (
