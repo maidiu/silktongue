@@ -18,7 +18,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// API routes
+// API routes - support both /api and /silktongue/api
+app.use('/silktongue/api/vocab', vocabRoutes);
+app.use('/silktongue/api/explore', exploreRoutes);
+app.use('/silktongue/api/meta', metaRoutes);
+app.use('/silktongue/api/quiz', quizRoutes);
+app.use('/silktongue/api/auth', authRoutes);
+app.use('/silktongue/api/maps', mapsRoutes);
+
 app.use('/api/vocab', vocabRoutes);
 app.use('/api/explore', exploreRoutes);
 app.use('/api/meta', metaRoutes);
@@ -28,22 +35,25 @@ app.use('/api/maps', mapsRoutes);
 
 // Serve static files from React build in production
 const clientBuildPath = path.join(__dirname, '../../client/dist');
-app.use(express.static(clientBuildPath));
+app.use('/silktongue', express.static(clientBuildPath, { index: false }));
 
 // All other GET routes (non-API) serve the React app
 // This catch-all must come last, after all API routes
 app.use((req, res, next) => {
-  // If it's an API route, skip this handler
-  if (req.path.startsWith('/api')) {
+  // If it's an API route, skip
+  if (req.path.startsWith('/api') || req.path.startsWith('/silktongue/api')) {
     return next();
   }
-  // For all other routes, serve the React app
-  res.sendFile(path.join(clientBuildPath, 'index.html'), (err) => {
-    if (err) {
-      // If the file doesn't exist (development mode), just continue
-      next();
-    }
-  });
+  // For /silktongue routes (except API), serve the React app
+  if (req.path.startsWith('/silktongue') || req.path === '/silktongue/') {
+    res.sendFile(path.join(clientBuildPath, 'index.html'), (err) => {
+      if (err) {
+        next();
+      }
+    });
+    return;
+  }
+  next();
 });
 
 cron.schedule('0 0 * * *', async () => {
