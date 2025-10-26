@@ -67,7 +67,7 @@ async function upsertQuizQuestion(question) {
   const word_id = await getWordId(question.word_id || question.word);
   
   const { rows } = await pool.query(
-    `INSERT INTO quiz_questions (
+    `INSERT INTO quiz_materials (
       word_id, level, question_type, prompt,
       options, correct_answer, correct_answers,
       variant_data, reward_amount, difficulty
