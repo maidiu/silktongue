@@ -35,25 +35,16 @@ app.use('/api/maps', mapsRoutes);
 
 // Serve static files from React build in production
 const clientBuildPath = path.join(__dirname, '../../client/dist');
-app.use('/silktongue', express.static(clientBuildPath, { index: false }));
+app.use('/silktongue', express.static(clientBuildPath));
 
-// All other GET routes (non-API) serve the React app
-// This catch-all must come last, after all API routes
-app.use((req, res, next) => {
-  // If it's an API route, skip
-  if (req.path.startsWith('/api') || req.path.startsWith('/silktongue/api')) {
-    return next();
-  }
-  // For /silktongue routes (except API), serve the React app
-  if (req.path.startsWith('/silktongue') || req.path === '/silktongue/') {
-    res.sendFile(path.join(clientBuildPath, 'index.html'), (err) => {
-      if (err) {
-        next();
-      }
-    });
-    return;
-  }
-  next();
+// Redirect root to /silktongue
+app.get('/', (req, res) => {
+  res.redirect('/silktongue');
+});
+
+// Serve React app for /silktongue and all sub-routes
+app.get('/silktongue*', (req, res) => {
+  res.sendFile(path.join(clientBuildPath, 'index.html'));
 });
 
 cron.schedule('0 0 * * *', async () => {
