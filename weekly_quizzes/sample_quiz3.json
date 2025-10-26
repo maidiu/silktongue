@@ -1,0 +1,400 @@
+[
+  {
+    "word": "perfunctory",
+    "level": 1,
+    "question_type": "spelling",
+    "prompt": "Arrange the letters to spell the word:",
+    "options": null,
+    "correct_answer": "perfunctory",
+    "variant_data": null,
+    "reward_amount": 10
+  },
+  {
+    "word": "perfunctory",
+    "level": 2,
+    "question_type": "typing",
+    "prompt": "Type the word you just arranged:",
+    "options": null,
+    "correct_answer": "perfunctory",
+    "variant_data": {
+      "case_insensitive": true
+    },
+    "reward_amount": 10
+  },
+  {
+    "word": "perfunctory",
+    "level": 3,
+    "question_type": "definition",
+    "prompt": "Select all definitions that accurately describe 'perfunctory':",
+    "options": {
+      "incorrect_answers": [
+        "Executed with great attention and care",
+        "Expressing heartfelt enthusiasm",
+        "Designed to be complex and deliberate",
+        "Marked by deep sincerity",
+        "Thorough and detailed",
+        "Carefully crafted through repetition",
+        "Mechanical yet precise",
+        "Energetic and inspired in performance"
+      ],
+      "correct_answers": [
+        "Done quickly and without genuine interest",
+        "Performed merely as a duty or routine",
+        "Completed mechanically, without emotion or reflection",
+        "Indifferent or apathetic in manner"
+      ]
+    },
+    "correct_answer": null,
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 3,
+      "feedback": {
+        "hint": "Think of action without spirit.",
+        "success": "You caught the hollowness in motion.",
+        "fail": "Some of those had too much heart."
+      }
+    },
+    "reward_amount": 15
+  },
+  {
+    "word": "perfunctory",
+    "level": 4,
+    "question_type": "synonym",
+    "prompt": "Drag each word into the correct basket for 'perfunctory':",
+    "options": {
+      "synonyms": ["cursory", "mechanical", "superficial", "routine"],
+      "antonyms": ["thorough", "careful", "attentive", "conscientious"],
+      "red_herrings": ["predictable", "tedious", "formal", "repetitive"]
+    },
+    "correct_answer": null,
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 6,
+      "feedback": {
+        "hint": "Listen for care vs. carelessness.",
+        "success": "You sorted the hollow from the wholehearted.",
+        "fail": "Some still landed in the wrong nest."
+      }
+    },
+    "reward_amount": 15
+  },
+  {
+    "word": "perfunctory",
+    "level": 5,
+    "question_type": "story",
+    "prompt": "Match each time period with its stage in the story of 'perfunctory', then arrange them in order:",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "12th c.",
+        "16th c.",
+        "19th c.",
+        "21st c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval Church",
+        "Renaissance Humanism",
+        "Industrial Age",
+        "Digital Life"
+      ],
+      "turns": [
+        "He worked among Roman officials who prized completion over feeling.",
+        "He became a prayer said by habit—words without heart.",
+        "He entered English bearing guilt for hollow acts.",
+        "Factories and offices gave him endless routines; he moved without soul.",
+        "He now lives in screens and schedules, still moving, still performing."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE — Rome → He worked among Roman officials who prized completion over feeling.",
+      "12th c. — Medieval Church → He became a prayer said by habit—words without heart.",
+      "16th c. — Renaissance Humanism → He entered English bearing guilt for hollow acts.",
+      "19th c. — Industrial Age → Factories and offices gave him endless routines; he moved without soul.",
+      "21st c. — Digital Life → He now lives in screens and schedules, still moving, still performing."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": true,
+      "feedback": {
+        "hint": "Trace how duty turned to emptiness.",
+        "success": "The centuries fall into place—the word lives again.",
+        "fail": "Some centuries landed out of time."
+      }
+    },
+    "reward_amount": 25
+  },
+  {
+    "word": "perfunctory",
+    "level": 6,
+    "question_type": "story",
+    "prompt": "Rebuild the full story of 'perfunctory'—beware the four false centuries. Conquer the beast for double silk.",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "12th c.",
+        "16th c.",
+        "19th c.",
+        "21st c.",
+        "8th c.",
+        "18th c.",
+        "20th c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval Church",
+        "Renaissance Humanism",
+        "Industrial Age",
+        "Digital Life",
+        "Carolingian Europe",
+        "Enlightenment England",
+        "American Pragmatism"
+      ],
+      "turns": [
+        "He worked among Roman officials who prized completion over feeling.",
+        "He became a prayer said by habit—words without heart.",
+        "He entered English bearing guilt for hollow acts.",
+        "Factories and offices gave him endless routines; he moved without soul.",
+        "He now lives in screens and schedules, still moving, still performing.",
+        "He was adopted by monks to describe joyful labor.",
+        "He symbolized the rational perfection of craft.",
+        "He inspired motivational slogans for workers."
+      ],
+      "red_herrings": [
+        "He was carved into temple inscriptions to bless crops.",
+        "He vanished after Rome's fall, lost to the barbarians.",
+        "He re-emerged during the French Revolution as a virtue.",
+        "He was sung in factories to ward off fatigue."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE — Rome → He worked among Roman officials who prized completion over feeling.",
+      "12th c. — Medieval Church → He became a prayer said by habit—words without heart.",
+      "16th c. — Renaissance Humanism → He entered English bearing guilt for hollow acts.",
+      "19th c. — Industrial Age → Factories and offices gave him endless routines; he moved without soul.",
+      "21st c. — Digital Life → He now lives in screens and schedules, still moving, still performing."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "hard_mode_penalty": {
+        "health_loss_on_fail": 2,
+        "reward_multiplier_on_success": 2
+      },
+      "feedback": {
+        "hint": "Some centuries whisper lies.",
+        "success": "You have slain the beast of confusion. Double silk earned.",
+        "fail": "The beast devoured your certainty. Try again."
+      }
+    },
+    "difficulty": "hard",
+    "reward_amount": 50
+  },
+  {
+    "word": "verisimilitude",
+    "level": 1,
+    "question_type": "spelling",
+    "prompt": "Arrange the letters to spell the word:",
+    "options": null,
+    "correct_answer": "verisimilitude",
+    "variant_data": null,
+    "reward_amount": 10
+  },
+  {
+    "word": "verisimilitude",
+    "level": 2,
+    "question_type": "typing",
+    "prompt": "Type the word you just arranged:",
+    "options": null,
+    "correct_answer": "verisimilitude",
+    "variant_data": {
+      "case_insensitive": true
+    },
+    "reward_amount": 10
+  },
+  {
+    "word": "verisimilitude",
+    "level": 3,
+    "question_type": "definition",
+    "prompt": "Select all definitions that accurately describe 'verisimilitude':",
+    "options": {
+      "incorrect_answers": [
+        "Absolute and verifiable truth",
+        "The act of deliberately deceiving others",
+        "Complete accuracy in all factual details",
+        "Objective reality independent of perception",
+        "Scientific proof or empirical evidence",
+        "Honesty and moral integrity",
+        "Exact replication without interpretation",
+        "Divine or absolute certainty"
+      ],
+      "correct_answers": [
+        "The appearance or quality of being true or real",
+        "The quality of seeming to be true or plausible",
+        "Believability or lifelike quality in fiction or art",
+        "The semblance of truth based on probability"
+      ]
+    },
+    "correct_answer": null,
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 3,
+      "feedback": {
+        "hint": "Think of seeming true, not being true.",
+        "success": "You caught the shadow of truth without mistaking it for the light.",
+        "fail": "Some held too much certainty; she deals in likeness, not proof."
+      }
+    },
+    "reward_amount": 15
+  },
+  {
+    "word": "verisimilitude",
+    "level": 4,
+    "question_type": "synonym",
+    "prompt": "Drag each word into the correct basket for 'verisimilitude':",
+    "options": {
+      "synonyms": ["plausibility", "believability", "realism", "credibility"],
+      "antonyms": ["implausibility", "incredibility", "unreality", "falseness"],
+      "red_herrings": ["accuracy", "honesty", "certainty", "verification"]
+    },
+    "correct_answer": null,
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 6,
+      "feedback": {
+        "hint": "She resembles truth but isn't its twin.",
+        "success": "You sorted appearance from substance with precision.",
+        "fail": "Some words claimed too much—or too little—truth."
+      }
+    },
+    "reward_amount": 15
+  },
+  {
+    "word": "verisimilitude",
+    "level": 5,
+    "question_type": "story",
+    "prompt": "Match each time period with its stage in the story of 'verisimilitude', then arrange them in order:",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "14th c.",
+        "17th c.",
+        "19th c.",
+        "20th c.",
+        "21st c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval Scholarship",
+        "English Enlightenment",
+        "Realist Movement",
+        "Modern Media",
+        "Digital Age"
+      ],
+      "turns": [
+        "She was born in rhetoric—the orator's art of seeming true when proof was distant.",
+        "She became the soul of narrative—what made fiction teach by feeling real.",
+        "She arrived in England as the measure of art—not truth, but its convincing performance.",
+        "Realists demanded research and detail; she grew exacting, almost scientific.",
+        "In courtrooms and cinema, she became evidence and spectacle—belief without certainty.",
+        "Now she moves through deepfakes and virtual worlds, engineering the feeling of truth."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE — Rome → She was born in rhetoric—the orator's art of seeming true when proof was distant.",
+      "14th c. — Medieval Scholarship → She became the soul of narrative—what made fiction teach by feeling real.",
+      "17th c. — English Enlightenment → She arrived in England as the measure of art—not truth, but its convincing performance.",
+      "19th c. — Realist Movement → Realists demanded research and detail; she grew exacting, almost scientific.",
+      "20th c. — Modern Media → In courtrooms and cinema, she became evidence and spectacle—belief without certainty.",
+      "21st c. — Digital Age → Now she moves through deepfakes and virtual worlds, engineering the feeling of truth."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": true,
+      "feedback": {
+        "hint": "Trace how likeness evolved from rhetoric to technology.",
+        "success": "The centuries align—truth's shadow comes into focus.",
+        "fail": "Some stages slipped out of sequence."
+      }
+    },
+    "reward_amount": 25
+  },
+  {
+    "word": "verisimilitude",
+    "level": 6,
+    "question_type": "story",
+    "prompt": "Rebuild the full story of 'verisimilitude'—beware the five false centuries. Conquer the beast for double silk.",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "14th c.",
+        "17th c.",
+        "19th c.",
+        "20th c.",
+        "21st c.",
+        "5th c.",
+        "11th c.",
+        "15th c.",
+        "18th c.",
+        "16th c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval Scholarship",
+        "English Enlightenment",
+        "Realist Movement",
+        "Modern Media",
+        "Digital Age",
+        "Byzantine Empire",
+        "Islamic Golden Age",
+        "Italian Renaissance",
+        "French Salons",
+        "Protestant Reformation"
+      ],
+      "turns": [
+        "She was born in rhetoric—the orator's art of seeming true when proof was distant.",
+        "She became the soul of narrative—what made fiction teach by feeling real.",
+        "She arrived in England as the measure of art—not truth, but its convincing performance.",
+        "Realists demanded research and detail; she grew exacting, almost scientific.",
+        "In courtrooms and cinema, she became evidence and spectacle—belief without certainty.",
+        "Now she moves through deepfakes and virtual worlds, engineering the feeling of truth.",
+        "She was worshipped as a goddess of wisdom in Byzantine temples.",
+        "She traveled the Silk Road as a merchant's guarantee of quality.",
+        "She became a painter's technique for perfect perspective.",
+        "She was debated in salons as the measure of moral virtue.",
+        "She was banned by reformers as a form of Catholic deceit."
+      ],
+      "red_herrings": [
+        "She inspired medieval illuminated manuscripts depicting truth as light.",
+        "She was encoded in Renaissance geometry as divine proportion.",
+        "She emerged in Romantic poetry as nature's authentic voice.",
+        "She became a Victorian virtue signaling moral character.",
+        "She was rejected by modernists as bourgeois pretense."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE — Rome → She was born in rhetoric—the orator's art of seeming true when proof was distant.",
+      "14th c. — Medieval Scholarship → She became the soul of narrative—what made fiction teach by feeling real.",
+      "17th c. — English Enlightenment → She arrived in England as the measure of art—not truth, but its convincing performance.",
+      "19th c. — Realist Movement → Realists demanded research and detail; she grew exacting, almost scientific.",
+      "20th c. — Modern Media → In courtrooms and cinema, she became evidence and spectacle—belief without certainty.",
+      "21st c. — Digital Age → Now she moves through deepfakes and virtual worlds, engineering the feeling of truth."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "hard_mode_penalty": {
+        "health_loss_on_fail": 2,
+        "reward_multiplier_on_success": 2
+      },
+      "feedback": {
+        "hint": "Illusions multiply—seek the thread from rhetoric to simulation.",
+        "success": "You have pierced the veil of false centuries. Double silk earned.",
+        "fail": "The beast of confusion claimed you. Truth's likeness remains hidden."
+      }
+    },
+    "difficulty": "hard",
+    "reward_amount": 50
+  }
+]
+

@@ -1,0 +1,324 @@
+[
+  {
+    "word": "cohesive",
+    "level": 5,
+    "question_type": "story",
+    "prompt": "Match each time period with its stage in the story of 'cohesive', then arrange them in order:",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "12th c.",
+        "16th c.",
+        "19th c.",
+        "21st c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval Church",
+        "Renaissance Humanism",
+        "Industrial Age",
+        "Digital Age"
+      ],
+      "turns": [
+        "She was born in Latin as *cohaerere*—'to cling together.' Built from *co-* ('with') and *haerere* ('to stick'), she was the force that bound matter to matter, stone to stone, word to word.",
+        "In medieval Latin, she became the glue of faith—what held the Church together, what bound believer to believer, what made the body of Christ one.",
+        "When the Renaissance arrived, she followed minds instead of stones. She became the force that bound idea to idea, argument to argument, the logical thread that held thought together.",
+        "In the industrial age, she found new work in the factory and the laboratory. She was the force that bound molecule to molecule, part to part, the invisible hand that made machines whole.",
+        "Now she lives in the digital realm, binding code to code, data to data, the force that makes virtual worlds cohere and digital communities stick together."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE — Rome → She was born in Latin as *cohaerere*—'to cling together.' Built from *co-* ('with') and *haerere* ('to stick'), she was the force that bound matter to matter, stone to stone, word to word.",
+      "12th c. — Medieval Church → In medieval Latin, she became the glue of faith—what held the Church together, what bound believer to believer, what made the body of Christ one.",
+      "16th c. — Renaissance Humanism → When the Renaissance arrived, she followed minds instead of stones. She became the force that bound idea to idea, argument to argument, the logical thread that held thought together.",
+      "19th c. — Industrial Age → In the industrial age, she found new work in the factory and the laboratory. She was the force that bound molecule to molecule, part to part, the invisible hand that made machines whole.",
+      "21st c. — Digital Age → Now she lives in the digital realm, binding code to code, data to data, the force that makes virtual worlds cohere and digital communities stick together."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": true,
+      "feedback": {
+        "hint": "Trace how the force of binding moved from matter to mind.",
+        "success": "The centuries fall into place—the word lives again.",
+        "fail": "Some centuries landed out of time."
+      }
+    },
+    "reward_amount": 25
+  },
+  {
+    "word": "impede",
+    "level": 5,
+    "question_type": "story",
+    "prompt": "Match each time period with its stage in the story of 'impede', then arrange them in order:",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "12th c.",
+        "16th c.",
+        "19th c.",
+        "21st c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval Church",
+        "Renaissance Humanism",
+        "Industrial Age",
+        "Digital Age"
+      ],
+      "turns": [
+        "Long ago, in Rome, he was *impedire*—'to shackle the feet.' Built from *in-* ('in, upon') and *pes/pedis* ('foot'), he was born of the body. To impede was to bind, to trap motion itself.",
+        "When the Empire's dust settled and prayers replaced campaigns, Impede crossed into Old French as *empedier*. He kept his fetters, but their meaning shifted. The soul now had feet.",
+        "Then the Renaissance arrived, and with it, motion itself became a metaphor. Discovery, reform, progress—everyone was moving somewhere new. Impede, still dragging his ancient chains, now followed minds instead of bodies.",
+        "By the industrial age, Impede had lost his shackles but kept his habit. He haunted the gears of systems, not the feet of soldiers. Processes stalled; reforms slowed; traffic stopped.",
+        "Now he lives in the digital realm, slowing downloads, blocking connections, the ancient force of obstruction finding new forms in the age of instant communication."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE — Rome → Long ago, in Rome, he was *impedire*—'to shackle the feet.' Built from *in-* ('in, upon') and *pes/pedis* ('foot'), he was born of the body. To impede was to bind, to trap motion itself.",
+      "12th c. — Medieval Church → When the Empire's dust settled and prayers replaced campaigns, Impede crossed into Old French as *empedier*. He kept his fetters, but their meaning shifted. The soul now had feet.",
+      "16th c. — Renaissance Humanism → Then the Renaissance arrived, and with it, motion itself became a metaphor. Discovery, reform, progress—everyone was moving somewhere new. Impede, still dragging his ancient chains, now followed minds instead of bodies.",
+      "19th c. — Industrial Age → By the industrial age, Impede had lost his shackles but kept his habit. He haunted the gears of systems, not the feet of soldiers. Processes stalled; reforms slowed; traffic stopped.",
+      "21st c. — Digital Age → Now he lives in the digital realm, slowing downloads, blocking connections, the ancient force of obstruction finding new forms in the age of instant communication."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": true,
+      "feedback": {
+        "hint": "Trace how obstruction moved from body to system.",
+        "success": "The centuries fall into place—the word lives again.",
+        "fail": "Some centuries landed out of time."
+      }
+    },
+    "reward_amount": 25
+  },
+  {
+    "word": "inherent",
+    "level": 5,
+    "question_type": "story",
+    "prompt": "Match each time period with its stage in the story of 'inherent', then arrange them in order:",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "12th c.",
+        "16th c.",
+        "18th c.",
+        "21st c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval Church",
+        "Renaissance Humanism",
+        "Enlightenment",
+        "Modern Philosophy"
+      ],
+      "turns": [
+        "She was born in Latin as *inhaerere*—'to stick within.' Built from *in-* ('in') and *haerere* ('to stick'), she was the force that made things belong where they were, naturally and permanently.",
+        "In medieval Latin, she became the mark of divine order—what belonged to creation by God's design, what was woven into the fabric of being itself.",
+        "When the Renaissance arrived, she followed minds instead of matter. She became the force that made ideas belong to their subjects, what was essential to understanding itself.",
+        "In the Enlightenment, she became the foundation of natural rights—what belonged to humans by their very nature, what could not be taken away because it was part of being human.",
+        "Now she lives in the age of identity, binding traits to selves, making what is learned feel as natural as what is born, the ancient force of belonging finding new forms in the age of self-creation."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE — Rome → She was born in Latin as *inhaerere*—'to stick within.' Built from *in-* ('in') and *haerere* ('to stick'), she was the force that made things belong where they were, naturally and permanently.",
+      "12th c. — Medieval Church → In medieval Latin, she became the mark of divine order—what belonged to creation by God's design, what was woven into the fabric of being itself.",
+      "16th c. — Renaissance Humanism → When the Renaissance arrived, she followed minds instead of matter. She became the force that made ideas belong to their subjects, what was essential to understanding itself.",
+      "18th c. — Enlightenment → In the Enlightenment, she became the foundation of natural rights—what belonged to humans by their very nature, what could not be taken away because it was part of being human.",
+      "21st c. — Modern Philosophy → Now she lives in the age of identity, binding traits to selves, making what is learned feel as natural as what is born, the ancient force of belonging finding new forms in the age of self-creation."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": true,
+      "feedback": {
+        "hint": "Trace how the idea of what belongs within moved from matter to morality.",
+        "success": "The centuries fall into place—the word lives again.",
+        "fail": "Some centuries landed out of time."
+      }
+    },
+    "reward_amount": 25
+  },
+  {
+    "word": "omit",
+    "level": 5,
+    "question_type": "story",
+    "prompt": "Match each time period with its stage in the story of 'omit', then arrange them in order:",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "12th c.",
+        "16th c.",
+        "19th c.",
+        "21st c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval Church",
+        "Renaissance Humanism",
+        "Industrial Age",
+        "Digital Age"
+      ],
+      "turns": [
+        "He was born in Latin as *omittere*—'to let go, to send away.' Built from *ob-* ('away') and *mittere* ('to send'), he was the force that made things disappear, that removed what was no longer needed.",
+        "In medieval Latin, he became the art of selective memory—what the Church chose to remember and what it chose to forget, the power to shape history by what was left out.",
+        "When the Renaissance arrived, he followed minds instead of matter. He became the force that shaped knowledge by what was excluded, the power to define truth by what was not said.",
+        "In the industrial age, he found new work in the factory and the office. He was the force that streamlined processes by removing steps, that made efficiency by what was left out.",
+        "Now he lives in the digital realm, filtering information, curating content, the ancient force of exclusion finding new forms in the age of infinite data."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE — Rome → He was born in Latin as *omittere*—'to let go, to send away.' Built from *ob-* ('away') and *mittere* ('to send'), he was the force that made things disappear, that removed what was no longer needed.",
+      "12th c. — Medieval Church → In medieval Latin, he became the art of selective memory—what the Church chose to remember and what it chose to forget, the power to shape history by what was left out.",
+      "16th c. — Renaissance Humanism → When the Renaissance arrived, he followed minds instead of matter. He became the force that shaped knowledge by what was excluded, the power to define truth by what was not said.",
+      "19th c. — Industrial Age → In the industrial age, he found new work in the factory and the office. He was the force that streamlined processes by removing steps, that made efficiency by what was left out.",
+      "21st c. — Digital Age → Now he lives in the digital realm, filtering information, curating content, the ancient force of exclusion finding new forms in the age of infinite data."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": true,
+      "feedback": {
+        "hint": "Trace how absence becomes its own kind of presence.",
+        "success": "The centuries fall into place—the word lives again.",
+        "fail": "Some centuries landed out of time."
+      }
+    },
+    "reward_amount": 25
+  },
+  {
+    "word": "perfunctory",
+    "level": 5,
+    "question_type": "story",
+    "prompt": "Match each time period with its stage in the story of 'perfunctory', then arrange them in order:",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "12th c.",
+        "16th c.",
+        "19th c.",
+        "21st c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval Church",
+        "Renaissance Humanism",
+        "Industrial Age",
+        "Digital Life"
+      ],
+      "turns": [
+        "He worked among Roman officials who prized completion over feeling, duty over devotion, the efficient discharge of obligation.",
+        "He became a prayer said by habit—words without heart, ritual without reverence, the mechanical performance of faith.",
+        "He entered English bearing guilt for hollow acts, the shame of doing without feeling, the emptiness of motion without meaning.",
+        "Factories and offices gave him endless routines; he moved without soul, worked without wonder, performed without passion.",
+        "He now lives in screens and schedules, still moving, still performing, the ancient force of duty finding new forms in the age of automation."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE — Rome → He worked among Roman officials who prized completion over feeling, duty over devotion, the efficient discharge of obligation.",
+      "12th c. — Medieval Church → He became a prayer said by habit—words without heart, ritual without reverence, the mechanical performance of faith.",
+      "16th c. — Renaissance Humanism → He entered English bearing guilt for hollow acts, the shame of doing without feeling, the emptiness of motion without meaning.",
+      "19th c. — Industrial Age → Factories and offices gave him endless routines; he moved without soul, worked without wonder, performed without passion.",
+      "21st c. — Digital Life → He now lives in screens and schedules, still moving, still performing, the ancient force of duty finding new forms in the age of automation."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": true,
+      "feedback": {
+        "hint": "Trace how repetition without meaning turns duty into emptiness.",
+        "success": "The centuries fall into place—the word lives again.",
+        "fail": "Some centuries landed out of time."
+      }
+    },
+    "reward_amount": 25
+  },
+  {
+    "word": "salient",
+    "level": 5,
+    "question_type": "story",
+    "prompt": "Match each time period with its stage in the story of 'salient', then arrange them in order:",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "12th c.",
+        "16th c.",
+        "19th c.",
+        "21st c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval Warfare",
+        "Renaissance Humanism",
+        "Industrial Age",
+        "Digital Age"
+      ],
+      "turns": [
+        "She was born in Latin as *salire*—'to leap, to jump.' Built from the root meaning 'to spring forth,' she was the force that made things burst into view, that made the hidden suddenly visible.",
+        "In medieval warfare, she became the mark of the charging knight—what leaped forward in battle, what stood out in the chaos of combat, the force that made the bold visible.",
+        "When the Renaissance arrived, she followed minds instead of bodies. She became the force that made ideas leap forward, that made the important stand out from the ordinary.",
+        "In the industrial age, she found new work in the factory and the laboratory. She was the force that made the significant visible, that highlighted what mattered in the noise of production.",
+        "Now she lives in the digital realm, making content viral, highlighting what matters in the flood of information, the ancient force of visibility finding new forms in the age of attention."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE — Rome → She was born in Latin as *salire*—'to leap, to jump.' Built from the root meaning 'to spring forth,' she was the force that made things burst into view, that made the hidden suddenly visible.",
+      "12th c. — Medieval Warfare → In medieval warfare, she became the mark of the charging knight—what leaped forward in battle, what stood out in the chaos of combat, the force that made the bold visible.",
+      "16th c. — Renaissance Humanism → When the Renaissance arrived, she followed minds instead of bodies. She became the force that made ideas leap forward, that made the important stand out from the ordinary.",
+      "19th c. — Industrial Age → In the industrial age, she found new work in the factory and the laboratory. She was the force that made the significant visible, that highlighted what mattered in the noise of production.",
+      "21st c. — Digital Age → Now she lives in the digital realm, making content viral, highlighting what matters in the flood of information, the ancient force of visibility finding new forms in the age of attention."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": true,
+      "feedback": {
+        "hint": "Trace how what once meant leaping into danger became the mark of what stands out.",
+        "success": "The centuries fall into place—the word lives again.",
+        "fail": "Some centuries landed out of time."
+      }
+    },
+    "reward_amount": 25
+  },
+  {
+    "word": "scattershot",
+    "level": 5,
+    "question_type": "story",
+    "prompt": "Match each time period with its stage in the story of 'scattershot', then arrange them in order:",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "12th c.",
+        "16th c.",
+        "19th c.",
+        "21st c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval Warfare",
+        "Renaissance Humanism",
+        "Industrial Age",
+        "Digital Age"
+      ],
+      "turns": [
+        "He was born in the precision of Roman artillery—the art of aiming true, of hitting the mark, of making every shot count in the chaos of battle.",
+        "In medieval warfare, he became the mark of the archer—what hit its target, what found its mark, the force that made precision possible in the fog of war.",
+        "When the Renaissance arrived, he followed minds instead of arrows. He became the force that made thought precise, that made argument hit its mark, the art of focused reasoning.",
+        "In the industrial age, he found new work in the factory and the laboratory. He was the force that made machines precise, that made processes hit their marks, the art of controlled production.",
+        "Now he lives in the digital realm, making algorithms precise, making data hit its marks, the ancient force of accuracy finding new forms in the age of automation."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE — Rome → He was born in the precision of Roman artillery—the art of aiming true, of hitting the mark, of making every shot count in the chaos of battle.",
+      "12th c. — Medieval Warfare → In medieval warfare, he became the mark of the archer—what hit its target, what found its mark, the force that made precision possible in the fog of war.",
+      "16th c. — Renaissance Humanism → When the Renaissance arrived, he followed minds instead of arrows. He became the force that made thought precise, that made argument hit its mark, the art of focused reasoning.",
+      "19th c. — Industrial Age → In the industrial age, he found new work in the factory and the laboratory. He was the force that made machines precise, that made processes hit their marks, the art of controlled production.",
+      "21st c. — Digital Age → Now he lives in the digital realm, making algorithms precise, making data hit its marks, the ancient force of accuracy finding new forms in the age of automation."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": true,
+      "feedback": {
+        "hint": "Trace how tools of precision become metaphors for chaos when control fails.",
+        "success": "The centuries fall into place—the word lives again.",
+        "fail": "Some centuries landed out of time."
+      }
+    },
+    "reward_amount": 25
+  }
+]

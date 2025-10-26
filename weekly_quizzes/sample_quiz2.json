@@ -1,0 +1,608 @@
+
+    [
+        {
+          "word_id": 1,
+          "level": 1,
+          "question_type": "spelling",
+          "prompt": "Unscramble the letters to form the word that means 'to block progress':",
+          "options": ["impdee", "imepde", "epdmei", "impede"],
+          "correct_answer": "impede",
+          "variant_data": { "difficulty": "easy" },
+          "reward_amount": 10
+        },
+        {
+          "word_id": 1,
+          "level": 2,
+          "question_type": "typing",
+          "prompt": "Type the vocabulary word defined as 'to slow or block progress, movement, or development.'",
+          "options": {},
+          "correct_answer": "impede",
+          "variant_data": { "difficulty": "easy" },
+          "reward_amount": 10
+        },
+        {
+          "word_id": 1,
+          "level": 3,
+          "question_type": "definition",
+          "prompt": "Select the best definition of 'impede'.",
+          "options": [
+            "To slow or block progress, movement, or development.",
+            "To encourage or make faster.",
+            "To measure the speed of something.",
+            "To prepare something in advance."
+          ],
+          "correct_answer": "To slow or block progress, movement, or development.",
+          "variant_data": { "difficulty": "medium" },
+          "reward_amount": 15
+        },
+        {
+          "word_id": 1,
+          "level": 4,
+          "question_type": "synonym",
+          "prompt": "Drag each word into the correct column: synonyms vs. antonyms of 'impede'.",
+          "options": {
+            "synonyms": ["obstruct", "delay", "inhibit", "hinder"],
+            "antonyms": ["assist", "facilitate", "enable", "advance"]
+          },
+          "correct_answer": "obstruct, delay, inhibit, hinder",
+          "variant_data": { "difficulty": "medium" },
+          "reward_amount": 15
+        },
+        {
+          "word_id": 1,
+          "level": 5,
+          "question_type": "story",
+          "prompt": "Reorder these stages of 'Impede’s' story from earliest to most recent.",
+          "options": [
+            "Roman soldiers use *impedire*—‘to shackle the feet.’",
+            "Medieval sermons describe sin as a stumble or snare.",
+            "Renaissance writers apply it to bureaucratic and intellectual delay.",
+            "Industrial age transforms it into mechanical inefficiency."
+          ],
+          "correct_answer": "Roman soldiers use *impedire*—‘to shackle the feet.’ → Medieval sermons describe sin as a stumble or snare. → Renaissance writers apply it to bureaucratic and intellectual delay. → Industrial age transforms it into mechanical inefficiency.",
+          "variant_data": { "difficulty": "hard" },
+          "reward_amount": 25
+        },
+        {
+          "word_id": 1,
+          "level": 5,
+          "question_type": "story",
+          "prompt": "Face the Beast: choose the one statement that best captures the structural essence of 'Impede’s' story.",
+          "options": [
+            "He shows how civilization’s movement from body to system replaced morality with mechanism.",
+            "He reveals how physical obstruction always remains moral evil, even in modern forms.",
+            "He symbolizes the triumph of speed over thought.",
+            "He proves that progress depends on removing all friction."
+          ],
+          "correct_answer": "He shows how civilization’s movement from body to system replaced morality with mechanism.",
+          "variant_data": {
+            "difficulty": "hard",
+            "wager_enabled": true,
+            "red_herrings": [
+              "Moral evil is constant across all ages.",
+              "Speed defines virtue in modern society.",
+              "Friction is the enemy of order."
+            ]
+          },
+          "reward_amount": 50
+        },
+        {
+            "word_id": 2,
+            "level": 1,
+            "question_type": "spelling",
+            "prompt": "Unscramble the letters to form the word that means 'existing as a natural or essential part of something':",
+            "options": ["ehrinhe", "reniheh", "inherent", "herinent"],
+            "correct_answer": "inherent",
+            "variant_data": { "difficulty": "easy" },
+            "reward_amount": 10
+          },
+          {
+            "word_id": 2,
+            "level": 2,
+            "question_type": "typing",
+            "prompt": "Type the vocabulary word defined as 'existing as a natural or essential part of something.'",
+            "options": {},
+            "correct_answer": "inherent",
+            "variant_data": { "difficulty": "easy" },
+            "reward_amount": 10
+          },
+          {
+            "word_id": 2,
+            "level": 3,
+            "question_type": "definition",
+            "prompt": "Select the best definition of 'inherent'.",
+            "options": [
+              "Existing as a natural or essential part of something.",
+              "Developed through learning or habit.",
+              "Accidental or temporary in nature.",
+              "Dependent on outside influence."
+            ],
+            "correct_answer": "Existing as a natural or essential part of something.",
+            "variant_data": { "difficulty": "medium" },
+            "reward_amount": 15
+          },
+          {
+            "word_id": 2,
+            "level": 4,
+            "question_type": "synonym",
+            "prompt": "Sort the following words into synonyms and antonyms of 'inherent'.",
+            "options": {
+              "synonyms": ["intrinsic", "innate", "essential", "fundamental"],
+              "antonyms": ["extrinsic", "acquired", "external", "incidental"]
+            },
+            "correct_answer": "intrinsic, innate, essential, fundamental",
+            "variant_data": { "difficulty": "medium" },
+            "reward_amount": 15
+          },
+          {
+            "word_id": 2,
+            "level": 5,
+            "question_type": "story",
+            "prompt": "Reorder these stages of 'Inherent’s' story from earliest to most recent.",
+            "options": [
+              "Latin *inhaerere*—‘to stick in, cling to’—used for physical adhesion.",
+              "Medieval scholars extend it to moral and spiritual qualities that ‘inhere’ in the soul.",
+              "Renaissance thinkers use it for natural properties of matter and being.",
+              "Modern philosophers turn it inward: identity and value as built-in essence."
+            ],
+            "correct_answer": "Latin *inhaerere*—‘to stick in, cling to’—used for physical adhesion. → Medieval scholars extend it to moral and spiritual qualities that ‘inhere’ in the soul. → Renaissance thinkers use it for natural properties of matter and being. → Modern philosophers turn it inward: identity and value as built-in essence.",
+            "variant_data": { "difficulty": "hard" },
+            "reward_amount": 25
+          },
+          {
+            "word_id": 2,
+            "level": 5,
+            "question_type": "story",
+            "prompt": "Face the Beast: choose the statement that best captures the structural essence of 'Inherent’s' story.",
+            "options": [
+              "He shows how the idea of what 'belongs within' migrated from matter to morality to identity.",
+              "He reveals that only physical attachment can be truly inherent.",
+              "He symbolizes the loss of external truth in modern philosophy.",
+              "He proves that what is learned is always stronger than what is innate."
+            ],
+            "correct_answer": "He shows how the idea of what 'belongs within' migrated from matter to morality to identity.",
+            "variant_data": {
+              "difficulty": "hard",
+              "wager_enabled": true,
+              "red_herrings": [
+                "Physical attachment defines all belonging.",
+                "External truth outweighs internal nature.",
+                "Learned qualities always surpass innate ones."
+              ]
+            },
+            "reward_amount": 50
+          },
+          {
+            "word_id": 3,
+            "level": 1,
+            "question_type": "spelling",
+            "prompt": "Unscramble the letters to form the word that means 'done with minimal effort or care':",
+            "options": ["fruorynctp", "perfunctory", "punctferory", "perfunctyro"],
+            "correct_answer": "perfunctory",
+            "variant_data": { "difficulty": "easy" },
+            "reward_amount": 10
+          },
+          {
+            "word_id": 3,
+            "level": 2,
+            "question_type": "typing",
+            "prompt": "Type the vocabulary word defined as 'done with minimal effort or care.'",
+            "options": {},
+            "correct_answer": "perfunctory",
+            "variant_data": { "difficulty": "easy" },
+            "reward_amount": 10
+          },
+          {
+            "word_id": 3,
+            "level": 3,
+            "question_type": "definition",
+            "prompt": "Select the best definition of 'perfunctory'.",
+            "options": [
+              "Done with minimal effort or reflection.",
+              "Marked by deep attention and sincerity.",
+              "Performed with excitement and curiosity.",
+              "Built upon careful preparation."
+            ],
+            "correct_answer": "Done with minimal effort or reflection.",
+            "variant_data": { "difficulty": "medium" },
+            "reward_amount": 15
+          },
+          {
+            "word_id": 3,
+            "level": 4,
+            "question_type": "synonym",
+            "prompt": "Sort the following words into synonyms and antonyms of 'perfunctory'.",
+            "options": {
+              "synonyms": ["automatic", "mechanical", "superficial", "unthinking"],
+              "antonyms": ["thorough", "diligent", "intentional", "sincere"]
+            },
+            "correct_answer": "automatic, mechanical, superficial, unthinking",
+            "variant_data": { "difficulty": "medium" },
+            "reward_amount": 15
+          },
+          {
+            "word_id": 3,
+            "level": 5,
+            "question_type": "story",
+            "prompt": "Reorder these stages of 'Perfunctory’s' story from earliest to most recent.",
+            "options": [
+              "Latin *perfungi*—‘to get through, perform to the end.’",
+              "Medieval clerics use it for ritual acts done without devotion.",
+              "Industrial age extends it to mechanical work and bureaucracy.",
+              "Modern usage frames it as emotional detachment or routine apathy."
+            ],
+            "correct_answer": "Latin *perfungi*—‘to get through, perform to the end.’ → Medieval clerics use it for ritual acts done without devotion. → Industrial age extends it to mechanical work and bureaucracy. → Modern usage frames it as emotional detachment or routine apathy.",
+            "variant_data": { "difficulty": "hard" },
+            "reward_amount": 25
+          },
+          {
+            "word_id": 3,
+            "level": 5,
+            "question_type": "story",
+            "prompt": "Face the Beast: choose the statement that best captures the structural essence of 'Perfunctory’s' story.",
+            "options": [
+              "He shows how repetition without meaning turns duty into emptiness.",
+              "He proves that efficiency always leads to spiritual depth.",
+              "He reveals that laziness is the source of creativity.",
+              "He symbolizes the triumph of passion over structure."
+            ],
+            "correct_answer": "He shows how repetition without meaning turns duty into emptiness.",
+            "variant_data": {
+              "difficulty": "hard",
+              "wager_enabled": true,
+              "red_herrings": [
+                "Efficiency breeds sincerity.",
+                "Laziness inspires innovation.",
+                "Passion always overrides order."
+              ]
+            },
+            "reward_amount": 50
+          },
+          {
+            "word_id": 4,
+            "level": 1,
+            "question_type": "spelling",
+            "prompt": "Unscramble the letters to form the word that means 'lacking focus or organization; spread over a wide area':",
+            "options": ["sttshaocret", "scattershot", "stsochatter", "sctthsoater"],
+            "correct_answer": "scattershot",
+            "variant_data": { "difficulty": "easy" },
+            "reward_amount": 10
+          },
+          {
+            "word_id": 4,
+            "level": 2,
+            "question_type": "typing",
+            "prompt": "Type the vocabulary word defined as 'lacking focus or organization; spread over a wide area.'",
+            "options": {},
+            "correct_answer": "scattershot",
+            "variant_data": { "difficulty": "easy" },
+            "reward_amount": 10
+          },
+          {
+            "word_id": 4,
+            "level": 3,
+            "question_type": "definition",
+            "prompt": "Select the best definition of 'scattershot'.",
+            "options": [
+              "Lacking focus or organization; spread over a wide area.",
+              "Precise and carefully targeted.",
+              "Repetitive and predictable in pattern.",
+              "Done secretly or with hesitation."
+            ],
+            "correct_answer": "Lacking focus or organization; spread over a wide area.",
+            "variant_data": { "difficulty": "medium" },
+            "reward_amount": 15
+          },
+          {
+            "word_id": 4,
+            "level": 4,
+            "question_type": "synonym",
+            "prompt": "Sort the following words into synonyms and antonyms of 'scattershot'.",
+            "options": {
+              "synonyms": ["random", "indiscriminate", "unfocused", "erratic"],
+              "antonyms": ["systematic", "targeted", "methodical", "deliberate"]
+            },
+            "correct_answer": "random, indiscriminate, unfocused, erratic",
+            "variant_data": { "difficulty": "medium" },
+            "reward_amount": 15
+          },
+          {
+            "word_id": 4,
+            "level": 5,
+            "question_type": "story",
+            "prompt": "Reorder these stages of 'Scattershot’s' story from earliest to most recent.",
+            "options": [
+              "Originates in the 19th century from the image of shotgun pellets scattering widely.",
+              "Adopted in journalism and politics to describe unfocused criticism or policy.",
+              "Extended to describe unfocused intellectual or emotional expression.",
+              "Modern digital age uses it for information overload and attention fragmentation."
+            ],
+            "correct_answer": "Originates in the 19th century from the image of shotgun pellets scattering widely. → Adopted in journalism and politics to describe unfocused criticism or policy. → Extended to describe unfocused intellectual or emotional expression. → Modern digital age uses it for information overload and attention fragmentation.",
+            "variant_data": { "difficulty": "hard" },
+            "reward_amount": 25
+          },
+          {
+            "word_id": 4,
+            "level": 5,
+            "question_type": "story",
+            "prompt": "Face the Beast: choose the statement that best captures the structural essence of 'Scattershot’s' story.",
+            "options": [
+              "He shows how tools of precision become metaphors for chaos when control fails.",
+              "He proves that randomness is superior to focus.",
+              "He symbolizes that accuracy is meaningless without spontaneity.",
+              "He reveals that intention has no role in human action."
+            ],
+            "correct_answer": "He shows how tools of precision become metaphors for chaos when control fails.",
+            "variant_data": {
+              "difficulty": "hard",
+              "wager_enabled": true,
+              "red_herrings": [
+                "Randomness always produces better outcomes.",
+                "Spontaneity is superior to structure.",
+                "Human intention is irrelevant to order."
+              ]
+            },
+            "reward_amount": 50
+          },
+          {
+            "word_id": 5,
+            "level": 1,
+            "question_type": "spelling",
+            "prompt": "Unscramble the letters to form the word that means 'to leave out or exclude':",
+            "options": ["tiom", "moit", "omit", "itmo"],
+            "correct_answer": "omit",
+            "variant_data": { "difficulty": "easy" },
+            "reward_amount": 10
+          },
+          {
+            "word_id": 5,
+            "level": 2,
+            "question_type": "typing",
+            "prompt": "Type the vocabulary word defined as 'to leave out or exclude'.",
+            "options": {},
+            "correct_answer": "omit",
+            "variant_data": { "difficulty": "easy" },
+            "reward_amount": 10
+          },
+          {
+            "word_id": 5,
+            "level": 3,
+            "question_type": "definition",
+            "prompt": "Select the best definition of 'omit'.",
+            "options": [
+              "To leave out or exclude.",
+              "To include something additional.",
+              "To repeat something unnecessarily.",
+              "To summarize something briefly."
+            ],
+            "correct_answer": "To leave out or exclude.",
+            "variant_data": { "difficulty": "medium" },
+            "reward_amount": 15
+          },
+          {
+            "word_id": 5,
+            "level": 4,
+            "question_type": "synonym",
+            "prompt": "Sort the following words into synonyms and antonyms of 'omit'.",
+            "options": {
+              "synonyms": ["exclude", "neglect", "skip", "leave out"],
+              "antonyms": ["include", "insert", "add", "mention"]
+            },
+            "correct_answer": "exclude, neglect, skip, leave out",
+            "variant_data": { "difficulty": "medium" },
+            "reward_amount": 15
+          },
+          {
+            "word_id": 5,
+            "level": 5,
+            "question_type": "story",
+            "prompt": "Reorder these stages of 'Omit’s' story from earliest to most recent.",
+            "options": [
+              "Latin *omittere* — ‘to let go, to give up, to send away’.",
+              "In medieval law, used for failing to perform a duty or fulfill an obligation.",
+              "In printing and scholarship, came to mean leaving something out intentionally.",
+              "Modern usage expands to emotional or moral absence — what is unspoken or ignored."
+            ],
+            "correct_answer": "Latin *omittere* — ‘to let go, to give up, to send away’. → In medieval law, used for failing to perform a duty or fulfill an obligation. → In printing and scholarship, came to mean leaving something out intentionally. → Modern usage expands to emotional or moral absence — what is unspoken or ignored.",
+            "variant_data": { "difficulty": "hard" },
+            "reward_amount": 25
+          },
+          {
+            "word_id": 5,
+            "level": 5,
+            "question_type": "story",
+            "prompt": "Face the Beast: choose the statement that best captures the structural essence of 'Omit’s' story.",
+            "options": [
+              "He shows how absence becomes its own kind of presence — what is left out shapes meaning as surely as what is said.",
+              "He reveals that forgetting is always accidental.",
+              "He proves that exclusion is morally neutral.",
+              "He symbolizes the end of responsibility in language."
+            ],
+            "correct_answer": "He shows how absence becomes its own kind of presence — what is left out shapes meaning as surely as what is said.",
+            "variant_data": {
+              "difficulty": "hard",
+              "wager_enabled": true,
+              "red_herrings": [
+                "All omission is accidental.",
+                "Exclusion carries no moral weight.",
+                "Responsibility ends once words are spoken."
+              ]
+            },
+            "reward_amount": 50
+          },
+          {
+            "word_id": 6,
+            "level": 1,
+            "question_type": "spelling",
+            "prompt": "Unscramble the letters to form the word that means 'sticking together; forming a united whole':",
+            "options": ["chsieeov", "cohesive", "siecohev", "ceishove"],
+            "correct_answer": "cohesive",
+            "variant_data": { "difficulty": "easy" },
+            "reward_amount": 10
+          },
+          {
+            "word_id": 6,
+            "level": 2,
+            "question_type": "typing",
+            "prompt": "Type the vocabulary word defined as 'sticking together; forming a united whole.'",
+            "options": {},
+            "correct_answer": "cohesive",
+            "variant_data": { "difficulty": "easy" },
+            "reward_amount": 10
+          },
+          {
+            "word_id": 6,
+            "level": 3,
+            "question_type": "definition",
+            "prompt": "Select the best definition of 'cohesive'.",
+            "options": [
+              "Sticking together; forming a united whole.",
+              "Falling apart easily; lacking unity.",
+              "Existing as a separate or detached entity.",
+              "Difficult to understand or explain."
+            ],
+            "correct_answer": "Sticking together; forming a united whole.",
+            "variant_data": { "difficulty": "medium" },
+            "reward_amount": 15
+          },
+          {
+            "word_id": 6,
+            "level": 4,
+            "question_type": "synonym",
+            "prompt": "Sort the following words into synonyms and antonyms of 'cohesive'.",
+            "options": {
+              "synonyms": ["united", "bonded", "connected", "integrated"],
+              "antonyms": ["fragmented", "disjointed", "separate", "divided"]
+            },
+            "correct_answer": "united, bonded, connected, integrated",
+            "variant_data": { "difficulty": "medium" },
+            "reward_amount": 15
+          },
+          {
+            "word_id": 6,
+            "level": 5,
+            "question_type": "story",
+            "prompt": "Reorder these stages of 'Cohesive’s' story from earliest to most recent.",
+            "options": [
+              "Latin *cohaerere* — ‘to stick together, to cling’.",
+              "Adopted into scientific language to describe the attraction between particles.",
+              "Expanded metaphorically to describe social and emotional unity.",
+              "Modern usage balances between structural integrity and interpersonal connection."
+            ],
+            "correct_answer": "Latin *cohaerere* — ‘to stick together, to cling’. → Adopted into scientific language to describe the attraction between particles. → Expanded metaphorically to describe social and emotional unity. → Modern usage balances between structural integrity and interpersonal connection.",
+            "variant_data": { "difficulty": "hard" },
+            "reward_amount": 25
+          },
+          {
+            "word_id": 6,
+            "level": 5,
+            "question_type": "story",
+            "prompt": "Face the Beast: choose the statement that best captures the structural essence of 'Cohesive’s' story.",
+            "options": [
+              "He shows how the instinct to cling moved from matter to mind—how the same force that binds atoms also binds people.",
+              "He proves that separation is the natural state of all systems.",
+              "He symbolizes the triumph of isolation over union.",
+              "He reveals that emotional attachment weakens structure."
+            ],
+            "correct_answer": "He shows how the instinct to cling moved from matter to mind—how the same force that binds atoms also binds people.",
+            "variant_data": {
+              "difficulty": "hard",
+              "wager_enabled": true,
+              "red_herrings": [
+                "Separation defines stability.",
+                "Isolation produces strength.",
+                "Emotion weakens structure."
+              ]
+            },
+            "reward_amount": 50
+          },
+          {
+            "word_id": 7,
+            "level": 1,
+            "question_type": "spelling",
+            "prompt": "Unscramble the letters to form the word that means 'most noticeable or important':",
+            "options": ["salniet", "lantesi", "salient", "sailent"],
+            "correct_answer": "salient",
+            "variant_data": { "difficulty": "easy" },
+            "reward_amount": 10
+          },
+          {
+            "word_id": 7,
+            "level": 2,
+            "question_type": "typing",
+            "prompt": "Type the vocabulary word defined as 'most noticeable or important.'",
+            "options": {},
+            "correct_answer": "salient",
+            "variant_data": { "difficulty": "easy" },
+            "reward_amount": 10
+          },
+          {
+            "word_id": 7,
+            "level": 3,
+            "question_type": "definition",
+            "prompt": "Select the best definition of 'salient'.",
+            "options": [
+              "Most noticeable or important.",
+              "Hidden or obscure.",
+              "Gradual or subtle in appearance.",
+              "Minor or secondary in nature."
+            ],
+            "correct_answer": "Most noticeable or important.",
+            "variant_data": { "difficulty": "medium" },
+            "reward_amount": 15
+          },
+          {
+            "word_id": 7,
+            "level": 4,
+            "question_type": "synonym",
+            "prompt": "Sort the following words into synonyms and antonyms of 'salient'.",
+            "options": {
+              "synonyms": ["prominent", "striking", "notable", "conspicuous"],
+              "antonyms": ["inconspicuous", "minor", "obscure", "unremarkable"]
+            },
+            "correct_answer": "prominent, striking, notable, conspicuous",
+            "variant_data": { "difficulty": "medium" },
+            "reward_amount": 15
+          },
+          {
+            "word_id": 7,
+            "level": 5,
+            "question_type": "story",
+            "prompt": "Reorder these stages of 'Salient’s' story from earliest to most recent.",
+            "options": [
+              "Latin *salire* — ‘to leap or spring forth’.",
+              "Used in 17th-century military language for a part of a fort that juts out toward the enemy.",
+              "Adopted figuratively to mean something that stands out or draws attention.",
+              "Modern use generalizes to 'important, conspicuous, or central'."
+            ],
+            "correct_answer": "Latin *salire* — ‘to leap or spring forth’. → Used in 17th-century military language for a part of a fort that juts out toward the enemy. → Adopted figuratively to mean something that stands out or draws attention. → Modern use generalizes to 'important, conspicuous, or central'.",
+            "variant_data": { "difficulty": "hard" },
+            "reward_amount": 25
+          },
+          {
+            "word_id": 7,
+            "level": 5,
+            "question_type": "story",
+            "prompt": "Face the Beast: choose the statement that best captures the structural essence of 'Salient’s' story.",
+            "options": [
+              "He shows how what once meant leaping into danger became the mark of what stands out to the eye and mind.",
+              "He reveals that visibility always guarantees truth.",
+              "He symbolizes the loss of depth in a world obsessed with surfaces.",
+              "He proves that importance is a matter of perspective, not presence."
+            ],
+            "correct_answer": "He shows how what once meant leaping into danger became the mark of what stands out to the eye and mind.",
+            "variant_data": {
+              "difficulty": "hard",
+              "wager_enabled": true,
+              "red_herrings": [
+                "Visibility ensures truth.",
+                "Depth always hides weakness.",
+                "Perception defines all reality."
+              ]
+            },
+            "reward_amount": 50
+          }  
+      ]
+      
+
+  

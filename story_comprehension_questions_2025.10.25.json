@@ -1,0 +1,533 @@
+[
+  {
+    "word_id": 0,
+    "word": "attest",
+    "questions": [
+      {
+        "century": "1",
+        "story_text": "In Rome, he was *testare*—'to bear witness.' Built from *testis*, the witness who stands by to see. The law required three witnesses for a will: three who would attest that yes, this was the voice of the dying. To attest was to put your body in the way of truth—to stand where you had been and speak what you had seen. It was physical presence made vocal.",
+        "context": "Roman legal and testamentary practice where oral testimony was binding evidence.",
+        "sibling_words": [
+          "testis",
+          "testamentum",
+          "testari"
+        ],
+        "question": "What did the word 'testare' originally mean in Roman law?",
+        "options": [
+          "To stand and speak as a witness",
+          "To write official documents",
+          "To judge court cases",
+          "To enforce legal penalties"
+        ],
+        "correct_answer": "To stand and speak as a witness",
+        "explanation": "The text explicitly states that 'testare' meant 'to bear witness' and describes how 'three witnesses' were required to stand and speak what they had seen."
+      },
+      {
+        "century": "14",
+        "story_text": "When English courts took shape, Attest crossed from Old French *attester*. He carried the stamp of formality. Deeds were attested by witnesses; charters bore attestations from clerks. He moved from spoken truth to written proof. The witness still stood, but now his words lived on in ink. Attest became the bridge between seeing and lasting: what the eye witnessed, the document preserved.",
+        "context": "Medieval English legal and bureaucratic systems formalizing evidence through written records.",
+        "sibling_words": [
+          "attestation",
+          "testimony"
+        ],
+        "question": "How did the meaning of 'attest' change when it entered English courts?",
+        "options": [
+          "It shifted from spoken testimony to written proof",
+          "It became more casual and informal",
+          "It lost all legal significance",
+          "It referred only to religious oaths"
+        ],
+        "correct_answer": "It shifted from spoken testimony to written proof",
+        "explanation": "The text explains that attest 'moved from spoken truth to written proof' and describes how witnesses' words 'lived on in ink.'"
+      },
+      {
+        "century": "17",
+        "story_text": "The age of exploration brought new witnesses. Travellers attested to wonders; historians to facts; naturalists to species. But as print multiplied voices, attest began to carry doubt. To attest was not just to affirm but to stake one's name on it. The word learned the weight of reputation—the risk of being wrong in public, for all to see.",
+        "context": "Scientific and historical discourse establishing facts through cited evidence and testimony.",
+        "sibling_words": [
+          "attestation"
+        ],
+        "question": "How did print culture change what it meant to 'attest' to something?",
+        "options": [
+          "It made testimony public and reputational, adding risk of public error",
+          "It made testimony less important and easier to give",
+          "It eliminated the need for witnesses entirely",
+          "It made attestation automatic and without consequence"
+        ],
+        "correct_answer": "It made testimony public and reputational, adding risk of public error",
+        "explanation": "The text states that 'print multiplied voices' and that to attest meant 'to stake one's name on it,' learning 'the weight of reputation—the risk of being wrong in public.'"
+      },
+      {
+        "century": "19",
+        "story_text": "In the industrial age, Attest grew quieter, more technical. Documents attested to births and deaths; certificates to skills and qualifications. He had passed from the drama of the courtroom to the routine of the office. The standing witness became a form to sign, a seal to affix. What began as the body's truth had become the system's record.",
+        "context": "Modern bureaucratic and administrative systems reducing personal testimony to procedural verification.",
+        "sibling_words": [],
+        "question": "How did attestation change in the industrial age?",
+        "options": [
+          "Personal testimony became routine, formal documentation",
+          "It became more dramatic and emotional",
+          "It was abolished entirely",
+          "It became more personal and less formal"
+        ],
+        "correct_answer": "Personal testimony became routine, formal documentation",
+        "explanation": "The text explains that Attest 'grew quieter, more technical' and that 'the standing witness became a form to sign, a seal to affix'—moving from personal truth to 'the system's record.'"
+      }
+    ]
+  },
+  {
+    "word_id": 0,
+    "word": "pall",
+    "questions": [
+      {
+        "century": "9",
+        "story_text": "From Old English *pæll*, he meant 'a cloak'—rich fabric draped over shoulders. Kings wore palls of purple; saints were buried under palls of silk. He was luxury before he was sorrow. But cloth is born to cover, and what it covers changes its nature. By the time Middle English spoke his name, he had learned to shield the face of death.",
+        "context": "Anglo-Saxon and early medieval textile culture where rich cloth marked status and ritual.",
+        "sibling_words": [
+          "appal",
+          "pale"
+        ],
+        "question": "What was the original meaning of 'pæll' in Old English?",
+        "options": [
+          "A rich cloak or ceremonial fabric",
+          "A mourning shroud",
+          "A carpet or floor covering",
+          "A type of armor"
+        ],
+        "correct_answer": "A rich cloak or ceremonial fabric",
+        "explanation": "The text explicitly states that 'he meant 'a cloak'—rich fabric draped over shoulders' and gives examples of 'Kings wore palls of purple; saints were buried under palls of silk.'"
+      },
+      {
+        "century": "14",
+        "story_text": "When plague swept Europe, Pall found his calling. Funeral rites stretched the pall over coffins—black wool for the poor, velvet for the rich, but always the same shield between the living and what they buried. He became the ritual cloth of separation: what the eye could not bear to see, he hid. From rich cloak to funeral shroud, luxury became dignity in death.",
+        "context": "Medieval Christian burial practices formalizing the covering of the dead as sacred ritual.",
+        "sibling_words": [
+          "pallium",
+          "palliate"
+        ],
+        "question": "How did the meaning of 'pall' shift during medieval plague times?",
+        "options": [
+          "It changed from luxury fabric to funeral shroud",
+          "It became only for rich people",
+          "It lost all meaning",
+          "It became a symbol of celebration"
+        ],
+        "correct_answer": "It changed from luxury fabric to funeral shroud",
+        "explanation": "The text states that 'He became the ritual cloth of separation' and explicitly notes 'From rich cloak to funeral shroud, luxury became dignity in death.'"
+      },
+      {
+        "century": "17",
+        "story_text": "Poets took him from the churchyard. Smoke hung like a pall over burning cities. Silence fell like a pall over crowds. He had learned to stretch—no longer just cloth but anything heavy, dark, settling. The metaphorical pall became more common than the literal one. He became atmosphere: the feeling of weight that comes from nowhere visible.",
+        "context": "Early modern English poetry expanding concrete images into emotional metaphors.",
+        "sibling_words": [],
+        "question": "How did poets transform the meaning of 'pall' in the 17th century?",
+        "options": [
+          "They expanded it from literal cloth to metaphorical atmosphere",
+          "They made it only mean literal funeral cloth",
+          "They gave it a positive, joyful meaning",
+          "They made it disappear from the language"
+        ],
+        "correct_answer": "They expanded it from literal cloth to metaphorical atmosphere",
+        "explanation": "The text explains that 'He had learned to stretch—no longer just cloth but anything heavy, dark, settling' and that 'He became atmosphere: the feeling of weight that comes from nowhere visible.'"
+      },
+      {
+        "century": "19",
+        "story_text": "As a verb, Pall learned to tire. The joke palled; the beauty palled; repetition palled everything. The same cloth that covered death now covered enjoyment. Not shock but weariness. Not grief but boredom. He had learned a new skill: the gentle killing of interest, the slow burial of what once delighted. The covering that hid death also muffled life.",
+        "context": "Victorian and Romantic literature exploring psychological states of ennui and melancholy.",
+        "sibling_words": [],
+        "question": "What new meaning did 'pall' gain as a verb in the Victorian era?",
+        "options": [
+          "To become tiresome or lose interest",
+          "To cause great excitement",
+          "To become physically stronger",
+          "To disappear completely"
+        ],
+        "correct_answer": "To become tiresome or lose interest",
+        "explanation": "The text states that 'The joke palled; the beauty palled; repetition palled everything' and describes how it represents 'weariness' and 'boredom'—the 'gentle killing of interest.'"
+      }
+    ]
+  },
+  {
+    "word_id": 0,
+    "word": "lumbering",
+    "questions": [
+      {
+        "century": "14",
+        "story_text": "From Lombard merchants came *lumber*—'pawn,' goods stored in a Lombard's shop. To lumber a room meant to fill it with stored things, cluttering the space. Lumber became the word for awkward bulk: furniture too big for doorways, objects blocking the way. He began as commerce and ended as obstruction. The slow merchant's stock became the slow creature's gait.",
+        "context": "Medieval trade where Lombard moneylenders and pawnbrokers stored goods that blocked spaces.",
+        "sibling_words": [
+          "lumber",
+          "lombard"
+        ],
+        "question": "What did 'lumber' originally mean when it came from Lombard merchants?",
+        "options": [
+          "Goods stored as pawn in a shop",
+          "Walking slowly",
+          "Cutting down trees",
+          "Moving machinery"
+        ],
+        "correct_answer": "Goods stored as pawn in a shop",
+        "explanation": "The text explicitly states that lumber meant 'pawn, goods stored in a Lombard's shop' and describes it as 'stored things, cluttering the space.'"
+      },
+      {
+        "century": "16",
+        "story_text": "As English explored new worlds, Lumbering met the forest. *Lumber* came to mean timber, and to lumber meant to cut it clumsily, to move it heavily. The word that named stored goods now named fallen trees. Merchants' stockrooms and loggers' rivers both held the same quality: things too heavy to move with grace. Bulk became movement—the awkward hauling of weight.",
+        "context": "Colonial and early modern resource extraction where heavy materials required cumbersome transport.",
+        "sibling_words": [
+          "lumber",
+          "timber"
+        ],
+        "question": "How did lumbering connect to colonial exploration?",
+        "options": [
+          "It came to mean cutting and moving heavy timber",
+          "It became a peaceful trading term",
+          "It lost all connection to heavy objects",
+          "It referred only to silver and gold"
+        ],
+        "correct_answer": "It came to mean cutting and moving heavy timber",
+        "explanation": "The text states that 'Lumber came to mean timber, and to lumber meant to cut it clumsily, to move it heavily' and that 'the word that named stored goods now named fallen trees.'"
+      },
+      {
+        "century": "18",
+        "story_text": "When writers described animals, they summoned him. The bear lumbered through snow; the elephant lumbered into the clearing. He had learned to walk. Not graceful movement but the honest gait of mass: each step deliberate, ground-giving, leaving prints too deep to fill. He became the poetry of weight—not beautiful but true, not fast but certain.",
+        "context": "Natural history writing exploring animal behavior and movement patterns.",
+        "sibling_words": [],
+        "question": "How did naturalists transform the meaning of 'lumbering'?",
+        "options": [
+          "They used it to describe heavy, deliberate animal movement",
+          "They made it mean graceful and swift movement",
+          "They used it only for small, light animals",
+          "They applied it to human emotions"
+        ],
+        "correct_answer": "They used it to describe heavy, deliberate animal movement",
+        "explanation": "The text states that 'The bear lumbered through snow; the elephant lumbered into the clearing' and describes this as 'the honest gait of mass: each step deliberate, ground-giving.'"
+      },
+      {
+        "century": "19",
+        "story_text": "Steam and steel gave him a voice. Lumbering trains; lumbering factories; lumbering machines that shook the earth. The term that once named awkward creatures now named industrial power. Modernity was big, loud, heavy, slow to start but impossible to stop once moving. Lumbering became the sound of progress itself—cumbersome but inevitable, awkward but unstoppable.",
+        "context": "Industrial Revolution where massive machinery defined both economic power and environmental impact.",
+        "sibling_words": [],
+        "question": "What did lumbering represent in the industrial age?",
+        "options": [
+          "Massive, powerful machinery that was awkward but unstoppable",
+          "Small, delicate tools",
+          "Peaceful, silent operation",
+          "Old-fashioned, unimportant technology"
+        ],
+        "correct_answer": "Massive, powerful machinery that was awkward but unstoppable",
+        "explanation": "The text states that 'Lumbering trains; lumbering factories; lumbering machines that shook the earth' and describes it as 'cumbersome but inevitable, awkward but unstoppable.'"
+      }
+    ]
+  },
+  {
+    "word_id": 0,
+    "word": "scurry",
+    "questions": [
+      {
+        "century": "17",
+        "story_text": "In the great houses of England, he was born from *hurry-scurry*—chaos made movement. To scurry was to rush about confused, servants running to orders that canceled each other out. He named the flustered gait of urgency, the movement of those who must arrive without knowing why. From hurry came scurry: not just speed but the anxious speed of small creatures before larger ones.",
+        "context": "Early modern English domestic and social life where service and social obligations created frantic movement.",
+        "sibling_words": [
+          "hurry",
+          "hurry-scurry"
+        ],
+        "question": "Where did 'scurry' come from and what did it originally describe?",
+        "options": [
+          "From great houses, describing confused, rushed servant movement",
+          "From battlefields, describing heroic charges",
+          "From monasteries, describing prayerful processions",
+          "From shipyards, describing careful construction"
+        ],
+        "correct_answer": "From great houses, describing confused, rushed servant movement",
+        "explanation": "The text explicitly states that 'In the great houses of England, he was born from *hurry-scurry*' and describes 'servants running to orders that canceled each other out.'"
+      },
+      {
+        "century": "19",
+        "story_text": "When naturalists wrote of small animals, Scurry found his true form. Mice scurried through fields; beetles scurried under logs; ants scurried along paths. He became the verb of small haste: not the bold rush of hunters but the furtive dash of the hunted. He carried the sound of small feet on hard ground—the audible anxiety of creatures too small to stand their ground.",
+        "context": "Natural history writing and Victorian literature observing animal behavior and movement patterns.",
+        "sibling_words": [
+          "scuttle"
+        ],
+        "question": "How did naturalists use 'scurry' to describe animal behavior?",
+        "options": [
+          "As the furtive, anxious movement of small, hunted creatures",
+          "As the slow, graceful movement of large predators",
+          "As the stationary behavior of sleeping animals",
+          "As the aggressive charging of territorial animals"
+        ],
+        "correct_answer": "As the furtive, anxious movement of small, hunted creatures",
+        "explanation": "The text describes scurrying as 'not the bold rush of hunters but the furtive dash of the hunted' and 'the audible anxiety of creatures too small to stand their ground.'"
+      },
+      {
+        "century": "19",
+        "story_text": "Workers scurried through workshops; clerks scurried between desks. The word that named animal haste now named human busyness. But scale mattered: to scurry was not to stride but to dart, not to march but to scoot. It suggested movement without dignity—hurried but not powerful, busy but not significant. The small creature's flight became the worker's pace.",
+        "context": "Industrial and bureaucratic settings where human labor mimicked the frantic movements of small animals.",
+        "sibling_words": [],
+        "question": "What did 'scurry' convey when applied to human workers?",
+        "options": [
+          "Hurried movement without dignity or power",
+          "Regal, important movement",
+          "Peaceful, meditative movement",
+          "Large, sweeping gestures"
+        ],
+        "correct_answer": "Hurried movement without dignity or power",
+        "explanation": "The text explicitly states that it 'suggested movement without dignity—hurried but not powerful, busy but not significant.'"
+      },
+      {
+        "century": "20",
+        "story_text": "Modern life gave him electricity. Feet scurried across screens; thoughts scurried through news; attention itself scurried from device to device. The verb of small movement became the verb of modern distraction: never still, never settled, always moving to the next thing. What began as flight became habit—the perpetual hurry of being that cannot stop.",
+        "context": "Contemporary culture of constant motion, digital distraction, and accelerated pace of life.",
+        "sibling_words": [],
+        "question": "How has 'scurry' been transformed in modern, digital culture?",
+        "options": [
+          "It describes constant mental distraction and never-still attention",
+          "It has become obsolete and unused",
+          "It means peaceful meditation",
+          "It describes slow, careful thought"
+        ],
+        "correct_answer": "It describes constant mental distraction and never-still attention",
+        "explanation": "The text explains that 'attention itself scurried from device to device' and that it represents 'never still, never settled, always moving to the next thing'—'the perpetual hurry of being that cannot stop.'"
+      }
+    ]
+  },
+  {
+    "word_id": 0,
+    "word": "steadfast",
+    "questions": [
+      {
+        "century": "9",
+        "story_text": "In Old English, he was *stædfæst*—'firm in place.' *Stæd* meant a place, a standing-ground; *fæst* meant fixed. Together they named what held its spot. Warriors stood steadfast in shield-walls; oaths remained steadfast in memory. He was physical before he was moral—not yet loyalty but position, not yet faith but footing. The stone does not move, the word does not break.",
+        "context": "Anglo-Saxon warrior culture where physical steadfastness in battle translated to moral steadfastness in oaths.",
+        "sibling_words": [
+          "steadd",
+          "fast",
+          "stand"
+        ],
+        "question": "What did 'stædfæst' originally mean in Old English?",
+        "options": [
+          "Firm in place, physically fixed",
+          "Quick and agile",
+          "Weak and uncertain",
+          "Moving constantly"
+        ],
+        "correct_answer": "Firm in place, physically fixed",
+        "explanation": "The text explicitly states that 'stædfæst' meant 'firm in place' and describes it as 'a standing-ground' and 'fixed'—showing physical position before moral loyalty."
+      },
+      {
+        "century": "14",
+        "story_text": "When chivalry made virtue ritual, Steadfast put on honor's colors. The knight who stood steadfast in battle stood steadfast in vows. What began as physical holding became moral holding. Fealty, faith, friendship—all required steadfastness. He learned to name not just standing but staying, not just position but persistence. The shield-wall became the oath-wall; the enemy without became the doubt within.",
+        "context": "Medieval chivalric codes formalizing loyalty, honor, and unwavering commitment as core virtues.",
+        "sibling_words": [
+          "faithful",
+          "constant"
+        ],
+        "question": "How did medieval chivalry transform the meaning of steadfastness?",
+        "options": [
+          "Physical holding in battle became moral holding in vows and loyalty",
+          "It lost all meaning and importance",
+          "It became purely physical without moral dimension",
+          "It meant being flexible and changing loyalties"
+        ],
+        "correct_answer": "Physical holding in battle became moral holding in vows and loyalty",
+        "explanation": "The text states that 'What began as physical holding became moral holding' and that 'Fealty, faith, friendship—all required steadfastness'—showing the shift from 'standing' to 'staying.'"
+      },
+      {
+        "century": "17",
+        "story_text": "When poets sang of love, they summoned him. The steadfast heart that beats one name; the steadfast gaze that never strays. He became the language of constancy—not just loyalty but devotion, not just persistence but passion that endures. What began as military courage became romantic fidelity. The standing warrior became the standing lover; the battle-line became the marriage vow.",
+        "context": "Renaissance and early modern poetry elevating romantic constancy as supreme virtue.",
+        "sibling_words": [],
+        "question": "How did Renaissance poets transform steadfastness?",
+        "options": [
+          "Military courage became romantic fidelity and devotion",
+          "It became a negative quality",
+          "It lost all connection to love",
+          "It meant changing partners frequently"
+        ],
+        "correct_answer": "Military courage became romantic fidelity and devotion",
+        "explanation": "The text states that 'What began as military courage became romantic fidelity' and describes 'not just loyalty but devotion, not just persistence but passion that endures.'"
+      },
+      {
+        "century": "19",
+        "story_text": "The Romantics gave him philosophy. Steadfastness became not just virtue but identity—the self that knows itself and holds. In changing times, the steadfast heart stayed true; in shifting values, the steadfast mind held course. He learned the language of authenticity: not stubbornness but integrity, not rigidity but resolve. What could not be moved defined the person who chose not to move.",
+        "context": "Romantic and Victorian philosophy valuing authentic selfhood and unwavering personal integrity.",
+        "sibling_words": [],
+        "question": "What did the Romantics say about steadfastness and personal identity?",
+        "options": [
+          "It became authentic selfhood and personal integrity",
+          "It was rejected as old-fashioned",
+          "It meant conforming to social expectations",
+          "It had no connection to identity"
+        ],
+        "correct_answer": "It became authentic selfhood and personal integrity",
+        "explanation": "The text states that 'Steadfastness became not just virtue but identity—the self that knows itself and holds' and describes it as 'authenticity: not stubbornness but integrity.'"
+      }
+    ]
+  },
+  {
+    "word": "elucidate",
+    "word_id": 33,
+    "story_part": 1,
+    "question": "What contextual sphere is most responsible for elucidate's development in the 1th century?",
+    "options": {
+      "A": "Philosophy",
+      "B": "Literature",
+      "C": "Science",
+      "D": "Religion"
+    },
+    "correct_answer": "D",
+    "explanation": "The 1th century context shows: Latin usage emphasizing clarity and transparency as intrinsic qualities of light and perception."
+  },
+  {
+    "word": "elucidate",
+    "word_id": 33,
+    "story_part": 2,
+    "question": "What contextual sphere is most responsible for elucidate's development in the 16th century?",
+    "options": {
+      "A": "Philosophy",
+      "B": "Literature",
+      "C": "Science",
+      "D": "Religion"
+    },
+    "correct_answer": "D",
+    "explanation": "The 16th century context shows: Renaissance humanism and scholarly tradition using classical Latin for precise intellectual operations."
+  },
+  {
+    "word": "elucidate",
+    "word_id": 33,
+    "story_part": 3,
+    "question": "What contextual sphere is most responsible for elucidate's development in the 18th century?",
+    "options": {
+      "A": "Philosophy",
+      "B": "Literature",
+      "C": "Science",
+      "D": "Religion"
+    },
+    "correct_answer": "D",
+    "explanation": "The 18th century context shows: Enlightenment philosophy and scientific method prioritizing clarity, reason, and systematic explanation."
+  },
+  {
+    "word": "elucidate",
+    "word_id": 33,
+    "story_part": 4,
+    "question": "What contextual sphere is most responsible for elucidate's development in the 20th century?",
+    "options": {
+      "A": "Philosophy",
+      "B": "Literature",
+      "C": "Science",
+      "D": "Religion"
+    },
+    "correct_answer": "D",
+    "explanation": "The 20th century context shows: Modern educational and analytical discourse where explanation has become routine institutional practice."
+  },
+  {
+    "word": "plausible",
+    "word_id": 34,
+    "story_part": 1,
+    "question": "What contextual sphere is most responsible for plausible's development in the 1th century?",
+    "options": {
+      "A": "Philosophy",
+      "B": "Literature",
+      "C": "Science",
+      "D": "Religion"
+    },
+    "correct_answer": "D",
+    "explanation": "The 1th century context shows: Roman rhetorical and theatrical culture where audience approval measured persuasive success."
+  },
+  {
+    "word": "plausible",
+    "word_id": 34,
+    "story_part": 2,
+    "question": "What contextual sphere is most responsible for plausible's development in the 17th century?",
+    "options": {
+      "A": "Philosophy",
+      "B": "Literature",
+      "C": "Science",
+      "D": "Religion"
+    },
+    "correct_answer": "D",
+    "explanation": "The 17th century context shows: Enlightenment philosophy and probability theory distinguishing appearance from certainty."
+  },
+  {
+    "word": "plausible",
+    "word_id": 34,
+    "story_part": 3,
+    "question": "What contextual sphere is most responsible for plausible's development in the 19th century?",
+    "options": {
+      "A": "Philosophy",
+      "B": "Literature",
+      "C": "Science",
+      "D": "Religion"
+    },
+    "correct_answer": "D",
+    "explanation": "The 19th century context shows: Victorian social codes emphasizing proper appearance and public respectability."
+  },
+  {
+    "word": "plausible",
+    "word_id": 34,
+    "story_part": 4,
+    "question": "What contextual sphere is most responsible for plausible's development in the 20th century?",
+    "options": {
+      "A": "Philosophy",
+      "B": "Literature",
+      "C": "Science",
+      "D": "Religion"
+    },
+    "correct_answer": "D",
+    "explanation": "The 20th century context shows: Modern discourse where persuasive presentation competes with factual verification."
+  },
+  {
+    "word": "ubiquitous",
+    "word_id": 35,
+    "story_part": 1,
+    "question": "What contextual sphere is most responsible for ubiquitous's development in the 17th century?",
+    "options": {
+      "A": "Philosophy",
+      "B": "Literature",
+      "C": "Science",
+      "D": "Religion"
+    },
+    "correct_answer": "D",
+    "explanation": "The 17th century context shows: Scholastic and Protestant theology concerning divine omnipresence."
+  },
+  {
+    "word": "ubiquitous",
+    "word_id": 35,
+    "story_part": 2,
+    "question": "What contextual sphere is most responsible for ubiquitous's development in the 19th century?",
+    "options": {
+      "A": "Philosophy",
+      "B": "Literature",
+      "C": "Science",
+      "D": "Religion"
+    },
+    "correct_answer": "D",
+    "explanation": "The 19th century context shows: Nineteenth-century physics and metaphysics theorizing universal forces and fields."
+  },
+  {
+    "word": "ubiquitous",
+    "word_id": 35,
+    "story_part": 3,
+    "question": "What contextual sphere is most responsible for ubiquitous's development in the 20th century?",
+    "options": {
+      "A": "Philosophy",
+      "B": "Literature",
+      "C": "Science",
+      "D": "Religion"
+    },
+    "correct_answer": "D",
+    "explanation": "The 20th century context shows: Mass media, advertising, and global capitalism distributing products and images universally."
+  },
+  {
+    "word": "ubiquitous",
+    "word_id": 35,
+    "story_part": 4,
+    "question": "What contextual sphere is most responsible for ubiquitous's development in the 21th century?",
+    "options": {
+      "A": "Philosophy",
+      "B": "Literature",
+      "C": "Science",
+      "D": "Religion"
+    },
+    "correct_answer": "D",
+    "explanation": "The 21th century context shows: Digital technology and internet culture creating universal connectivity and constant presence."
+  }
+]

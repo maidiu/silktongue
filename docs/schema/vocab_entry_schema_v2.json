@@ -1,0 +1,223 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Vocabulary Entry (Full Schema)",
+  "description": "Complete specification for vocabulary entries matching the actual Postgres schema. Use with ingest_vocab_enhanced.js",
+  "type": "object",
+  "properties": {
+    "word": {
+      "type": "string",
+      "description": "The headword (modern English form). Must be unique."
+    },
+    "part_of_speech": {
+      "type": "string",
+      "description": "Part of speech label (e.g., 'noun', 'verb', 'adjective')."
+    },
+    "modern_definition": {
+      "type": "string",
+      "description": "Concise, student-facing definition (1–2 sentences)."
+    },
+    "usage_example": {
+      "type": "string",
+      "description": "Sentence showing natural contextual use of the word."
+    },
+    "synonyms": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of words with similar meaning. Will be stored as TEXT[] and in word_relations."
+    },
+    "antonyms": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of words with opposite meaning. Will be stored as TEXT[] and in word_relations."
+    },
+    "related": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Conceptually linked words (not strict synonyms). Stored in word_relations only."
+    },
+    "collocations": {
+      "type": "object",
+      "description": "JSONB object of common collocations/idioms with glosses.",
+      "additionalProperties": true
+    },
+    "common_collocations": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Array of frequent idiomatic phrases (alternative to collocations JSONB)."
+    },
+    "french_equivalent": {
+      "type": "string",
+      "description": "French equivalent with register and nuance notes."
+    },
+    "russian_equivalent": {
+      "type": "string",
+      "description": "Russian equivalent with nuance explanation."
+    },
+    "cefr_level": {
+      "type": "string",
+      "enum": ["A1", "A2", "B1", "B2", "C1", "C2"],
+      "description": "Common European Framework of Reference level."
+    },
+    "pronunciation": {
+      "type": "string",
+      "description": "IPA or simplified pronunciation guide."
+    },
+    "story_text": {
+      "type": "string",
+      "description": "Quick summary of the word's history (stored directly on vocab_entries for fast access)."
+    },
+    "contrastive_opening": {
+      "type": "string",
+      "description": "Pedagogical opening comparing modern vs. historical sense."
+    },
+    "structural_analysis": {
+      "type": "string",
+      "description": "Synthesis paragraph identifying major semantic forces across time."
+    },
+    "metadata": {
+      "type": "object",
+      "description": "JSONB for any additional flexible data.",
+      "additionalProperties": true
+    },
+    "timeline": {
+      "type": "array",
+      "description": "Chronological narrative timeline of semantic evolution (stored in word_timeline_events).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "century": {
+            "type": "integer",
+            "description": "Century as integer (negative for BCE, e.g., -1 = 1st c. BCE)."
+          },
+          "exact_date": {
+            "type": "string",
+            "description": "Human-readable date like 'c. 1400', '1578', '12th–13th c.'"
+          },
+          "language_stage": {
+            "type": "string",
+            "description": "Language at that time: 'Latin', 'Old French', 'Middle English', etc."
+          },
+          "region": {
+            "type": "string",
+            "description": "Geographic context: 'Northern France', 'England', etc."
+          },
+          "semantic_focus": {
+            "type": "string",
+            "description": "Domain tag: 'moral', 'editorial', 'legal', 'military', etc."
+          },
+          "event_text": {
+            "type": "string",
+            "description": "The actual narrative paragraph for this time period."
+          },
+          "sibling_words": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Words from the same etymological family during that era."
+          },
+          "context": {
+            "type": "string",
+            "description": "Cultural, legal, or technological environment shaping meaning."
+          },
+          "causal_tags": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Semantic pressure keywords (snake_case): 'lexical_competition', 'printing_revolution', etc."
+          },
+          "citations": {
+            "type": "array",
+            "description": "Citations/sources for this timeline event.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source": {
+                  "type": "string",
+                  "description": "Source reference (OED, dictionary, text)"
+                },
+                "url": {
+                  "type": "string",
+                  "description": "Optional URL"
+                },
+                "quote": {
+                  "type": "string",
+                  "description": "Optional quotation or excerpt"
+                }
+              },
+              "required": ["source"]
+            }
+          }
+        },
+        "required": ["century", "event_text"]
+      }
+    },
+    "roots": {
+      "type": "array",
+      "description": "Etymological root families (stored in root_families + word_root_links).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "root_word": {
+            "type": "string",
+            "description": "The root form, e.g., 'mittere', 'omittere'"
+          },
+          "language": {
+            "type": "string",
+            "description": "Language of origin: 'Latin', 'Greek', 'Old English', etc."
+          },
+          "gloss": {
+            "type": "string",
+            "description": "Meaning/gloss of the root"
+          },
+          "relation_description": {
+            "type": "string",
+            "description": "How this word relates: 'direct descendant', 'compound of ob- + mittere', etc."
+          }
+        },
+        "required": ["root_word", "language"]
+      }
+    },
+    "domains": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Semantic domains this word belongs to: 'legal', 'moral', 'editorial', 'military', etc. (stored in semantic_domains + vocab_domain_links)."
+    },
+    "derivations": {
+      "type": "array",
+      "description": "Morphological/etymological parent-child relationships (stored in derivations table).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "related_word": {
+            "type": "string",
+            "description": "The parent or child word"
+          },
+          "relation_type": {
+            "type": "string",
+            "enum": ["derives_from", "compound_of", "borrowed_via", "calque_of", "affixation", "semantic_shift"],
+            "description": "Type of derivational relationship"
+          },
+          "direction": {
+            "type": "string",
+            "enum": ["parent", "child"],
+            "description": "'parent' if related_word is the parent, 'child' if current word is parent"
+          },
+          "notes": {
+            "type": "string",
+            "description": "Additional notes about the derivation"
+          }
+        },
+        "required": ["related_word", "relation_type", "direction"]
+      }
+    }
+  },
+  "required": [
+    "word",
+    "part_of_speech",
+    "modern_definition",
+    "usage_example",
+    "french_equivalent",
+    "russian_equivalent",
+    "structural_analysis"
+  ],
+  "additionalProperties": false
+}
+

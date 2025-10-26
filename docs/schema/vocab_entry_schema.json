@@ -1,0 +1,106 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Vocabulary Entry",
+    "description": "Canonical specification for vocabulary entries used in the Postgres ingestion pipeline.",
+    "type": "object",
+    "properties": {
+      "word": {
+        "type": "string",
+        "description": "The headword (modern English form). Must be unique."
+      },
+      "part_of_speech": {
+        "type": "string",
+        "description": "Part of speech label (e.g., 'noun', 'verb', 'adjective')."
+      },
+      "modern_definition": {
+        "type": "string",
+        "description": "Concise, student-facing definition (1–2 sentences)."
+      },
+      "usage_example": {
+        "type": "string",
+        "description": "Sentence showing natural contextual use of the word."
+      },
+      "synonyms": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "List of words with similar meaning. Optional."
+      },
+      "antonyms": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "List of words with opposite meaning. Optional."
+      },
+      "related": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Conceptually linked words (not strict synonyms). Optional."
+      },
+      "common_collocations": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Frequent idiomatic phrases with short glosses. Optional."
+      },
+      "french_equiv": {
+        "type": "string",
+        "description": "French equivalent with register and nuance notes."
+      },
+      "russian_equiv": {
+        "type": "string",
+        "description": "Russian equivalent with nuance explanation."
+      },
+      "story": {
+        "type": "array",
+        "description": "Chronological narrative timeline of semantic evolution.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "century": {
+              "type": "string",
+              "description": "Century or range, e.g., '12', '17', or '-1' for BCE."
+            },
+            "story_text": {
+              "type": "string",
+              "description": "Narrative description of the word’s sense and context at that stage."
+            },
+            "sibling_words": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Words from the same etymological family during that era."
+            },
+            "context": {
+              "type": "string",
+              "description": "Cultural, legal, or technological environment shaping meaning."
+            },
+            "causal_tags": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Keywords for semantic pressures (snake_case)."
+            }
+          },
+          "required": ["century", "story_text"]
+        }
+      },
+      "structural_analysis": {
+        "type": "string",
+        "description": "Synthesis paragraph identifying the major semantic forces across time."
+      },
+      "date_added": {
+        "type": "string",
+        "format": "date",
+        "description": "ISO date string for tracking when entry was added."
+      }
+    },
+    "required": [
+      "word",
+      "part_of_speech",
+      "modern_definition",
+      "usage_example",
+      "french_equiv",
+      "russian_equiv",
+      "story",
+      "structural_analysis",
+      "date_added"
+    ],
+    "additionalProperties": false
+  }
+  

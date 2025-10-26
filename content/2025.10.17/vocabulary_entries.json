@@ -1,0 +1,1074 @@
+[
+  {
+    "word": "impede",
+    "part_of_speech": "verb",
+    "modern_definition": "to slow or block progress, movement, or development.",
+    "usage_example": "Heavy traffic impeded our progress to the airport.",
+    "synonyms": [
+      "obstruction",
+      "delay",
+      "resistance",
+      "inhibition"
+    ],
+    "antonyms": [
+      "assist",
+      "facilitate",
+      "enable",
+      "promote",
+      "advance"
+    ],
+    "related": [
+      "impediment",
+      "expedite"
+    ],
+    "french_equivalent": "entraver — often used for physical or bureaucratic obstruction.",
+    "russian_equivalent": "препятствовать (prepyatstvovat’) — to hinder or stand in the way.",
+    "definitions": {
+      "primary": "To obstruct or delay the movement or progress of something.",
+      "secondary": "To hinder or block the functioning or development of a process or person.",
+      "tertiary": "Figurative: to place barriers in the path of advancement or success."
+    },
+    "variant_forms": [
+      "impediment",
+      "impeded",
+      "impeding"
+    ],
+    "semantic_field": [
+      "obstruction",
+      "delay",
+      "resistance",
+      "inhibition"
+    ],
+    "french_synonyms": [
+      "entraver",
+      "bloquer",
+      "ralentir"
+    ],
+    "french_root_cognates": [
+      "pied — foot"
+    ],
+    "russian_synonyms": [
+      "мешать",
+      "затруднять",
+      "препятствовать"
+    ],
+    "russian_root_cognates": [
+      "препятствие — obstacle"
+    ],
+    "common_collocations": [
+      "impede progress — to slow development or advancement (bureaucratic, academic)",
+      "impede access — to make entry or use difficult (rights, equity, logistics)",
+      "impede justice — to obstruct or delay legal process (legal idiom)"
+    ],
+    "story_intro": "Impede walks with a quiet weight. He’s the slow hand on a turning wheel, the tangle in a runner’s feet. He isn’t cruel; he just holds things where they are. You meet him in paperwork, in hesitation, in the long breath before action. He doesn’t destroy. He delays.",
+    "story": [
+      {
+        "century": "1",
+        "story_text": "Long ago, in Rome, he was *impedire*—'to shackle the feet.' Built from *in-* ('in, upon') and *pes/pedis* ('foot'), he was born of the body. To impede was to bind, to trap motion itself. Soldiers felt him in their tangled nets; lawyers in their endless petitions. His world was literal: movement stopped by weight or chain.",
+        "sibling_words": [
+          "pedis",
+          "expedire",
+          "impedimentum"
+        ],
+        "context": "Roman military and legal life where action and obstruction were physical facts.",
+        "causal_tags": [
+          "physical_metaphor",
+          "lexical_origin"
+        ]
+      },
+      {
+        "century": "14",
+        "story_text": "When the Empire’s dust settled and prayers replaced campaigns, Impede crossed into Old French as *empedier*. He kept his fetters, but their meaning shifted. The soul now had feet. To sin was to stumble; to be virtuous was to walk unchained. In sermons he became the enemy of grace—the snag that kept the spirit from moving freely toward God.",
+        "sibling_words": [
+          "empescher",
+          "empêchement"
+        ],
+        "context": "Feudal Christianity moralized physical delay into spiritual bondage.",
+        "causal_tags": [
+          "moralization",
+          "metaphoric_extension"
+        ]
+      },
+      {
+        "century": "16",
+        "story_text": "Then the Renaissance arrived, and with it, motion itself became a metaphor. Discovery, reform, progress—everyone was moving somewhere new. Impede, still dragging his ancient chains, now followed minds instead of bodies. He was no longer evil, just inconvenient: the bureaucrat’s delay, the inventor’s frustration, the scholar’s pause.",
+        "sibling_words": [
+          "expedite",
+          "impediment"
+        ],
+        "context": "Humanist and bureaucratic cultures reframed movement as intellectual and social progress.",
+        "causal_tags": [
+          "bureaucratization",
+          "semantic_abstraction"
+        ]
+      },
+      {
+        "century": "19",
+        "story_text": "By the industrial age, Impede had lost his shackles but kept his habit. He haunted the gears of systems, not the feet of soldiers. Processes stalled; reforms slowed; traffic stopped. The moral heat was gone—only procedure remained. What began in the body ended in the machine.",
+        "sibling_words": [],
+        "context": "Modern administrative and technological systems turned moral delay into mechanical inefficiency.",
+        "causal_tags": [
+          "semantic_neutralization",
+          "industrial_context"
+        ]
+      }
+    ],
+    "why_the_shifts_happened": [
+      "A physical image of restraint widened into moral metaphor.",
+      "Medieval theology moralized delay as sin.",
+      "Renaissance abstraction transformed movement into thought and progress.",
+      "Industrial systems secularized and neutralized the concept of hindrance."
+    ],
+    "common_phrases": [
+      "impede progress — bureaucratic and technical usage.",
+      "impede justice — legal idiom retaining a moral echo.",
+      "impede access — rights and equity discourse."
+    ],
+    "structural_analysis": "A word born of the body’s weight now moves through systems. Its journey from fettered feet to clogged bureaucracy traces the civilization’s shift from moral to mechanical order.",
+    "cefr_level": "C1",
+    "frequency_band": 7000,
+    "date_added": "2025-10-18"
+  },
+  {
+    "word": "inherent",
+    "part_of_speech": "adjective",
+    "modern_definition": "existing as a permanent, essential, or characteristic attribute of something.",
+    "usage_example": "Risk is inherent in all forms of investment.",
+    "synonyms": [
+      "intrinsic",
+      "innate",
+      "essential",
+      "built-in",
+      "fundamental",
+      "native"
+    ],
+    "antonyms": [
+      "external",
+      "acquired",
+      "extrinsic",
+      "adventitious"
+    ],
+    "related": [
+      "inherit",
+      "adhere",
+      "cohere"
+    ],
+    "french_equivalent": "inhérent — same meaning; formal and philosophical register.",
+    "russian_equivalent": "присущий (prisyushchiy) — innate, belonging naturally to.",
+    "definitions": {
+      "primary": "Belonging naturally; existing as an essential part of something.",
+      "secondary": "Permanently associated with and inseparable from the subject.",
+      "tertiary": "Philosophical: existing within a substance rather than derived from something external."
+    },
+    "variant_forms": [
+      "inherence",
+      "inherently"
+    ],
+    "semantic_field": [
+      "essence",
+      "nature",
+      "quality",
+      "property",
+      "identity"
+    ],
+    "french_synonyms": [
+      "intrinsèque",
+      "propre à"
+    ],
+    "french_root_cognates": [
+      "adhérer",
+      "cohérent"
+    ],
+    "russian_synonyms": [
+      "врождённый",
+      "свойственный",
+      "присущий"
+    ],
+    "russian_root_cognates": [],
+    "common_collocations": [
+      "inherent risk — unavoidable or native to a system (finance, engineering)",
+      "inherent value — fundamental or intrinsic worth (philosophy, economics)",
+      "inherent right — natural or inborn entitlement (law, ethics)"
+    ],
+    "story_intro": "Inherent is the quiet bond between a thing and what it cannot lose. He’s not loud about it—he simply abides. You find him in the weight of stone, in the pulse of justice, in the curve of instinct. He doesn’t add; he dwells. His power is the stillness of what already belongs.",
+    "story": [
+      {
+        "century": "1",
+        "story_text": "In Rome, he was *inhaerēre*—'to stick in, to cling to.' His body was a burr caught in wool, wax pressed to marble, paint holding fast to plaster. From this touch grew an idea: some things exist *within* others, inseparable and abiding. Philosophers used him to name qualities that lived inside matter itself.",
+        "sibling_words": [
+          "adhere",
+          "cohere",
+          "haerere"
+        ],
+        "context": "Roman and Scholastic Latin describing properties residing 'in' a substance rather than external to it.",
+        "causal_tags": [
+          "physical_metaphor",
+          "lexical_origin"
+        ]
+      },
+      {
+        "century": "14",
+        "story_text": "In the halls of medieval scholars, Inherent put on robes and became a word of metaphysics. Through Old French *inherer* and Latin *inhaerens*, he entered English carrying Aristotle’s logic of substance and accident. Virtue was said to inhere in the soul; whiteness to inhere in snow. He spoke of what could never be separated from what it was.",
+        "sibling_words": [
+          "adhérent",
+          "cohérent"
+        ],
+        "context": "Scholastic theology and Aristotelian philosophy shaping European metaphysical vocabulary.",
+        "causal_tags": [
+          "philosophical_extension",
+          "language_transition"
+        ]
+      },
+      {
+        "century": "17",
+        "story_text": "When the Enlightenment dawned, Inherent left the cloister for the forum. He began to speak of rights and dignity—qualities not bestowed but possessed. What once described color in marble now described worth in humankind. He became political, carrying the old logic of internal belonging into the language of freedom.",
+        "sibling_words": [],
+        "context": "Natural-law and early liberal philosophy expanding metaphysical inherence into moral and political discourse.",
+        "causal_tags": [
+          "semantic_extension",
+          "political_context"
+        ]
+      },
+      {
+        "century": "20",
+        "story_text": "Today he moves quietly through science and systems: the inherent bias of data, the inherent stability of molecules. The stickiness of matter has become the grammar of structure. The touch is gone, but its logic remains—what belongs within still holds everything together.",
+        "sibling_words": [],
+        "context": "Modern scientific and analytic usage turning metaphysical inherence into structural description.",
+        "causal_tags": [
+          "semantic_neutralization",
+          "scientific_context"
+        ]
+      }
+    ],
+    "why_the_shifts_happened": [
+      "A tactile metaphor of adhesion grew into a concept of essence.",
+      "Medieval philosophy formalized inherence as the mark of true being.",
+      "The Enlightenment moralized it as human rights and dignity.",
+      "Modern science secularized it into the language of internal structure."
+    ],
+    "common_phrases": [
+      "inherent risk — unavoidable or native to the system.",
+      "inherent value — philosophical or economic sense of intrinsic worth.",
+      "inherent right — moral and political discourse on innate entitlement."
+    ],
+    "structural_analysis": "‘Inherent’ shows how a single image—something clinging within—became the foundation for ideas of essence, morality, and structure. It’s the story of adhesion turned into identity.",
+    "cefr_level": "C1",
+    "frequency_band": 6500,
+    "date_added": "2025-10-18"
+  },
+  {
+    "word": "cohesive",
+    "part_of_speech": "adjective",
+    "modern_definition": "forming a united whole; characterized by or causing cohesion.",
+    "usage_example": "The team was highly cohesive, working together with remarkable trust.",
+    "synonyms": [
+      "unified",
+      "connected",
+      "integrated",
+      "consistent",
+      "harmonious"
+    ],
+    "antonyms": [
+      "fragmented",
+      "disjointed",
+      "dispersed",
+      "incoherent",
+      "scattered",
+      "disconnected"
+    ],
+    "related": [
+      "cohere",
+      "cohesion",
+      "adhere"
+    ],
+    "french_equivalent": "cohésif — technical term; more often 'cohérent' in everyday usage.",
+    "russian_equivalent": "связный (svyaznyy) — logically or structurally connected.",
+    "definitions": {
+      "primary": "Forming a united whole; characterized by internal connection or consistency.",
+      "secondary": "Causing cohesion or sticking together physically or metaphorically.",
+      "tertiary": "Logical: showing clear connection between parts of a text or argument."
+    },
+    "variant_forms": [
+      "cohesion",
+      "cohesively",
+      "cohesiveness"
+    ],
+    "semantic_field": [
+      "unity",
+      "connection",
+      "consistency",
+      "adhesion",
+      "solidarity"
+    ],
+    "french_synonyms": [
+      "cohérent",
+      "solidaire"
+    ],
+    "french_root_cognates": [
+      "adhérent",
+      "collant"
+    ],
+    "russian_synonyms": [
+      "связный",
+      "единый",
+      "сплочённый"
+    ],
+    "russian_root_cognates": [
+      "связь — connection"
+    ],
+    "common_collocations": [
+      "cohesive team — group united by trust or shared purpose (organizational use)",
+      "cohesive argument — logically connected reasoning (academic writing)",
+      "cohesive device — linguistic element linking parts of a text (linguistics)"
+    ],
+    "story_intro": "Cohesive is the hum beneath harmony—the invisible pull that makes many things one. He moves quietly between fingers clasped in work, between thoughts that fit together cleanly. He’s not loud like unity or proud like strength. He’s the unseen gravity that holds the form intact.",
+    "story": [
+      {
+        "century": "1",
+        "story_text": "In the Latin world, he began as *cohaerēre*—'to stick together.' His body was glue, sap, wax. He clung where things met: brick to mortar, vine to trellis, friend to friend. *Haerēre* meant to cling, and *co-* joined him to others. He was the language of closeness before it was a metaphor.",
+        "sibling_words": [
+          "adhere",
+          "inherent",
+          "cohere"
+        ],
+        "context": "Roman and Scholastic Latin using adhesion as a metaphor for both physical and moral unity.",
+        "causal_tags": [
+          "physical_metaphor",
+          "lexical_origin"
+        ]
+      },
+      {
+        "century": "17",
+        "story_text": "When the thinkers of the new sciences began to name the secret laws of matter, they summoned him again. *Cohere*, *cohesion*—the way dust joins into drop, drop into stone. He became a principle, not just a feeling. Boyle and Newton made him a law of nature: the power that binds atoms as friendship binds men.",
+        "sibling_words": [
+          "adhesion",
+          "aggregation"
+        ],
+        "context": "Scientific revolution defining cohesion as the force uniting particles or bodies.",
+        "causal_tags": [
+          "scientific_extension",
+          "language_transition"
+        ]
+      },
+      {
+        "century": "19",
+        "story_text": "The industrial age stretched him further. Machines turned, cities swelled, and people began to ask what held them all together. Cohesive took on new tasks—describing nations, crowds, stories, minds. The bond of molecules became the bond of meaning. He was no longer just physical; he was social, intellectual, and moral.",
+        "sibling_words": [],
+        "context": "Sociology, psychology, and rhetoric borrowed scientific metaphors to describe unity in human systems.",
+        "causal_tags": [
+          "metaphoric_extension",
+          "sociological_context"
+        ]
+      },
+      {
+        "century": "20",
+        "story_text": "Now Cohesive lives in offices and classrooms, in design briefs and mission statements. His Latin body is gone, but his instinct endures: to pull the scattered into shape. Every time a team holds, or an argument flows, he’s there—quiet, connecting, necessary.",
+        "sibling_words": [],
+        "context": "Modern management, communication theory, and design emphasizing unity through integration.",
+        "causal_tags": [
+          "semantic_neutralization",
+          "organizational_context"
+        ]
+      }
+    ],
+    "why_the_shifts_happened": [
+      "A tactile image of adhesion evolved into a universal metaphor of unity.",
+      "Scientific revolution abstracted cohesion from touch into force.",
+      "Industrial and social theory extended it to people and ideas.",
+      "Modern institutions adopted it as language for collaboration and design."
+    ],
+    "common_phrases": [
+      "cohesive team — strength through shared trust.",
+      "cohesive argument — reasoning that holds together.",
+      "cohesive device — the invisible bridge of language between thoughts."
+    ],
+    "structural_analysis": "‘Cohesive’ charts how the language of matter became the language of belonging. What began in glue and grain now holds together minds, stories, and societies.",
+    "cefr_level": "B2",
+    "frequency_band": 6000,
+    "date_added": "2025-10-18"
+  },
+  {
+    "word": "scattershot",
+    "part_of_speech": "adjective",
+    "modern_definition": "lacking focus or organization; covering many things in a random or haphazard way.",
+    "usage_example": "His scattershot approach to problem-solving wasted time and resources.",
+    "synonyms": [
+      "haphazard",
+      "indiscriminate",
+      "unfocused",
+      "broad-brush",
+      "random"
+    ],
+    "antonyms": [
+      "targeted",
+      "systematic",
+      "methodical",
+      "precise",
+      "focused"
+    ],
+    "related": [
+      "shotgun",
+      "scatter",
+      "aimless"
+    ],
+    "french_equivalent": "désordonné — disorganized; 'à la volée' captures the sense of randomness.",
+    "russian_equivalent": "беспорядочный (besporyadochnyy) — chaotic, lacking order.",
+    "definitions": {
+      "primary": "Covering a wide area or range without clear focus or direction.",
+      "secondary": "Random or haphazard; lacking method or precision.",
+      "tertiary": "Figurative: attempting too much or acting without strategic aim."
+    },
+    "variant_forms": [],
+    "semantic_field": [
+      "randomness",
+      "diffusion",
+      "lack of focus",
+      "breadth",
+      "chaos"
+    ],
+    "french_synonyms": [
+      "désordonné",
+      "épars",
+      "aléatoire"
+    ],
+    "french_root_cognates": [
+      "disperser",
+      "tir",
+      "éparpiller"
+    ],
+    "russian_synonyms": [
+      "разбросанный",
+      "хаотичный",
+      "беспорядочный"
+    ],
+    "russian_root_cognates": [
+      "разброс — scatter"
+    ],
+    "common_collocations": [
+      "scattershot approach — unfocused or uncoordinated method (management, policy)",
+      "scattershot strategy — diffuse plan lacking prioritization (business, politics)",
+      "scattershot criticism — broad, indiscriminate attack (journalism, debate)"
+    ],
+    "story_intro": "Scattershot lives in the moment before aim. He bursts outward—bright, loud, everywhere at once. He’s energy without a center, ambition before direction. Some call him reckless; others, free. He doesn’t choose a single path—he takes them all, and lets the world decide what lands.",
+    "story": [
+      {
+        "century": "19",
+        "story_text": "In the rough talk of the 1800s frontier, 'scattershot' was pure mechanics: the spray of pellets from a shotgun’s mouth. It was a hunter’s word, meaning range at the cost of precision. A scattershot could strike anything or nothing. The image belonged to smoke, echo, and chance.",
+        "sibling_words": [
+          "shotgun",
+          "buckshot"
+        ],
+        "context": "American hunting and frontier language valuing practicality over precision.",
+        "causal_tags": [
+          "technological_origin",
+          "compound_formation"
+        ]
+      },
+      {
+        "century": "20",
+        "story_text": "After the wars, the world grew obsessed with targets—goals, quotas, metrics. Into that culture, Scattershot wandered, half feral. He was the one who fired ideas instead of bullets: policies that sprawled, arguments that sprawled wider. The old gunmetal word now measured intellectual mess.",
+        "sibling_words": [
+          "broadside",
+          "spray"
+        ],
+        "context": "Postwar bureaucratic and managerial discourse moralizing precision as efficiency.",
+        "causal_tags": [
+          "metaphoric_extension",
+          "organizational_context"
+        ]
+      },
+      {
+        "century": "21",
+        "story_text": "Now he’s everywhere—meetings, essays, start-ups. Scattershot speaks of the rush to do, to say, to solve before thinking. He carries a faint scent of gunpowder still, the memory of the hunt. But his meaning is softer now: not danger, just disarray—the price of trying to hit everything at once.",
+        "sibling_words": [],
+        "context": "Contemporary colloquial English across media, technology, and education.",
+        "causal_tags": [
+          "semantic_stabilization",
+          "colloquial_extension"
+        ]
+      }
+    ],
+    "why_the_shifts_happened": [
+      "A literal hunting term broadened into a metaphor for unfocused effort.",
+      "Industrial and bureaucratic societies prized precision, defining 'scattershot' as its opposite.",
+      "Colloquial speech softened the martial image into everyday critique of inefficiency."
+    ],
+    "common_phrases": [
+      "scattershot approach — effort without aim.",
+      "scattershot policy — governance without focus.",
+      "scattershot criticism — wide but shallow attack."
+    ],
+    "structural_analysis": "‘Scattershot’ marks the moralization of precision. What began as a hunter’s pattern of spread became a culture’s anxiety about control and coherence.",
+    "cefr_level": "C1",
+    "frequency_band": 8500,
+    "date_added": "2025-10-18"
+  },
+  {
+    "word": "salient",
+    "part_of_speech": "adjective",
+    "modern_definition": "most noticeable or important; prominent or striking.",
+    "usage_example": "The most salient feature of the proposal was its emphasis on sustainability.",
+    "synonyms": [
+      "prominent",
+      "notable",
+      "striking",
+      "conspicuous",
+      "remarkable",
+      "outstanding"
+    ],
+    "antonyms": [
+      "obscure",
+      "inconspicuous",
+      "hidden",
+      "minor"
+    ],
+    "related": [
+      "salience",
+      "saliently",
+      "resilient"
+    ],
+    "french_equivalent": "saillant — literally 'leaping out'; used for prominence or protrusion.",
+    "russian_equivalent": "выдающийся (vydaiushchiysya) — prominent, remarkable.",
+    "definitions": {
+      "primary": "Most noticeable or important; standing out prominently.",
+      "secondary": "Projecting outward, as in a salient angle or bulge.",
+      "tertiary": "Figurative: striking or leaping to attention through force or clarity."
+    },
+    "variant_forms": [
+      "salience",
+      "saliently"
+    ],
+    "semantic_field": [
+      "prominence",
+      "emphasis",
+      "projection",
+      "distinctness",
+      "visibility"
+    ],
+    "french_synonyms": [
+      "saillant",
+      "remarquable"
+    ],
+    "french_root_cognates": [
+      "sauter — to leap",
+      "ressortir — to stand out"
+    ],
+    "russian_synonyms": [
+      "выдающийся",
+      "бросающийся в глаза"
+    ],
+    "russian_root_cognates": [
+      "сальто — borrowed from Italian salto (leap)"
+    ],
+    "common_collocations": [
+      "salient feature — most prominent aspect (analysis, design)",
+      "salient point — main or central argument (rhetoric)",
+      "salient angle — projecting angle in military or architectural use (historical)",
+      "most salient — intensifier for central importance (journalism, commentary)"
+    ],
+    "story_intro": "Salient is the leap made visible—the instant something crosses from hidden to seen. He’s the flash in the mind, the outcrop on the plain. He doesn’t whisper for attention; he springs toward it. Wherever meaning wants to be found, Salient has already taken a step forward.",
+    "story": [
+      {
+        "century": "1",
+        "story_text": "In Rome, he was *saliēns*—'leaping, springing forth.' The poets used him for fountains, fish, the pulse of joy. To leap was to live: the verb *salīre* carried vitality itself. Salient began as motion, not metaphor.",
+        "sibling_words": [
+          "salire",
+          "resilire",
+          "assilire"
+        ],
+        "context": "Roman poetic and descriptive vocabulary where leaping marked life and vigor.",
+        "causal_tags": [
+          "physical_metaphor",
+          "lexical_origin"
+        ]
+      },
+      {
+        "century": "16",
+        "story_text": "By the Renaissance, *saillant* in French meant 'jutting out'—a wall that leaned toward the world, a bastion pointing at the horizon. English borrowed him as an engineer’s and soldier’s term: the salient angle of a fortress, the place that struck first and was struck hardest.",
+        "sibling_words": [
+          "assaillant",
+          "ressortissant"
+        ],
+        "context": "Military and architectural vocabulary linking geometry with aggression and defense.",
+        "causal_tags": [
+          "technological_extension",
+          "language_transition"
+        ]
+      },
+      {
+        "century": "17",
+        "story_text": "Then the leap turned inward. Philosophers and rhetoricians called an idea 'salient' when it sprang to the mind. The fortification became a thought: something projecting beyond the rest. To leap became to signify.",
+        "sibling_words": [
+          "conspicuous",
+          "prominent"
+        ],
+        "context": "Early modern intellectual and rhetorical writing emphasizing clarity and distinction.",
+        "causal_tags": [
+          "metaphoric_extension",
+          "semantic_abstraction"
+        ]
+      },
+      {
+        "century": "19",
+        "story_text": "By the modern age, Salient had settled into analysis and argument. He no longer moved; he marked. To be salient was to stand out by design, not by motion. Yet in every use, his ancient spring survives—the mind’s leap made permanent in language.",
+        "sibling_words": [],
+        "context": "Scientific, analytic, and journalistic use of 'salient' for central data or defining traits.",
+        "causal_tags": [
+          "semantic_stabilization",
+          "discursive_specialization"
+        ]
+      }
+    ],
+    "why_the_shifts_happened": [
+      "Physical experience of motion became conceptual language for prominence.",
+      "Architectural and military geometry reinforced the spatial sense of projection.",
+      "Philosophical and rhetorical discourse abstracted it into intellectual distinction.",
+      "Modernity stabilized the metaphor as a neutral term for centrality and importance."
+    ],
+    "common_phrases": [
+      "salient point — the idea that leaps to mind.",
+      "salient feature — what stands out in view or argument.",
+      "salient angle — projection toward encounter or risk.",
+      "most salient — the peak of prominence."
+    ],
+    "structural_analysis": "‘Salient’ traces the conversion of motion into meaning. Born in the leap of bodies and fountains, it became the figure for prominence in thought—a standing reminder that every idea once sprang from life’s movement.",
+    "cefr_level": "C1",
+    "frequency_band": 6500,
+    "date_added": "2025-10-18"
+  },
+  {
+    "word": "perfunctory",
+    "part_of_speech": "adjective",
+    "modern_definition": "done quickly and without real interest, care, or effort.",
+    "usage_example": "He gave a perfunctory nod before leaving the room.",
+    "synonyms": [
+      "cursory",
+      "mechanical",
+      "superficial",
+      "indifferent",
+      "unthinking"
+    ],
+    "antonyms": [
+      "thorough",
+      "careful",
+      "deliberate",
+      "attentive",
+      "conscientious"
+    ],
+    "related": [
+      "function",
+      "perform"
+    ],
+    "french_equivalent": "superficiel — lacking depth; 'mécanique' for mechanical sense.",
+    "russian_equivalent": "поверхностный (poverkhnostnyy) — superficial, lacking depth or sincerity.",
+    "definitions": {
+      "primary": "Done quickly and without real care or interest; mechanical.",
+      "secondary": "Performed merely as a duty or routine; superficial.",
+      "tertiary": "Indifferent or apathetic in manner or attitude."
+    },
+    "variant_forms": [
+      "perfunctorily",
+      "perfunctoriness"
+    ],
+    "semantic_field": [
+      "carelessness",
+      "mechanical action",
+      "habit",
+      "routine",
+      "insincerity"
+    ],
+    "french_synonyms": [
+      "superficiel",
+      "mécanique"
+    ],
+    "french_root_cognates": [
+      "fonction",
+      "exécution"
+    ],
+    "russian_synonyms": [
+      "поверхностный",
+      "формальный",
+      "механический"
+    ],
+    "russian_root_cognates": [],
+    "common_collocations": [
+      "perfunctory nod — minimal acknowledgment (social cue)",
+      "perfunctory smile — forced or insincere expression (emotional detachment)",
+      "perfunctory task — routine action done without care (workplace idiom)"
+    ],
+    "story_intro": "Perfunctory walks among us like someone still doing their job long after the reason has gone. He smiles when he’s supposed to, nods when he must, checks the box, moves on. He’s not cruel—just tired. You’ve met him in a rushed 'thanks,' a dry 'sorry,' a promise said without weight. That’s who he is now. But he wasn’t always this way.",
+    "story": [
+      {
+        "century": "1",
+        "story_text": "In Rome, he was *perfungī*—'to do through.' A soldier’s word, a clerk’s word. He lived in the world of completion, not care. He finished what others feared to start, and thought that enough. His virtue was endurance, not tenderness.",
+        "sibling_words": [
+          "fungi",
+          "function",
+          "defunctus"
+        ],
+        "context": "Roman civic and military discipline: the ethic of finishing as moral strength.",
+        "causal_tags": [
+          "lexical_origin",
+          "duty_ethic"
+        ]
+      },
+      {
+        "century": "12",
+        "story_text": "When the empire gave way to prayer, he followed into the church. *Perfunctorius* began to mean a prayer said by habit. The form was right, but the heart was missing. He was no longer a soldier—he was a monk murmuring words he no longer felt.",
+        "sibling_words": [
+          "function",
+          "defunct"
+        ],
+        "context": "Medieval religious culture valuing inward sincerity over outward performance.",
+        "causal_tags": [
+          "moralization",
+          "spiritual_shift"
+        ]
+      },
+      {
+        "century": "16",
+        "story_text": "In the English tongue he found guilt waiting for him. Renaissance writers turned him into a warning: the worker of hollow deeds. The Reformation made him blush—the new world wanted feeling, and he had only form.",
+        "sibling_words": [],
+        "context": "Renaissance and Reformation humanism redefined moral value through authenticity.",
+        "causal_tags": [
+          "language_transition",
+          "humanist_reinterpretation"
+        ]
+      },
+      {
+        "century": "19",
+        "story_text": "Then came the factories. The machines welcomed him home. Every lever pulled, every stamp struck—done through, done well, done empty. The virtue of completion returned, but without pride. He had become the rhythm of repetition.",
+        "sibling_words": [],
+        "context": "Industrial revolution and the rise of mechanical labor and bureaucratic routine.",
+        "causal_tags": [
+          "industrial_context",
+          "semantic_extension"
+        ]
+      },
+      {
+        "century": "21",
+        "story_text": "Now he lives in notifications and signatures. He sends the email, taps the emoji, finishes the task. Still functioning, still performing. The discipline of Rome survives—but the soul of it has gone missing.",
+        "sibling_words": [],
+        "context": "Digital-age communication and emotional automation.",
+        "causal_tags": [
+          "technological_context",
+          "semantic_stabilization"
+        ]
+      }
+    ],
+    "why_the_shifts_happened": [
+      "Roman virtue of completion reinterpreted through Christian morality as hollow ritual.",
+      "Humanist and Protestant cultures elevated sincerity over endurance.",
+      "Industrial repetition and digital automation universalized mechanical behavior.",
+      "Meaning shifted from 'to fulfill a duty' to 'to act without spirit.'"
+    ],
+    "common_phrases": [
+      "perfunctory nod — motion without meaning.",
+      "perfunctory smile — performance without warmth.",
+      "perfunctory ritual — habit without heart."
+    ],
+    "structural_analysis": "‘Perfunctory’ charts the collapse of duty into disaffection. Born in Rome’s ethic of steadiness, he was remade by religion into guilt, and by industry into automation—a mirror of work emptied of its will.",
+    "cefr_level": "C2",
+    "frequency_band": 9500,
+    "date_added": "2025-10-18"
+  },
+  {
+    "word": "omit",
+    "part_of_speech": "verb",
+    "modern_definition": "to leave out or exclude intentionally or accidentally.",
+    "usage_example": "He omitted the crucial detail from his report.",
+    "synonyms": [
+      "exclude",
+      "leave out",
+      "skip",
+      "neglect",
+      "ignore"
+    ],
+    "antonyms": [
+      "include",
+      "retain",
+      "insert",
+      "add"
+    ],
+    "related": [
+      "delete"
+    ],
+    "french_equivalent": "omettre — neutral register; also means 'to skip' or 'neglect'.",
+    "russian_equivalent": "опустить (opustit’) — to omit or leave out; also 'to lower'.",
+    "definitions": {
+      "primary": "To leave out or fail to include.",
+      "secondary": "To neglect to do or say something that should be done.",
+      "tertiary": "To exclude intentionally or accidentally from a record, statement, or act."
+    },
+    "variant_forms": [
+      "omitted",
+      "omitting",
+      "omission"
+    ],
+    "semantic_field": [
+      "absence",
+      "exclusion",
+      "neglect",
+      "editing"
+    ],
+    "french_synonyms": [
+      "omettre",
+      "négliger"
+    ],
+    "french_root_cognates": [
+      "commettre",
+      "soumettre",
+      "permettre"
+    ],
+    "russian_synonyms": [
+      "опускать",
+      "пропускать",
+      "упускать"
+    ],
+    "russian_root_cognates": [],
+    "common_collocations": [
+      "sin of omission — failure to act when morally required (theological phrase)",
+      "lie of omission — misleading silence (moral idiom)",
+      "errors and omissions — legal formula (contracts, insurance)",
+      "omit from record — exclusion from documentation (bureaucratic)",
+      "by omission — framing absence as shaping meaning (rhetorical use)"
+    ],
+    "story_intro": "Omit is quiet company. He doesn’t strike; he slips away. He’s the space left where something should have been—the pause, the blank, the line forgotten to be drawn. His power is absence itself: what’s unsent, unsaid, undone. He never lies, yet nothing hides better than he does.",
+    "story": [
+      {
+        "century": "1",
+        "story_text": "In Rome, he was *omittere*—'to let go, to send away.' Built from *ob-* ('away') + *mittere* ('to send'), he belonged to a family of doers—*remittere, permittere, submittere*. They all acted; he refrained. His meaning was the negative space of will: to set aside, to leave undone.",
+        "sibling_words": [
+          "mittere",
+          "remittere",
+          "permittere",
+          "submittere",
+          "transmittere"
+        ],
+        "context": "Roman legal and rhetorical life: omission as deliberate restraint rather than failure.",
+        "causal_tags": [
+          "lexical_origin",
+          "intentional_absence"
+        ]
+      },
+      {
+        "century": "12",
+        "story_text": "In the age of confession, he was moralized. *Omettre* became a sin of silence—a thing not done when duty called. His neutrality vanished. To omit was to fail the soul, not the sentence.",
+        "sibling_words": [
+          "commettre",
+          "soumettre"
+        ],
+        "context": "Medieval Christian theology: the opposition of commission and omission as moral binaries.",
+        "causal_tags": [
+          "moralization",
+          "religious_context"
+        ]
+      },
+      {
+        "century": "15",
+        "story_text": "When the monks became clerks and the parchment became proof, Omit found a new stage. He lived in records now, where what was left out could ruin fortunes. His sin became paperwork.",
+        "sibling_words": [],
+        "context": "Late medieval bureaucracy and recordkeeping linking omission to legal liability.",
+        "causal_tags": [
+          "bureaucratization",
+          "legal_precision"
+        ]
+      },
+      {
+        "century": "16",
+        "story_text": "With printing presses and ledgers multiplying, Omit shed his guilt. To omit was now an act of editing—a choice, not a failure. The blank became a craft.",
+        "sibling_words": [],
+        "context": "Renaissance print culture and textual specialization transforming omission into technique.",
+        "causal_tags": [
+          "technological_shift",
+          "semantic_extension"
+        ]
+      },
+      {
+        "century": "20",
+        "story_text": "Now he walks between worlds: neutral in documents, moral in sermons, rhetorical in debate. He survives in phrases like fossils—'sins of omission,' 'lies of omission'—ghosts of the age when absence was blame.",
+        "sibling_words": [],
+        "context": "Modern English separating moral, legal, and editorial discourses.",
+        "causal_tags": [
+          "semantic_stabilization",
+          "discursive_divergence"
+        ]
+      }
+    ],
+    "why_the_shifts_happened": [
+      "From neutral restraint to moral fault under Christian theology.",
+      "From moral neglect to legal and bureaucratic accountability.",
+      "From procedural necessity to textual technique through the printing revolution.",
+      "From moralized act to neutral function in administrative and scientific prose."
+    ],
+    "common_phrases": [
+      "sin of omission — moral failure by inaction.",
+      "lie of omission — deception by silence.",
+      "errors and omissions — legal safeguard.",
+      "omit from record — bureaucratic exclusion.",
+      "by omission — rhetorical presence of absence."
+    ],
+    "structural_analysis": "Omit tells the story of absence acquiring meaning. He begins as restraint, becomes sin, turns bureaucratic, and ends editorial—proof that even nothingness, named often enough, becomes an act.",
+    "cefr_level": "B2",
+    "frequency_band": 4000,
+    "date_added": "2025-10-18"
+  },
+  {
+    "word": "verisimilitude",
+    "part_of_speech": "noun",
+    "modern_definition": "the appearance or quality of being true or real; the quality of seeming to be true.",
+    "usage_example": "The novel's verisimilitude made readers believe the events had actually occurred.",
+    "synonyms": [
+      "plausibility",
+      "believability",
+      "realism",
+      "authenticity",
+      "credibility"
+    ],
+    "antonyms": [
+      "implausibility",
+      "incredibility",
+      "unreality",
+      "falseness"
+    ],
+    "related": [
+      "verify",
+      "similar",
+      "simulate",
+      "versimilar"
+    ],
+    "french_equivalent": "vraisemblance — the appearance of truth; used in literature and philosophy.",
+    "russian_equivalent": "правдоподобие (pravdopodobie) — truthlikeness, plausibility.",
+    "definitions": {
+      "primary": "The appearance or semblance of truth; the quality of appearing to be true or real.",
+      "secondary": "In literature and art: lifelike quality that makes fiction believable.",
+      "tertiary": "In philosophy and law: the quality of being probable or likely based on available evidence."
+    },
+    "variant_forms": [
+      "verisimilar"
+    ],
+    "semantic_field": [
+      "truth",
+      "appearance",
+      "believability",
+      "realism",
+      "probability"
+    ],
+    "french_synonyms": [
+      "vraisemblance",
+      "plausibilité",
+      "crédibilité"
+    ],
+    "french_root_cognates": [
+      "vrai — true",
+      "semblable — similar"
+    ],
+    "russian_synonyms": [
+      "правдоподобие",
+      "достоверность",
+      "вероятность"
+    ],
+    "russian_root_cognates": [
+      "правда — truth",
+      "подобный — similar"
+    ],
+    "common_collocations": [
+      "verisimilitude in fiction — believability in storytelling (literary criticism)",
+      "lack verisimilitude — fail to seem realistic or plausible (critique)",
+      "lend verisimilitude — add realistic detail to enhance believability (craft)"
+    ],
+    "story_intro": "Verisimilitude wears the mask of truth without claiming to be it. She moves between the real and the crafted, making lies feel lived and fictions feel found. She isn't honesty—she's its shadow, its twin. You meet her in novels that breathe, in courtroom arguments that persuade, in designs that feel inevitable. She doesn't promise truth. She promises its likeness.",
+    "story": [
+      {
+        "century": "1",
+        "story_text": "In Rome, she was *verisimilitudo*—'truthlikeness.' Philosophers built her from *verus* ('true') and *similis* ('like'), a concept born of resemblance. She lived in the space between certainty and illusion, where rhetoricians worked. To have verisimilitude was to speak what seemed true when proof was distant. Cicero knew her well: she was the orator's art.",
+        "sibling_words": [
+          "verus",
+          "similis",
+          "similitudo",
+          "veritas"
+        ],
+        "context": "Roman rhetoric and philosophy distinguishing probable truth from absolute certainty.",
+        "causal_tags": [
+          "lexical_origin",
+          "philosophical_extension"
+        ]
+      },
+      {
+        "century": "14",
+        "story_text": "When Aristotle's *Poetics* returned to European thought through Arabic translations, Verisimilitude found new purpose. Medieval scholars called her the soul of narrative—what made a tale feel true even when invention shaped it. She wasn't deception; she was craft. Fiction could teach by seeming real.",
+        "sibling_words": [
+          "vraisemblance",
+          "probabilis"
+        ],
+        "context": "Scholastic rediscovery of Aristotelian poetics and the theory of mimesis.",
+        "causal_tags": [
+          "philosophical_extension",
+          "language_transition"
+        ]
+      },
+      {
+        "century": "17",
+        "story_text": "In England's coffee houses and theaters, she arrived as *verisimilitude*—French *vraisemblance* dressed in Latin gravity. Critics demanded it of playwrights; novelists studied it like scripture. Defoe and Richardson built worlds that breathed because of her. She had become the measure of art: not truth, but its convincing performance.",
+        "sibling_words": [
+          "plausibility",
+          "probability"
+        ],
+        "context": "Rise of the novel and neoclassical literary criticism valuing realistic representation.",
+        "causal_tags": [
+          "prestige_loan",
+          "aesthetic_formalization"
+        ]
+      },
+      {
+        "century": "19",
+        "story_text": "The realists took her seriously—Flaubert, Tolstoy, Eliot. Every detail mattered now. Verisimilitude demanded research, observation, the texture of lived life. She grew exacting, almost scientific. To write without her was to betray the reader. She had become the conscience of fiction.",
+        "sibling_words": [
+          "realism",
+          "naturalism"
+        ],
+        "context": "Realist and naturalist movements prioritizing documentary accuracy in literature.",
+        "causal_tags": [
+          "aesthetic_intensification",
+          "scientific_context"
+        ]
+      },
+      {
+        "century": "20",
+        "story_text": "In courtrooms she found work: forensic verisimilitude, the story that fits the evidence. In cinema she became spectacle: CGI that feels tangible, worlds that seem real enough to touch. Philosophers questioned her ethics—could a lie made lifelike be trusted? But she endures, untroubled: wherever truth is absent and belief is needed, she waits.",
+        "sibling_words": [],
+        "context": "Legal theory, film studies, and postmodern skepticism about representation and authenticity.",
+        "causal_tags": [
+          "semantic_extension",
+          "technological_context"
+        ]
+      },
+      {
+        "century": "21",
+        "story_text": "Now she moves through deepfakes and virtual worlds, through user experience design and narrative games. She's become a technology: algorithms that predict believability, interfaces that feel intuitive because they mimic the real. She no longer argues for truth—she engineers its feeling.",
+        "sibling_words": [],
+        "context": "Digital media, simulation theory, and UX design valuing intuitive realism.",
+        "causal_tags": [
+          "technological_context",
+          "semantic_stabilization"
+        ]
+      }
+    ],
+    "why_the_shifts_happened": [
+      "Roman rhetoric formalized the distinction between truth and its persuasive appearance.",
+      "Medieval poetics elevated verisimilitude as the moral justification for fiction.",
+      "The novel's rise made truthlike craft a professional standard.",
+      "Realism transformed it into documentary rigor.",
+      "Modern media and law extended it into evidence, design, and simulation."
+    ],
+    "common_phrases": [
+      "verisimilitude in fiction — the art of believable storytelling.",
+      "lack verisimilitude — the failure to convince or feel real.",
+      "lend verisimilitude — to add detail that creates belief."
+    ],
+    "structural_analysis": "Verisimilitude traces the journey from philosophical category to aesthetic principle to technological standard. Born in rhetoric's gray zone between truth and persuasion, she became the measure by which we judge what feels real—proof that likeness can be as powerful as truth itself.",
+    "cefr_level": "C2",
+    "frequency_band": 11000,
+    "date_added": "2025-10-21"
+  }
+]

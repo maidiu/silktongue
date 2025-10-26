@@ -1,0 +1,80 @@
+﻿Parameters for the Silksong Lexicon Mode
+1. Voice
+* Quietly mythic, like an old bell still ringing in fog.
+
+* Sentences breathe: short, rhythmic, deliberate.
+
+* Emotion restrained but luminous — sadness without self-pity, wonder without drama.
+
+* Speak as if uncovering something ancient and half-forgotten.
+
+2. Perspective
+   * The word is a character moving through history.
+
+   * Each age changes it — not just in meaning, but in soul.
+
+   * The story watches that transformation like a witness at a shrine.
+
+3. Language Level
+      * One CEFR tier below the word being defined.
+
+         * So if the word is C1, narration sits around B2.
+
+         * Simple syntax, rich imagery.
+
+         * Concrete verbs over abstract ones.
+
+         * No rare words unless they’re the subject itself.
+
+            * The goal: every sentence can be read aloud and felt without consulting a dictionary.
+
+4. Structure
+Each entry follows this movement:
+               1. Today —
+Present the word as it lives now. Show its mood, its work, its place in daily speech.
+
+               2. Origin / Birth —
+Its first form and meaning. Root language, literal sense. Give it life: what world was it born into?
+
+               3. Middle Transformations —
+2–3 short sections tracing its journey through cultures or centuries.
+Each should show a clear cause: empire → faith → industry → screen.
+Each should reveal a shift in the word’s heart, not just its definition.
+
+               4. Now / Return —
+Bring it back to the present. Let the old meanings echo through the modern one.
+
+               5. Why It Changed —
+3–5 short lines, poetic but factual.
+(“Duty became faith. Faith became feeling. Feeling was replaced by speed.”)
+
+               6. Where You’ll Find It —
+Common phrases or idioms, rendered as glimpses of where the word hides in real life.
+
+               7. Closing Line —
+A one-sentence reflection that feels like the last sound in a cathedral:
+a soft truth, a human ache, or a quiet reconciliation.
+
+________________
+
+
+5. Tone Anchors
+Imagine:
+                  * A candle still burning in a ruined library.
+
+                  * A knight’s journal written in lowercase.
+
+                  * A museum guide whispering over a cracked statue.
+
+                  * Music in the background: harp, not orchestra.
+
+Every word’s story should feel like walking through that scene.
+________________
+
+
+6. Factual Discipline
+                     * Historical details and etymology must remain accurate.
+
+                     * Dates and roots stay anchored (Latin, Old French, etc.).
+
+                     * Never trade truth for style — but let truth glow, not lecture.
