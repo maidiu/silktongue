@@ -328,6 +328,15 @@ CREATE TABLE IF NOT EXISTS derivations (
 CREATE INDEX IF NOT EXISTS idx_derivations_child ON derivations(child_vocab_id);
 CREATE INDEX IF NOT EXISTS idx_derivations_parent ON derivations(parent_vocab_id);
 
+CREATE TABLE IF NOT EXISTS tokens (
+    id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL,
+    description TEXT,
+    silk_cost INTEGER NOT NULL,
+    image_url TEXT,
+    CHECK (silk_cost >= 0)
+);
+
 CREATE TABLE IF NOT EXISTS purchases (
     id SERIAL PRIMARY KEY,
     user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
@@ -395,15 +404,6 @@ CREATE TABLE IF NOT EXISTS silk_transactions (
     description TEXT,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
     CHECK (transaction_type IN ('earn', 'spend', 'wager_win', 'wager_loss'))
-);
-
-CREATE TABLE IF NOT EXISTS tokens (
-    id SERIAL PRIMARY KEY,
-    name TEXT NOT NULL,
-    description TEXT,
-    silk_cost INTEGER NOT NULL,
-    image_url TEXT,
-    CHECK (silk_cost >= 0)
 );
 
 CREATE TABLE IF NOT EXISTS vocab_domain_links (
