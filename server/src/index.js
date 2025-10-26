@@ -35,15 +35,17 @@ app.use('/api/maps', mapsRoutes);
 
 // Serve static files from React build in production
 const clientBuildPath = path.join(__dirname, '../../client/dist');
+
+// Serve static files at root and /silktongue
+app.use(express.static(clientBuildPath));
 app.use('/silktongue', express.static(clientBuildPath));
 
-// Redirect root to /silktongue
-app.get('/', (req, res) => {
-  res.redirect('/silktongue');
-});
-
-// Serve React app for /silktongue and all sub-routes
-app.get('/silktongue*', (req, res) => {
+// Serve React app for all non-API routes
+app.get('*', (req, res, next) => {
+  // Skip API routes
+  if (req.path.startsWith('/api') || req.path.startsWith('/silktongue/api')) {
+    return next();
+  }
   res.sendFile(path.join(clientBuildPath, 'index.html'));
 });
 
