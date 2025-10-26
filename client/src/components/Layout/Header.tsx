@@ -27,11 +27,81 @@ export default function Header({ onSearch }: HeaderProps) {
   return (
     <>
     <header className="bg-black/60 backdrop-blur-md sticky top-0 z-50">
-      <div className="px-4 sm:px-6 py-4">
-        {/* Top row: Silk/Health on left, Title in center, Avatar/Menu on right */}
-        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between mb-4 gap-4">
-          {/* Left: Patreon Link and Silk/Health */}
-          <div className="flex flex-col gap-2 w-full lg:w-auto">
+      <div className="px-2 sm:px-4 lg:px-6 py-2 sm:py-3">
+        {/* Mobile: Compact horizontal layout */}
+        <div className="flex items-center justify-between gap-2 mb-2 lg:hidden">
+          {/* Left: Compact stats */}
+          <div className="flex items-center gap-3">
+            <div className="bg-gray-900 border border-yellow-500 rounded px-2 py-1">
+              <div className="text-yellow-400 text-[10px] font-bold">💎</div>
+              <div className="text-white text-sm font-bold">{user?.silkBalance || 0}</div>
+            </div>
+            <div className="text-xs">
+              <div className="text-red-500">{"❤️".repeat(Math.min(user?.healthPoints || 0, 3))}</div>
+              <div className="text-gray-500 text-[10px]">{user?.healthPoints || 0}/{user?.maxHealthPoints || 3}</div>
+            </div>
+          </div>
+          
+          {/* Center: Compact title */}
+          <Link to="/" className="flex-1 text-center">
+            <h1 className="text-lg sm:text-xl font-display font-bold text-white tracking-wide">
+              Silktongue
+            </h1>
+          </Link>
+          
+          {/* Right: Avatar menu */}
+          <div className="relative">
+            <button
+              onClick={() => setShowUserMenu(!showUserMenu)}
+              className="flex items-center gap-1 px-2 py-1 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded transition-colors"
+            >
+              <AvatarDisplay config={user?.avatarConfig} size={24} />
+              <span className="text-xs">▼</span>
+            </button>
+            
+            {/* Mobile Menu Dropdown */}
+            {showUserMenu && (
+              <div className="absolute right-0 top-full mt-2 w-56 bg-gray-800 border border-gray-700 rounded-lg shadow-xl z-[100]">
+                <div className="p-3 border-b border-gray-700">
+                  <div className="text-white text-sm font-medium">{user?.username}</div>
+                  <div className="text-gray-400 text-xs mt-1">Silk: {user?.silkBalance || 0}</div>
+                </div>
+                <div className="py-2">
+                  <Link
+                    to="/"
+                    onClick={() => setShowUserMenu(false)}
+                    className="w-full text-left px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors block"
+                  >
+                    🗺️ Maps
+                  </Link>
+                  <button
+                    onClick={() => {
+                      setShowAvatarCustomizer(true);
+                      setShowUserMenu(false);
+                    }}
+                    className="w-full text-left px-4 py-2 text-sm text-purple-400 hover:bg-gray-700 hover:text-purple-300 transition-colors"
+                  >
+                    🎭 Customize Avatar
+                  </button>
+                  <button
+                    onClick={() => {
+                      logout();
+                      setShowUserMenu(false);
+                    }}
+                    className="w-full text-left px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors"
+                  >
+                    Logout
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+        
+        {/* Desktop: Full layout */}
+        <div className="hidden lg:flex items-center justify-between mb-4 gap-4">
+          {/* Left: Patreon and Stats */}
+          <div className="flex flex-col gap-2">
             <a 
               href="https://patreon.com/SimeonWeil" 
               target="_blank" 
@@ -40,33 +110,27 @@ export default function Header({ onSearch }: HeaderProps) {
             >
               Support on Patreon →
             </a>
-            <div className="bg-gray-900 border-2 border-yellow-500 rounded-lg px-4 sm:px-6 py-3">
-            <div className="text-yellow-400 text-sm font-bold mb-1">💎 Silk Balance</div>
-            <div className="text-white text-2xl font-bold">{user?.silkBalance || 0}</div>
-            {/* Health below silk */}
-            <div className="mt-2 flex items-center gap-2">
-              <div className="text-gray-400 text-xs">Health:</div>
-              <div className="text-red-500 font-display">
-                {'❤️'.repeat(user?.healthPoints || 0)}
-              </div>
-              <div className="text-gray-500 text-xs">
-                ({user?.healthPoints || 0}/{user?.maxHealthPoints || 3})
-              </div>
+            <div className="bg-gray-900 border-2 border-yellow-500 rounded-lg px-4 py-2">
+            <div className="text-yellow-400 text-sm font-bold">💎 Silk: <span className="text-white">{user?.silkBalance || 0}</span></div>
+            <div className="mt-1 flex items-center gap-2 text-xs">
+              <div className="text-gray-400">Health:</div>
+              <div className="text-red-500">{'❤️'.repeat(user?.healthPoints || 0)}</div>
+              <div className="text-gray-500">({user?.healthPoints || 0}/{user?.maxHealthPoints || 3})</div>
             </div>
             </div>
           </div>
 
-          {/* Center: Laleo Knight Title */}
-          <div className="flex-1 flex justify-center w-full lg:w-auto order-last lg:order-none">
+          {/* Center: Title */}
+          <div className="flex-1 flex justify-center">
             <Link to="/" className="group">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-display font-bold text-white group-hover:text-gray-300 transition-colors tracking-wider text-center">
+              <h1 className="text-4xl font-display font-bold text-white group-hover:text-gray-300 transition-colors tracking-wider">
                 Laleo Knight: Silktongue
               </h1>
             </Link>
           </div>
 
-          {/* Right: Avatar and Menu */}
-          <div className="flex items-center space-x-4 lg:space-x-8 w-full lg:w-auto justify-between lg:justify-start">
+          {/* Right: Avatar Menu */}
+          <div className="flex items-center space-x-4">
           {/* Avatar and User Menu */}
           <div className="relative flex flex-col items-center">
             {/* Avatar above dropdown */}
@@ -222,26 +286,26 @@ export default function Header({ onSearch }: HeaderProps) {
         </div>
 
         {/* Second row: Tower/Asketereion */}
-        <div className="flex items-center text-white space-x-2 sm:space-x-3 justify-center mb-3">
+        <div className="flex items-center text-white space-x-2 sm:space-x-3 justify-center mb-2 sm:mb-3">
           {isOnMaps ? (
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-wider drop-shadow-2xl">
+            <h2 className="text-base sm:text-lg md:text-xl font-bold text-white tracking-wide">
               THE TOWER OF WORDS
             </h2>
           ) : (
             <Link to="/">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-wider drop-shadow-2xl hover:text-gray-300 transition-colors">
+              <h2 className="text-base sm:text-lg md:text-xl font-bold text-white hover:text-gray-300 transition-colors">
                 THE TOWER OF WORDS
               </h2>
             </Link>
           )}
-          <span className="text-gray-500 text-lg sm:text-2xl">/</span>
+          <span className="text-gray-500 text-sm sm:text-base">/</span>
           {isOnHome ? (
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-wider drop-shadow-2xl">
+            <h2 className="text-base sm:text-lg md:text-xl font-bold text-white tracking-wide">
               ASKETEREION
             </h2>
           ) : (
             <Link to="/home">
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-300 tracking-wider drop-shadow-2xl hover:text-white transition-colors">
+              <h2 className="text-base sm:text-lg md:text-xl font-bold text-gray-300 hover:text-white transition-colors">
                 ASKETEREION
               </h2>
             </Link>
