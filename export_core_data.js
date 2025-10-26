@@ -30,7 +30,7 @@ async function exportCoreData() {
         }
         // Handle arrays (text[])
         if (Array.isArray(val)) {
-          const escaped = val.map(v => `"${String(v).replace(/"/g, '""')}"`).join(',');
+          const escaped = val.map(v => `'${String(v).replace(/'/g, "''")}'`).join(',');
           return `ARRAY[${escaped}]`;
         }
         if (typeof val === 'object' && val !== null) {
