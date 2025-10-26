@@ -57,10 +57,8 @@ async function upsertQuizQuestion(question) {
     prompt,
     options,
     correct_answer,
-    correct_answers,
     variant_data,
-    reward_amount = 10,
-    difficulty = 'normal'
+    reward_amount = 10
   } = question;
   
   // Get word_id
@@ -69,19 +67,17 @@ async function upsertQuizQuestion(question) {
   const { rows } = await pool.query(
     `INSERT INTO quiz_materials (
       word_id, level, question_type, prompt,
-      options, correct_answer, correct_answers,
-      variant_data, reward_amount, difficulty
+      options, correct_answer,
+      variant_data, reward_amount
     )
-    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
+    VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
     ON CONFLICT (word_id, level) DO UPDATE SET
       question_type = EXCLUDED.question_type,
       prompt = EXCLUDED.prompt,
       options = EXCLUDED.options,
       correct_answer = EXCLUDED.correct_answer,
-      correct_answers = EXCLUDED.correct_answers,
       variant_data = EXCLUDED.variant_data,
-      reward_amount = EXCLUDED.reward_amount,
-      difficulty = EXCLUDED.difficulty
+      reward_amount = EXCLUDED.reward_amount
     RETURNING id, word_id, level`,
     [
       word_id,
@@ -90,10 +86,8 @@ async function upsertQuizQuestion(question) {
       prompt,
       options ? JSON.stringify(options) : null,
       correct_answer || null,
-      correct_answers ? JSON.stringify(correct_answers) : null,
       variant_data ? JSON.stringify(variant_data) : null,
-      reward_amount,
-      difficulty
+      reward_amount
     ]
   );
   
