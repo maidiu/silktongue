@@ -24,7 +24,19 @@ async function importStoryQuestions() {
     
     // Import questions for each word
     for (const wordData of questionsData) {
-      console.log(`\nProcessing word: ${wordData.word} (ID: ${wordData.word_id})`);
+      // Look up the actual word_id from the database
+      const wordLookup = await pool.query(
+        'SELECT id FROM vocab_entries WHERE word = $1',
+        [wordData.word]
+      );
+      
+      if (wordLookup.rows.length === 0) {
+        console.log(`\n⚠ Skipping ${wordData.word}: not found in database`);
+        continue;
+      }
+      
+      const actualWordId = wordLookup.rows[0].id;
+      console.log(`\nProcessing word: ${wordData.word} (ID: ${actualWordId})`);
       
       for (const question of wordData.questions) {
         const insertQuery = `
@@ -34,7 +46,7 @@ async function importStoryQuestions() {
         `;
         
         const values = [
-          wordData.word_id,
+          actualWordId,
           question.century,
           question.question,
           JSON.stringify(question.options),
