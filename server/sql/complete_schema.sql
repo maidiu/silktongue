@@ -109,7 +109,7 @@ CREATE TABLE IF NOT EXISTS word_relations (
     source_id INTEGER NOT NULL REFERENCES vocab_entries(id) ON DELETE CASCADE,
     target_id INTEGER NOT NULL REFERENCES vocab_entries(id) ON DELETE CASCADE,
     relation_type TEXT NOT NULL,
-    PRIMARY KEY (source_id, target_id, relation_type),
+    UNIQUE (source_id, target_id, relation_type),
     CHECK (source_id != target_id)
 );
 
