@@ -31,7 +31,12 @@ for (const wordData of data) {
     await pool.query(
       `INSERT INTO story_comprehension_questions 
        (word_id, century, question, options, correct_answer, explanation) 
-       VALUES ($1, $2, $3, $4, $5, $6)`,
+       VALUES ($1, $2, $3, $4, $5, $6)
+       ON CONFLICT (word_id, century) DO UPDATE SET
+         question = EXCLUDED.question,
+         options = EXCLUDED.options,
+         correct_answer = EXCLUDED.correct_answer,
+         explanation = EXCLUDED.explanation`,
       [actualWordId, q.century, q.question, JSON.stringify(q.options), q.correct_answer, q.explanation]
     );
     totalQuestions++;
