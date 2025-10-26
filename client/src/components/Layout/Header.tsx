@@ -58,7 +58,7 @@ export default function Header({ onSearch }: HeaderProps) {
             
             {/* Menu Dropdown (overlays below) */}
             {showUserMenu && (
-              <div className="absolute right-0 top-full mt-2 w-48 bg-gray-800 border border-gray-700 rounded-lg shadow-xl z-[100]">
+              <div className="absolute right-0 top-full mt-2 w-64 bg-gray-800 border border-gray-700 rounded-lg shadow-xl z-[100]">
                 <div className="p-3 border-b border-gray-700">
                   <div className="text-white text-sm font-medium">{user?.username}</div>
                   <div className="text-yellow-400 text-xs mt-1">💎 Silk: {user?.silkBalance || 0}</div>
