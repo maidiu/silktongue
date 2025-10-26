@@ -156,10 +156,6 @@ async function insertRelation(sourceId, targetWord, relationType, bidirectional 
 async function insertTimelineEvent(vocabId, event) {
   const {
     century,
-    exact_date,
-    language_stage,
-    region,
-    semantic_focus,
     event_text,
     sibling_words = [],
     context,
@@ -174,14 +170,12 @@ async function insertTimelineEvent(vocabId, event) {
   // Insert the timeline event
   const { rows: eventRows } = await pool.query(
     `INSERT INTO word_timeline_events (
-      vocab_id, century, exact_date, language_stage, region,
-      semantic_focus, event_text, sibling_words, context
+      vocab_id, century, event_text, sibling_words, context
     )
-    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+    VALUES ($1, $2, $3, $4, $5)
     RETURNING id`,
     [
-      vocabId, century, exact_date, language_stage, region,
-      semantic_focus, event_text, sibling_words, context
+      vocabId, century, event_text, sibling_words, context
     ]
   );
   const eventId = eventRows[0].id;
@@ -207,15 +201,7 @@ async function insertTimelineEvent(vocabId, event) {
     );
   }
 
-  // Insert citations for this event
-  for (const citation of citations) {
-    const { source, url, quote } = citation;
-    await pool.query(
-      `INSERT INTO citations (event_id, source, url, quote)
-       VALUES ($1, $2, $3, $4)`,
-      [eventId, source, url, quote]
-    );
-  }
+  // Note: Citations not supported in current schema
 
   return eventId;
 }
