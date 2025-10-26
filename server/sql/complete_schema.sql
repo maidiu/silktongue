@@ -85,7 +85,11 @@ CREATE INDEX IF NOT EXISTS idx_vocab_is_mastered ON vocab_entries(is_mastered);
 CREATE TABLE IF NOT EXISTS word_timeline_events (
     id SERIAL PRIMARY KEY,
     vocab_id INTEGER NOT NULL REFERENCES vocab_entries(id) ON DELETE CASCADE,
-    century TEXT,
+    century INTEGER NOT NULL,
+    exact_date TEXT,
+    language_stage TEXT,
+    region TEXT,
+    semantic_focus TEXT,
     event_text TEXT NOT NULL,
     sibling_words TEXT[],
     context TEXT,
@@ -432,7 +436,7 @@ CREATE TABLE IF NOT EXISTS story_comprehension_questions (
     question TEXT NOT NULL,
     options JSONB NOT NULL,
     correct_answer VARCHAR(255) NOT NULL,
-    explanation TEXT,
+    explanation TEXT NOT NULL,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
     UNIQUE(word_id, century)
