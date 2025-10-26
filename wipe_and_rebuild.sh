@@ -24,8 +24,8 @@ EOF
 
 echo "✅ Database recreated"
 echo ""
-echo "📊 Applying full_schema.sql..."
-sudo -u postgres psql -d vocab_atlas -f full_schema.sql
+echo "📊 Applying complete_schema.sql..."
+sudo -u postgres psql -d vocab_atlas -f server/sql/complete_schema.sql
 
 echo "✅ Schema applied"
 echo ""
