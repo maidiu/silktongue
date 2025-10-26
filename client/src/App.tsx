@@ -34,9 +34,12 @@ function AppContent() {
 }
 
 function App() {
+  // Use /silktongue basename in production, / for development
+  const basename = import.meta.env.PROD ? '/silktongue' : '/';
+  
   return (
     <AuthProvider>
-      <Router basename="/silktongue">
+      <Router basename={basename}>
         <AppContent />
       </Router>
     </AuthProvider>
