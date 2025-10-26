@@ -797,3 +797,573 @@ CREATE INDEX IF NOT EXISTS idx_timeline_vocab
     ON public.word_timeline_events USING btree
     (vocab_id ASC NULLS LAST)
     TABLESPACE pg_default;
+
+
+-- Table: public.beast_mode_attempts
+
+-- DROP TABLE IF EXISTS public.beast_mode_attempts;
+
+CREATE TABLE IF NOT EXISTS public.beast_mode_attempts
+(
+    id integer NOT NULL DEFAULT nextval('beast_mode_attempts_id_seq'::regclass),
+    user_id integer,
+    word_id integer,
+    wager_amount integer NOT NULL,
+    success boolean NOT NULL,
+    silk_earned integer DEFAULT 0,
+    attempted_at timestamp with time zone DEFAULT now(),
+    completed_at timestamp with time zone,
+    updated_at timestamp with time zone DEFAULT now(),
+    CONSTRAINT beast_mode_attempts_pkey PRIMARY KEY (id),
+    CONSTRAINT beast_mode_attempts_user_id_fkey FOREIGN KEY (user_id)
+        REFERENCES public.users (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE,
+    CONSTRAINT beast_mode_attempts_word_id_fkey FOREIGN KEY (word_id)
+        REFERENCES public.vocab_entries (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE,
+    CONSTRAINT beast_mode_attempts_wager_amount_check CHECK (wager_amount > 0)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.beast_mode_attempts
+    OWNER to postgres;
+-- Index: idx_beast_attempts_user
+
+-- DROP INDEX IF EXISTS public.idx_beast_attempts_user;
+
+CREATE INDEX IF NOT EXISTS idx_beast_attempts_user
+    ON public.beast_mode_attempts USING btree
+    (user_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+-- Index: idx_beast_attempts_word
+
+-- DROP INDEX IF EXISTS public.idx_beast_attempts_word;
+
+CREATE INDEX IF NOT EXISTS idx_beast_attempts_word
+    ON public.beast_mode_attempts USING btree
+    (word_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+
+-- Trigger: update_beast_mode_attempts_updated_at
+
+-- DROP TRIGGER IF EXISTS update_beast_mode_attempts_updated_at ON public.beast_mode_attempts;
+
+CREATE OR REPLACE TRIGGER update_beast_mode_attempts_updated_at
+    BEFORE UPDATE 
+    ON public.beast_mode_attempts
+    FOR EACH ROW
+    EXECUTE FUNCTION public.set_updated_at();
+
+
+-- Table: public.beast_mode_cooldowns
+
+-- DROP TABLE IF EXISTS public.beast_mode_cooldowns;
+
+CREATE TABLE IF NOT EXISTS public.beast_mode_cooldowns
+(
+    id integer NOT NULL DEFAULT nextval('beast_mode_cooldowns_id_seq'::regclass),
+    user_id integer,
+    word_id integer,
+    last_attempt timestamp with time zone DEFAULT now(),
+    cooldown_until timestamp with time zone DEFAULT (now() + '01:00:00'::interval),
+    CONSTRAINT beast_mode_cooldowns_pkey PRIMARY KEY (id),
+    CONSTRAINT beast_mode_cooldowns_user_id_word_id_key UNIQUE (user_id, word_id),
+    CONSTRAINT beast_mode_cooldowns_user_id_fkey FOREIGN KEY (user_id)
+        REFERENCES public.users (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE,
+    CONSTRAINT beast_mode_cooldowns_word_id_fkey FOREIGN KEY (word_id)
+        REFERENCES public.vocab_entries (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.beast_mode_cooldowns
+    OWNER to postgres;
+-- Index: idx_beast_cooldowns_user
+
+-- DROP INDEX IF EXISTS public.idx_beast_cooldowns_user;
+
+CREATE INDEX IF NOT EXISTS idx_beast_cooldowns_user
+    ON public.beast_mode_cooldowns USING btree
+    (user_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+-- Index: idx_beast_cooldowns_word
+
+-- DROP INDEX IF EXISTS public.idx_beast_cooldowns_word;
+
+CREATE INDEX IF NOT EXISTS idx_beast_cooldowns_word
+    ON public.beast_mode_cooldowns USING btree
+    (word_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+
+
+-- Table: public.floor_boss_scenarios
+
+-- DROP TABLE IF EXISTS public.floor_boss_scenarios;
+
+CREATE TABLE IF NOT EXISTS public.floor_boss_scenarios
+(
+    id integer NOT NULL DEFAULT nextval('floor_boss_scenarios_id_seq'::regclass),
+    floor_id integer,
+    scenario_text text COLLATE pg_catalog."default" NOT NULL,
+    correct_word_id integer,
+    difficulty_level integer DEFAULT 1,
+    created_at timestamp with time zone DEFAULT now(),
+    CONSTRAINT floor_boss_scenarios_pkey PRIMARY KEY (id),
+    CONSTRAINT floor_boss_scenarios_correct_word_id_fkey FOREIGN KEY (correct_word_id)
+        REFERENCES public.vocab_entries (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE,
+    CONSTRAINT floor_boss_scenarios_floor_id_fkey FOREIGN KEY (floor_id)
+        REFERENCES public.floors (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.floor_boss_scenarios
+    OWNER to postgres;
+-- Index: idx_floor_boss_scenarios_floor_id
+
+-- DROP INDEX IF EXISTS public.idx_floor_boss_scenarios_floor_id;
+
+CREATE INDEX IF NOT EXISTS idx_floor_boss_scenarios_floor_id
+    ON public.floor_boss_scenarios USING btree
+    (floor_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+
+
+-- Table: public.floors
+
+-- DROP TABLE IF EXISTS public.floors;
+
+CREATE TABLE IF NOT EXISTS public.floors
+(
+    id integer NOT NULL DEFAULT nextval('floors_id_seq'::regclass),
+    map_id integer,
+    floor_number integer NOT NULL,
+    name text COLLATE pg_catalog."default" NOT NULL,
+    description text COLLATE pg_catalog."default",
+    unlock_requirement text COLLATE pg_catalog."default",
+    boss_challenge_type text COLLATE pg_catalog."default" DEFAULT 'scenario_typing'::text,
+    silk_reward integer DEFAULT 100,
+    created_at timestamp with time zone DEFAULT now(),
+    CONSTRAINT floors_pkey PRIMARY KEY (id),
+    CONSTRAINT floors_map_id_floor_number_key UNIQUE (map_id, floor_number),
+    CONSTRAINT floors_map_id_fkey FOREIGN KEY (map_id)
+        REFERENCES public.maps (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.floors
+    OWNER to postgres;
+-- Index: idx_floors_map_id
+
+-- DROP INDEX IF EXISTS public.idx_floors_map_id;
+
+CREATE INDEX IF NOT EXISTS idx_floors_map_id
+    ON public.floors USING btree
+    (map_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+
+
+-- Table: public.maps
+
+-- DROP TABLE IF EXISTS public.maps;
+
+CREATE TABLE IF NOT EXISTS public.maps
+(
+    id integer NOT NULL DEFAULT nextval('maps_id_seq'::regclass),
+    name text COLLATE pg_catalog."default" NOT NULL,
+    description text COLLATE pg_catalog."default",
+    total_floors integer DEFAULT 1,
+    created_at timestamp with time zone DEFAULT now(),
+    CONSTRAINT maps_pkey PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.maps
+    OWNER to postgres;
+
+
+-- Table: public.rooms
+
+-- DROP TABLE IF EXISTS public.rooms;
+
+CREATE TABLE IF NOT EXISTS public.rooms
+(
+    id integer NOT NULL DEFAULT nextval('rooms_id_seq'::regclass),
+    floor_id integer,
+    word_id integer,
+    room_number integer NOT NULL,
+    name text COLLATE pg_catalog."default" NOT NULL,
+    description text COLLATE pg_catalog."default",
+    silk_cost integer DEFAULT 50,
+    silk_reward integer DEFAULT 25,
+    is_boss_room boolean DEFAULT false,
+    created_at timestamp with time zone DEFAULT now(),
+    CONSTRAINT rooms_pkey PRIMARY KEY (id),
+    CONSTRAINT rooms_floor_id_room_number_key UNIQUE (floor_id, room_number),
+    CONSTRAINT rooms_floor_id_fkey FOREIGN KEY (floor_id)
+        REFERENCES public.floors (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE,
+    CONSTRAINT rooms_word_id_fkey FOREIGN KEY (word_id)
+        REFERENCES public.vocab_entries (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.rooms
+    OWNER to postgres;
+-- Index: idx_rooms_floor_id
+
+-- DROP INDEX IF EXISTS public.idx_rooms_floor_id;
+
+CREATE INDEX IF NOT EXISTS idx_rooms_floor_id
+    ON public.rooms USING btree
+    (floor_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+-- Index: idx_rooms_word_id
+
+-- DROP INDEX IF EXISTS public.idx_rooms_word_id;
+
+CREATE INDEX IF NOT EXISTS idx_rooms_word_id
+    ON public.rooms USING btree
+    (word_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+
+
+-- Table: public.story_comprehension_questions
+
+-- DROP TABLE IF EXISTS public.story_comprehension_questions;
+
+CREATE TABLE IF NOT EXISTS public.story_comprehension_questions
+(
+    id integer NOT NULL DEFAULT nextval('story_comprehension_questions_id_seq'::regclass),
+    word_id integer NOT NULL,
+    century character varying(10) COLLATE pg_catalog."default" NOT NULL,
+    question text COLLATE pg_catalog."default" NOT NULL,
+    options jsonb NOT NULL,
+    correct_answer character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    explanation text COLLATE pg_catalog."default" NOT NULL,
+    created_at timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
+    updated_at timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT story_comprehension_questions_pkey PRIMARY KEY (id),
+    CONSTRAINT story_comprehension_questions_word_id_century_key UNIQUE (word_id, century),
+    CONSTRAINT story_comprehension_questions_word_id_fkey FOREIGN KEY (word_id)
+        REFERENCES public.vocab_entries (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.story_comprehension_questions
+    OWNER to postgres;
+-- Index: idx_story_comprehension_word_id
+
+-- DROP INDEX IF EXISTS public.idx_story_comprehension_word_id;
+
+CREATE INDEX IF NOT EXISTS idx_story_comprehension_word_id
+    ON public.story_comprehension_questions USING btree
+    (word_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+
+
+-- Table: public.user_floor_boss_attempts
+
+-- DROP TABLE IF EXISTS public.user_floor_boss_attempts;
+
+CREATE TABLE IF NOT EXISTS public.user_floor_boss_attempts
+(
+    id integer NOT NULL DEFAULT nextval('user_floor_boss_attempts_id_seq'::regclass),
+    user_id integer,
+    floor_id integer,
+    scenarios_presented jsonb,
+    user_responses jsonb,
+    correct_count integer DEFAULT 0,
+    total_scenarios integer DEFAULT 0,
+    success boolean DEFAULT false,
+    silk_earned integer DEFAULT 0,
+    attempted_at timestamp with time zone DEFAULT now(),
+    completed_at timestamp with time zone,
+    CONSTRAINT user_floor_boss_attempts_pkey PRIMARY KEY (id),
+    CONSTRAINT user_floor_boss_attempts_floor_id_fkey FOREIGN KEY (floor_id)
+        REFERENCES public.floors (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE,
+    CONSTRAINT user_floor_boss_attempts_user_id_fkey FOREIGN KEY (user_id)
+        REFERENCES public.users (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.user_floor_boss_attempts
+    OWNER to postgres;
+-- Index: idx_user_floor_boss_attempts_floor_id
+
+-- DROP INDEX IF EXISTS public.idx_user_floor_boss_attempts_floor_id;
+
+CREATE INDEX IF NOT EXISTS idx_user_floor_boss_attempts_floor_id
+    ON public.user_floor_boss_attempts USING btree
+    (floor_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+-- Index: idx_user_floor_boss_attempts_user_id
+
+-- DROP INDEX IF EXISTS public.idx_user_floor_boss_attempts_user_id;
+
+CREATE INDEX IF NOT EXISTS idx_user_floor_boss_attempts_user_id
+    ON public.user_floor_boss_attempts USING btree
+    (user_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+
+
+-- Table: public.user_map_progress
+
+-- DROP TABLE IF EXISTS public.user_map_progress;
+
+CREATE TABLE IF NOT EXISTS public.user_map_progress
+(
+    id integer NOT NULL DEFAULT nextval('user_map_progress_id_seq'::regclass),
+    user_id integer,
+    map_id integer,
+    current_floor integer DEFAULT 1,
+    current_room integer DEFAULT 1,
+    floors_completed integer DEFAULT 0,
+    total_silk_spent integer DEFAULT 0,
+    total_silk_earned integer DEFAULT 0,
+    created_at timestamp with time zone DEFAULT now(),
+    updated_at timestamp with time zone DEFAULT now(),
+    CONSTRAINT user_map_progress_pkey PRIMARY KEY (id),
+    CONSTRAINT user_map_progress_user_id_map_id_key UNIQUE (user_id, map_id),
+    CONSTRAINT user_map_progress_map_id_fkey FOREIGN KEY (map_id)
+        REFERENCES public.maps (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE,
+    CONSTRAINT user_map_progress_user_id_fkey FOREIGN KEY (user_id)
+        REFERENCES public.users (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.user_map_progress
+    OWNER to postgres;
+-- Index: idx_user_map_progress_user_id
+
+-- DROP INDEX IF EXISTS public.idx_user_map_progress_user_id;
+
+CREATE INDEX IF NOT EXISTS idx_user_map_progress_user_id
+    ON public.user_map_progress USING btree
+    (user_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+
+
+-- Table: public.user_room_unlocks
+
+-- DROP TABLE IF EXISTS public.user_room_unlocks;
+
+CREATE TABLE IF NOT EXISTS public.user_room_unlocks
+(
+    id integer NOT NULL DEFAULT nextval('user_room_unlocks_id_seq'::regclass),
+    user_id integer,
+    room_id integer,
+    unlocked_at timestamp with time zone DEFAULT now(),
+    silk_spent integer DEFAULT 0,
+    silk_earned integer DEFAULT 0,
+    completed_at timestamp with time zone,
+    CONSTRAINT user_room_unlocks_pkey PRIMARY KEY (id),
+    CONSTRAINT user_room_unlocks_user_id_room_id_key UNIQUE (user_id, room_id),
+    CONSTRAINT user_room_unlocks_room_id_fkey FOREIGN KEY (room_id)
+        REFERENCES public.rooms (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE,
+    CONSTRAINT user_room_unlocks_user_id_fkey FOREIGN KEY (user_id)
+        REFERENCES public.users (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.user_room_unlocks
+    OWNER to postgres;
+-- Index: idx_user_room_unlocks_room_id
+
+-- DROP INDEX IF EXISTS public.idx_user_room_unlocks_room_id;
+
+CREATE INDEX IF NOT EXISTS idx_user_room_unlocks_room_id
+    ON public.user_room_unlocks USING btree
+    (room_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+-- Index: idx_user_room_unlocks_user_id
+
+-- DROP INDEX IF EXISTS public.idx_user_room_unlocks_user_id;
+
+CREATE INDEX IF NOT EXISTS idx_user_room_unlocks_user_id
+    ON public.user_room_unlocks USING btree
+    (user_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+
+
+-- Table: public.user_story_study_attempts
+
+-- DROP TABLE IF EXISTS public.user_story_study_attempts;
+
+CREATE TABLE IF NOT EXISTS public.user_story_study_attempts
+(
+    id integer NOT NULL DEFAULT nextval('user_story_study_attempts_id_seq'::regclass),
+    user_id integer NOT NULL,
+    word_id integer NOT NULL,
+    question_id integer NOT NULL,
+    user_answer character varying(255) COLLATE pg_catalog."default" NOT NULL,
+    is_correct boolean NOT NULL,
+    attempted_at timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT user_story_study_attempts_pkey PRIMARY KEY (id),
+    CONSTRAINT user_story_study_attempts_question_id_fkey FOREIGN KEY (question_id)
+        REFERENCES public.story_comprehension_questions (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE,
+    CONSTRAINT user_story_study_attempts_user_id_fkey FOREIGN KEY (user_id)
+        REFERENCES public.users (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE,
+    CONSTRAINT user_story_study_attempts_word_id_fkey FOREIGN KEY (word_id)
+        REFERENCES public.vocab_entries (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.user_story_study_attempts
+    OWNER to postgres;
+-- Index: idx_user_story_study_attempts_user_id
+
+-- DROP INDEX IF EXISTS public.idx_user_story_study_attempts_user_id;
+
+CREATE INDEX IF NOT EXISTS idx_user_story_study_attempts_user_id
+    ON public.user_story_study_attempts USING btree
+    (user_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+-- Index: idx_user_story_study_attempts_word_id
+
+-- DROP INDEX IF EXISTS public.idx_user_story_study_attempts_word_id;
+
+CREATE INDEX IF NOT EXISTS idx_user_story_study_attempts_word_id
+    ON public.user_story_study_attempts USING btree
+    (word_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+
+
+-- Table: public.user_story_study_progress
+
+-- DROP TABLE IF EXISTS public.user_story_study_progress;
+
+CREATE TABLE IF NOT EXISTS public.user_story_study_progress
+(
+    id integer NOT NULL DEFAULT nextval('user_story_study_progress_id_seq'::regclass),
+    user_id integer NOT NULL,
+    word_id integer NOT NULL,
+    story_completed boolean DEFAULT false,
+    first_completion_at timestamp with time zone,
+    last_studied_at timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
+    times_studied integer DEFAULT 0,
+    total_silk_earned integer DEFAULT 0,
+    created_at timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
+    updated_at timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT user_story_study_progress_pkey PRIMARY KEY (id),
+    CONSTRAINT user_story_study_progress_user_id_word_id_key UNIQUE (user_id, word_id),
+    CONSTRAINT user_story_study_progress_user_id_fkey FOREIGN KEY (user_id)
+        REFERENCES public.users (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE,
+    CONSTRAINT user_story_study_progress_word_id_fkey FOREIGN KEY (word_id)
+        REFERENCES public.vocab_entries (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.user_story_study_progress
+    OWNER to postgres;
+-- Index: idx_user_story_study_progress_user_id
+
+-- DROP INDEX IF EXISTS public.idx_user_story_study_progress_user_id;
+
+CREATE INDEX IF NOT EXISTS idx_user_story_study_progress_user_id
+    ON public.user_story_study_progress USING btree
+    (user_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+-- Index: idx_user_story_study_progress_word_id
+
+-- DROP INDEX IF EXISTS public.idx_user_story_study_progress_word_id;
+
+CREATE INDEX IF NOT EXISTS idx_user_story_study_progress_word_id
+    ON public.user_story_study_progress USING btree
+    (word_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+
+
+-- Table: public.user_word_definitions
+
+-- DROP TABLE IF EXISTS public.user_word_definitions;
+
+CREATE TABLE IF NOT EXISTS public.user_word_definitions
+(
+    id integer NOT NULL DEFAULT nextval('user_word_definitions_id_seq'::regclass),
+    user_id integer NOT NULL,
+    word_id integer NOT NULL,
+    initial_definition text COLLATE pg_catalog."default" NOT NULL,
+    created_at timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
+    updated_at timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT user_word_definitions_pkey PRIMARY KEY (id),
+    CONSTRAINT user_word_definitions_user_id_word_id_key UNIQUE (user_id, word_id),
+    CONSTRAINT user_word_definitions_user_id_fkey FOREIGN KEY (user_id)
+        REFERENCES public.users (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE,
+    CONSTRAINT user_word_definitions_word_id_fkey FOREIGN KEY (word_id)
+        REFERENCES public.vocab_entries (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE CASCADE
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.user_word_definitions
+    OWNER to postgres;
+-- Index: idx_user_word_definitions_user_id
+
+-- DROP INDEX IF EXISTS public.idx_user_word_definitions_user_id;
+
+CREATE INDEX IF NOT EXISTS idx_user_word_definitions_user_id
+    ON public.user_word_definitions USING btree
+    (user_id ASC NULLS LAST)
+    TABLESPACE pg_default;
+-- Index: idx_user_word_definitions_word_id
+
+-- DROP INDEX IF EXISTS public.idx_user_word_definitions_word_id;
+
+CREATE INDEX IF NOT EXISTS idx_user_word_definitions_word_id
+    ON public.user_word_definitions USING btree
+    (word_id ASC NULLS LAST)
+    TABLESPACE pg_default;
