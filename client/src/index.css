@@ -44,7 +44,7 @@ body {
 #root {
   min-height: 100vh;
   position: relative;
-  padding: 2rem;
+  padding: 0;
 }
 
 /* Silk thread pattern overlay - more ornate and visible */

@@ -1,7 +1,7 @@
 
 // client/vite.config.js
 export default {
-    base: '/',
+    base: '/silktongue/',
     server: {
       proxy: {
         '/api': 'http://localhost:3000',

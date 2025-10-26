@@ -1,12 +1,12 @@
 #!/bin/bash
 # Quick script to import week 2 story comprehension questions
-cd /var/www/maxvocab/server
+cd /Users/matthewsmith/Desktop/MaxVocab
 
 node << 'JS'
 import fs from 'fs';
-import { pool } from './src/db/index.js';
+import { pool } from './server/src/db/index.js';
 
-const data = JSON.parse(fs.readFileSync('../story_comprehension_questions_2025.10.25.json', 'utf8'));
+const data = JSON.parse(fs.readFileSync('story_comprehension_questions_2025.10.25.json', 'utf8'));
 
 console.log(`Found ${data.length} items to process\n`);
 
@@ -76,4 +76,3 @@ await pool.end();
 JS
 
 echo "Done!"
-

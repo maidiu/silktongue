@@ -1,0 +1,16 @@
+Run these commands on your VPS:
+
+1. SSH to server:
+   ssh root@142.171.47.157
+
+2. Navigate to directory:
+   cd /var/www/maxvocab
+
+3. Restore the database:
+   sudo -u postgres pg_restore -d vocab_atlas --clean --if-exists vocab_atlas.dump
+
+4. Restart the app:
+   pm2 restart maxvocab
+
+This will completely replace the VPS database with your local working database.
+
