@@ -19,8 +19,10 @@ export default function Header({ onSearch }: HeaderProps) {
   const [showAvatarCustomizer, setShowAvatarCustomizer] = useState(false);
   
   // Determine which section we're on
-  const isOnMaps = location.pathname === '/' || location.pathname === '/maps';
-  const isOnHome = location.pathname === '/home';
+  // location.pathname already accounts for basename in React Router
+  const pathname = location.pathname;
+  const isOnMaps = pathname === '/' || pathname === '/maps';
+  const isOnHome = pathname === '/home';
 
   return (
     <>
