@@ -27,22 +27,22 @@ export default function HomePage() {
 
   return (
     <Layout onSearch={handleSearch}>
-      <div className="space-y-8">
+      <div className="space-y-4 sm:space-y-6 lg:space-y-8">
         {/* Header Section */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 py-12 border-b-2 border-white/15 relative">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 sm:gap-6 py-6 sm:py-8 lg:py-12 border-b-2 border-white/15 relative">
           {/* Ornate header decorations */}
           <div className="absolute -bottom-1 left-0 w-24 h-0.5 bg-white/20"></div>
           <div className="absolute -bottom-1 right-0 w-24 h-0.5 bg-white/20"></div>
           <div className="absolute -bottom-0.5 left-1/2 transform -translate-x-1/2 w-16 h-0.5 bg-white/10"></div>
           
           <div className="relative">
-            <h2 className="text-5xl font-display font-bold text-white tracking-wider mb-3 relative">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white tracking-wider mb-2 sm:mb-3 relative">
               VOCABULARY
               {/* Decorative underline */}
               <div className="absolute -bottom-2 left-0 w-full h-0.5 bg-white/20"></div>
               <div className="absolute -bottom-1 left-1/4 w-1/2 h-0.5 bg-white/10"></div>
             </h2>
-            <p className="text-gray-400 text-sm uppercase tracking-widest ml-2">
+            <p className="text-gray-400 text-xs sm:text-sm uppercase tracking-widest ml-2">
               {completeWords.length} {completeWords.length === 1 ? 'Entry' : 'Entries'}
             </p>
           </div>
