@@ -40,8 +40,8 @@ export default function Header({ onSearch }: HeaderProps) {
             </Link>
           </div>
           
-          {/* Right: Avatar above dropdown */}
-          <div className="relative flex flex-col items-end">
+          {/* Right: Avatar, button, stats, and dropdown */}
+          <div className="relative flex flex-col items-end gap-1">
             {/* Avatar */}
             <div className="mb-1">
               <AvatarDisplay config={user?.avatarConfig} size={32} />
@@ -56,13 +56,17 @@ export default function Header({ onSearch }: HeaderProps) {
               <span className="text-xs">▼</span>
             </button>
             
-            {/* Menu Dropdown (overlays below) */}
+            {/* Silk and Hearts - always visible below button */}
+            <div className="flex flex-col items-end text-xs gap-0.5">
+              <div className="text-yellow-400">💎 Silk: {user?.silkBalance || 0}</div>
+              <div className="text-red-500">{"❤️".repeat(user?.healthPoints || 0)} {user?.healthPoints || 0}/{user?.maxHealthPoints || 3}</div>
+            </div>
+            
+            {/* Menu Dropdown (overlays over stats when open) */}
             {showUserMenu && (
-              <div className="absolute right-0 top-full mt-2 w-64 bg-gray-800 border border-gray-700 rounded-lg shadow-xl z-[100]">
+              <div className="absolute right-0 top-[80px] w-64 bg-gray-800 border border-gray-700 rounded-lg shadow-xl z-[100]">
                 <div className="p-3 border-b border-gray-700">
                   <div className="text-white text-sm font-medium">{user?.username}</div>
-                  <div className="text-yellow-400 text-xs mt-1">💎 Silk: {user?.silkBalance || 0}</div>
-                  <div className="text-red-500 text-xs mt-1">{"❤️".repeat(user?.healthPoints || 0)} {user?.healthPoints || 0}/{user?.maxHealthPoints || 3}</div>
                 </div>
                 <div className="py-2">
                   <Link
