@@ -44,7 +44,7 @@ async function exportTowerData() {
         const isBoss = idx === floorWords.length - 1;
         sqlCommands.push(`INSERT INTO rooms (floor_id, room_number, word_id, name, description, silk_cost, silk_reward, is_boss_room, created_at)`);
         sqlCommands.push(`SELECT (SELECT id FROM floors WHERE map_id = 1 AND floor_number = ${floorNum}), ${idx + 1}, ${word.id}, 'The Room of ${word.word}', 'Master ${word.word} and unlock its power.', ${40 + (idx * 10) + (floorNum * 20)}, ${30 + (idx * 5) + (floorNum * 10)}, ${isBoss}, NOW()`);
-        sqlCommands.push(`ON CONFLICT (floor_id, room_number) DO NOTHING;`);
+        sqlCommands.push(`ON CONFLICT (floor_id, room_number) DO UPDATE SET word_id = EXCLUDED.word_id, name = EXCLUDED.name, description = EXCLUDED.description, silk_cost = EXCLUDED.silk_cost, silk_reward = EXCLUDED.silk_reward, is_boss_room = EXCLUDED.is_boss_room;`);
       });
       
       sqlCommands.push('');

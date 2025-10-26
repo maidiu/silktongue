@@ -53,7 +53,7 @@ async function exportAllVocab() {
       ];
       
       sqlCommands.push(`INSERT INTO vocab_entries (id, word, part_of_speech, modern_definition, usage_example, synonyms, antonyms, collocations, french_equivalent, russian_equivalent, cefr_level, pronunciation, is_mastered, learning_status, date_added, story_text, contrastive_opening, structural_analysis) VALUES`);
-      sqlCommands.push(`(${vals.map(v => v === null ? 'NULL' : v).join(', ')}) ON CONFLICT (id) DO NOTHING;`);
+      sqlCommands.push(`(${vals.map(v => v === null ? 'NULL' : v).join(', ')}) ON CONFLICT (id) DO UPDATE SET word = EXCLUDED.word, part_of_speech = EXCLUDED.part_of_speech, modern_definition = EXCLUDED.modern_definition, usage_example = EXCLUDED.usage_example, synonyms = EXCLUDED.synonyms, antonyms = EXCLUDED.antonyms, collocations = EXCLUDED.collocations, french_equivalent = EXCLUDED.french_equivalent, russian_equivalent = EXCLUDED.russian_equivalent, cefr_level = EXCLUDED.cefr_level, pronunciation = EXCLUDED.pronunciation, is_mastered = EXCLUDED.is_mastered, learning_status = EXCLUDED.learning_status, date_added = EXCLUDED.date_added, story_text = EXCLUDED.story_text, contrastive_opening = EXCLUDED.contrastive_opening, structural_analysis = EXCLUDED.structural_analysis;`);
       sqlCommands.push(``);
     }
     
@@ -77,7 +77,7 @@ async function exportAllVocab() {
       const vars = quiz.variant_data ? JSON.stringify(quiz.variant_data).replace(/'/g, "''") : 'NULL';
       
       quizSql.push(`INSERT INTO quiz_materials (word_id, level, question_type, prompt, options, correct_answer, variant_data, reward_amount, created_at, updated_at) VALUES`);
-      quizSql.push(`(${quiz.word_id}, ${quiz.level}, '${quiz.question_type}', '${quiz.prompt.replace(/'/g, "''")}', '${opts}'::jsonb, '${quiz.correct_answer}', '${vars}'::jsonb, ${quiz.reward_amount}, '${quiz.created_at}', '${quiz.updated_at}') ON CONFLICT (word_id, level) DO NOTHING;`);
+      quizSql.push(`(${quiz.word_id}, ${quiz.level}, '${quiz.question_type}', '${quiz.prompt.replace(/'/g, "''")}', '${opts}'::jsonb, '${quiz.correct_answer}', '${vars}'::jsonb, ${quiz.reward_amount}, '${quiz.created_at}', '${quiz.updated_at}') ON CONFLICT (word_id, level) DO UPDATE SET question_type = EXCLUDED.question_type, prompt = EXCLUDED.prompt, options = EXCLUDED.options, correct_answer = EXCLUDED.correct_answer, variant_data = EXCLUDED.variant_data, reward_amount = EXCLUDED.reward_amount, updated_at = EXCLUDED.updated_at;`);
     }
     
     const quizFile = 'quiz_data_export.sql';
@@ -96,7 +96,7 @@ async function exportAllVocab() {
     for (const story of storyRows) {
       const opts = JSON.stringify(story.options).replace(/'/g, "''");
       storySql.push(`INSERT INTO story_comprehension_questions (word_id, century, question, options, correct_answer, explanation, created_at, updated_at) VALUES`);
-      storySql.push(`(${story.word_id}, '${story.century}', '${story.question.replace(/'/g, "''")}', '${opts}'::jsonb, '${story.correct_answer}', '${story.explanation.replace(/'/g, "''")}', '${story.created_at}', '${story.updated_at}') ON CONFLICT (word_id, century) DO NOTHING;`);
+      storySql.push(`(${story.word_id}, '${story.century}', '${story.question.replace(/'/g, "''")}', '${opts}'::jsonb, '${story.correct_answer}', '${story.explanation.replace(/'/g, "''")}', '${story.created_at}', '${story.updated_at}') ON CONFLICT (word_id, century) DO UPDATE SET question = EXCLUDED.question, options = EXCLUDED.options, correct_answer = EXCLUDED.correct_answer, explanation = EXCLUDED.explanation, updated_at = EXCLUDED.updated_at;`);
     }
     
     const storyFile = 'story_data_export.sql';
