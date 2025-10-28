@@ -347,10 +347,10 @@
         "15th c."
       ],
       "settings": [
-        "Setting 1th c.",
-        "Setting 16th c.",
-        "Setting 18th c.",
-        "Setting 20th c.",
+        "Ancient Rome",
+        "Renaissance Humanism",
+        "Enlightenment",
+        "Modern Education",
         "False Setting 1",
         "False Setting 2",
         "False Setting 3"
@@ -937,10 +937,10 @@
         "15th c."
       ],
       "settings": [
-        "Setting 1th c.",
-        "Setting 17th c.",
-        "Setting 19th c.",
-        "Setting 20th c.",
+        "Rome",
+        "Enlightenment",
+        "Victorian England",
+        "Modern Media",
         "False Setting 1",
         "False Setting 2",
         "False Setting 3"
@@ -1526,10 +1526,10 @@
         "15th c."
       ],
       "settings": [
-        "Setting 17th c.",
-        "Setting 19th c.",
-        "Setting 20th c.",
-        "Setting 21th c.",
+        "Theological Scholasticism",
+        "Scientific Age",
+        "Mass Media Era",
+        "Digital Age",
         "False Setting 1",
         "False Setting 2",
         "False Setting 3"
