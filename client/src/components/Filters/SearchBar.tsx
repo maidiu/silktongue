@@ -67,7 +67,7 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
   };
 
   return (
-    <div ref={searchRef} className="relative max-w-md">
+    <div ref={searchRef} className="relative max-w-md" style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
       <form onSubmit={handleSubmit}>
         <div className="relative">
           <input
@@ -75,7 +75,7 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search..."
-            className="w-full px-4 py-3 bg-black/40 border-2 border-white/10 text-white placeholder-gray-500 focus:border-white/30 transition-all duration-200 outline-none backdrop-blur-sm uppercase tracking-widest text-sm"
+            className="w-full px-4 py-3 bg-black/40 border-2 border-white/10 text-white placeholder-gray-500 focus:border-white/30 transition-all duration-200 outline-none backdrop-blur-sm uppercase tracking-widest text-sm" style={{width: '200px'}}
           />
         </div>
       </form>

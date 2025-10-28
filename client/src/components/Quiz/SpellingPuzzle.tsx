@@ -58,7 +58,7 @@ export default function SpellingPuzzle({ word, onSuccess }: SpellingPuzzleProps)
       <div className="flex flex-col items-center mt-8">
         <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
           <SortableContext items={items} strategy={horizontalListSortingStrategy}>
-            <div className="flex gap-3 flex-wrap justify-center">
+            <div className="flex gap-3 flex-wrap justify-center" style={{fontSize: '24px'}}>
               {items.map((id, i) => (
                 <motion.div
                   key={`${id}-${i}`}

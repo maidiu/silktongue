@@ -34,11 +34,12 @@ router.get('/scoreboard', async (req, res) => {
         u.words_learned,
         u.words_mastered,
         u.total_silk_earned,
+        u.avatar_config,
         COUNT(DISTINCT CASE WHEN up.completed_at IS NOT NULL THEN up.word_id END) as quizzes_completed
       FROM users u
       LEFT JOIN user_quiz_progress up ON u.id = up.user_id
       WHERE u.username IS NOT NULL
-      GROUP BY u.id, u.username, u.silk_balance, u.words_learned, u.words_mastered, u.total_silk_earned
+      GROUP BY u.id, u.username, u.silk_balance, u.words_learned, u.words_mastered, u.total_silk_earned, u.avatar_config
       ORDER BY u.total_silk_earned DESC, u.words_mastered DESC, u.words_learned DESC
       LIMIT 10
     `;
@@ -52,11 +53,12 @@ router.get('/scoreboard', async (req, res) => {
 });
 
 // GET /api/vocab/beast-mode-status/:wordId - Check beast mode status for a word
-router.get('/beast-mode-status/:wordId', async (req, res) => {
+router.get('/beast-mode-status/:wordId', authenticateToken, async (req, res) => {
   try {
     const { wordId } = req.params;
+    const userId = req.user.userId;
     
-    // Check if user has completed Level 5 for this word
+    // Check if THIS user has completed Level 5 for this word
     const query = `
       SELECT 
         up.completed_at,
@@ -68,10 +70,10 @@ router.get('/beast-mode-status/:wordId', async (req, res) => {
         END as status
       FROM user_quiz_progress up
       LEFT JOIN beast_mode_cooldowns bmc ON up.user_id = bmc.user_id AND up.word_id = bmc.word_id
-      WHERE up.word_id = $1 AND up.completed_at IS NOT NULL
+      WHERE up.user_id = $1 AND up.word_id = $2 AND up.completed_at IS NOT NULL
     `;
     
-    const { rows } = await pool.query(query, [wordId]);
+    const { rows } = await pool.query(query, [userId, wordId]);
     
     if (rows.length === 0) {
       res.json({ status: 'locked' });
@@ -193,7 +195,7 @@ router.get('/:id', async (req, res) => {
     // Get timeline events (FIXED column names to match schema)
     const timelineQuery = `
       SELECT 
-        id, century, event_text as story_text, sibling_words, context, created_at
+        id, century, event_text, sibling_words, context, created_at
       FROM word_timeline_events
       WHERE vocab_id = $1
       ORDER BY century ASC
@@ -272,7 +274,7 @@ router.get('/:id', async (req, res) => {
     // Format timeline events as story array
     const story = timelineRows.map(event => ({
       century: event.century.toString(),
-      story_text: event.story_text,
+      story_text: event.event_text,
       sibling_words: event.sibling_words || [],
       context: event.context
     }));
@@ -363,6 +365,7 @@ router.post('/:id/definition', authenticateToken, async (req, res) => {
 router.get('/:id/story-questions', authenticateToken, async (req, res) => {
   try {
     const wordId = parseInt(req.params.id);
+    console.log('📚 Fetching story questions for wordId:', wordId);
     
     const query = `
       SELECT 
@@ -374,15 +377,28 @@ router.get('/:id/story-questions', authenticateToken, async (req, res) => {
         scq.explanation
       FROM story_comprehension_questions scq
       WHERE scq.word_id = $1
-      ORDER BY scq.century::int ASC
+      ORDER BY 
+        CASE 
+          WHEN scq.century ~ '^-?[0-9]+$' THEN scq.century::int
+          WHEN scq.century ~ '^[0-9]+-[0-9]+' THEN SPLIT_PART(scq.century, '-', 1)::int
+          ELSE 999
+        END ASC
     `;
     
     const { rows } = await pool.query(query, [wordId]);
     
-    res.json(rows);
+    console.log('✅ Found', rows.length, 'story questions for word', wordId);
+    
+    // Parse JSON options if they're strings
+    const parsedRows = rows.map(row => ({
+      ...row,
+      options: typeof row.options === 'string' ? JSON.parse(row.options) : row.options
+    }));
+    
+    res.json(parsedRows);
   } catch (err) {
-    console.error('Error fetching story questions:', err);
-    res.status(500).json({ error: 'Internal server error' });
+    console.error('❌ Error fetching story questions:', err);
+    res.status(500).json({ error: 'Internal server error', details: err.message });
   }
 });
 
@@ -393,19 +409,26 @@ router.post('/:id/story-answer', authenticateToken, async (req, res) => {
     const wordId = parseInt(req.params.id);
     const { questionId, userAnswer } = req.body;
     
+    console.log('📝 Story answer submission:', { userId, wordId, questionId, userAnswer });
+    
     // Get the correct answer
     const correctQuery = `
-      SELECT correct_answer FROM story_comprehension_questions 
+      SELECT correct_answer, explanation FROM story_comprehension_questions 
       WHERE id = $1 AND word_id = $2
     `;
     const { rows: correctRows } = await pool.query(correctQuery, [questionId, wordId]);
     
+    console.log('✅ Found', correctRows.length, 'rows for question', questionId);
+    
     if (correctRows.length === 0) {
+      console.error('❌ Question not found:', questionId, 'for word', wordId);
       return res.status(404).json({ error: 'Question not found' });
     }
     
     const correctAnswer = correctRows[0].correct_answer;
     const isCorrect = userAnswer.trim().toLowerCase() === correctAnswer.toLowerCase();
+    
+    console.log('🎯 Answer check:', { userAnswer, correctAnswer, isCorrect });
     
     // Record the attempt
     const insertQuery = `
@@ -416,14 +439,16 @@ router.post('/:id/story-answer', authenticateToken, async (req, res) => {
     
     await pool.query(insertQuery, [userId, wordId, questionId, userAnswer, isCorrect]);
     
+    console.log('✅ Attempt recorded');
+    
     res.json({ 
       isCorrect, 
       correctAnswer,
       explanation: correctRows[0].explanation || 'No explanation available'
     });
   } catch (err) {
-    console.error('Error submitting story answer:', err);
-    res.status(500).json({ error: 'Internal server error' });
+    console.error('❌ Error submitting story answer:', err);
+    res.status(500).json({ error: 'Internal server error', details: err.message });
   }
 });
 

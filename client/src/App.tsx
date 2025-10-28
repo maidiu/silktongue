@@ -9,6 +9,7 @@ import AvatarPage from './pages/AvatarPage';
 import MapsPage from './pages/MapsPage';
 import WordExplorationPage from './pages/WordExplorationPage';
 import RoomDetailsPage from './pages/RoomDetailsPage';
+import GuardianPage from './pages/GuardianPage';
 import './App.css';
 
 function AppContent() {
@@ -29,6 +30,7 @@ function AppContent() {
       <Route path="/maps" element={<MapsPage />} />
       <Route path="/word-exploration/:wordId" element={<WordExplorationPage />} />
       <Route path="/room-details/:roomId" element={<RoomDetailsPage />} />
+      <Route path="/guardian/:floor" element={<GuardianPage />} />
     </Routes>
   );
 }

@@ -1,24 +1,32 @@
 import express from 'express';
 import { pool } from '../db/index.js';
+import { authenticateToken } from './auth.js';
 
 const router = express.Router();
 
 // GET /api/explore - Filter by century and/or tags
-router.get('/', async (req, res) => {
+router.get('/', authenticateToken, async (req, res) => {
   try {
     const { century, tag } = req.query;
+    const userId = req.user.userId;
     
     let query = `
       SELECT DISTINCT 
         ve.id, ve.word, ve.part_of_speech, ve.modern_definition, 
-        ve.usage_example, ve.is_mastered, ve.date_added
+        ve.usage_example, 
+        CASE 
+          WHEN uqp.completed_at IS NOT NULL THEN true 
+          ELSE false 
+        END as is_mastered,
+        ve.date_added
       FROM vocab_entries ve
       JOIN word_timeline_events wte ON ve.id = wte.vocab_id
+      LEFT JOIN user_quiz_progress uqp ON ve.id = uqp.word_id AND uqp.user_id = $1
     `;
     
     const conditions = [];
-    const params = [];
-    let paramCount = 1;
+    const params = [userId];
+    let paramCount = 2;
     
     if (century) {
       conditions.push(`wte.century = $${paramCount}`);

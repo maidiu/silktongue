@@ -336,45 +336,61 @@
       "most salient — intensifier for central importance (journalism, commentary)"
     ],
   
-    "story_intro": "Salient is the leap made visible—the instant something crosses from hidden to seen. He’s the flash in the mind, the outcrop on the plain. He doesn’t whisper for attention; he springs toward it. Wherever meaning wants to be found, Salient has already taken a step forward.",
-  
+    "story_intro": "Salient is the leap made visible—the moment motion becomes meaning. He began as the body’s spring, reemerged in the medieval wall’s projection, and flickered through thought until the age of code taught machines to notice him. Wherever something insists on being seen—whether by eye, mind, or algorithm—Salient is that instant of emergence.",
+
     "story": [
-      {
-        "century": "1",
-        "story_text": "In Rome, he was *saliēns*—'leaping, springing forth.' The poets used him for fountains, fish, the pulse of joy. To leap was to live: the verb *salīre* carried vitality itself. Salient began as motion, not metaphor.",
-        "sibling_words": ["salire", "resilire", "assilire"],
-        "context": "Roman poetic and descriptive vocabulary where leaping marked life and vigor.",
-        "causal_tags": ["physical_metaphor", "lexical_origin"]
-      },
-      {
-        "century": "16",
-        "story_text": "By the Renaissance, *saillant* in French meant 'jutting out'—a wall that leaned toward the world, a bastion pointing at the horizon. English borrowed him as an engineer’s and soldier’s term: the salient angle of a fortress, the place that struck first and was struck hardest.",
-        "sibling_words": ["assaillant", "ressortissant"],
-        "context": "Military and architectural vocabulary linking geometry with aggression and defense.",
-        "causal_tags": ["technological_extension", "language_transition"]
-      },
-      {
-        "century": "17",
-        "story_text": "Then the leap turned inward. Philosophers and rhetoricians called an idea 'salient' when it sprang to the mind. The fortification became a thought: something projecting beyond the rest. To leap became to signify.",
-        "sibling_words": ["conspicuous", "prominent"],
-        "context": "Early modern intellectual and rhetorical writing emphasizing clarity and distinction.",
-        "causal_tags": ["metaphoric_extension", "semantic_abstraction"]
-      },
-      {
-        "century": "19",
-        "story_text": "By the modern age, Salient had settled into analysis and argument. He no longer moved; he marked. To be salient was to stand out by design, not by motion. Yet in every use, his ancient spring survives—the mind’s leap made permanent in language.",
-        "sibling_words": [],
-        "context": "Scientific, analytic, and journalistic use of 'salient' for central data or defining traits.",
-        "causal_tags": ["semantic_stabilization", "discursive_specialization"]
-      }
-    ],
+  {
+    "century": "1",
+    "story_text": "In Rome, he was *saliēns* — 'leaping, springing forth.' Poets used him for fountains, fish, and joy itself. To leap was to live: *salīre* carried vitality, not metaphor. Salient began as motion embodied.",
+    "sibling_words": ["salire", "resilire", "assilire"],
+    "context": "Classical Latin where physical motion marked life and vigor.",
+    "causal_tags": ["physical_metaphor", "lexical_origin"]
+  },
+  {
+    "century": "12",
+    "story_text": "In medieval France, *saillir* meant 'to leap, to project,' and *saillant* described what thrust forward — a wall, a knight, a beast on a shield. The word’s leap became visibility itself: what stood out, what risked being struck first.",
+    "sibling_words": ["saillir", "saillant"],
+    "context": "Old French military, architectural, and heraldic vocabulary connecting motion with exposure and valor.",
+    "causal_tags": ["language_transition", "spatial_projection"]
+  },
+  {
+    "century": "16",
+    "story_text": "Renaissance English borrowed *salient* from French and Latin. Engineers and philosophers alike used it for what jutted out — a bastion, a point, an argument. The physical term turned symbolic: to project was to assert.",
+    "sibling_words": ["assaillant", "ressortissant"],
+    "context": "Renaissance engineering, rhetoric, and translation of Latin and French texts into English.",
+    "causal_tags": ["technological_extension", "semantic_transfer"]
+  },
+  {
+    "century": "17",
+    "story_text": "By early modernity, the leap turned inward. Thinkers called an idea 'salient' when it sprang to the mind — prominence became cognition. The fortress became the mind’s topography.",
+    "sibling_words": ["conspicuous", "prominent"],
+    "context": "Philosophical and rhetorical writing emphasizing clarity and mental distinctness.",
+    "causal_tags": ["metaphoric_extension", "semantic_abstraction"]
+  },
+  {
+    "century": "19",
+    "story_text": "By the industrial and analytic age, Salient had stopped moving; he now marked data, facts, arguments. The leap became fixation — but within it still pulsed the old Latin spring.",
+    "sibling_words": [],
+    "context": "Scientific, analytic, and journalistic uses of 'salient' for central data or defining traits.",
+    "causal_tags": ["semantic_stabilization", "discursive_specialization"]
+  },
+  {
+    "century": "20–21",
+    "story_text": "In the age of cognition and code, Salient entered the mind and the machine alike. Psychologists mapped what the eye notices first; engineers taught algorithms to mimic the leap. Attention itself became measurable—visibility quantified. Yet even here, his essence endures: what springs into awareness, refusing to stay unseen.",
+    "sibling_words": ["attention", "noticeability", "prominence"],
+    "context": "Cognitive psychology, linguistics, computer vision, and media theory treating salience as measurable prominence in perception and information.",
+    "causal_tags": ["scientific_formalization", "algorithmic_extension"]
+  }
+],
   
     "why_the_shifts_happened": [
-      "Physical experience of motion became conceptual language for prominence.",
-      "Architectural and military geometry reinforced the spatial sense of projection.",
-      "Philosophical and rhetorical discourse abstracted it into intellectual distinction.",
-      "Modernity stabilized the metaphor as a neutral term for centrality and importance."
-    ],
+  "Physical motion in Latin provided the root metaphor for emergence and vitality.",
+  "Old French vernaculars reimagined that motion as projection and exposure within martial and architectural space.",
+  "Renaissance borrowing into English extended the spatial metaphor to argument and intellect—projection became assertion.",
+  "Early modern abstraction turned projection into cognitive prominence, transforming movement into salience of thought.",
+  "Modernity stabilized the metaphor as analytical shorthand for what stands out—visibility as data, attention, or value.",
+  "The cognitive and digital ages formalized salience as quantifiable attention: the leap modeled, mapped, and measured by minds and machines alike."
+],
   
     "common_phrases": [
       "salient point — the idea that leaps to mind.",
@@ -383,8 +399,8 @@
       "most salient — the peak of prominence."
     ],
   
-    "structural_analysis": "‘Salient’ traces the conversion of motion into meaning. Born in the leap of bodies and fountains, it became the figure for prominence in thought—a standing reminder that every idea once sprang from life’s movement.",
-  
+    "structural_analysis": "‘Salient’ tracks the metamorphosis of motion into visibility and, finally, into computation. Born in the Latin leap of living things, reborn in the French bastion’s projection, and abstracted in English thought, he has become the index of attention itself. Each era tamed his energy—poetic, martial, cognitive, digital—but the same ancient spring drives them all: what rises cannot help but be seen.",
+
     "cefr_level": "C1",
     "frequency_band": 6500,
     "date_added": "2025-10-18"

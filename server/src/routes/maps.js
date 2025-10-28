@@ -36,6 +36,24 @@ router.get('/:mapId', authenticateToken, async (req, res) => {
     
     const map = mapRows[0];
     
+    // ============================================================================
+    // HARD-CODED: First room (impede) is ALWAYS unlocked for ALL users, forever
+    // This runs every time the map loads, ensuring impede is always accessible
+    // ============================================================================
+    await pool.query(`
+      INSERT INTO user_room_unlocks (user_id, room_id, silk_spent)
+      SELECT $1, r.id, 0
+      FROM rooms r
+      JOIN floors f ON r.floor_id = f.id
+      WHERE f.map_id = $2 
+        AND f.floor_number = 1 
+        AND r.room_number = 1
+        AND NOT EXISTS (
+          SELECT 1 FROM user_room_unlocks 
+          WHERE user_id = $1 AND room_id = r.id
+        )
+    `, [userId, mapId]);
+    
     // Get floors with rooms
     const { rows: floors } = await pool.query(`
       SELECT 
@@ -394,6 +412,53 @@ router.post('/:mapId/floors/:floorId/boss/complete', authenticateToken, async (r
   } catch (error) {
     console.error('Error completing floor boss challenge:', error);
     res.status(500).json({ error: 'Failed to complete floor boss challenge' });
+  }
+});
+
+// Complete guardian challenge and unlock next floor
+router.post('/unlock-next-floor', authenticateToken, async (req, res) => {
+  try {
+    const { currentFloor } = req.body;
+    const userId = req.user.userId;
+    
+    console.log('🔓 Unlock next floor request:', { currentFloor, userId });
+    
+    // Find the next floor
+    const { rows: nextFloorRows } = await pool.query(`
+      SELECT f.* FROM floors f
+      WHERE f.floor_number = $1
+      LIMIT 1
+    `, [currentFloor + 1]);
+    
+    if (nextFloorRows.length === 0) {
+      return res.status(404).json({ error: 'Next floor not found' });
+    }
+    
+    const nextFloor = nextFloorRows[0];
+    console.log('✓ Found next floor:', nextFloor.name);
+    
+    // Update user progress to next floor
+    await pool.query(`
+      INSERT INTO user_map_progress (user_id, map_id, current_floor)
+      VALUES ($1, $2, $3)
+      ON CONFLICT (user_id, map_id)
+      DO UPDATE SET current_floor = $3, updated_at = NOW()
+    `, [userId, nextFloor.map_id, currentFloor + 1]);
+    
+    console.log('✅ User progress updated to floor', currentFloor + 1);
+    
+    res.json({ 
+      success: true, 
+      message: `Floor ${currentFloor + 1} unlocked!`,
+      nextFloor: {
+        id: nextFloor.id,
+        floor_number: nextFloor.floor_number,
+        name: nextFloor.name
+      }
+    });
+  } catch (error) {
+    console.error('Error unlocking next floor:', error);
+    res.status(500).json({ error: 'Failed to unlock next floor' });
   }
 });
 

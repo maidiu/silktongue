@@ -1,0 +1,49 @@
+{
+    "floor": 1,
+    "guardian": "The Mason",
+    "intro": "You descend into the foundation vault. A mason leans against the wall, gray with dust. The air smells of lime and rain. When he finally speaks, it sounds less like a greeting than a confession. He talks to the stone more than to you, as if it’s been his only listener for years.",
+    "dialogue": [
+      {
+        "order": 1,
+        "word": "impede",
+        "paragraph": "We thought we could keep building, but the work slowed, like the tower itself had grown weary. Every swing landed heavier than the last, every lift pulled against some quiet resistance. There’s a word for that kind of drag—when motion still happens, but something unseen keeps it from ever quite reaching forward."
+      },
+      {
+        "order": 2,
+        "word": "cohesive",
+        "paragraph": "In those early days the stones met perfectly—edges kissing edges, no space between. Each man trusted the next, each block the one above it. The whole thing held as if by instinct. I’ve been trying to recall that word, when parts join so well they forget they were ever separate."
+      },
+      {
+        "order": 3,
+        "word": "inherent",
+        "paragraph": "Maybe it failed because the flaw was inside us from the start—built into our hands, not the plan. We tried to chisel it out, but it was part of the grain. What do you call it, when the defect belongs to the thing itself?"
+      },
+      {
+        "order": 4,
+        "word": "salient",
+        "paragraph": "Still, it was beautiful once. You could see from the ground where the light caught—the one detail that told the whole design was alive. The word escapes me, that for what stands out, not by choice but by nature."
+      },
+      {
+        "order": 5,
+        "word": "perfunctory",
+        "paragraph": "After the collapse we rebuilt the lower courses—more out of duty than belief. Hammers struck like bells without prayers behind them. There’s a word for that—when the gesture remains but the heart has gone missing."
+      },
+      {
+        "order": 6,
+        "word": "scattershot",
+        "paragraph": "When we tried again, we lost the order. Every man set his own rhythm, flinging stones where they’d land. It wasn’t rage, just exhaustion made aimless. I keep thinking of the word for that—when effort sprays in every direction and nothing lands true."
+      },
+      {
+        "order": 7,
+        "word": "omit",
+        "paragraph": "In the records, my name isn’t there. They skipped me, or maybe I never wrote it. Sometimes I wonder if that absence is earned or just forgotten. What’s the word for what you leave out, on purpose or by accident?"
+      },
+      {
+        "order": 8,
+        "word": "verisimilitude",
+        "paragraph": "Yet even now, when I picture the tower whole, I almost believe it stands somewhere—so real it casts a shadow. There’s a word for that kind of truth, the one that feels real enough to fool the heart."
+      }
+    ],
+    "completion": "As you speak the last of the words, the air changes. The dust hanging between you drifts upward in slow spirals. The Mason’s hand, still resting on the wall, leaves a clean print where the grime falls away. He exhales once, almost a laugh. The crack beside him straightens by a hair’s width. He nods to you—relieved, or maybe ashamed—and steps back into the stone. The stair behind him groans, then opens upward."
+  }
+  

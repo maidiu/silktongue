@@ -21,7 +21,12 @@ export function useExploreData({ century = '', tag = '' }: UseExploreDataParams 
         if (century) params.append('century', century);
         if (tag) params.append('tag', tag);
         
-        const res = await fetch(`/api/explore?${params.toString()}`);
+        const token = localStorage.getItem('token');
+        const res = await fetch(`/api/explore?${params.toString()}`, {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
         if (!res.ok) throw new Error('Failed to fetch vocabulary');
         
         const data = await res.json();

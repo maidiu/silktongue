@@ -1,0 +1,501 @@
+[
+  {
+    "word": "impede",
+    "level": 6,
+    "question_type": "story",
+    "prompt": "Rebuild the full story of 'impede'\u2014beware the three false centuries. Conquer the beast for double silk.",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "14th c.",
+        "16th c.",
+        "19th c.",
+        "8th c.",
+        "12th c.",
+        "18th c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval Christianity",
+        "Renaissance Humanism",
+        "Industrial Age",
+        "Carolingian Empire",
+        "Crusades",
+        "Enlightenment"
+      ],
+      "turns": [
+        "Long ago, in Rome, he was *impedire*\u2014'to shackle the feet.' Built from *in-* ('in, upon') and *pes/pedis* ('foot'), he was born of the body. To impede was to bind, to trap motion itself. Soldiers felt him in their tangled nets; lawyers in their endless petitions. His world was literal: movement stopped by weight or chain.",
+        "When the Empire's dust settled and prayers replaced campaigns, Impede crossed into Old French as *empedier*. He kept his fetters, but their meaning shifted. The soul now had feet. To sin was to stumble; to be virtuous was to walk unchained. In sermons he became the enemy of grace\u2014the snag that kept the spirit from moving freely toward God.",
+        "Then the Renaissance arrived, and with it, motion itself became a metaphor. Discovery, reform, progress\u2014everyone was moving somewhere new. Impede, still dragging his ancient chains, now followed minds instead of bodies. He was no longer evil, just inconvenient: the bureaucrat's delay, the inventor's frustration, the scholar's pause.",
+        "By the industrial age, Impede had lost his shackles but kept his habit. He haunted the gears of systems, not the feet of soldiers. Processes stalled; reforms slowed; traffic stopped. The moral heat was gone\u2014only procedure remained. What began in the body ended in the machine.",
+        "He was adopted by Charlemagne's scribes to describe the weight of imperial decrees\u2014where law became the shackle that bound the realm together. In the courts of the Frankish Empire, he represented the necessary friction that prevented chaos.",
+        "He followed the Crusaders as the enemy of divine progress\u2014the obstacle that stood between faith and fulfillment of holy purpose. Medieval chroniclers used him to describe the temporal barriers that tested the faithful.",
+        "He was reimagined by Enlightenment thinkers as the natural resistance of tradition\u2014the friction that reason must overcome to achieve progress. Philosophers saw in him the necessary tension between old and new."
+      ],
+      "red_herrings": [
+        "He was adopted by Charlemagne's scribes to describe the weight of imperial decrees\u2014where law became the shackle that bound the realm together. In the courts of the Frankish Empire, he represented the necessary friction that prevented chaos.",
+        "He followed the Crusaders as the enemy of divine progress\u2014the obstacle that stood between faith and fulfillment of holy purpose. Medieval chroniclers used him to describe the temporal barriers that tested the faithful.",
+        "He was reimagined by Enlightenment thinkers as the natural resistance of tradition\u2014the friction that reason must overcome to achieve progress. Philosophers saw in him the necessary tension between old and new."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE \u2014 Rome \u2192 Long ago, in Rome, he was *impedire*\u2014'to shackle the feet.' Built from *in-* ('in, upon') and *pes/pedis* ('foot'), he was born of the body. To impede was to bind, to trap motion itself. Soldiers felt him in their tangled nets; lawyers in their endless petitions. His world was literal: movement stopped by weight or chain.",
+      "14th c. \u2014 Medieval Christianity \u2192 When the Empire's dust settled and prayers replaced campaigns, Impede crossed into Old French as *empedier*. He kept his fetters, but their meaning shifted. The soul now had feet. To sin was to stumble; to be virtuous was to walk unchained. In sermons he became the enemy of grace\u2014the snag that kept the spirit from moving freely toward God.",
+      "16th c. \u2014 Renaissance Humanism \u2192 Then the Renaissance arrived, and with it, motion itself became a metaphor. Discovery, reform, progress\u2014everyone was moving somewhere new. Impede, still dragging his ancient chains, now followed minds instead of bodies. He was no longer evil, just inconvenient: the bureaucrat's delay, the inventor's frustration, the scholar's pause.",
+      "19th c. \u2014 Industrial Age \u2192 By the industrial age, Impede had lost his shackles but kept his habit. He haunted the gears of systems, not the feet of soldiers. Processes stalled; reforms slowed; traffic stopped. The moral heat was gone\u2014only procedure remained. What began in the body ended in the machine."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "hard_mode_penalty": {
+        "health_loss_on_fail": 2,
+        "reward_multiplier_on_success": 2
+      },
+      "feedback": {
+        "hint": "Some centuries whisper lies.",
+        "success": "You have slain the beast of confusion. Double silk earned.",
+        "fail": "The beast devoured your certainty. Try again."
+      }
+    },
+    "difficulty": "hard",
+    "reward_amount": 50
+  },
+  {
+    "word": "inherent",
+    "level": 6,
+    "question_type": "story",
+    "prompt": "Rebuild the full story of 'inherent'\u2014beware the three false centuries. Conquer the beast for double silk.",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "14th c.",
+        "17th c.",
+        "20th c.",
+        "8th c.",
+        "12th c.",
+        "18th c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval Philosophy",
+        "Enlightenment",
+        "Modern Science",
+        "Carolingian Renaissance",
+        "Scholasticism",
+        "Romantic Era"
+      ],
+      "turns": [
+        "In Rome, he was *inhaer\u0113re*\u2014'to stick in, to cling to.' His body was a burr caught in wool, wax pressed to marble, paint holding fast to plaster. From this touch grew an idea: some things exist *within* others, inseparable and abiding. Philosophers used him to name qualities that lived inside matter itself.",
+        "In the halls of medieval scholars, Inherent put on robes and became a word of metaphysics. Through Old French *inherer* and Latin *inhaerens*, he entered English carrying Aristotle's logic of substance and accident. Virtue was said to inhere in the soul; whiteness to inhere in snow. He spoke of what could never be separated from what it was.",
+        "When the Enlightenment dawned, Inherent left the cloister for the forum. He began to speak of rights and dignity\u2014qualities not bestowed but possessed. What once described color in marble now described worth in humankind. He became political, carrying the old logic of internal belonging into the language of freedom.",
+        "Today he moves quietly through science and systems: the inherent bias of data, the inherent stability of molecules. The stickiness of matter has become the grammar of structure. The touch is gone, but its logic remains\u2014what belongs within still holds everything together.",
+        "He was adopted by Carolingian monks to describe the divine spark in all creation\u2014the eternal essence that bound matter to spirit. In their illuminated manuscripts, he represented the inalienable connection between the physical and spiritual realms.",
+        "He became the cornerstone of scholastic debates about essence and accident\u2014the fundamental question of what truly belonged to substance. Medieval theologians used him to distinguish between what was essential to a thing's nature.",
+        "He symbolized the romantic notion of natural genius and inspiration\u2014the inborn qualities that distinguished the artist from the artisan. Romantic poets and philosophers saw in him the divine gift that could not be taught or learned."
+      ],
+      "red_herrings": [
+        "He was adopted by Carolingian monks to describe the divine spark in all creation\u2014the eternal essence that bound matter to spirit. In their illuminated manuscripts, he represented the inalienable connection between the physical and spiritual realms.",
+        "He became the cornerstone of scholastic debates about essence and accident\u2014the fundamental question of what truly belonged to substance. Medieval theologians used him to distinguish between what was essential to a thing's nature.",
+        "He symbolized the romantic notion of natural genius and inspiration\u2014the inborn qualities that distinguished the artist from the artisan. Romantic poets and philosophers saw in him the divine gift that could not be taught or learned."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE \u2014 Rome \u2192 In Rome, he was *inhaer\u0113re*\u2014'to stick in, to cling to.' His body was a burr caught in wool, wax pressed to marble, paint holding fast to plaster. From this touch grew an idea: some things exist *within* others, inseparable and abiding. Philosophers used him to name qualities that lived inside matter itself.",
+      "14th c. \u2014 Medieval Philosophy \u2192 In the halls of medieval scholars, Inherent put on robes and became a word of metaphysics. Through Old French *inherer* and Latin *inhaerens*, he entered English carrying Aristotle's logic of substance and accident. Virtue was said to inhere in the soul; whiteness to inhere in snow. He spoke of what could never be separated from what it was.",
+      "17th c. \u2014 Enlightenment \u2192 When the Enlightenment dawned, Inherent left the cloister for the forum. He began to speak of rights and dignity\u2014qualities not bestowed but possessed. What once described color in marble now described worth in humankind. He became political, carrying the old logic of internal belonging into the language of freedom.",
+      "20th c. \u2014 Modern Science \u2192 Today he moves quietly through science and systems: the inherent bias of data, the inherent stability of molecules. The stickiness of matter has become the grammar of structure. The touch is gone, but its logic remains\u2014what belongs within still holds everything together."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "hard_mode_penalty": {
+        "health_loss_on_fail": 2,
+        "reward_multiplier_on_success": 2
+      },
+      "feedback": {
+        "hint": "Some centuries whisper lies.",
+        "success": "You have slain the beast of confusion. Double silk earned.",
+        "fail": "The beast devoured your certainty. Try again."
+      }
+    },
+    "difficulty": "hard",
+    "reward_amount": 50
+  },
+  {
+    "word": "cohesive",
+    "level": 6,
+    "question_type": "story",
+    "prompt": "Rebuild the full story of 'cohesive'\u2014beware the three false centuries. Conquer the beast for double silk.",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "17th c.",
+        "19th c.",
+        "20th c.",
+        "8th c.",
+        "12th c.",
+        "18th c."
+      ],
+      "settings": [
+        "Rome",
+        "Scientific Revolution",
+        "Industrial Age",
+        "Modern Management",
+        "Carolingian Empire",
+        "Medieval Guilds",
+        "Romantic Movement"
+      ],
+      "turns": [
+        "In the Latin world, he began as *cohaer\u0113re*\u2014'to stick together.' His body was glue, sap, wax. He clung where things met: brick to mortar, vine to trellis, friend to friend. *Haer\u0113re* meant to cling, and *co-* joined him to others. He was the language of closeness before it was a metaphor.",
+        "When the thinkers of the new sciences began to name the secret laws of matter, they summoned him again. *Cohere*, *cohesion*\u2014the way dust joins into drop, drop into stone. He became a principle, not just a feeling. Boyle and Newton made him a law of nature: the power that binds atoms as friendship binds men.",
+        "The industrial age stretched him further. Machines turned, cities swelled, and people began to ask what held them all together. Cohesive took on new tasks\u2014describing nations, crowds, stories, minds. The bond of molecules became the bond of meaning. He was no longer just physical; he was social, intellectual, and moral.",
+        "Now Cohesive lives in offices and classrooms, in design briefs and mission statements. His Latin body is gone, but his instinct endures: to pull the scattered into shape. Every time a team holds, or an argument flows, he's there\u2014quiet, connecting, necessary.",
+        "He was adopted by Carolingian architects to describe the unity of stone and mortar\u2014the sacred bond that held cathedrals together. In their architectural treatises, he represented the divine principle of structural integrity.",
+        "He became the motto of medieval guilds celebrating craft unity\u2014the principle that bound master to apprentice in shared purpose. Guild masters used him to describe the mysterious bond that connected all practitioners of a craft.",
+        "He symbolized the romantic ideal of organic social harmony\u2014the natural cohesion that emerged from authentic human connection. Romantic thinkers saw in him the antithesis of mechanical society."
+      ],
+      "red_herrings": [
+        "He was adopted by Carolingian architects to describe the unity of stone and mortar\u2014the sacred bond that held cathedrals together. In their architectural treatises, he represented the divine principle of structural integrity.",
+        "He became the motto of medieval guilds celebrating craft unity\u2014the principle that bound master to apprentice in shared purpose. Guild masters used him to describe the mysterious bond that connected all practitioners of a craft.",
+        "He symbolized the romantic ideal of organic social harmony\u2014the natural cohesion that emerged from authentic human connection. Romantic thinkers saw in him the antithesis of mechanical society."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE \u2014 Rome \u2192 In the Latin world, he began as *cohaer\u0113re*\u2014'to stick together.' His body was glue, sap, wax. He clung where things met: brick to mortar, vine to trellis, friend to friend. *Haer\u0113re* meant to cling, and *co-* joined him to others. He was the language of closeness before it was a metaphor.",
+      "17th c. \u2014 Scientific Revolution \u2192 When the thinkers of the new sciences began to name the secret laws of matter, they summoned him again. *Cohere*, *cohesion*\u2014the way dust joins into drop, drop into stone. He became a principle, not just a feeling. Boyle and Newton made him a law of nature: the power that binds atoms as friendship binds men.",
+      "19th c. \u2014 Industrial Age \u2192 The industrial age stretched him further. Machines turned, cities swelled, and people began to ask what held them all together. Cohesive took on new tasks\u2014describing nations, crowds, stories, minds. The bond of molecules became the bond of meaning. He was no longer just physical; he was social, intellectual, and moral.",
+      "20th c. \u2014 Modern Management \u2192 Now Cohesive lives in offices and classrooms, in design briefs and mission statements. His Latin body is gone, but his instinct endures: to pull the scattered into shape. Every time a team holds, or an argument flows, he's there\u2014quiet, connecting, necessary."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "hard_mode_penalty": {
+        "health_loss_on_fail": 2,
+        "reward_multiplier_on_success": 2
+      },
+      "feedback": {
+        "hint": "Some centuries whisper lies.",
+        "success": "You have slain the beast of confusion. Double silk earned.",
+        "fail": "The beast devoured your certainty. Try again."
+      }
+    },
+    "difficulty": "hard",
+    "reward_amount": 50
+  },
+  {
+    "word": "scattershot",
+    "level": 6,
+    "question_type": "story",
+    "prompt": "Rebuild the full story of 'scattershot'\u2014beware the two false centuries. Conquer the beast for double silk.",
+    "options": {
+      "time_periods": [
+        "19th c.",
+        "20th c.",
+        "21st c.",
+        "16th c.",
+        "18th c."
+      ],
+      "settings": [
+        "American Frontier",
+        "Postwar Era",
+        "Digital Age",
+        "Renaissance",
+        "Enlightenment"
+      ],
+      "turns": [
+        "In the rough talk of the 1800s frontier, 'scattershot' was pure mechanics: the spray of pellets from a shotgun's mouth. It was a hunter's word, meaning range at the cost of precision. A scattershot could strike anything or nothing. The image belonged to smoke, echo, and chance.",
+        "After the wars, the world grew obsessed with targets\u2014goals, quotas, metrics. Into that culture, Scattershot wandered, half feral. He was the one who fired ideas instead of bullets: policies that sprawled, arguments that sprawled wider. The old gunmetal word now measured intellectual mess.",
+        "Now he's everywhere\u2014meetings, essays, start-ups. Scattershot speaks of the rush to do, to say, to solve before thinking. He carries a faint scent of gunpowder still, the memory of the hunt. But his meaning is softer now: not danger, just disarray\u2014the price of trying to hit everything at once.",
+        "He was adopted by Renaissance artists to describe experimental painting techniques\u2014the bold strokes that captured movement and energy. In their studios, he represented the revolutionary approach to composition that broke free from traditional constraints.",
+        "He symbolized the Enlightenment ideal of spreading knowledge widely\u2014the intellectual approach that cast ideas broadly rather than narrowly. Philosophers and educators used him to describe the democratic distribution of learning."
+     ],
+      "red_herrings": [
+        "He was adopted by Renaissance artists to describe experimental painting techniques\u2014the bold strokes that captured movement and energy. In their studios, he represented the revolutionary approach to composition that broke free from traditional constraints.",
+        "He symbolized the Enlightenment ideal of spreading knowledge widely\u2014the intellectual approach that cast ideas broadly rather than narrowly. Philosophers and educators used him to describe the democratic distribution of learning."
+      ]
+    },
+    "correct_answer": [
+      "19th c. \u2014 American Frontier \u2192 In the rough talk of the 1800s frontier, 'scattershot' was pure mechanics: the spray of pellets from a shotgun's mouth. It was a hunter's word, meaning range at the cost of precision. A scattershot could strike anything or nothing. The image belonged to smoke, echo, and chance.",
+      "20th c. \u2014 Postwar Era \u2192 After the wars, the world grew obsessed with targets\u2014goals, quotas, metrics. Into that culture, Scattershot wandered, half feral. He was the one who fired ideas instead of bullets: policies that sprawled, arguments that sprawled wider. The old gunmetal word now measured intellectual mess.",
+      "21st c. \u2014 Digital Age \u2192 Now he's everywhere\u2014meetings, essays, start-ups. Scattershot speaks of the rush to do, to say, to solve before thinking. He carries a faint scent of gunpowder still, the memory of the hunt. But his meaning is softer now: not danger, just disarray\u2014the price of trying to hit everything at once."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "hard_mode_penalty": {
+        "health_loss_on_fail": 2,
+        "reward_multiplier_on_success": 2
+      },
+      "feedback": {
+        "hint": "Some centuries whisper lies.",
+        "success": "You have slain the beast of confusion. Double silk earned.",
+        "fail": "The beast devoured your certainty. Try again."
+      }
+    },
+    "difficulty": "hard",
+    "reward_amount": 50
+  },
+  {
+    "word": "salient",
+    "level": 6,
+    "question_type": "story",
+    "prompt": "Rebuild the full story of 'salient'\u2014beware the three false centuries. Conquer the beast for double silk.",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "12th c.",
+        "16th c.",
+        "17th c.",
+        "19th c.",
+        "20\u201321st c.",
+        "8th c.",
+        "14th c.",
+        "18th c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval France",
+        "Renaissance Engineering",
+        "Early Philosophy",
+        "Modern Analysis",
+        "Age of Cognition",
+        "Carolingian Empire",
+        "Medieval Courts",
+        "Romantic Poetry"
+      ],
+      "turns": [
+        "In Rome, he was *sali\u0113ns* \u2014 'leaping, springing forth.' Poets used him for fountains, fish, and joy itself. To leap was to live: *sal\u012bre* carried vitality, not metaphor. Salient began as motion embodied.",
+        "In medieval France, *saillir* meant 'to leap, to project,' and *saillant* described what thrust forward \u2014 a wall, a knight, a beast on a shield. The word's leap became visibility itself: what stood out, what risked being struck first.",
+        "Renaissance English borrowed *salient* from French and Latin. Engineers and philosophers alike used it for what jutted out \u2014 a bastion, a point, an argument. The physical term turned symbolic: to project was to assert.",
+        "By early modernity, the leap turned inward. Thinkers called an idea 'salient' when it sprang to the mind \u2014 prominence became cognition. The fortress became the mind's topography.",
+        "By the industrial and analytic age, Salient had stopped moving; he now marked data, facts, arguments. The leap became fixation \u2014 but within it still pulsed the old Latin spring.",
+        "In the age of cognition and code, Salient entered the mind and the machine alike. Psychologists mapped what the eye notices first; engineers taught algorithms to mimic the leap. Attention itself became measurable\u2014visibility quantified. Yet even here, his essence endures: what springs into awareness, refusing to stay unseen.",
+        "He was adopted by Carolingian architects to describe cathedral spires\u2014the soaring elements that leapt toward heaven. In their architectural drawings, he represented the vertical aspiration that connected earthly construction to divine inspiration.",
+        "He became the motto of medieval knights celebrating chivalric valor\u2014the virtue that leapt forth in moments of noble action. In their chivalric codes, he embodied the sudden emergence of heroic courage.",
+        "He symbolized the romantic ideal of spontaneous inspiration\u2014the creative leap that emerged from the depths of feeling. Romantic artists and poets used him to describe the mysterious moment when artistic vision suddenly crystallized."
+       ],
+      "red_herrings": [
+        "He was adopted by Carolingian architects to describe cathedral spires\u2014the soaring elements that leapt toward heaven. In their architectural drawings, he represented the vertical aspiration that connected earthly construction to divine inspiration.",
+        "He became the motto of medieval knights celebrating chivalric valor\u2014the virtue that leapt forth in moments of noble action. In their chivalric codes, he embodied the sudden emergence of heroic courage.",
+        "He symbolized the romantic ideal of spontaneous inspiration\u2014the creative leap that emerged from the depths of feeling. Romantic artists and poets used him to describe the mysterious moment when artistic vision suddenly crystallized."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE \u2014 Rome \u2192 In Rome, he was *sali\u0113ns* \u2014 'leaping, springing forth.' Poets used him for fountains, fish, and joy itself. To leap was to live: *sal\u012bre* carried vitality, not metaphor. Salient began as motion embodied.",
+      "12th c. \u2014 Medieval France \u2192 In medieval France, *saillir* meant 'to leap, to project,' and *saillant* described what thrust forward \u2014 a wall, a knight, a beast on a shield. The word's leap became visibility itself: what stood out, what risked being struck first.",
+      "16th c. \u2014 Renaissance Engineering \u2192 Renaissance English borrowed *salient* from French and Latin. Engineers and philosophers alike used it for what jutted out \u2014 a bastion, a point, an argument. The physical term turned symbolic: to project was to assert.",
+      "17th c. \u2014 Early Philosophy \u2192 By early modernity, the leap turned inward. Thinkers called an idea 'salient' when it sprang to the mind \u2014 prominence became cognition. The fortress became the mind's topography.",
+      "19th c. \u2014 Modern Analysis \u2192 By the industrial and analytic age, Salient had stopped moving; he now marked data, facts, arguments. The leap became fixation \u2014 but within it still pulsed the old Latin spring.",
+      "20\u201321st c. \u2014 Age of Cognition \u2192 In the age of cognition and code, Salient entered the mind and the machine alike. Psychologists mapped what the eye notices first; engineers taught algorithms to mimic the leap. Attention itself became measurable\u2014visibility quantified. Yet even here, his essence endures: what springs into awareness, refusing to stay unseen."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "hard_mode_penalty": {
+        "health_loss_on_fail": 2,
+        "reward_multiplier_on_success": 2
+      },
+      "feedback": {
+        "hint": "Some centuries whisper lies.",
+        "success": "You have slain the beast of confusion. Double silk earned.",
+        "fail": "The beast devoured your certainty. Try again."
+      }
+    },
+    "difficulty": "hard",
+    "reward_amount": 50
+  },
+  {
+    "word": "omit",
+    "level": 6,
+    "question_type": "story",
+    "prompt": "Rebuild the full story of 'omit'\u2014beware the three false centuries. Conquer the beast for double silk.",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "12th c.",
+        "15th c.",
+        "16th c.",
+        "20th c.",
+        "8th c.",
+        "18th c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval Theology",
+        "Late Medieval Bureaucracy",
+        "Renaissance Printing",
+        "Modern English",
+        "Carolingian Empire",
+        "Enlightenment"
+      ],
+      "turns": [
+        "In Rome, he was *omittere*\u2014'to let go, to send away.' Built from *ob-* ('away') + *mittere* ('to send'), he belonged to a family of doers\u2014*remittere, permittere, submittere*. They all acted; he refrained. His meaning was the negative space of will: to set aside, to leave undone.",
+        "In the age of confession, he was moralized. *Omettre* became a sin of silence\u2014a thing not done when duty called. His neutrality vanished. To omit was to fail the soul, not the sentence.",
+        "When the monks became clerks and the parchment became proof, Omit found a new stage. He lived in records now, where what was left out could ruin fortunes. His sin became paperwork.",
+        "With printing presses and ledgers multiplying, Omit shed his guilt. To omit was now an act of editing\u2014a choice, not a failure. The blank became a craft.",
+        "Now he walks between worlds: neutral in documents, moral in sermons, rhetorical in debate. He survives in phrases like fossils\u2014'sins of omission,' 'lies of omission'\u2014ghosts of the age when absence was blame.",
+        "He was adopted by Carolingian scribes to describe the art of diplomatic silence\u2014the strategic omission that preserved peace. In their diplomatic correspondence, he represented the sophisticated skill of knowing what not to say.",
+        "He symbolized Enlightenment ideal rational restraint\u2014deliberate exclusion unnecessary elements. Philosophers scientists used him describe methodological principle parsimony."
+      ],
+      "red_herrings": [
+        "He was adopted by Carolingian scribes to describe the art of diplomatic silence\u2014the strategic omission that preserved peace. In their diplomatic correspondence, he represented the sophisticated skill of knowing what not to say.",
+        "He symbolized Enlightenment ideal rational restraint\u2014deliberate exclusion unnecessary elements. Philosophers scientists used him describe methodological principle parsimony."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE \u2014 Rome \u2192 In Rome, he was *omittere*\u2014'to let go, to send away.' Built from *ob-* ('away') + *mittere* ('to send'), he belonged to a family of doers\u2014*remittere, permittere, submittere*. They all acted; he refrained. His meaning was the negative space of will: to set aside, to leave undone.",
+      "12th c. \u2014 Medieval Theology \u2192 In the age of confession, he was moralized. *Omettre* became a sin of silence\u2014a thing not done when duty called. His neutrality vanished. To omit was to fail the soul, not the sentence.",
+      "15th c. \u2014 Late Medieval Bureaucracy \u2192 When the monks became clerks and the parchment became proof, Omit found a new stage. He lived in records now, where what was left out could ruin fortunes. His sin became paperwork.",
+      "16th c. \u2014 Renaissance Printing \u2192 With printing presses and ledgers multiplying, Omit shed his guilt. To omit was now an act of editing\u2014a choice, not a failure. The blank became a craft.",
+      "20th c. \u2014 Modern English \u2192 Now he walks between worlds: neutral in documents, moral in sermons, rhetorical in debate. He survives in phrases like fossils\u2014'sins of omission,' 'lies of omission'\u2014ghosts of the age when absence was blame."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "hard_mode_penalty": {
+        "health_loss_on_fail": 2,
+        "reward_multiplier_on_success": 2
+      },
+      "feedback": {
+        "hint": "Some centuries whisper lies.",
+        "success": "You have slain the beast of confusion. Double silk earned.",
+        "fail": "The beast devoured your certainty. Try again."
+      }
+    },
+    "difficulty": "hard",
+    "reward_amount": 50
+  },
+  {
+    "word": "perfunctory",
+    "level": 6,
+    "question_type": "story",
+    "prompt": "Rebuild the full story of 'perfunctory'\u2014beware the three false centuries. Conquer the beast for double silk.",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "12th c.",
+        "16th c.",
+        "19th c.",
+        "21st c.",
+        "8th c.",
+        "14th c.",
+        "18th c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval Church",
+        "Renaissance Humanism",
+        "Industrial Age",
+        "Digital Age",
+        "Carolingian Empire",
+        "Crusader States",
+        "Romantic Movement"
+      ],
+      "turns": [
+        "In Rome, he was *perfung\u012b*\u2014'to do through.' A soldier's word, a clerk's word. He lived in the world of completion, not care. He finished what others feared to start, and thought that enough. His virtue was endurance, not tenderness.",
+        "When the empire gave way to prayer, he followed into the church. *Perfunctorius* began to mean a prayer said by habit. The form was right, but the heart was missing. He was no longer a soldier\u2014he was a monk murmuring words he no longer felt.",
+        "In the English tongue he found guilt waiting for him. Renaissance writers turned him into a warning: the worker of hollow deeds. The Reformation made him blush\u2014the new world wanted feeling, and he had only form.",
+        "Then came the factories. The machines welcomed him home. Every lever pulled, every stamp struck\u2014done through, done well, done empty. The virtue of completion returned, but without pride. He had become the rhythm of repetition.",
+        "Now he lives in notifications and signatures. He sends the email, taps the emoji, finishes the task. Still functioning, still performing. The discipline of Rome survives\u2014but the soul of it has gone missing.",
+        "He was adopted by Carolingian monks to perfect the divine liturgy through mechanical perfection\u2014where ritual precision was valued above heartfelt devotion. In their scriptoria, he represented the paradoxical virtue of form without feeling.",
+        "He became the code of Crusader knights who performed their duties without emotion or passion\u2014where steadfast action was prized over inner conviction. In their chronicles, he embodied the warrior's ethic of execution without engagement.",
+        "He symbolized the Romantic rejection of all mechanical work in favor of spontaneous creative inspiration\u2014where natural feeling triumphed over disciplined routine. Romantic poets used him to describe the enemy of authentic artistic expression."
+      ],
+      "red_herrings": [
+        "He was adopted by Carolingian monks to perfect the divine liturgy through mechanical perfection\u2014where ritual precision was valued above heartfelt devotion. In their scriptoria, he represented the paradoxical virtue of form without feeling.",
+        "He became the code of Crusader knights who performed their duties without emotion or passion\u2014where steadfast action was prized over inner conviction. In their chronicles, he embodied the warrior's ethic of execution without engagement.",
+        "He symbolized the Romantic rejection of all mechanical work in favor of spontaneous creative inspiration\u2014where natural feeling triumphed over disciplined routine. Romantic poets used him to describe the enemy of authentic artistic expression."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE \u2014 Rome \u2192 In Rome, he was *perfung\u012b*\u2014'to do through.' A soldier's word, a clerk's word. He lived in the world of completion, not care. He finished what others feared to start, and thought that enough. His virtue was endurance, not tenderness.",
+      "12th c. \u2014 Medieval Church \u2192 When the empire gave way to prayer, he followed into the church. *Perfunctorius* began to mean a prayer said by habit. The form was right, but the heart was missing. He was no longer a soldier\u2014he was a monk murmuring words he no longer felt.",
+      "16th c. \u2014 Renaissance Humanism \u2192 In the English tongue he found guilt waiting for him. Renaissance writers turned him into a warning: the worker of hollow deeds. The Reformation made him blush\u2014the new world wanted feeling, and he had only form.",
+      "19th c. \u2014 Industrial Age \u2192 Then came the factories. The machines welcomed him home. Every lever pulled, every stamp struck\u2014done through, done well, done empty. The virtue of completion returned, but without pride. He had become the rhythm of repetition.",
+      "21st c. \u2014 Digital Age \u2192 Now he lives in notifications and signatures. He sends the email, taps the emoji, finishes the task. Still functioning, still performing. The discipline of Rome survives\u2014but the soul of it has gone missing."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "hard_mode_penalty": {
+        "health_loss_on_fail": 2,
+        "reward_multiplier_on_success": 2
+      },
+      "feedback": {
+        "hint": "Some centuries whisper lies.",
+        "success": "You have slain the beast of confusion. Double silk earned.",
+        "fail": "The beast devoured your certainty. Try again."
+      }
+    },
+    "difficulty": "hard",
+    "reward_amount": 50
+  },
+  {
+    "word": "verisimilitude",
+    "level": 6,
+    "question_type": "story",
+    "prompt": "Rebuild the full story of 'verisimilitude'\u2014beware the three false centuries. Conquer the beast for double silk.",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "14th c.",
+        "17th c.",
+        "19th c.",
+        "20th c.",
+        "21st c.",
+        "8th c.",
+        "12th c.",
+        "16th c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval Poetics",
+        "Rise of the Novel",
+        "Realist Movement",
+        "Modern Media",
+        "Postmodern Skepticism",
+        "Carolingian Empire",
+        "Scholastic Theology",
+        "Renaissance Art"
+      ],
+      "turns": [
+        "In Rome, she was *verisimilitudo*\u2014'truthlikeness.' Philosophers built her from *verus* ('true') and *similis* ('like'), a concept born of resemblance. She lived in the space between certainty and illusion, where rhetoricians worked. To have verisimilitude was to speak what seemed true when proof was distant. Cicero knew her well: she was the orator's art.",
+        "When Aristotle's *Poetics* returned to European thought through Arabic translations, Verisimilitude found new purpose. Medieval scholars called her the soul of narrative\u2014what made a tale feel true even when invention shaped it. She wasn't deception; she was craft. Fiction could teach by seeming real.",
+        "In England's coffee houses and theaters, she arrived as *verisimilitude*\u2014French *vraisemblance* dressed in Latin gravity. Critics demanded it of playwrights; novelists studied it like scripture. Defoe and Richardson built worlds that breathed because of her. She had become the measure of art: not truth, but its convincing performance.",
+        "The realists took her seriously\u2014Flaubert, Tolstoy, Eliot. Every detail mattered now. Verisimilitude demanded research, observation, the texture of lived life. She grew exacting, almost scientific. To write without her was to betray the reader. She had become the conscience of fiction.",
+        "In courtrooms she found work: forensic verisimilitude, the story that fits the evidence. In cinema she became spectacle: CGI that feels tangible, worlds that seem real enough to touch. Philosophers questioned her ethics\u2014could a lie made lifelike be trusted? But she endures, untroubled: wherever truth is absent and belief is needed, she waits.",
+        "Now she moves through deepfakes and virtual worlds, through user experience design and narrative games. She's become a technology: algorithms that predict believability, interfaces that feel intuitive because they mimic the real. She no longer argues for truth\u2014she engineers its feeling.",
+        "She was embraced by Carolingian scholars who believed divine truth required only superficial resemblance to earthly experience.",
+        "She became central to scholastic debates where perfect imitation of theological models proved spiritual authenticity.",
+        "She symbolized Renaissance art's ultimate goal: creating works indistinguishable from reality itself."
+      ],
+      "red_herrings": [
+"She was embraced by Carolingian scholars who believed divine truth required only superficial resemblance to earthly experience.",
+        "She symbolized Renaissance art's ultimate goal: creating works indistinguishable from reality itself\u2014"
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE \u2014 Rome \u2192 In Rome, she was *verisimilitudo*\u2014'truthlikeness.' Philosophers built her from *verus* ('true') and *similis* ('like'), a concept born of resemblance. She lived in the space between certainty and illusion, where rhetoricians worked. To have verisimilitude was to speak what seemed true when proof was distant. Cicero knew her well: she was the orator's art.",
+      "14th c. \u2014 Medieval Poetics \u2192 When Aristotle's *Poetics* returned to European thought through Arabic translations, Verisimilitude found new purpose. Medieval scholars called her the soul of narrative\u2014what made a tale feel true even when invention shaped it. She wasn't deception; she was craft. Fiction could teach by seeming real.",
+      "17th c. \u2014 Rise of the Novel \u2192 In England's coffee houses and theaters, she arrived as *verisimilitude*\u2014French *vraisemblance* dressed in Latin gravity. Critics demanded it of playwrights; novelists studied it like scripture. Defoe and Richardson built worlds that breathed because of her. She had become the measure of art: not truth, but its convincing performance.",
+      "19th c. \u2014 Realist Movement \u2192 The realists took her seriously\u2014Flaubert, Tolstoy, Eliot. Every detail mattered now. Verisimilitude demanded research, observation, the texture of lived life. She grew exacting, almost scientific. To write without her was to betray the reader. She had become the conscience of fiction.",
+      "20th c. \u2014 Modern Media \u2192 In courtrooms she found work: forensic verisimilitude, the story that fits the evidence. In cinema she became spectacle: CGI that feels tangible, worlds that seem real enough to touch. Philosophers questioned her ethics\u2014could a lie made lifelike be trusted? But she endures, untroubled: wherever truth is absent and belief is needed, she waits.",
+      "21st c. \u2014 Postmodern Skepticism \u2192 Now she moves through deepfakes and virtual worlds, through user experience design and narrative games. She's become a technology: algorithms that predict believability, interfaces that feel intuitive because they mimic the real. She no longer argues for truth\u2014she engineers its feeling."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "hard_mode_penalty": {
+        "health_loss_on_fail": 2,
+        "reward_multiplier_on_success": 2
+      },
+      "feedback": {
+        "hint": "Some centuries whisper lies.",
+        "success": "You have slain the beast of confusion. Double silk earned.",
+        "fail": "The beast devoured your certainty. Try again."
+      }
+    },
+    "difficulty": "hard",
+    "reward_amount": 50
+  }
+]

@@ -35,16 +35,16 @@ export default function AvatarCustomizer({
   ];
 
   return (
-    <div className="bg-gray-800/30 p-4 rounded-lg border border-gray-700">
-      <h3 className="text-lg font-display font-bold text-white mb-4 uppercase tracking-wider">
+    <div className="bg-gray-800/30 p-4 rounded-lg border border-gray-700" style={{top:0, backgroundColor:'#000000', width:'70vw', height:'70vh', left:'15%'}}>
+      <h3 className="text-lg font-display font-bold text-white mb-6 uppercase tracking-wider text-center">
         🎭 {userName || 'Customize Your Avatar'}
       </h3>
       
       <div className="grid grid-cols-2 gap-6 max-h-[50vh]">
         {/* Avatar Preview */}
         <div className="flex flex-col items-center">
-          <div className="bg-gray-900/50 p-4 rounded-lg border border-gray-600 mb-4">
-            <SilksongAvatar config={config} size={200} />
+          <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-600 mb-4">
+            <SilksongAvatar config={config} size={160} />
           </div>
           
           {/* Quick Presets */}
@@ -182,7 +182,7 @@ export default function AvatarCustomizer({
           {/* Effects */}
           <div>
             <label className="block text-sm font-medium text-gray-300 mb-2">Effects</label>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="space-y-6 max-w-3xl mx-auto">
               {(['none', 'sparkle', 'glow', 'shadow'] as const).map((effect) => (
                 <button
                   key={effect}

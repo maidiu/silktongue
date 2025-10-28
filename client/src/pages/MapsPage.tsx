@@ -36,6 +36,8 @@ interface Room {
   word_id: number;
   unlocked: boolean;
   completed: boolean;
+  story_completed?: boolean;
+  quiz_completed?: boolean;
 }
 
 interface UserProgress {
@@ -271,6 +273,15 @@ const MapsPage: React.FC = () => {
       return;
     }
     
+    // Check if this is a boss room
+    console.log('Is boss room:', room.is_boss_room);
+    console.log('Room completed:', room.completed);
+    if (room.is_boss_room && room.completed) {
+      console.log('✅ Boss room clicked, navigating to guardian page...');
+      navigate(`/guardian/${selectedFloor.floor_number}`);
+      return;
+    }
+    
     setSelectedRoom(room);
     
     // If room is unlocked, navigate to word exploration (learning) page
@@ -324,14 +335,15 @@ const MapsPage: React.FC = () => {
   }
 
   return (
+    <>
     <Layout>
-      <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 relative">
+      <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 relative -mx-4 sm:-mx-6 lg:-mx-8 -mb-4 sm:-mb-6 lg:-mb-8">
       {/* Silk Balance Display */}
       
       
-      {selectedMap && selectedFloor && (
-        <>
-          <div className="h-screen" style={{ pointerEvents: 'none' }}>
+        {selectedMap && selectedFloor && (
+          <>
+            <div style={{ pointerEvents: 'none' }}>
             <SilksongMap
               floors={selectedMap.floors}
               currentFloor={selectedFloor.floor_number}
@@ -506,7 +518,9 @@ const MapsPage: React.FC = () => {
         }}
       />
     )}
-    </Layout>
+    
+  </Layout>
+  </>
   );
 };
 

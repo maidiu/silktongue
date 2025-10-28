@@ -208,6 +208,9 @@ const WordExplorationModal: React.FC<WordExplorationModalProps> = ({
     if (!selectedAnswer || !storyQuestions[currentStoryIndex]) return;
 
     try {
+      const questionId = storyQuestions[currentStoryIndex].id;
+      console.log('Submitting answer for questionId:', questionId, 'wordId:', wordId, 'answer:', selectedAnswer);
+      
       const response = await fetch(`/api/vocab/${wordId}/story-answer`, {
         method: 'POST',
         headers: {
@@ -215,11 +218,13 @@ const WordExplorationModal: React.FC<WordExplorationModalProps> = ({
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          questionId: storyQuestions[currentStoryIndex].id,
+          questionId: questionId,
           userAnswer: selectedAnswer
         })
       });
 
+      console.log('Response status:', response.status);
+      
       if (response.ok) {
         const result = await response.json();
         setAnswerResult({
@@ -227,9 +232,14 @@ const WordExplorationModal: React.FC<WordExplorationModalProps> = ({
           explanation: result.explanation
         });
         setShowAnswerResult(true);
+      } else {
+        const errorText = await response.text();
+        console.error('Error submitting answer:', response.status, errorText);
+        alert('Failed to submit answer. Please try again.');
       }
     } catch (error) {
       console.error('Error submitting answer:', error);
+      alert('Failed to submit answer. Please try again.');
     }
   };
 

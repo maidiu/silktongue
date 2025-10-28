@@ -1,0 +1,49 @@
+{
+  "floor": 2,
+  "guardian": "The Jurist",
+  "intro": "The second floor is a narrow chamber lined with shelves of bound volumes, their spines labeled in fading script. A man in dark robes sits at a lectern, eyes fixed on an open codex. He doesn't acknowledge your arrival at first—only the faint scratch of his finger tracing marginalia. When he finally speaks, his voice is measured, formal, as if every word might be entered into record.",
+  "dialogue": [
+    {
+      "order": 1,
+      "word": "attest",
+      "paragraph": "We gathered testimony from all who witnessed the collapse—masons, architects, the men who hauled the first stones. Each was asked to swear to the truth of their account, to place their name beneath their words as proof of fidelity. There's a term for that act, when one pledges certainty to a claim. The word escapes me now."
+    },
+    {
+      "order": 2,
+      "word": "plausible",
+      "paragraph": "Not all accounts agreed, of course. Some stories sounded true enough to survive scrutiny—they had the shape of truth, even if the substance was uncertain. We filed them separately, those testimonies that were believable without being proven. What do you call something that sounds as though it could be real?"
+    },
+    {
+      "order": 3,
+      "word": "elucidate",
+      "paragraph": "My task was to take the contradictions and make them comprehensible—to draw clarity from confusion, to illuminate what the witnesses themselves could not articulate. I spent years learning to do that: to make the obscure plain, to shed light on what resisted understanding. The word for that labor is just beyond reach."
+    },
+    {
+      "order": 4,
+      "word": "steadfast",
+      "paragraph": "Through all of it, a few men never wavered in their accounts. They returned year after year, repeating the same testimony without revision, unmoved by doubt or contradiction. Their constancy was almost troubling—loyalty so firm it refused even the possibility of error. There's a word for that quality of unwavering adherence."
+    },
+    {
+      "order": 5,
+      "word": "pall",
+      "paragraph": "After the final inquiry closed, a shadow settled over these chambers—not darkness, but something heavier, something that dimmed the light without extinguishing it. It changed how we moved through the records, as if mourning had become material. What's the word for that kind of covering, the one that weighs on everything it touches?"
+    },
+    {
+      "order": 6,
+      "word": "lumbering",
+      "paragraph": "The old magistrates would move between the shelves with a slow, burdened gait—not from age alone, but from the weight of judgment carried too long. Each step deliberate and effortful, as though thought itself had mass and had to be dragged forward. I need the word for that heavy, deliberate motion."
+    },
+    {
+      "order": 7,
+      "word": "scurry",
+      "paragraph": "But the young clerks—they darted everywhere, quick and nervous, gathering fragments of precedent, never pausing long enough to settle. They moved like small animals between the stacks, always hurrying to the next citation, the next cross-reference. There's a word for that frantic, small-footed haste."
+    },
+    {
+      "order": 8,
+      "word": "ubiquitous",
+      "paragraph": "And then there's the dust. It's in every volume, every margin, every breath. You can't escape it. It settles into the text itself, becomes part of the record, indistinguishable from the ink. What do you call something that is so thoroughly present it becomes invisible, something found everywhere at once?"
+    }
+  ],
+  "completion": "You speak the final word, and the Jurist's hand stills on the page. He closes the codex slowly, almost ceremonially, then lifts his gaze to meet yours. For the first time, something shifts in his expression—not quite a smile, but a loosening, as if a judgment long held has finally been released. The volumes on the shelves straighten themselves by degrees. He rises, gestures toward a stone stair spiraling upward behind the lectern. 'The record is complete,' he says quietly. 'You may ascend.'"
+}
+

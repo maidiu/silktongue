@@ -45,6 +45,7 @@ export interface ScoreboardEntry {
   words_mastered: number;
   total_silk_earned: number;
   quizzes_completed: number;
+  avatar_config?: any;
 }
 
 export interface BeastModeStatus {
@@ -159,7 +160,12 @@ export async function getScoreboard(): Promise<ScoreboardEntry[]> {
 }
 
 export async function getBeastModeStatus(wordId: number): Promise<BeastModeStatus> {
-  const res = await fetch(`/api/vocab/beast-mode-status/${wordId}`);
+  const token = localStorage.getItem('token');
+  const res = await fetch(`/api/vocab/beast-mode-status/${wordId}`, {
+    headers: {
+      'Authorization': `Bearer ${token}`
+    }
+  });
   if (!res.ok) throw new Error('Failed to load beast mode status');
   return res.json();
 }

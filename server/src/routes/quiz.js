@@ -155,7 +155,15 @@ router.get('/word/:wordId', async (req, res) => {
     `;
     
     const { rows } = await pool.query(query, [wordId]);
-    res.json(rows);
+    
+    // Parse JSON fields
+    const parsedRows = rows.map(row => ({
+      ...row,
+      options: typeof row.options === 'string' ? JSON.parse(row.options) : row.options,
+      variant_data: typeof row.variant_data === 'string' ? JSON.parse(row.variant_data) : row.variant_data
+    }));
+    
+    res.json(parsedRows);
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Internal server error' });
@@ -241,20 +249,7 @@ router.post('/level-complete', authenticateToken, async (req, res) => {
     const isComplete = level >= 5;
     const nextLevel = level < 5 ? level + 1 : null;
     
-    // Determine learning status progression
-    let learningStatusUpdate = '';
-    if (level === 6) {
-      // Level 6 (Beast Mode) completion = mastered
-      learningStatusUpdate = "learning_status = 'mastered', is_mastered = true";
-    } else if (level === 5) {
-      // Level 5 completion = learned (not mastered yet)
-      learningStatusUpdate = "learning_status = 'learned'";
-    } else if (level >= 3) {
-      // Levels 3-4 = learned
-      learningStatusUpdate = "learning_status = 'learned'";
-    }
-    
-    // Update progress
+    // Update progress (per-user tracking only - no global updates)
     const updateQuery = isComplete
       ? `UPDATE user_quiz_progress
          SET current_level = $1,
@@ -274,14 +269,6 @@ router.post('/level-complete', authenticateToken, async (req, res) => {
       updateQuery,
       [isComplete ? level : nextLevel, reward, userId, wordId]
     );
-    
-    // Update vocab entry learning status for all levels
-    if (learningStatusUpdate) {
-      await pool.query(
-        `UPDATE vocab_entries SET ${learningStatusUpdate} WHERE id = $1`,
-        [wordId]
-      );
-    }
     
     // If complete, update user stats and silk balance
     if (isComplete) {
@@ -649,12 +636,6 @@ router.post('/beast-mode/:attemptId/complete', authenticateToken, async (req, re
       await pool.query(
         `UPDATE user_stats SET silk_balance = silk_balance + $1 WHERE user_id = $2`,
         [silkEarned, userId]
-      );
-      
-      // Mark word as mastered when Beast Mode is successfully completed
-      await pool.query(
-        `UPDATE vocab_entries SET learning_status = 'mastered', is_mastered = true WHERE id = $1`,
-        [attempt.word_id]
       );
       
       // Update user's mastered word count (only if not already counted from regular quiz completion)

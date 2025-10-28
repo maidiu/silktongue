@@ -1,0 +1,1571 @@
+[
+  {
+    "word": "attest",
+    "word_id": 28,
+    "level": 1,
+    "question_type": "spelling",
+    "prompt": "Arrange the letters to spell the word:",
+    "options": null,
+    "correct_answer": "attest",
+    "variant_data": null,
+    "reward_amount": 10
+  },
+  {
+    "word_id": 28,
+    "level": 2,
+    "question_type": "typing",
+    "prompt": "Type the word you just arranged:",
+    "options": null,
+    "correct_answer": "(?i)^attest$",
+    "variant_data": null,
+    "reward_amount": 10,
+    "word": "attest"
+  },
+  {
+    "word_id": 28,
+    "level": 3,
+    "question_type": "definition",
+    "prompt": "Select all definitions that accurately describe 'attest':",
+    "incorrect_answers": [
+      "To deny or refute something",
+      "To hide or conceal evidence",
+      "To remain silent about facts",
+      "To avoid providing proof",
+      "To contradict a statement",
+      "To dismiss as false",
+      "To refuse to acknowledge",
+      "To suppress information"
+    ],
+    "correct_answers": [
+      "To provide clear evidence or proof of something",
+      "To bear witness or testify to a fact",
+      "To certify or verify as true",
+      "To declare or affirm formally"
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 3,
+      "feedback": {
+        "hint": "Think of standing with truth.",
+        "success": "You witnessed what matters.",
+        "fail": "Some hid what should be seen."
+      }
+    },
+    "reward_amount": 15,
+    "word": "attest"
+  },
+  {
+    "word_id": 28,
+    "level": 4,
+    "question_type": "syn_ant_sort",
+    "prompt": "Drag each word into the correct basket for 'attest':",
+    "options": {
+      "synonyms": [
+        "testify",
+        "verify",
+        "confirm",
+        "certify"
+      ],
+      "antonyms": [
+        "deny",
+        "refute",
+        "dispute",
+        "contradict"
+      ],
+      "red_herrings": [
+        "witness",
+        "statement",
+        "claim",
+        "affirm"
+      ]
+    },
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 6,
+      "feedback": {
+        "hint": "Listen for truth vs. falsehood.",
+        "success": "You separated the witnesses from the deniers.",
+        "fail": "Some landed in the wrong court."
+      }
+    },
+    "reward_amount": 15,
+    "word": "attest"
+  },
+  {
+    "word_id": 28,
+    "level": 5,
+    "question_type": "story_reorder",
+    "prompt": "Match each time period with its stage in the story of 'attest', then arrange them in order:",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "14th c.",
+        "17th c.",
+        "19th c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval English Courts",
+        "Age of Exploration",
+        "Industrial Age"
+      ],
+      "turns": [
+        "In Rome, he was *testare*\u2014'to bear witness.' The law required three witnesses for a will: three who would attest that yes, this was the voice of the dying.",
+        "When English courts took shape, Attest crossed from Old French. He moved from spoken truth to written proof. The witness still stood, but now his words lived on in ink.",
+        "The age of exploration brought new witnesses. Travellers attested to wonders; historians to facts. As print multiplied voices, attest learned the weight of reputation\u2014the risk of being wrong in public.",
+        "In the industrial age, Attest grew quieter, more technical. Documents attested to births and deaths; certificates to skills. The standing witness became a form to sign, a seal to affix."
+      ],
+      "red_herrings": [
+        "He was forgotten during the Middle Ages.",
+        "He gained magical powers in the Renaissance."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE \u2014 Rome \u2192 In Rome, he was *testare*\u2014'to bear witness.' The law required three witnesses for a will: three who would attest that yes, this was the voice of the dying.",
+      "14th c. \u2014 Medieval English Courts \u2192 When English courts took shape, Attest crossed from Old French. He moved from spoken truth to written proof. The witness still stood, but now his words lived on in ink.",
+      "17th c. \u2014 Age of Exploration \u2192 The age of exploration brought new witnesses. Travellers attested to wonders; historians to facts. As print multiplied voices, attest learned the weight of reputation\u2014the risk of being wrong in public.",
+      "19th c. \u2014 Industrial Age \u2192 In the industrial age, Attest grew quieter, more technical. Documents attested to births and deaths; certificates to skills. The standing witness became a form to sign, a seal to affix."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": true,
+      "feedback": {
+        "hint": "Trace how witness became document.",
+        "success": "The centuries fall into place\u2014the word lives again.",
+        "fail": "Some centuries landed out of time."
+      }
+    },
+    "reward_amount": 25,
+    "word": "attest"
+  },
+  {
+    "word": "attest",
+    "level": 6,
+    "question_type": "story",
+    "prompt": "Rebuild the full story of 'attest'\u2014beware the three false centuries. Conquer the beast for double silk.",
+    "options": {
+      "time_periods": [
+        "1st c. CE",
+        "14th c.",
+        "17th c.",
+        "19th c.",
+        "8th c.",
+        "11th c.",
+        "16th c."
+      ],
+      "settings": [
+        "Rome",
+        "Medieval English Courts",
+        "Age of Exploration",
+        "Industrial Age",
+        "Carolingian Empire",
+        "Viking Invasions",
+        "Renaissance Humanism"
+      ],
+      "turns": [
+        "In Rome, he was *testare*\u2014'to bear witness.' Built from *testis*, the witness who stands by to see. The law required three witnesses for a will: three who would attest that yes, this was the voice of the dying. To attest was to put your body in the way of truth\u2014to stand where you had been and speak what you had seen. It was physical presence made vocal.",
+        "When English courts took shape, Attest crossed from Old French *attester*. He carried the stamp of formality. Deeds were attested by witnesses; charters bore attestations from clerks. He moved from spoken truth to written proof. The witness still stood, but now his words lived on in ink. Attest became the bridge between seeing and lasting: what the eye witnessed, the document preserved.",
+        "The age of exploration brought new witnesses. Travellers attested to wonders; historians to facts; naturalists to species. But as print multiplied voices, attest began to carry doubt. To attest was not just to affirm but to stake one's name on it. The word learned the weight of reputation\u2014the risk of being wrong in public, for all to see.",
+        "In the industrial age, Attest grew quieter, more technical. Documents attested to births and deaths; certificates to skills and qualifications. He had passed from the drama of the courtroom to the routine of the office. The standing witness became a form to sign, a seal to affix. What began as the body's truth had become the system's record.",
+        "He was adopted by Carolingian notaries to record the oaths of vassals\u2014where the spoken promise of fealty became the inked contract of allegiance. In the imperial courts, he represented the sacred transformation of voice into record, making loyalty visible and permanent.",
+        "He became the voice of Viking skalds bearing witness to heroic deeds in their longship songs\u2014where the witness stood on shifting seas and sang what could not be forgotten. Norse poets used him to name the duty of memory that outlasted kingdoms.",
+        "He symbolized the humanist ideal of testimony as intellectual virtue\u2014where scholars and translators attested to the truth of recovered classical texts, making ancient voices speak again through sworn fidelity to their meaning."
+      ],
+      "red_herrings": [
+        "He was adopted by Carolingian notaries to record the oaths of vassals\u2014where the spoken promise of fealty became the inked contract of allegiance. In the imperial courts, he represented the sacred transformation of voice into record, making loyalty visible and permanent.",
+        "He became the voice of Viking skalds bearing witness to heroic deeds in their longship songs\u2014where the witness stood on shifting seas and sang what could not be forgotten. Norse poets used him to name the duty of memory that outlasted kingdoms.",
+        "He symbolized the humanist ideal of testimony as intellectual virtue\u2014where scholars and translators attested to the truth of recovered classical texts, making ancient voices speak again through sworn fidelity to their meaning."
+      ]
+    },
+    "correct_answer": [
+      "1st c. CE \u2014 Rome \u2192 In Rome, he was *testare*\u2014'to bear witness.' Built from *testis*, the witness who stands by to see. The law required three witnesses for a will: three who would attest that yes, this was the voice of the dying. To attest was to put your body in the way of truth\u2014to stand where you had been and speak what you had seen. It was physical presence made vocal.",
+      "14th c. \u2014 Medieval English Courts \u2192 When English courts took shape, Attest crossed from Old French *attester*. He carried the stamp of formality. Deeds were attested by witnesses; charters bore attestations from clerks. He moved from spoken truth to written proof. The witness still stood, but now his words lived on in ink. Attest became the bridge between seeing and lasting: what the eye witnessed, the document preserved.",
+      "17th c. \u2014 Age of Exploration \u2192 The age of exploration brought new witnesses. Travellers attested to wonders; historians to facts; naturalists to species. But as print multiplied voices, attest began to carry doubt. To attest was not just to affirm but to stake one's name on it. The word learned the weight of reputation\u2014the risk of being wrong in public, for all to see.",
+      "19th c. \u2014 Industrial Age \u2192 In the industrial age, Attest grew quieter, more technical. Documents attested to births and deaths; certificates to skills and qualifications. He had passed from the drama of the courtroom to the routine of the office. The standing witness became a form to sign, a seal to affix. What began as the body's truth had become the system's record."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "hard_mode_penalty": {
+        "health_loss_on_fail": 2,
+        "reward_multiplier_on_success": 2
+      },
+      "feedback": {
+        "hint": "Some centuries whisper lies.",
+        "success": "You have slain the beast of confusion. Double silk earned.",
+        "fail": "The beast devoured your certainty. Try again."
+      }
+    },
+    "difficulty": "hard",
+    "reward_amount": 50
+  },
+  {
+    "word": "elucidate",
+    "word_id": 33,
+    "level": 1,
+    "question_type": "spelling",
+    "prompt": "Arrange the letters to spell the word:",
+    "options": null,
+    "correct_answer": "elucidate",
+    "variant_data": null,
+    "reward_amount": 10
+  },
+  {
+    "word_id": 33,
+    "level": 2,
+    "question_type": "typing",
+    "prompt": "Type the word you just arranged:",
+    "options": null,
+    "correct_answer": "(?i)^elucidate$",
+    "variant_data": null,
+    "reward_amount": 10,
+    "word": "elucidate"
+  },
+  {
+    "word_id": 33,
+    "level": 3,
+    "question_type": "definition",
+    "prompt": "Select all definitions that accurately describe 'elucidate':",
+    "incorrect_answers": [
+      "To deliberately obscure or confuse meaning",
+      "To make something more difficult to understand",
+      "To hide or conceal information",
+      "To complicate matters unnecessarily",
+      "To deliberately mislead readers",
+      "To create confusion intentionally",
+      "To withhold clarity",
+      "To obfuscate the truth"
+    ],
+    "correct_answers": [
+      "To make something clear or easy to understand",
+      "To provide clarity and illumination on a complex subject",
+      "To explain or make clear something that is obscure",
+      "To bring light and understanding to a topic"
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 3,
+      "feedback": {
+        "hint": "Think carefully about elucidate",
+        "success": "You understood correctly.",
+        "fail": "Some definitions were missed."
+      }
+    },
+    "reward_amount": 15,
+    "word": "elucidate"
+  },
+  {
+    "word": "elucidate",
+    "word_id": 33,
+    "level": 4,
+    "question_type": "syn_ant_sort",
+    "prompt": "Drag each word into the correct basket for 'elucidate':",
+    "options": {
+      "synonyms": [
+        "explain",
+        "clarify",
+        "illuminate",
+        "expound",
+        "unfold",
+        "explicate"
+      ],
+      "antonyms": [
+        "obscure",
+        "confuse",
+        "muddle",
+        "bewilder",
+        "complicate"
+      ],
+      "red_herrings": [
+        "word",
+        "term",
+        "concept",
+        "meaning"
+      ]
+    },
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 5,
+      "feedback": {
+        "hint": "Listen carefully.",
+        "success": "You separated them correctly.",
+        "fail": "Some landed in the wrong place."
+      }
+    },
+    "reward_amount": 15
+  },
+  {
+    "word": "elucidate",
+    "word_id": 33,
+    "level": 5,
+    "question_type": "story_reorder",
+    "prompt": "Match each time period with its stage in the story of 'elucidate', then arrange them in order:",
+    "options": {
+      "time_periods": [
+        "1th c.",
+        "16th c.",
+        "18th c.",
+        "20th c."
+      ],
+      "story_texts": [
+        "In Rome, he began as *l\u016bcidus*\u2014'bright, shining, clear.' His root was *l\u016bx*, light itself. What was ...",
+        "When English scholars reached for Latin to name the act of making clear, they formed *\u0113l\u016bcid\u0101tum*\u2014't...",
+        "In the Age of Enlightenment, Elucidate found his calling. Thinkers vowed to elucidate nature, histor...",
+        "Now he moves through classrooms and commentaries, through textbooks and analysis. To elucidate is st..."
+      ]
+    },
+    "correct_answer": [
+      "1th c.",
+      "16th c.",
+      "18th c.",
+      "20th c."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "feedback": {
+        "hint": "Time flows forward.",
+        "success": "You ordered the centuries correctly.",
+        "fail": "The timeline is broken."
+      }
+    },
+    "reward_amount": 15
+  },
+  {
+    "word": "elucidate",
+    "level": 6,
+    "question_type": "story",
+    "prompt": "Rebuild the full story of 'elucidate'\u2014beware the three false centuries. Conquer the beast for double silk.",
+    "options": {
+      "time_periods": [
+        "1th c.",
+        "16th c.",
+        "18th c.",
+        "20th c.",
+        "8th c.",
+        "12th c.",
+        "15th c."
+      ],
+      "settings": [
+        "Setting 1th c.",
+        "Setting 16th c.",
+        "Setting 18th c.",
+        "Setting 20th c.",
+        "False Setting 1",
+        "False Setting 2",
+        "False Setting 3"
+      ],
+      "turns": [
+        "In Rome, he began as *l\u016bcidus*\u2014'bright, shining, clear.' His root was *l\u016bx*, light itself. What was *l\u016bcidus* shone with inner clarity\u2014water you could see through, thoughts that had no shadows. He described what the eye could trust: transparent things, minds without disguise. His power was revelation through visibility.",
+        "When English scholars reached for Latin to name the act of making clear, they formed *\u0113l\u016bcid\u0101tum*\u2014'to make luminous.' To elucidate was to take what was dark and turn it bright. Philosophers elucidated arguments; poets elucidated mysteries. The word that had meant 'bright' became an action: the deliberate casting of light into obscurity.",
+        "In the Age of Enlightenment, Elucidate found his calling. Thinkers vowed to elucidate nature, history, the human mind. Reason was the lamp he carried. Every explanation removed one more shadow; every clarification opened another door. He became the verb of understanding\u2014not faith but illumination, not mystery but method.",
+        "Now he moves through classrooms and commentaries, through textbooks and analysis. To elucidate is still to bring light, but the light itself has grown ordinary. In a world of footnotes and explanations, he no longer speaks of revelation\u2014only of procedure, the workable task of making the obscure one shade less dark."
+      ],
+      "red_herrings": [
+        "He was adopted by Carolingian scholars to illuminate sacred manuscripts\u2014where *l\u016bcidus* described the golden ink that made divine texts visible across the darkened scriptoria. In their theological commentaries, he represented the brightness that revealed God's word to human eyes, where illumination of scripture became a sacred act that",
+        "He became central to scholastic debates where clarity was the highest virtue\u2014where *\u0113l\u016bcid\u0101re* meant to untangle the knots of Aristotle's logic. Medieval philosophers used him to describe the intellectual light that transformed confusion into understanding, making the obscure suddenly obvious as abstract concepts",
+        "He symbolized the Renaissance ideal of seeing through deception\u2014where enlightenment meant recognizing truth beneath the layers of medieval darkness. Humanist scholars used him to name the moment when classical wisdom once again became visible to the modern world, piercing through centuries of scholarly obfuscation."
+      ]
+    },
+    "correct_answer": [
+      "1th c. \u2014 Latin usage emphasizing clarity and transparency as intrinsic qualities of light and perception. \u2192 In Rome, he began as *l\u016bcidus*\u2014'bright, shining, clear.' His root was *l\u016bx*, light itself. What was *l\u016bcidus* shone with inner clarity\u2014water you could see through, thoughts that had no shadows. He described what the eye could trust: transparent things, minds without disguise. His power was revelation through visibility.",
+      "16th c. \u2014 Renaissance humanism and scholarly tradition using classical Latin for precise intellectual operations. \u2192 When English scholars reached for Latin to name the act of making clear, they formed *\u0113l\u016bcid\u0101tum*\u2014'to make luminous.' To elucidate was to take what was dark and turn it bright. Philosophers elucidated arguments; poets elucidated mysteries. The word that had meant 'bright' became an action: the deliberate casting of light into obscurity.",
+      "18th c. \u2014 Enlightenment philosophy and scientific method prioritizing clarity, reason, and systematic explanation. \u2192 In the Age of Enlightenment, Elucidate found his calling. Thinkers vowed to elucidate nature, history, the human mind. Reason was the lamp he carried. Every explanation removed one more shadow; every clarification opened another door. He became the verb of understanding\u2014not faith but illumination, not mystery but method.",
+      "20th c. \u2014 Modern educational and analytical discourse where explanation has become routine institutional practice. \u2192 Now he moves through classrooms and commentaries, through textbooks and analysis. To elucidate is still to bring light, but the light itself has grown ordinary. In a world of footnotes and explanations, he no longer speaks of revelation\u2014only of procedure, the workable task of making the obscure one shade less dark."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "hard_mode_penalty": {
+        "health_loss_on_fail": 2,
+        "reward_multiplier_on_success": 2
+      },
+      "feedback": {
+        "hint": "Some centuries whisper lies.",
+        "success": "You have slain the beast of confusion. Double silk earned.",
+        "fail": "The beast devoured your certainty. Try again."
+      }
+    },
+    "difficulty": "hard",
+    "reward_amount": 50
+  },
+  {
+    "word": "lumbering",
+    "word_id": 30,
+    "level": 1,
+    "question_type": "spelling",
+    "prompt": "Arrange the letters to spell the word:",
+    "options": null,
+    "correct_answer": "lumbering",
+    "variant_data": null,
+    "reward_amount": 10
+  },
+  {
+    "word_id": 30,
+    "level": 2,
+    "question_type": "typing",
+    "prompt": "Type the word you just arranged:",
+    "options": null,
+    "correct_answer": "(?i)^lumbering$",
+    "variant_data": null,
+    "reward_amount": 10,
+    "word": "lumbering"
+  },
+  {
+    "word_id": 30,
+    "level": 3,
+    "question_type": "definition",
+    "prompt": "Select all definitions that accurately describe 'lumbering':",
+    "incorrect_answers": [
+      "Moving with grace and elegance",
+      "Light and nimble in motion",
+      "Quick and agile movement",
+      "Smooth and fluid gestures",
+      "Delicate and refined motion",
+      "Swift and effortless action",
+      "Flexible and supple movement",
+      "Graceful and coordinated steps"
+    ],
+    "correct_answers": [
+      "Moving in a slow, heavy, awkward way",
+      "Characterized by ponderous or clumsy movement",
+      "Making a heavy, thudding sound when moving",
+      "Ungainly or unwieldy in motion"
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 3,
+      "feedback": {
+        "hint": "Think of weight made movement.",
+        "success": "You felt the earth shake.",
+        "fail": "Some moved too lightly."
+      }
+    },
+    "reward_amount": 15,
+    "word": "lumbering"
+  },
+  {
+    "word_id": 30,
+    "level": 4,
+    "question_type": "syn_ant_sort",
+    "prompt": "Drag each word into the correct basket for 'lumbering':",
+    "options": {
+      "synonyms": [
+        "clumsy",
+        "awkward",
+        "plodding",
+        "ungainly"
+      ],
+      "antonyms": [
+        "graceful",
+        "agile",
+        "nimble",
+        "elegant"
+      ],
+      "red_herrings": [
+        "heavy",
+        "slow",
+        "large",
+        "big"
+      ]
+    },
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 6,
+      "feedback": {
+        "hint": "Listen for weight vs. lightness.",
+        "success": "You separated the heavy from the light-footed.",
+        "fail": "Some landed in the wrong gait."
+      }
+    },
+    "reward_amount": 15,
+    "word": "lumbering"
+  },
+  {
+    "word_id": 30,
+    "level": 5,
+    "question_type": "story_reorder",
+    "prompt": "Match each time period with its stage in the story of 'lumbering', then arrange them in order:",
+    "options": {
+      "time_periods": [
+        "14th c.",
+        "16th c.",
+        "18th c.",
+        "19th c."
+      ],
+      "settings": [
+        "Medieval Trade",
+        "Colonial Exploration",
+        "Natural History",
+        "Industrial Revolution"
+      ],
+      "turns": [
+        "From Lombard merchants came *lumber*\u2014goods stored in shops. To lumber a room meant to fill it with stored things, cluttering the space.",
+        "As English explored new worlds, Lumbering met the forest. *Lumber* came to mean timber, and to lumber meant to cut it clumsily, to move it heavily.",
+        "When writers described animals, they summoned him. The bear lumbered through snow; the elephant lumbered into the clearing. He had learned to walk.",
+        "Steam and steel gave him a voice. Lumbering trains; lumbering factories; lumbering machines. The term that named awkward creatures now named industrial power."
+      ],
+      "red_herrings": [
+        "He was never used for animals.",
+        "He started as a dance term."
+      ]
+    },
+    "correct_answer": [
+      "14th c. \u2014 Medieval Trade \u2192 From Lombard merchants came *lumber*\u2014goods stored in shops. To lumber a room meant to fill it with stored things, cluttering the space.",
+      "16th c. \u2014 Colonial Exploration \u2192 As English explored new worlds, Lumbering met the forest. *Lumber* came to mean timber, and to lumber meant to cut it clumsily, to move it heavily.",
+      "18th c. \u2014 Natural History \u2192 When writers described animals, they summoned him. The bear lumbered through snow; the elephant lumbered into the clearing. He had learned to walk.",
+      "19th c. \u2014 Industrial Revolution \u2192 Steam and steel gave him a voice. Lumbering trains; lumbering factories; lumbering machines. The term that named awkward creatures now named industrial power."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": true,
+      "feedback": {
+        "hint": "Trace how goods became weight.",
+        "success": "The centuries fall into place\u2014the word lives again.",
+        "fail": "Some centuries landed out of time."
+      }
+    },
+    "reward_amount": 25,
+    "word": "lumbering"
+  },
+  {
+    "word": "lumbering",
+    "level": 6,
+    "question_type": "story",
+    "prompt": "Rebuild the full story of 'lumbering'\u2014beware the three false centuries. Conquer the beast for double silk.",
+    "options": {
+      "time_periods": [
+        "14th c.",
+        "16th c.",
+        "18th c.",
+        "19th c.",
+        "12th c.",
+        "15th c.",
+        "17th c."
+      ],
+      "settings": [
+        "Medieval Trade",
+        "Colonial Exploration",
+        "Natural History",
+        "Industrial Revolution",
+        "Crusader Kingdoms",
+        "Renaissance Commerce",
+        "Age of Discovery"
+      ],
+      "turns": [
+        "From Lombard merchants came *lumber*\u2014'pawn,' goods stored in a Lombard's shop. To lumber a room meant to fill it with stored things, cluttering the space. Lumber became the word for awkward bulk: furniture too big for doorways, objects blocking the way. He began as commerce and ended as obstruction. The slow merchant's stock became the slow creature's gait.",
+        "As English explored new worlds, Lumbering met the forest. *Lumber* came to mean timber, and to lumber meant to cut it clumsily, to move it heavily. The word that named stored goods now named fallen trees. Merchants' stockrooms and loggers' rivers both held the same quality: things too heavy to move with grace. Bulk became movement\u2014the awkward hauling of weight.",
+        "When writers described animals, they summoned him. The bear lumbered through snow; the elephant lumbered into the clearing. He had learned to walk. Not graceful movement but the honest gait of mass: each step deliberate, ground-giving, leaving prints too deep to fill. He became the poetry of weight\u2014not beautiful but true, not fast but certain.",
+        "Steam and steel gave him a voice. Lumbering trains; lumbering factories; lumbering machines that shook the earth. The term that once named awkward creatures now named industrial power. Modernity was big, loud, heavy, slow to start but impossible to stop once moving. Lumbering became the sound of progress itself\u2014cumbersome but inevitable, awkward but unstoppable.",
+        "He was carried by Crusader caravans\u2014where lumbering beasts hauled siege engines across desolate landscapes toward the walls of holy cities. Chroniclers wrote of how the massive engines lumbered forward like moving fortresses, shaking the earth with their advance.",
+        "He became the rhythm of Renaissance warehouses\u2014where Italian merchants lumbered goods from ship to stall in chaotic loading docks. The sound of heavy crates being lumbered through narrow passages echoed through Mediterranean ports.",
+        "He symbolized the heroic burden of explorers who lumbered through unmapped wilderness\u2014bearing impossible loads of supplies and equipment into unknown territories, where every step was a conquest of distance and weight."
+      ],
+      "red_herrings": [
+        "He was carried by Crusader caravans\u2014where lumbering beasts hauled siege engines across desolate landscapes toward the walls of holy cities. Chroniclers wrote of how the massive engines lumbered forward like moving fortresses, shaking the earth with their advance.",
+        "He became the rhythm of Renaissance warehouses\u2014where Italian merchants lumbered goods from ship to stall in chaotic loading docks. The sound of heavy crates being lumbered through narrow passages echoed through Mediterranean ports.",
+        "He symbolized the heroic burden of explorers who lumbered through unmapped wilderness\u2014bearing impossible loads of supplies and equipment into unknown territories, where every step was a conquest of distance and weight."
+      ]
+    },
+    "correct_answer": [
+      "14th c. \u2014 Medieval Trade \u2192 From Lombard merchants came *lumber*\u2014'pawn,' goods stored in a Lombard's shop. To lumber a room meant to fill it with stored things, cluttering the space. Lumber became the word for awkward bulk: furniture too big for doorways, objects blocking the way. He began as commerce and ended as obstruction. The slow merchant's stock became the slow creature's gait.",
+      "16th c. \u2014 Colonial Exploration \u2192 As English explored new worlds, Lumbering met the forest. *Lumber* came to mean timber, and to lumber meant to cut it clumsily, to move it heavily. The word that named stored goods now named fallen trees. Merchants' stockrooms and loggers' rivers both held the same quality: things too heavy to move with grace. Bulk became movement\u2014the awkward hauling of weight.",
+      "18th c. \u2014 Natural History \u2192 When writers described animals, they summoned him. The bear lumbered through snow; the elephant lumbered into the clearing. He had learned to walk. Not graceful movement but the honest gait of mass: each step deliberate, ground-giving, leaving prints too deep to fill. He became the poetry of weight\u2014not beautiful but true, not fast but certain.",
+      "19th c. \u2014 Industrial Revolution \u2192 Steam and steel gave him a voice. Lumbering trains; lumbering factories; lumbering machines that shook the earth. The term that once named awkward creatures now named industrial power. Modernity was big, loud, heavy, slow to start but impossible to stop once moving. Lumbering became the sound of progress itself\u2014cumbersome but inevitable, awkward but unstoppable."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "hard_mode_penalty": {
+        "health_loss_on_fail": 2,
+        "reward_multiplier_on_success": 2
+      },
+      "feedback": {
+        "hint": "Some centuries whisper lies.",
+        "success": "You have slain the beast of confusion. Double silk earned.",
+        "fail": "The beast devoured your certainty. Try again."
+      }
+    },
+    "difficulty": "hard",
+    "reward_amount": 50
+  },
+  {
+    "word": "pall",
+    "word_id": 29,
+    "level": 1,
+    "question_type": "spelling",
+    "prompt": "Arrange the letters to spell the word:",
+    "options": null,
+    "correct_answer": "pall",
+    "variant_data": null,
+    "reward_amount": 10
+  },
+  {
+    "word_id": 29,
+    "level": 2,
+    "question_type": "typing",
+    "prompt": "Type the word you just arranged:",
+    "options": null,
+    "correct_answer": "(?i)^pall$",
+    "variant_data": null,
+    "reward_amount": 10,
+    "word": "pall"
+  },
+  {
+    "word_id": 29,
+    "level": 3,
+    "question_type": "definition",
+    "prompt": "Select all definitions that accurately describe 'pall':",
+    "incorrect_answers": [
+      "A bright and cheerful atmosphere",
+      "Something that brings joy and excitement",
+      "A feeling of lightness and freedom",
+      "An uplifting or inspiring quality",
+      "A celebration or festivity",
+      "Something that energizes and motivates",
+      "A sense of hope and optimism",
+      "An atmosphere of happiness"
+    ],
+    "correct_answers": [
+      "A heavy, dark cloth covering, especially for mourning",
+      "A gloomy or depressing atmosphere",
+      "To become dull or less interesting",
+      "Something that spreads sadness or gloom"
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 3,
+      "feedback": {
+        "hint": "Think of what covers and darkens.",
+        "success": "You felt the weight of gloom.",
+        "fail": "Some shone too brightly."
+      }
+    },
+    "reward_amount": 15,
+    "word": "pall"
+  },
+  {
+    "word_id": 29,
+    "level": 4,
+    "question_type": "syn_ant_sort",
+    "prompt": "Drag each word into the correct basket for 'pall':",
+    "options": {
+      "synonyms": [
+        "shroud",
+        "gloom",
+        "melancholy",
+        "cloud"
+      ],
+      "antonyms": [
+        "brightness",
+        "cheer",
+        "joy",
+        "lightness"
+      ],
+      "red_herrings": [
+        "cloth",
+        "covering",
+        "veil",
+        "cover"
+      ]
+    },
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 6,
+      "feedback": {
+        "hint": "Listen for dark vs. light.",
+        "success": "You separated the shadows from the sun.",
+        "fail": "Some landed in the wrong light."
+      }
+    },
+    "reward_amount": 15,
+    "word": "pall"
+  },
+  {
+    "word_id": 29,
+    "level": 5,
+    "question_type": "story_reorder",
+    "prompt": "Match each time period with its stage in the story of 'pall', then arrange them in order:",
+    "options": {
+      "time_periods": [
+        "9th c.",
+        "14th c.",
+        "17th c.",
+        "19th c."
+      ],
+      "settings": [
+        "Anglo-Saxon England",
+        "Medieval Plague",
+        "Early Modern Poetry",
+        "Victorian Literature"
+      ],
+      "turns": [
+        "From Old English *p\u00e6ll*, he meant 'a cloak'\u2014rich fabric draped over shoulders. Kings wore palls of purple; saints were buried under palls of silk.",
+        "When plague swept Europe, Pall found his calling. Funeral rites stretched the pall over coffins. He became the ritual cloth of separation: what the eye could not bear to see, he hid.",
+        "Poets took him from the churchyard. Smoke hung like a pall over burning cities. Silence fell like a pall over crowds. He became atmosphere: the feeling of weight from nowhere visible.",
+        "As a verb, Pall learned to tire. The joke palled; the beauty palled; repetition palled everything. He had learned to kill interest, to bury what once delighted."
+      ],
+      "red_herrings": [
+        "He was always a verb of excitement.",
+        "He disappeared completely in the 16th century."
+      ]
+    },
+    "correct_answer": [
+      "9th c. \u2014 Anglo-Saxon England \u2192 From Old English *p\u00e6ll*, he meant 'a cloak'\u2014rich fabric draped over shoulders. Kings wore palls of purple; saints were buried under palls of silk.",
+      "14th c. \u2014 Medieval Plague \u2192 When plague swept Europe, Pall found his calling. Funeral rites stretched the pall over coffins. He became the ritual cloth of separation: what the eye could not bear to see, he hid.",
+      "17th c. \u2014 Early Modern Poetry \u2192 Poets took him from the churchyard. Smoke hung like a pall over burning cities. Silence fell like a pall over crowds. He became atmosphere: the feeling of weight from nowhere visible.",
+      "19th c. \u2014 Victorian Literature \u2192 As a verb, Pall learned to tire. The joke palled; the beauty palled; repetition palled everything. He had learned to kill interest, to bury what once delighted."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": true,
+      "feedback": {
+        "hint": "Trace how cloth became weariness.",
+        "success": "The centuries fall into place\u2014the word lives again.",
+        "fail": "Some centuries landed out of time."
+      }
+    },
+    "reward_amount": 25,
+    "word": "pall"
+  },
+  {
+    "word": "pall",
+    "level": 6,
+    "question_type": "story",
+    "prompt": "Rebuild the full story of 'pall'\u2014beware the three false centuries. Conquer the beast for double silk.",
+    "options": {
+      "time_periods": [
+        "9th c.",
+        "14th c.",
+        "17th c.",
+        "19th c.",
+        "7th c.",
+        "12th c.",
+        "18th c."
+      ],
+      "settings": [
+        "Anglo-Saxon England",
+        "Medieval Plague",
+        "Early Modern Poetry",
+        "Victorian Literature",
+        "Carolingian Empire",
+        "Crusader States",
+        "Romantic Movement"
+      ],
+      "turns": [
+        "From Old English *p\u00e6ll*, he meant 'a cloak'\u2014rich fabric draped over shoulders. Kings wore palls of purple; saints were buried under palls of silk. He was luxury before he was sorrow. But cloth is born to cover, and what it covers changes its nature. By the time Middle English spoke his name, he had learned to shield the face of death.",
+        "When plague swept Europe, Pall found his calling. Funeral rites stretched the pall over coffins\u2014black wool for the poor, velvet for the rich, but always the same shield between the living and what they buried. He became the ritual cloth of separation: what the eye could not bear to see, he hid. From rich cloak to funeral shroud, luxury became dignity in death.",
+        "Poets took him from the churchyard. Smoke hung like a pall over burning cities. Silence fell like a pall over crowds. He had learned to stretch\u2014no longer just cloth but anything heavy, dark, settling. The metaphorical pall became more common than the literal one. He became atmosphere: the feeling of weight that comes from nowhere visible.",
+        "As a verb, Pall learned to tire. The joke palled; the beauty palled; repetition palled everything. The same cloth that covered death now covered enjoyment. Not shock but weariness. Not grief but boredom. He had learned a new skill: the gentle killing of interest, the slow burial of what once delighted. The covering that hid death also muffled life.",
+        "He was woven by Carolingian nuns as the veil for relics\u2014where the sacred cloth shielded mortal remains from mortal sight, creating a boundary between the temporal and eternal. In monastery scriptoria, he represented the mystery of what lives beyond the body.",
+        "He became the standard of Crusader knights\u2014where black silk marked the deathless crusade against infidel lands, transforming personal grief into divine mission. Chroniclers recorded how he flew over battlefields as both promise and memorial.",
+        "He symbolized the Romantic shroud of melancholy that covered the artist's soul\u2014making sorrow into aesthetic beauty, where creative genius found its voice in the language of loss and longing that could not be expressed in cheer."
+      ],
+      "red_herrings": [
+        "He was woven by Carolingian nuns as the veil for relics\u2014where the sacred cloth shielded mortal remains from mortal sight, creating a boundary between the temporal and eternal. In monastery scriptoria, he represented the mystery of what lives beyond the body.",
+        "He became the standard of Crusader knights\u2014where black silk marked the deathless crusade against infidel lands, transforming personal grief into divine mission. Chroniclers recorded how he flew over battlefields as both promise and memorial.",
+        "He symbolized the Romantic shroud of melancholy that covered the artist's soul\u2014making sorrow into aesthetic beauty, where creative genius found its voice in the language of loss and longing that could not be expressed in cheer."
+      ]
+    },
+    "correct_answer": [
+      "9th c. \u2014 Anglo-Saxon England \u2192 From Old English *p\u00e6ll*, he meant 'a cloak'\u2014rich fabric draped over shoulders. Kings wore palls of purple; saints were buried under palls of silk. He was luxury before he was sorrow. But cloth is born to cover, and what it covers changes its nature. By the time Middle English spoke his name, he had learned to shield the face of death.",
+      "14th c. \u2014 Medieval Plague \u2192 When plague swept Europe, Pall found his calling. Funeral rites stretched the pall over coffins\u2014black wool for the poor, velvet for the rich, but always the same shield between the living and what they buried. He became the ritual cloth of separation: what the eye could not bear to see, he hid. From rich cloak to funeral shroud, luxury became dignity in death.",
+      "17th c. \u2014 Early Modern Poetry \u2192 Poets took him from the churchyard. Smoke hung like a pall over burning cities. Silence fell like a pall over crowds. He had learned to stretch\u2014no longer just cloth but anything heavy, dark, settling. The metaphorical pall became more common than the literal one. He became atmosphere: the feeling of weight that comes from nowhere visible.",
+      "19th c. \u2014 Victorian Literature \u2192 As a verb, Pall learned to tire. The joke palled; the beauty palled; repetition palled everything. The same cloth that covered death now covered enjoyment. Not shock but weariness. Not grief but boredom. He had learned a new skill: the gentle killing of interest, the slow burial of what once delighted. The covering that hid death also muffled life."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "hard_mode_penalty": {
+        "health_loss_on_fail": 2,
+        "reward_multiplier_on_success": 2
+      },
+      "feedback": {
+        "hint": "Some centuries whisper lies.",
+        "success": "You have slain the beast of confusion. Double silk earned.",
+        "fail": "The beast devoured your certainty. Try again."
+      }
+    },
+    "difficulty": "hard",
+    "reward_amount": 50
+  },
+  {
+    "word": "plausible",
+    "word_id": 34,
+    "level": 1,
+    "question_type": "spelling",
+    "prompt": "Arrange the letters to spell the word:",
+    "options": null,
+    "correct_answer": "plausible",
+    "variant_data": null,
+    "reward_amount": 10
+  },
+  {
+    "word_id": 34,
+    "level": 2,
+    "question_type": "typing",
+    "prompt": "Type the word you just arranged:",
+    "options": null,
+    "correct_answer": "(?i)^plausible$",
+    "variant_data": null,
+    "reward_amount": 10,
+    "word": "plausible"
+  },
+  {
+    "word_id": 34,
+    "level": 3,
+    "question_type": "definition",
+    "prompt": "Select all definitions that accurately describe 'plausible':",
+    "incorrect_answers": [
+      "Absolutely true and verified",
+      "Completely false and impossible",
+      "Definitively proven",
+      "Obviously untrue and absurd",
+      "Empirically verified",
+      "Scientifically proven",
+      "Objectively false",
+      "Universally rejected"
+    ],
+    "correct_answers": [
+      "Appearing reasonable or credible",
+      "Seeming worthy of belief without proof",
+      "Having the appearance of truth without certainty",
+      "Being believable but not necessarily true"
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 3,
+      "feedback": {
+        "hint": "Think carefully about plausible",
+        "success": "You understood correctly.",
+        "fail": "Some definitions were missed."
+      }
+    },
+    "reward_amount": 15,
+    "word": "plausible"
+  },
+  {
+    "word": "plausible",
+    "word_id": 34,
+    "level": 4,
+    "question_type": "syn_ant_sort",
+    "prompt": "Drag each word into the correct basket for 'plausible':",
+    "options": {
+      "synonyms": [
+        "credible",
+        "believable",
+        "reasonable",
+        "convincing",
+        "persuasive",
+        "specious"
+      ],
+      "antonyms": [
+        "implausible",
+        "incredible",
+        "unbelievable",
+        "absurd",
+        "ridiculous"
+      ],
+      "red_herrings": [
+        "word",
+        "term",
+        "concept",
+        "meaning"
+      ]
+    },
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 5,
+      "feedback": {
+        "hint": "Listen carefully.",
+        "success": "You separated them correctly.",
+        "fail": "Some landed in the wrong place."
+      }
+    },
+    "reward_amount": 15
+  },
+  {
+    "word": "plausible",
+    "word_id": 34,
+    "level": 5,
+    "question_type": "story_reorder",
+    "prompt": "Match each time period with its stage in the story of 'plausible', then arrange them in order:",
+    "options": {
+      "time_periods": [
+        "1th c.",
+        "17th c.",
+        "19th c.",
+        "20th c."
+      ],
+      "story_texts": [
+        "In Rome, she was *plaudibilis*\u2014'worthy of applause.' Born from *plaudere*, 'to clap hands,' she name...",
+        "When Enlightenment thinkers borrowed her, Plausible moved from theater to philosophy. She still aske...",
+        "Victorian society taught her politeness. To be plausible meant to seem respectable, to wear the mask...",
+        "Now she negotiates the space between truth and its convenient substitutes. In politics, in media, in..."
+      ]
+    },
+    "correct_answer": [
+      "1th c.",
+      "17th c.",
+      "19th c.",
+      "20th c."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "feedback": {
+        "hint": "Time flows forward.",
+        "success": "You ordered the centuries correctly.",
+        "fail": "The timeline is broken."
+      }
+    },
+    "reward_amount": 15
+  },
+  {
+    "word": "plausible",
+    "level": 6,
+    "question_type": "story",
+    "prompt": "Rebuild the full story of 'plausible'\u2014beware the three false centuries. Conquer the beast for double silk.",
+    "options": {
+      "time_periods": [
+        "1th c.",
+        "17th c.",
+        "19th c.",
+        "20th c.",
+        "8th c.",
+        "12th c.",
+        "15th c."
+      ],
+      "settings": [
+        "Setting 1th c.",
+        "Setting 17th c.",
+        "Setting 19th c.",
+        "Setting 20th c.",
+        "False Setting 1",
+        "False Setting 2",
+        "False Setting 3"
+      ],
+      "turns": [
+        "In Rome, she was *plaudibilis*\u2014'worthy of applause.' Born from *plaudere*, 'to clap hands,' she named what audiences approved through sound. To be plausible was to earn the crowd's favor, to meet their standards for what deserved applause. She was theater's judgment: not truth but approval, not reality but acceptance.",
+        "When Enlightenment thinkers borrowed her, Plausible moved from theater to philosophy. She still asked for approval, but now from reason, not crowds. A plausible argument was one that reasonable minds could accept\u2014not necessarily true, but not obviously false. The applause became internal: the quiet nod of recognition.",
+        "Victorian society taught her politeness. To be plausible meant to seem respectable, to wear the mask of propriety. She learned the language of appearances\u2014what could be said in public, what could be defended in good company. Her truth became social acceptability, measured in frowns averted, suspicions eased.",
+        "Now she negotiates the space between truth and its convenient substitutes. In politics, in media, in everyday claims, plausibility has become currency: not lies, not certainty, but the middle ground of seeming reasonable. She has learned to serve whoever needs belief without proof\u2014the master of appearances, still asking only for applause."
+      ],
+      "red_herrings": [
+        "She was embraced by scholastic philosophers who believed truth required universal consensus\u2014where *plaudibilis* became the measure of what all reasonable minds must accept. Medieval theologians used her to describe the shared judgment that distinguished truth from heresy, where plausibility emerged from the Her reputa",
+        "She became the standard of chivalric courts where public approval measured virtue\u2014where the applause of nobles proved the knight's worth. In the tournament grounds, she represented the collective judgment that turned individual deeds into lasting reputation, where the knight's character was measured not by",
+        "She symbolized the Renaissance humanist's faith in public debate\u2014where plausibility emerged from the free exchange of ideas. Philosophers believed that what could survive open scrutiny was, by definition, worthy of belief\u2014the applause of the forum became the test of truth, where intellectual discourse determined what ideas deserved"
+      ]
+    },
+    "correct_answer": [
+      "1th c. \u2014 Roman rhetorical and theatrical culture where audience approval measured persuasive success. \u2192 In Rome, she was *plaudibilis*\u2014'worthy of applause.' Born from *plaudere*, 'to clap hands,' she named what audiences approved through sound. To be plausible was to earn the crowd's favor, to meet their standards for what deserved applause. She was theater's judgment: not truth but approval, not reality but acceptance.",
+      "17th c. \u2014 Enlightenment philosophy and probability theory distinguishing appearance from certainty. \u2192 When Enlightenment thinkers borrowed her, Plausible moved from theater to philosophy. She still asked for approval, but now from reason, not crowds. A plausible argument was one that reasonable minds could accept\u2014not necessarily true, but not obviously false. The applause became internal: the quiet nod of recognition.",
+      "19th c. \u2014 Victorian social codes emphasizing proper appearance and public respectability. \u2192 Victorian society taught her politeness. To be plausible meant to seem respectable, to wear the mask of propriety. She learned the language of appearances\u2014what could be said in public, what could be defended in good company. Her truth became social acceptability, measured in frowns averted, suspicions eased.",
+      "20th c. \u2014 Modern discourse where persuasive presentation competes with factual verification. \u2192 Now she negotiates the space between truth and its convenient substitutes. In politics, in media, in everyday claims, plausibility has become currency: not lies, not certainty, but the middle ground of seeming reasonable. She has learned to serve whoever needs belief without proof\u2014the master of appearances, still asking only for applause."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "hard_mode_penalty": {
+        "health_loss_on_fail": 2,
+        "reward_multiplier_on_success": 2
+      },
+      "feedback": {
+        "hint": "Some centuries whisper lies.",
+        "success": "You have slain the beast of confusion. Double silk earned.",
+        "fail": "The beast devoured your certainty. Try again."
+      }
+    },
+    "difficulty": "hard",
+    "reward_amount": 50
+  },
+  {
+    "word": "scurry",
+    "word_id": 31,
+    "level": 1,
+    "question_type": "spelling",
+    "prompt": "Arrange the letters to spell the word:",
+    "options": null,
+    "correct_answer": "scurry",
+    "variant_data": null,
+    "reward_amount": 10
+  },
+  {
+    "word_id": 31,
+    "level": 2,
+    "question_type": "typing",
+    "prompt": "Type the word you just arranged:",
+    "options": null,
+    "correct_answer": "(?i)^scurry$",
+    "variant_data": null,
+    "reward_amount": 10,
+    "word": "scurry"
+  },
+  {
+    "word_id": 31,
+    "level": 3,
+    "question_type": "definition",
+    "prompt": "Select all definitions that accurately describe 'scurry':",
+    "incorrect_answers": [
+      "To move slowly and deliberately",
+      "To walk with dignity and purpose",
+      "To proceed in a calm, measured way",
+      "To march with determination",
+      "To stroll leisurely",
+      "To amble without urgency",
+      "To move with confidence and grace",
+      "To travel at a steady, relaxed pace"
+    ],
+    "correct_answers": [
+      "To move hurriedly with short, quick steps",
+      "To rush about busily in a somewhat frantic manner",
+      "To dash or dart quickly",
+      "To hurry with nervous or anxious energy"
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 3,
+      "feedback": {
+        "hint": "Think of small, urgent feet.",
+        "success": "You caught the quick dash.",
+        "fail": "Some moved too slowly."
+      }
+    },
+    "reward_amount": 15,
+    "word": "scurry"
+  },
+  {
+    "word_id": 31,
+    "level": 4,
+    "question_type": "syn_ant_sort",
+    "prompt": "Drag each word into the correct basket for 'scurry':",
+    "options": {
+      "synonyms": [
+        "hurry",
+        "dash",
+        "scuttle",
+        "rush"
+      ],
+      "antonyms": [
+        "amble",
+        "saunter",
+        "stroll",
+        "linger"
+      ],
+      "red_herrings": [
+        "run",
+        "walk",
+        "move",
+        "go"
+      ]
+    },
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 6,
+      "feedback": {
+        "hint": "Listen for haste vs. leisure.",
+        "success": "You separated the hurried from the unhurried.",
+        "fail": "Some landed at the wrong pace."
+      }
+    },
+    "reward_amount": 15,
+    "word": "scurry"
+  },
+  {
+    "word_id": 31,
+    "level": 5,
+    "question_type": "story_reorder",
+    "prompt": "Match each time period with its stage in the story of 'scurry', then arrange them in order:",
+    "options": {
+      "time_periods": [
+        "17th c.",
+        "19th c.",
+        "19th c.",
+        "20th c."
+      ],
+      "settings": [
+        "Great English Houses",
+        "Natural History Writing",
+        "Industrial Workshops",
+        "Modern Digital Age"
+      ],
+      "turns": [
+        "In the great houses of England, he was born from *hurry-scurry*\u2014chaos made movement. To scurry was to rush about confused, servants running to orders that canceled each other out.",
+        "When naturalists wrote of small animals, Scurry found his true form. Mice scurried through fields; beetles scurried under logs. He became the verb of small haste: the furtive dash of the hunted.",
+        "Workers scurried through workshops; clerks scurried between desks. The word that named animal haste now named human busyness.",
+        "Modern life gave him electricity. Feet scurried across screens; thoughts scurried through news. The verb of small movement became the verb of modern distraction."
+      ],
+      "red_herrings": [
+        "He was invented in the 21st century.",
+        "He never described animal movement."
+      ]
+    },
+    "correct_answer": [
+      "17th c. \u2014 Great English Houses \u2192 In the great houses of England, he was born from *hurry-scurry*\u2014chaos made movement. To scurry was to rush about confused, servants running to orders that canceled each other out.",
+      "19th c. \u2014 Natural History Writing \u2192 When naturalists wrote of small animals, Scurry found his true form. Mice scurried through fields; beetles scurried under logs. He became the verb of small haste: the furtive dash of the hunted.",
+      "19th c. \u2014 Industrial Workshops \u2192 Workers scurried through workshops; clerks scurried between desks. The word that named animal haste now named human busyness.",
+      "20th c. \u2014 Modern Digital Age \u2192 Modern life gave him electricity. Feet scurried across screens; thoughts scurried through news. The verb of small movement became the verb of modern distraction."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": true,
+      "feedback": {
+        "hint": "Trace how small became busy.",
+        "success": "The centuries fall into place\u2014the word lives again.",
+        "fail": "Some centuries landed out of time."
+      }
+    },
+    "reward_amount": 25,
+    "word": "scurry"
+  },
+  {
+    "word": "scurry",
+    "level": 6,
+    "question_type": "story",
+    "prompt": "Rebuild the full story of 'scurry'\u2014beware the three false centuries. Conquer the beast for double silk.",
+    "options": {
+      "time_periods": [
+        "17th c.",
+        "19th c.",
+        "19th c.",
+        "20th c.",
+        "15th c.",
+        "16th c.",
+        "18th c."
+      ],
+      "settings": [
+        "Great English Houses",
+        "Natural History Writing",
+        "Industrial Workshops",
+        "Modern Digital Age",
+        "Medieval Courts",
+        "Renaissance Households",
+        "Enlightenment Society"
+      ],
+      "turns": [
+        "In the great houses of England, he was born from *hurry-scurry*\u2014chaos made movement. To scurry was to rush about confused, servants running to orders that canceled each other out. He named the flustered gait of urgency, the movement of those who must arrive without knowing why. From hurry came scurry: not just speed but the anxious speed of small creatures before larger ones.",
+        "When naturalists wrote of small animals, Scurry found his true form. Mice scurried through fields; beetles scurried under logs; ants scurried along paths. He became the verb of small haste: not the bold rush of hunters but the furtive dash of the hunted. He carried the sound of small feet on hard ground\u2014the audible anxiety of creatures too small to stand their ground.",
+        "Workers scurried through workshops; clerks scurried between desks. The word that named animal haste now named human busyness. But scale mattered: to scurry was not to stride but to dart, not to march but to scoot. It suggested movement without dignity\u2014hurried but not powerful, busy but not significant. The small creature's flight became the worker's pace.",
+        "Modern life gave him electricity. Feet scurried across screens; thoughts scurried through news; attention itself scurried from device to device. The verb of small movement became the verb of modern distraction: never still, never settled, always moving to the next thing. What began as flight became habit\u2014the perpetual hurry of being that cannot stop.",
+        "He was carried by minstrels scurrying through medieval castles\u2014where performers rushed between courts seeking patronage, their hurrying feet carrying songs and stories from one great hall to the next in the perpetual dance of courtly service.",
+        "He became the secret language of spies scurrying through Renaissance cities\u2014gathering intelligence in the shadows of power, where every hurried movement carried the weight of state secrets and political survival.",
+        "He symbolized the enlightened citizen scurrying between coffee houses and salons\u2014where ideas traveled faster than people, and the new public sphere was built on the hurried circulation of printed words and spoken debate."
+      ],
+      "red_herrings": [
+        "He was carried by minstrels scurrying through medieval castles\u2014where performers rushed between courts seeking patronage, their hurrying feet carrying songs and stories from one great hall to the next in the perpetual dance of courtly service.",
+        "He became the secret language of spies scurrying through Renaissance cities\u2014gathering intelligence in the shadows of power, where every hurried movement carried the weight of state secrets and political survival.",
+        "He symbolized the enlightened citizen scurrying between coffee houses and salons\u2014where ideas traveled faster than people, and the new public sphere was built on the hurried circulation of printed words and spoken debate."
+      ]
+    },
+    "correct_answer": [
+      "17th c. \u2014 Great English Houses \u2192 In the great houses of England, he was born from *hurry-scurry*\u2014chaos made movement. To scurry was to rush about confused, servants running to orders that canceled each other out. He named the flustered gait of urgency, the movement of those who must arrive without knowing why. From hurry came scurry: not just speed but the anxious speed of small creatures before larger ones.",
+      "19th c. \u2014 Natural History Writing \u2192 When naturalists wrote of small animals, Scurry found his true form. Mice scurried through fields; beetles scurried under logs; ants scurried along paths. He became the verb of small haste: not the bold rush of hunters but the furtive dash of the hunted. He carried the sound of small feet on hard ground\u2014the audible anxiety of creatures too small to stand their ground.",
+      "19th c. \u2014 Industrial Workshops \u2192 Workers scurried through workshops; clerks scurried between desks. The word that named animal haste now named human busyness. But scale mattered: to scurry was not to stride but to dart, not to march but to scoot. It suggested movement without dignity\u2014hurried but not powerful, busy but not significant. The small creature's flight became the worker's pace.",
+      "20th c. \u2014 Modern Digital Age \u2192 Modern life gave him electricity. Feet scurried across screens; thoughts scurried through news; attention itself scurried from device to device. The verb of small movement became the verb of modern distraction: never still, never settled, always moving to the next thing. What began as flight became habit\u2014the perpetual hurry of being that cannot stop."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "hard_mode_penalty": {
+        "health_loss_on_fail": 2,
+        "reward_multiplier_on_success": 2
+      },
+      "feedback": {
+        "hint": "Some centuries whisper lies.",
+        "success": "You have slain the beast of confusion. Double silk earned.",
+        "fail": "The beast devoured your certainty. Try again."
+      }
+    },
+    "difficulty": "hard",
+    "reward_amount": 50
+  },
+  {
+    "word": "steadfast",
+    "word_id": 32,
+    "level": 1,
+    "question_type": "spelling",
+    "prompt": "Arrange the letters to spell the word:",
+    "options": null,
+    "correct_answer": "steadfast",
+    "variant_data": null,
+    "reward_amount": 10
+  },
+  {
+    "word_id": 32,
+    "level": 2,
+    "question_type": "typing",
+    "prompt": "Type the word you just arranged:",
+    "options": null,
+    "correct_answer": "(?i)^steadfast$",
+    "variant_data": null,
+    "reward_amount": 10,
+    "word": "steadfast"
+  },
+  {
+    "word_id": 32,
+    "level": 3,
+    "question_type": "definition",
+    "prompt": "Select all definitions that accurately describe 'steadfast':",
+    "incorrect_answers": [
+      "Changeable and unreliable",
+      "Unsteady and wavering",
+      "Inconsistent and fickle",
+      "Unstable and uncertain",
+      "Flexible to the point of weakness",
+      "Indecisive and hesitant",
+      "Vacillating and uncertain",
+      "Uncommitted and half-hearted"
+    ],
+    "correct_answers": [
+      "Firmly fixed in purpose, loyalty, or faith",
+      "Resolutely unwavering in commitment",
+      "Constant and dependable in nature",
+      "Steady and firm in position or belief"
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 3,
+      "feedback": {
+        "hint": "Think of the unmovable.",
+        "success": "You found what does not break.",
+        "fail": "Some fell where they should stand."
+      }
+    },
+    "reward_amount": 15,
+    "word": "steadfast"
+  },
+  {
+    "word_id": 32,
+    "level": 4,
+    "question_type": "syn_ant_sort",
+    "prompt": "Drag each word into the correct basket for 'steadfast':",
+    "options": {
+      "synonyms": [
+        "loyal",
+        "faithful",
+        "constant",
+        "resolute"
+      ],
+      "antonyms": [
+        "fickle",
+        "wavering",
+        "unreliable",
+        "inconstant"
+      ],
+      "red_herrings": [
+        "strong",
+        "firm",
+        "steady",
+        "solid"
+      ]
+    },
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 6,
+      "feedback": {
+        "hint": "Listen for constancy vs. change.",
+        "success": "You separated the faithful from the faithless.",
+        "fail": "Some landed in the wrong camp."
+      }
+    },
+    "reward_amount": 15,
+    "word": "steadfast"
+  },
+  {
+    "word_id": 32,
+    "level": 5,
+    "question_type": "story_reorder",
+    "prompt": "Match each time period with its stage in the story of 'steadfast', then arrange them in order:",
+    "options": {
+      "time_periods": [
+        "9th c.",
+        "14th c.",
+        "17th c.",
+        "19th c."
+      ],
+      "settings": [
+        "Anglo-Saxon Warrior Culture",
+        "Medieval Chivalry",
+        "Renaissance Poetry",
+        "Romantic Philosophy"
+      ],
+      "turns": [
+        "In Old English, he was *st\u00e6df\u00e6st*\u2014'firm in place.' Warriors stood steadfast in shield-walls; oaths remained steadfast in memory. He was physical before he was moral.",
+        "When chivalry made virtue ritual, Steadfast put on honor's colors. What began as physical holding became moral holding. The shield-wall became the oath-wall.",
+        "When poets sang of love, they summoned him. He became the language of constancy\u2014not just loyalty but devotion. What began as military courage became romantic fidelity.",
+        "The Romantics gave him philosophy. Steadfastness became not just virtue but identity\u2014the self that knows itself and holds."
+      ],
+      "red_herrings": [
+        "He lost all meaning in the Middle Ages.",
+        "He was invented in modern times."
+      ]
+    },
+    "correct_answer": [
+      "9th c. \u2014 Anglo-Saxon Warrior Culture \u2192 In Old English, he was *st\u00e6df\u00e6st*\u2014'firm in place.' Warriors stood steadfast in shield-walls; oaths remained steadfast in memory. He was physical before he was moral.",
+      "14th c. \u2014 Medieval Chivalry \u2192 When chivalry made virtue ritual, Steadfast put on honor's colors. What began as physical holding became moral holding. The shield-wall became the oath-wall.",
+      "17th c. \u2014 Renaissance Poetry \u2192 When poets sang of love, they summoned him. He became the language of constancy\u2014not just loyalty but devotion. What began as military courage became romantic fidelity.",
+      "19th c. \u2014 Romantic Philosophy \u2192 The Romantics gave him philosophy. Steadfastness became not just virtue but identity\u2014the self that knows itself and holds."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": true,
+      "feedback": {
+        "hint": "Trace how standing became staying.",
+        "success": "The centuries fall into place\u2014the word lives again.",
+        "fail": "Some centuries landed out of time."
+      }
+    },
+    "reward_amount": 25,
+    "word": "steadfast"
+  },
+  {
+    "word": "steadfast",
+    "level": 6,
+    "question_type": "story",
+    "prompt": "Rebuild the full story of 'steadfast'\u2014beware the three false centuries. Conquer the beast for double silk.",
+    "options": {
+      "time_periods": [
+        "9th c.",
+        "14th c.",
+        "17th c.",
+        "19th c.",
+        "11th c.",
+        "13th c.",
+        "18th c."
+      ],
+      "settings": [
+        "Anglo-Saxon Warrior Culture",
+        "Medieval Chivalry",
+        "Renaissance Poetry",
+        "Romantic Philosophy",
+        "Viking Sagas",
+        "Crusader Honor",
+        "Enlightenment Ethics"
+      ],
+      "turns": [
+        "In Old English, he was *st\u00e6df\u00e6st*\u2014'firm in place.' *St\u00e6d* meant a place, a standing-ground; *f\u00e6st* meant fixed. Together they named what held its spot. Warriors stood steadfast in shield-walls; oaths remained steadfast in memory. He was physical before he was moral\u2014not yet loyalty but position, not yet faith but footing. The stone does not move, the word does not break.",
+        "When chivalry made virtue ritual, Steadfast put on honor's colors. The knight who stood steadfast in battle stood steadfast in vows. What began as physical holding became moral holding. Fealty, faith, friendship\u2014all required steadfastness. He learned to name not just standing but staying, not just position but persistence. The shield-wall became the oath-wall; the enemy without became the doubt within.",
+        "When poets sang of love, they summoned him. The steadfast heart that beats one name; the steadfast gaze that never strays. He became the language of constancy\u2014not just loyalty but devotion, not just persistence but passion that endures. What began as military courage became romantic fidelity. The standing warrior became the standing lover; the battle-line became the marriage vow.",
+        "The Romantics gave him philosophy. Steadfastness became not just virtue but identity\u2014the self that knows itself and holds. In changing times, the steadfast heart stayed true; in shifting values, the steadfast mind held course. He learned the language of authenticity: not stubbornness but integrity, not rigidity but resolve. What could not be moved defined the person who chose not to move.",
+        "He was sworn by Viking jarls who held fast to their word across seas and seasons\u2014where honor was measured by constancy in the face of betrayal, and the steadfast heart was the only currency that survived changing alliances.",
+        "He became the creed of Crusader knights who stood steadfast before infidel armies\u2014where faith in God became unbreakable resolve, and the steadfast heart found its true test not in victory but in remaining true when all hope had fled.",
+        "He symbolized the enlightened philosopher's commitment to reason\u2014where steadfast pursuit of truth outweighed all worldly pressures, and intellectual integrity became the highest form of courage in an age of questioning."
+      ],
+      "red_herrings": [
+        "He was sworn by Viking jarls who held fast to their word across seas and seasons\u2014where honor was measured by constancy in the face of betrayal, and the steadfast heart was the only currency that survived changing alliances.",
+        "He became the creed of Crusader knights who stood steadfast before infidel armies\u2014where faith in God became unbreakable resolve, and the steadfast heart found its true test not in victory but in remaining true when all hope had fled.",
+        "He symbolized the enlightened philosopher's commitment to reason\u2014where steadfast pursuit of truth outweighed all worldly pressures, and intellectual integrity became the highest form of courage in an age of questioning."
+      ]
+    },
+    "correct_answer": [
+      "9th c. \u2014 Anglo-Saxon Warrior Culture \u2192 In Old English, he was *st\u00e6df\u00e6st*\u2014'firm in place.' *St\u00e6d* meant a place, a standing-ground; *f\u00e6st* meant fixed. Together they named what held its spot. Warriors stood steadfast in shield-walls; oaths remained steadfast in memory. He was physical before he was moral\u2014not yet loyalty but position, not yet faith but footing. The stone does not move, the word does not break.",
+      "14th c. \u2014 Medieval Chivalry \u2192 When chivalry made virtue ritual, Steadfast put on honor's colors. The knight who stood steadfast in battle stood steadfast in vows. What began as physical holding became moral holding. Fealty, faith, friendship\u2014all required steadfastness. He learned to name not just standing but staying, not just position but persistence. The shield-wall became the oath-wall; the enemy without became the doubt within.",
+      "17th c. \u2014 Renaissance Poetry \u2192 When poets sang of love, they summoned him. The steadfast heart that beats one name; the steadfast gaze that never strays. He became the language of constancy\u2014not just loyalty but devotion, not just persistence but passion that endures. What began as military courage became romantic fidelity. The standing warrior became the standing lover; the battle-line became the marriage vow.",
+      "19th c. \u2014 Romantic Philosophy \u2192 The Romantics gave him philosophy. Steadfastness became not just virtue but identity\u2014the self that knows itself and holds. In changing times, the steadfast heart stayed true; in shifting values, the steadfast mind held course. He learned the language of authenticity: not stubbornness but integrity, not rigidity but resolve. What could not be moved defined the person who chose not to move."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "hard_mode_penalty": {
+        "health_loss_on_fail": 2,
+        "reward_multiplier_on_success": 2
+      },
+      "feedback": {
+        "hint": "Some centuries whisper lies.",
+        "success": "You have slain the beast of confusion. Double silk earned.",
+        "fail": "The beast devoured your certainty. Try again."
+      }
+    },
+    "difficulty": "hard",
+    "reward_amount": 50
+  },
+  {
+    "word": "ubiquitous",
+    "word_id": 35,
+    "level": 1,
+    "question_type": "spelling",
+    "prompt": "Arrange the letters to spell the word:",
+    "options": null,
+    "correct_answer": "ubiquitous",
+    "variant_data": null,
+    "reward_amount": 10
+  },
+  {
+    "word_id": 35,
+    "level": 2,
+    "question_type": "typing",
+    "prompt": "Type the word you just arranged:",
+    "options": null,
+    "correct_answer": "(?i)^ubiquitous$",
+    "variant_data": null,
+    "reward_amount": 10,
+    "word": "ubiquitous"
+  },
+  {
+    "word_id": 35,
+    "level": 3,
+    "question_type": "definition",
+    "prompt": "Select all definitions that accurately describe 'ubiquitous':",
+    "incorrect_answers": [
+      "Extremely rare and uncommon",
+      "Confined to a single location",
+      "Limited to specific places",
+      "Unusual and hard to find",
+      "Exclusive to certain areas",
+      "Absent from most spaces",
+      "Restricted to narrow regions",
+      "Scarce and infrequent"
+    ],
+    "correct_answers": [
+      "Present or appearing everywhere simultaneously",
+      "Excessively or extremely common and widespread",
+      "Omnipresent and universal",
+      "Found in all places at once"
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 3,
+      "feedback": {
+        "hint": "Think carefully about ubiquitous",
+        "success": "You understood correctly.",
+        "fail": "Some definitions were missed."
+      }
+    },
+    "reward_amount": 15,
+    "word": "ubiquitous"
+  },
+  {
+    "word": "ubiquitous",
+    "word_id": 35,
+    "level": 4,
+    "question_type": "syn_ant_sort",
+    "prompt": "Drag each word into the correct basket for 'ubiquitous':",
+    "options": {
+      "synonyms": [
+        "omnipresent",
+        "pervasive",
+        "everywhere",
+        "universal",
+        "commonplace"
+      ],
+      "antonyms": [
+        "rare",
+        "scarce",
+        "uncommon",
+        "unusual",
+        "absent"
+      ],
+      "red_herrings": [
+        "word",
+        "term",
+        "concept",
+        "meaning"
+      ]
+    },
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "min_correct_to_pass": 5,
+      "feedback": {
+        "hint": "Listen carefully.",
+        "success": "You separated them correctly.",
+        "fail": "Some landed in the wrong place."
+      }
+    },
+    "reward_amount": 15
+  },
+  {
+    "word": "ubiquitous",
+    "word_id": 35,
+    "level": 5,
+    "question_type": "story_reorder",
+    "prompt": "Match each time period with its stage in the story of 'ubiquitous', then arrange them in order:",
+    "options": {
+      "time_periods": [
+        "17th c.",
+        "19th c.",
+        "20th c.",
+        "21th c."
+      ],
+      "story_texts": [
+        "In the age of theology, he was born: *ub\u012bque*, 'everywhere.' Latin reached for him when describing t...",
+        "Science borrowed him carefully. The ether was ubiquitous\u2014filling all space without occupying it. Ele...",
+        "Then he learned replication. Brands became ubiquitous; advertisements, ubiquitous; technologies, ubi...",
+        "Now he is the air itself: the network that connects everyone, the platform that spans all spaces, th..."
+      ]
+    },
+    "correct_answer": [
+      "17th c.",
+      "19th c.",
+      "20th c.",
+      "21th c."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "feedback": {
+        "hint": "Time flows forward.",
+        "success": "You ordered the centuries correctly.",
+        "fail": "The timeline is broken."
+      }
+    },
+    "reward_amount": 15
+  },
+  {
+    "word": "ubiquitous",
+    "level": 6,
+    "question_type": "story",
+    "prompt": "Rebuild the full story of 'ubiquitous'\u2014beware the three false centuries. Conquer the beast for double silk.",
+    "options": {
+      "time_periods": [
+        "17th c.",
+        "19th c.",
+        "20th c.",
+        "21th c.",
+        "8th c.",
+        "12th c.",
+        "15th c."
+      ],
+      "settings": [
+        "Setting 17th c.",
+        "Setting 19th c.",
+        "Setting 20th c.",
+        "Setting 21th c.",
+        "False Setting 1",
+        "False Setting 2",
+        "False Setting 3"
+      ],
+      "turns": [
+        "In the age of theology, he was born: *ub\u012bque*, 'everywhere.' Latin reached for him when describing the divine\u2014God's presence that filled all places simultaneously. He named what could not be contained: the being whose location was everywhere and nowhere. He was the word of impossibility made grammatical.",
+        "Science borrowed him carefully. The ether was ubiquitous\u2014filling all space without occupying it. Electromagnetic waves were ubiquitous\u2014present in every void. What began as divine attribute became physical property: the quality of being distributed across all points without being localized to any. He had stepped from metaphysics into matter.",
+        "Then he learned replication. Brands became ubiquitous; advertisements, ubiquitous; technologies, ubiquitous. He moved from the philosophical to the economic, from the metaphysical to the manufactured. What was everywhere was not divine or physical but commercial\u2014the mark of success measured in total saturation.",
+        "Now he is the air itself: the network that connects everyone, the platform that spans all spaces, the digital that has no absence. Ubiquitous has become the adjective of our age\u2014the word for what cannot be escaped because it has become the medium in which we breathe. His original mystery has been replaced by his accomplished fact."
+      ],
+      "red_herrings": [
+        "He was adopted by Carolingian mystics to describe the omnipresent divine presence that infused all creation\u2014where *ub\u012bque* became the name for God's simultaneous existence in every monastery stone and every breath of wind. In their contemplative texts, he represented the mystery of infinite presence within finite boundaries, where the",
+        "He became central to medieval theories of magic and alchemy\u2014where ubiquity was the property of substances that could exist in all places simultaneously. Alchemists sought to create the philosopher's stone that shared in divine ubiquity\u2014a single essence distributed across all matter, where the transformation of",
+        "He symbolized the humanist ideal of knowledge spreading universally\u2014where the printing press made ideas ubiquitous across all European courts and universities. Renaissance scholars believed that information, like divine presence, should know no boundaries\u2014the word of possibility made manifest in ink and paper, where knowledge"
+      ]
+    },
+    "correct_answer": [
+      "17th c. \u2014 Scholastic and Protestant theology concerning divine omnipresence. \u2192 In the age of theology, he was born: *ub\u012bque*, 'everywhere.' Latin reached for him when describing the divine\u2014God's presence that filled all places simultaneously. He named what could not be contained: the being whose location was everywhere and nowhere. He was the word of impossibility made grammatical.",
+      "19th c. \u2014 Nineteenth-century physics and metaphysics theorizing universal forces and fields. \u2192 Science borrowed him carefully. The ether was ubiquitous\u2014filling all space without occupying it. Electromagnetic waves were ubiquitous\u2014present in every void. What began as divine attribute became physical property: the quality of being distributed across all points without being localized to any. He had stepped from metaphysics into matter.",
+      "20th c. \u2014 Mass media, advertising, and global capitalism distributing products and images universally. \u2192 Then he learned replication. Brands became ubiquitous; advertisements, ubiquitous; technologies, ubiquitous. He moved from the philosophical to the economic, from the metaphysical to the manufactured. What was everywhere was not divine or physical but commercial\u2014the mark of success measured in total saturation.",
+      "21th c. \u2014 Digital technology and internet culture creating universal connectivity and constant presence. \u2192 Now he is the air itself: the network that connects everyone, the platform that spans all spaces, the digital that has no absence. Ubiquitous has become the adjective of our age\u2014the word for what cannot be escaped because it has become the medium in which we breathe. His original mystery has been replaced by his accomplished fact."
+    ],
+    "variant_data": {
+      "shuffle_each_attempt": true,
+      "allow_partial_credit": false,
+      "hard_mode_penalty": {
+        "health_loss_on_fail": 2,
+        "reward_multiplier_on_success": 2
+      },
+      "feedback": {
+        "hint": "Some centuries whisper lies.",
+        "success": "You have slain the beast of confusion. Double silk earned.",
+        "fail": "The beast devoured your certainty. Try again."
+      }
+    },
+    "difficulty": "hard",
+    "reward_amount": 50
+  }
+]

@@ -1,0 +1,47 @@
+Here’s a schema built to last a long climb—each floor a different *register* of language, each “guy” the kind of consciousness that forms when a whole domain of speech learns to talk to itself too long. You can move through them in any order, or shuffle them when you need fresh tone.
+
+---
+
+### **THE TOWER OF SPEECH — DOMAINS AND THEIR KEEPERS**
+
+| **#**  | **Domain / Register**             | **The “Guy”**         | **How He Speaks**                        | **What He’s Trying to Say**                            | **Why He Gets Stuck**                               |
+| :----- | :-------------------------------- | :-------------------- | :--------------------------------------- | :----------------------------------------------------- | :-------------------------------------------------- |
+| **1**  | Craft / Material Speech           | **The Mason**         | Plain, tactile, half-mumbled.            | How the tower was first built from the world’s matter. | Knows shapes but not meanings.                      |
+| **2**  | Law / Definition                  | **The Jurist**        | Formal, clipped, moralizing.             | Wants to prove the tower’s order is righteous.         | Mistakes correctness for truth.                     |
+| **3**  | Theology / Faith                  | **The Monk**          | Gentle, recursive, self-questioning.     | Says the tower is the path to salvation.               | Cannot describe God without turning Him into stone. |
+| **4**  | Philosophy / Abstraction          | **The Scholar**       | Precise, weary, logical.                 | Tries to explain what the tower *is*.                  | Confuses analysis for presence.                     |
+| **5**  | Commerce / Record                 | **The Clerk**         | Methodical, numbers tucked into speech.  | Keeps inventory of words, workers, costs.              | Reduces meaning to entries and tallies.             |
+| **5b** | Archive / Preservation            | **The Archivist**     | Paper-thin, cataloging, careful.         | Maintains the tower's collected knowledge.             | Confuses storage with understanding.                |
+| **6**  | Poetry / Art                      | **The Poet**          | Rhythmic, lyrical, fragmented.           | Wants the tower to *sing*.                             | Feels too much to finish a sentence.                |
+| **7**  | Science / Inquiry                 | **The Naturalist**    | Curious, descriptive, slightly manic.    | Believes the tower reveals natural law.                | Measures everything but himself.                    |
+| **8**  | Power / Command                   | **The General**       | Declarative, urgent, military precision. | Claims the tower must reach completion.                | Mistakes obedience for order.                       |
+| **9**  | Memory / Story                    | **The Historian**     | Reflective, looping, self-referential.   | Tells how others failed.                               | Forgets he’s still part of the story.               |
+| **10** | Bureaucracy / Language of Systems | **The Functionary**   | Cold, procedural, calm.                  | Believes efficiency will redeem chaos.                 | Speaks perfectly; understands nothing.              |
+| **11** | Commerce of Feeling / Persuasion  | **The Orator**        | Smooth, rising and falling cadences.     | Wants the tower to *mean* something to someone.        | Performs belief instead of having it.               |
+| **12** | Machine / Automation              | **The Operator**      | Even, mechanical, emotion simulated.     | Repeats every prior phrase flawlessly.                 | Has forgotten what forgetting means.                |
+| **13** | Silence / Collapse                | **No Guy — The Echo** | Only the fragments of the others.        | The tower speaks through absence.                      | Nothing left to forget.                             |
+
+---
+
+### **Recurring Pattern**
+
+Each floor follows the same pulse:
+
+1. He tells his version of what the tower *is for*.
+2. He loses hold of one crucial word.
+3. He circles it—metaphor, gesture, half-sentence.
+4. He turns to you: *“Perhaps you could help me.”*
+
+You give the word. The floor loosens. The next domain begins.
+
+---
+
+### **Design Flexibility**
+
+* You can pull from this set infinitely; the order doesn’t matter.
+* Every week’s random eight words just color *his* vocabulary—scientific for the Naturalist, bureaucratic for the Clerk, lyrical for the Poet.
+* The tower’s myth stays continuous because each voice believes the same story differently.
+
+---
+
+Would you like a condensed *core loop* next—a short reusable structure for each floor’s dialogue beats (so you can script or generate them later)?

@@ -71,63 +71,63 @@
     "questions": [
       {
         "century": "1",
-        "story_text": "In ancient Rome, *inhaerere* meant 'to stick fast'—like wax to a seal, or a vine to its trellis. It was physical adhesion, the way things clung to their proper places. A soldier's armor adhered to his body; a law stuck to its purpose. Nothing was 'inherent' yet—only stuck.",
-        "context": "Roman legal and military culture where adherence was physical and literal.",
-        "sibling_words": ["adhaerere", "cohaerere"],
-        "question": "What was the original Roman meaning of 'inhaerere'?",
+        "story_text": "In Rome, he was *inhaerēre*—'to stick in, to cling to.' His body was a burr caught in wool, wax pressed to marble, paint holding fast to plaster. From this touch grew an idea: some things exist *within* others, inseparable and abiding. Philosophers used him to name qualities that lived inside matter itself.",
+        "context": "Roman and Scholastic Latin describing properties residing 'in' a substance rather than external to it.",
+        "sibling_words": ["adhere", "cohere", "haerere"],
+        "question": "What was the original Latin meaning of 'inhaerēre' and how was it used?",
         "options": [
-          "To be naturally part of something",
-          "To stick fast physically",
-          "To inherit property",
-          "To be morally right"
+          "To stick in or cling to physically; used by philosophers to describe properties within matter",
+          "To separate or divide things",
+          "To hide or conceal objects",
+          "To move rapidly away from something"
         ],
-        "correct_answer": "To stick fast physically",
-        "explanation": "The text explicitly states that 'inhaerere' meant 'to stick fast' and gives examples like 'wax to a seal' and 'vine to its trellis' - all physical adhesion."
+        "correct_answer": "To stick in or cling to physically; used by philosophers to describe properties within matter",
+        "explanation": "The text states 'inhaerēre' meant 'to stick in, to cling to' and gives physical examples, then shows 'Philosophers used him to name qualities that lived inside matter itself.'"
       },
       {
         "century": "14",
-        "story_text": "Medieval scholars took this sticky word and made it stickier. When they said a quality was 'inherent,' they meant it clung to a thing's essence like a burr to wool. Goodness clung to God; sin clung to the soul. The physical became metaphysical—but the clinging remained.",
-        "context": "Scholastic philosophy where qualities adhered to essences through divine order.",
-        "sibling_words": ["inhaerentia", "adhaerentia"],
-        "question": "How did medieval scholars transform the meaning of 'inherent'?",
+        "story_text": "In the halls of medieval scholars, Inherent put on robes and became a word of metaphysics. Through Old French *inherer* and Latin *inhaerens*, he entered English carrying Aristotle's logic of substance and accident. Virtue was said to inhere in the soul; whiteness to inhere in snow. He spoke of what could never be separated from what it was.",
+        "context": "Scholastic theology and Aristotelian philosophy shaping European metaphysical vocabulary.",
+        "sibling_words": ["adhérent", "cohérent"],
+        "question": "How did medieval scholars use 'inherent' in philosophical discourse?",
         "options": [
-          "They made it purely physical",
-          "They made it metaphysical while keeping the idea of clinging",
-          "They made it about inheritance",
-          "They made it about morality only"
+          "They used it to describe qualities that could never be separated from their substance (virtue in soul, whiteness in snow)",
+          "They used it to mean qualities that could be easily removed",
+          "They used it only to describe physical objects",
+          "They stopped using it entirely"
         ],
-        "correct_answer": "They made it metaphysical while keeping the idea of clinging",
-        "explanation": "The text states 'The physical became metaphysical—but the clinging remained' and gives examples of 'Goodness clung to God; sin clung to the soul.'"
+        "correct_answer": "They used it to describe qualities that could never be separated from their substance (virtue in soul, whiteness in snow)",
+        "explanation": "The text states 'Virtue was said to inhere in the soul; whiteness to inhere in snow' and 'He spoke of what could never be separated from what it was.'"
       },
       {
-        "century": "16",
-        "story_text": "Renaissance thinkers loosened the grip. They said qualities could be 'inherent' without divine glue—they belonged to things by nature, not by God's will. The clinging became belonging; the stickiness became essence. What was stuck became what was true.",
-        "context": "Humanist philosophy separated natural properties from divine adherence.",
-        "sibling_words": ["inhaerentia", "essential"],
-        "question": "What changed about 'inherent' during the Renaissance?",
+        "century": "17",
+        "story_text": "When the Enlightenment dawned, Inherent left the cloister for the forum. He began to speak of rights and dignity—qualities not bestowed but possessed. What once described color in marble now described worth in humankind. He became political, carrying the old logic of internal belonging into the language of freedom.",
+        "context": "Natural-law and early liberal philosophy expanding metaphysical inherence into moral and political discourse.",
+        "sibling_words": [],
+        "question": "What happened to 'inherent' during the Enlightenment?",
         "options": [
-          "It became more religious",
-          "It became about divine will",
-          "It became about natural belonging rather than divine adherence",
-          "It became purely physical again"
+          "It moved from metaphysics to politics, describing rights and dignity as qualities that belonged naturally to humans",
+          "It became purely religious",
+          "It returned to describing only physical objects",
+          "It lost all meaning"
         ],
-        "correct_answer": "It became about natural belonging rather than divine adherence",
-        "explanation": "The text states that qualities could be 'inherent' 'without divine glue' and 'by nature, not by God's will,' showing the shift from divine to natural."
+        "correct_answer": "It moved from metaphysics to politics, describing rights and dignity as qualities that belonged naturally to humans",
+        "explanation": "The text states 'He began to speak of rights and dignity—qualities not bestowed but possessed' and 'He became political, carrying the old logic of internal belonging into the language of freedom.'"
       },
       {
-        "century": "19",
-        "story_text": "Modern science stripped away the clinging entirely. 'Inherent' became a property that existed within a thing's structure—like magnetism in iron, or color in light. No divine order, no metaphysical glue—just the way things were made. The stickiness was gone; only the structure remained.",
-        "context": "Scientific materialism reduced inherent properties to structural characteristics.",
-        "sibling_words": ["intrinsic", "structural"],
-        "question": "How did modern science transform 'inherent'?",
+        "century": "20",
+        "story_text": "Today he moves quietly through science and systems: the inherent bias of data, the inherent stability of molecules. The stickiness of matter has become the grammar of structure. The touch is gone, but its logic remains—what belongs within still holds everything together.",
+        "context": "Modern scientific and analytic usage turning metaphysical inherence into structural description.",
+        "sibling_words": [],
+        "question": "How is 'inherent' used in modern scientific and technical discourse?",
         "options": [
-          "It made it more religious",
-          "It made it about divine order",
-          "It reduced it to structural properties without metaphysical meaning",
-          "It made it purely about morality"
+          "To describe structural properties (bias in data, stability in molecules) where the logic of 'belonging within' endures",
+          "To describe qualities that can be easily removed or changed",
+          "Only in poetry and literature",
+          "To mean the opposite of what belongs naturally"
         ],
-        "correct_answer": "It reduced it to structural properties without metaphysical meaning",
-        "explanation": "The text states 'No divine order, no metaphysical glue—just the way things were made' and gives examples like 'magnetism in iron' - purely structural properties."
+        "correct_answer": "To describe structural properties (bias in data, stability in molecules) where the logic of 'belonging within' endures",
+        "explanation": "The text shows 'the inherent bias of data, the inherent stability of molecules' where 'what belongs within still holds everything together' - structural properties maintain the concept of internal belonging."
       }
     ]
   },
@@ -137,63 +137,63 @@
     "questions": [
       {
         "century": "1",
-        "story_text": "In Latin, *cohaerere* meant 'to stick together'—like grains of sand in wet mortar, or soldiers in formation. It was the force that held things together when they wanted to fall apart. Roman builders used it for walls; generals used it for armies. Cohesion was physical, visible, necessary.",
-        "context": "Roman military and architectural culture where sticking together was literal and practical.",
-        "sibling_words": ["cohaerentia", "adhaerere"],
-        "question": "What was the original Roman meaning of 'cohaerere'?",
+        "story_text": "In the Latin world, he began as *cohaerēre*—'to stick together.' His body was glue, sap, wax. He clung where things met: brick to mortar, vine to trellis, friend to friend. *Haerēre* meant to cling, and *co-* joined him to others. He was the language of closeness before it was a metaphor.",
+        "context": "Roman and Scholastic Latin using adhesion as a metaphor for both physical and moral unity.",
+        "sibling_words": ["adhere", "inherent", "cohere"],
+        "question": "What was the original Latin meaning of 'cohaerēre'?",
         "options": [
-          "To be morally united",
-          "To stick together physically",
-          "To be intellectually consistent",
-          "To be emotionally connected"
+          "To stick together physically (glue, sap, wax) and metaphorically (friends)",
+          "To separate things apart",
+          "To mean only mental concepts",
+          "To describe warfare exclusively"
         ],
-        "correct_answer": "To stick together physically",
-        "explanation": "The text explicitly states that 'cohaerere' meant 'to stick together' and gives physical examples like 'grains of sand in wet mortar' and 'soldiers in formation.'"
+        "correct_answer": "To stick together physically (glue, sap, wax) and metaphorically (friends)",
+        "explanation": "The text states 'cohaerēre' meant 'to stick together' and shows physical examples (glue, sap, wax, brick to mortar) as well as metaphorical ones (friend to friend)."
       },
       {
-        "century": "14",
-        "story_text": "Medieval theologians took this sticky word and made it stickier. When they spoke of 'cohesive' doctrine, they meant teachings that clung together like beads on a rosary—each truth connected to the next by divine thread. Heresy was what fell apart; orthodoxy was what held together.",
-        "context": "Medieval theology where doctrinal unity was maintained through divine connection.",
-        "sibling_words": ["cohaerentia", "connexio"],
-        "question": "How did medieval theologians use 'cohesive'?",
+        "century": "17",
+        "story_text": "When the thinkers of the new sciences began to name the secret laws of matter, they summoned him again. *Cohere*, *cohesion*—the way dust joins into drop, drop into stone. He became a principle, not just a feeling. Boyle and Newton made him a law of nature: the power that binds atoms as friendship binds men.",
+        "context": "Scientific revolution defining cohesion as the force uniting particles or bodies.",
+        "sibling_words": ["adhesion", "aggregation"],
+        "question": "How did the scientific revolution transform 'cohesive'?",
         "options": [
-          "To describe physical buildings",
-          "To describe military formations",
-          "To describe doctrinal unity held together by divine connection",
-          "To describe scientific principles"
+          "It became a physical law describing the force that binds particles and atoms together",
+          "It lost all scientific meaning",
+          "It became only about human relationships",
+          "It referred only to liquids"
         ],
-        "correct_answer": "To describe doctrinal unity held together by divine connection",
-        "explanation": "The text states that 'cohesive doctrine' meant 'teachings that clung together like beads on a rosary—each truth connected to the next by divine thread.'"
-      },
-      {
-        "century": "16",
-        "story_text": "Renaissance scholars loosened the divine grip. They said ideas could be 'cohesive' through logic alone—not divine thread, but rational connection. A coherent argument held together by reason; a cohesive theory by evidence. The sticking became thinking; the divine became human.",
-        "context": "Humanist philosophy emphasized rational rather than divine connection.",
-        "sibling_words": ["cohaerentia", "logica"],
-        "question": "What changed about 'cohesive' during the Renaissance?",
-        "options": [
-          "It became more religious",
-          "It became about divine connection",
-          "It became about rational rather than divine connection",
-          "It became purely physical"
-        ],
-        "correct_answer": "It became about rational rather than divine connection",
-        "explanation": "The text states that ideas could be 'cohesive' 'through logic alone—not divine thread, but rational connection' and gives examples of 'coherent argument' and 'cohesive theory.'"
+        "correct_answer": "It became a physical law describing the force that binds particles and atoms together",
+        "explanation": "The text states 'He became a principle, not just a feeling' and 'Boyle and Newton made him a law of nature: the power that binds atoms as friendship binds men.'"
       },
       {
         "century": "19",
-        "story_text": "Modern science stripped away the sticking entirely. 'Cohesive' became a property of matter itself—the molecular forces that held atoms together, the gravitational pull that bound planets. No divine thread, no rational glue—just the physics of attraction. What held together was what was made to hold.",
-        "context": "Scientific materialism reduced cohesion to physical forces and molecular bonds.",
-        "sibling_words": ["cohesion", "adhesion"],
-        "question": "How did modern science transform 'cohesive'?",
+        "story_text": "The industrial age stretched him further. Machines turned, cities swelled, and people began to ask what held them all together. Cohesive took on new tasks—describing nations, crowds, stories, minds. The bond of molecules became the bond of meaning. He was no longer just physical; he was social, intellectual, and moral.",
+        "context": "Sociology, psychology, and rhetoric borrowed scientific metaphors to describe unity in human systems.",
+        "sibling_words": [],
+        "question": "How did the industrial age expand the meaning of 'cohesive'?",
         "options": [
-          "It made it more religious",
-          "It made it about divine forces",
-          "It reduced it to physical forces and molecular bonds",
-          "It made it purely about logic"
+          "It extended from physical science to describe social and intellectual unity (nations, crowds, stories, minds)",
+          "It became only about machines",
+          "It returned to physical objects only",
+          "It lost all connection to unity"
         ],
-        "correct_answer": "It reduced it to physical forces and molecular bonds",
-        "explanation": "The text states that 'cohesive' became 'a property of matter itself—the molecular forces that held atoms together' and 'just the physics of attraction.'"
+        "correct_answer": "It extended from physical science to describe social and intellectual unity (nations, crowds, stories, minds)",
+        "explanation": "The text shows 'Cohesive took on new tasks—describing nations, crowds, stories, minds. The bond of molecules became the bond of meaning. He was no longer just physical; he was social, intellectual, and moral.'"
+      },
+      {
+        "century": "20",
+        "story_text": "Now Cohesive lives in offices and classrooms, in design briefs and mission statements. His Latin body is gone, but his instinct endures: to pull the scattered into shape. Every time a team holds, or an argument flows, he's there—quiet, connecting, necessary.",
+        "context": "Modern management, communication theory, and design emphasizing unity through integration.",
+        "sibling_words": [],
+        "question": "How is 'cohesive' used in modern organizational and design contexts?",
+        "options": [
+          "To describe the integration and unity of teams, arguments, and designs that hold together",
+          "To mean the opposite of united",
+          "Only in scientific contexts",
+          "To describe things that fall apart"
+        ],
+        "correct_answer": "To describe the integration and unity of teams, arguments, and designs that hold together",
+        "explanation": "The text shows 'Now Cohesive lives in offices and classrooms, in design briefs and mission statements' and 'Every time a team holds, or an argument flows, he's there—quiet, connecting, necessary.'"
       }
     ]
   },
@@ -202,64 +202,49 @@
     "word": "scattershot",
     "questions": [
       {
-        "century": "1",
-        "story_text": "In ancient Rome, *spargere* meant 'to scatter'—like seeds from a farmer's hand, or stones from a sling. It was the opposite of precision: you threw wide, hoping something would hit. Roman hunters scattered bait; generals scattered troops. Scattering was strategy, not accident.",
-        "context": "Roman military and agricultural culture where scattering was deliberate tactical action.",
-        "sibling_words": ["sparsus", "dispergere"],
-        "question": "What was the original Roman meaning of 'spargere'?",
-        "options": [
-          "To aim precisely",
-          "To scatter deliberately as strategy",
-          "To gather together",
-          "To destroy completely"
-        ],
-        "correct_answer": "To scatter deliberately as strategy",
-        "explanation": "The text states that 'spargere' meant 'to scatter' and emphasizes it was 'the opposite of precision' but 'strategy, not accident,' with examples of hunters and generals using it tactically."
-      },
-      {
-        "century": "14",
-        "story_text": "Medieval archers took this scattered word and made it more scattered. When they spoke of 'scattershot' tactics, they meant arrows loosed in volleys—not aimed at one target, but spread across many. The enemy might dodge one arrow, but not all. Scattering became covering; precision became coverage.",
-        "context": "Medieval warfare where volley tactics replaced individual precision.",
-        "sibling_words": ["sparsus", "volley"],
-        "question": "How did medieval warfare transform 'scattershot'?",
-        "options": [
-          "It made it more precise",
-          "It made it about individual accuracy",
-          "It made it about volley tactics and coverage rather than precision",
-          "It made it purely defensive"
-        ],
-        "correct_answer": "It made it about volley tactics and coverage rather than precision",
-        "explanation": "The text states that 'scattershot tactics' meant 'arrows loosed in volleys—not aimed at one target, but spread across many' and 'Scattering became covering; precision became coverage.'"
-      },
-      {
-        "century": "16",
-        "story_text": "Renaissance gunners refined the scatter. They said 'scattershot' was what happened when you loaded a cannon with stones instead of a single ball—spread damage over wide area, but less focused impact. The strategy remained, but the weapon changed. Scattering became artillery; coverage became bombardment.",
-        "context": "Renaissance artillery warfare where cannons replaced archery.",
-        "sibling_words": ["scatter", "artillery"],
-        "question": "What changed about 'scattershot' during the Renaissance?",
-        "options": [
-          "It became more precise",
-          "It became about archery only",
-          "It became about artillery bombardment rather than archery volleys",
-          "It became purely defensive"
-        ],
-        "correct_answer": "It became about artillery bombardment rather than archery volleys",
-        "explanation": "The text states that 'scattershot' became 'what happened when you loaded a cannon with stones instead of a single ball' and 'Scattering became artillery; coverage became bombardment.'"
-      },
-      {
         "century": "19",
-        "story_text": "Modern warfare stripped away the strategy entirely. 'Scattershot' became what happened when you fired without aiming—random, wasteful, ineffective. Precision was everything; scattering was failure. What was once tactical became accidental; what was once coverage became chaos.",
-        "context": "Modern warfare emphasized precision and efficiency over area coverage.",
-        "sibling_words": ["scatter", "random"],
-        "question": "How did modern warfare transform 'scattershot'?",
+        "story_text": "In the rough talk of the 1800s frontier, 'scattershot' was pure mechanics: the spray of pellets from a shotgun's mouth. It was a hunter's word, meaning range at the cost of precision. A scattershot could strike anything or nothing. The image belonged to smoke, echo, and chance.",
+        "context": "American hunting and frontier language valuing practicality over precision.",
+        "sibling_words": ["shotgun", "buckshot"],
+        "question": "What was the original meaning of 'scattershot' in 1800s frontier America?",
         "options": [
-          "It made it more strategic",
-          "It made it about precision and efficiency",
-          "It made it about random, wasteful, ineffective firing",
-          "It made it purely defensive"
+          "The spray of pellets from a shotgun, sacrificing precision for range",
+          "A precise, aimed single shot",
+          "A military strategy for urban warfare",
+          "A term for gathering crops"
         ],
-        "correct_answer": "It made it about random, wasteful, ineffective firing",
-        "explanation": "The text states that 'scattershot' became 'what happened when you fired without aiming—random, wasteful, ineffective' and 'What was once tactical became accidental.'"
+        "correct_answer": "The spray of pellets from a shotgun, sacrificing precision for range",
+        "explanation": "The text states that 'scattershot' was 'pure mechanics: the spray of pellets from a shotgun's mouth' and 'meaning range at the cost of precision.'"
+      },
+      {
+        "century": "20",
+        "story_text": "After the wars, the world grew obsessed with targets—goals, quotas, metrics. Into that culture, Scattershot wandered, half feral. He was the one who fired ideas instead of bullets: policies that sprawled, arguments that sprawled wider. The old gunmetal word now measured intellectual mess.",
+        "context": "Postwar bureaucratic and managerial discourse moralizing precision as efficiency.",
+        "sibling_words": ["broadside", "spray"],
+        "question": "How did postwar culture transform 'scattershot'?",
+        "options": [
+          "From physical pellets to describing unfocused ideas, policies, and arguments",
+          "It became only about shotgun hunting",
+          "It became synonymous with precision",
+          "It disappeared entirely"
+        ],
+        "correct_answer": "From physical pellets to describing unfocused ideas, policies, and arguments",
+        "explanation": "The text states 'He was the one who fired ideas instead of bullets: policies that sprawled, arguments that sprawled wider' and 'The old gunmetal word now measured intellectual mess.'"
+      },
+      {
+        "century": "21",
+        "story_text": "Now he's everywhere—meetings, essays, start-ups. Scattershot speaks of the rush to do, to say, to solve before thinking. He carries a faint scent of gunpowder still, the memory of the hunt. But his meaning is softer now: not danger, just disarray—the price of trying to hit everything at once.",
+        "context": "Contemporary colloquial English across media, technology, and education.",
+        "sibling_words": [],
+        "question": "How is 'scattershot' used in contemporary culture?",
+        "options": [
+          "To describe unfocused, hasty effort that tries to address everything without clear strategy",
+          "To mean precise and targeted",
+          "Only in hunting contexts",
+          "To describe successful, well-planned approaches"
+        ],
+        "correct_answer": "To describe unfocused, hasty effort that tries to address everything without clear strategy",
+        "explanation": "The text shows 'Scattershot speaks of the rush to do, to say, to solve before thinking' and 'the price of trying to hit everything at once' - describing unfocused effort."
       }
     ]
   },
@@ -269,63 +254,93 @@
     "questions": [
       {
         "century": "1",
-        "story_text": "In Latin, *salire* meant 'to leap'—like a deer springing from cover, or water jumping from a fountain. It was sudden movement, unexpected emergence. Roman soldiers leaped from ambush; springs leaped from rocks. Salience was physical, visible, immediate.",
-        "context": "Roman military and natural observation where leaping was literal and tactical.",
-        "sibling_words": ["saltus", "exsilire"],
-        "question": "What was the original Latin meaning of 'salire'?",
+        "story_text": "In Rome, he was *saliēns* — 'leaping, springing forth.' Poets used him for fountains, fish, and joy itself. To leap was to live: *salīre* carried vitality, not metaphor. Salient began as motion embodied.",
+        "context": "Classical Latin where physical motion marked life and vigor.",
+        "sibling_words": ["salire", "resilire", "assilire"],
+        "question": "What was the original Latin meaning of 'saliēns'?",
         "options": [
-          "To be important",
-          "To leap physically",
-          "To be hidden",
-          "To be slow"
+          "Leaping or springing forth physically",
+          "Being important or prominent",
+          "Being hidden or obscure",
+          "Being slow or delayed"
         ],
-        "correct_answer": "To leap physically",
-        "explanation": "The text explicitly states that 'salire' meant 'to leap' and gives physical examples like 'deer springing from cover' and 'water jumping from a fountain.'"
+        "correct_answer": "Leaping or springing forth physically",
+        "explanation": "The text explicitly states that 'saliēns' meant 'leaping, springing forth' and gives examples of 'fountains, fish, and joy itself' - all physical motion."
       },
       {
-        "century": "14",
-        "story_text": "Medieval scholars took this leaping word and made it leap higher. When they spoke of 'salient' points, they meant ideas that jumped out from the text—not hidden meanings, but obvious ones that sprang to attention. The leap became the leap of recognition; the spring became the spring of understanding.",
-        "context": "Medieval scholarship where obvious points were emphasized over hidden meanings.",
-        "sibling_words": ["salientia", "evidentia"],
-        "question": "How did medieval scholars transform 'salient'?",
+        "century": "12",
+        "story_text": "In medieval France, *saillir* meant 'to leap, to project,' and *saillant* described what thrust forward — a wall, a knight, a beast on a shield. The word's leap became visibility itself: what stood out, what risked being struck first.",
+        "context": "Old French military, architectural, and heraldic vocabulary connecting motion with exposure and valor.",
+        "sibling_words": ["saillir", "saillant"],
+        "question": "How did Old French transform 'salient' from physical motion?",
         "options": [
-          "They made it more physical",
-          "They made it about hidden meanings",
-          "They made it about ideas that jumped out and were obvious",
-          "They made it purely about movement"
+          "It connected physical motion to visibility and projection in military/architectural contexts",
+          "It lost all connection to motion",
+          "It became purely about hiding things",
+          "It referred only to farming tools"
         ],
-        "correct_answer": "They made it about ideas that jumped out and were obvious",
-        "explanation": "The text states that 'salient points' meant 'ideas that jumped out from the text—not hidden meanings, but obvious ones that sprang to attention.'"
+        "correct_answer": "It connected physical motion to visibility and projection in military/architectural contexts",
+        "explanation": "The text shows how 'saillir' meant 'to leap, to project' and 'saillant' described 'what thrust forward — a wall, a knight, a beast on a shield,' connecting motion to visibility and projection."
       },
       {
         "century": "16",
-        "story_text": "Renaissance thinkers refined the leap. They said 'salient' features were what caught the eye first—not hidden depths, but surface prominence. A salient argument leaped to the mind; a salient detail sprang to attention. The leap became the leap of perception; the spring became the spring of focus.",
-        "context": "Renaissance emphasis on surface observation and immediate perception.",
-        "sibling_words": ["salientia", "prominentia"],
-        "question": "What changed about 'salient' during the Renaissance?",
+        "story_text": "Renaissance English borrowed *salient* from French and Latin. Engineers and philosophers alike used it for what jutted out — a bastion, a point, an argument. The physical term turned symbolic: to project was to assert.",
+        "context": "Renaissance engineering, rhetoric, and translation of Latin and French texts into English.",
+        "sibling_words": ["assaillant", "ressortissant"],
+        "question": "What did Renaissance English use 'salient' to describe?",
         "options": [
-          "It became more about hidden meanings",
-          "It became about surface prominence and immediate perception",
-          "It became purely physical",
-          "It became about slow, careful analysis"
+          "Things that jutted out — both physical (bastions) and symbolic (arguments)",
+          "Only physical buildings",
+          "Only abstract ideas",
+          "Hidden, concealed objects"
         ],
-        "correct_answer": "It became about surface prominence and immediate perception",
-        "explanation": "The text states that 'salient features were what caught the eye first—not hidden depths, but surface prominence' and gives examples of 'salient argument' and 'salient detail.'"
+        "correct_answer": "Things that jutted out — both physical (bastions) and symbolic (arguments)",
+        "explanation": "The text shows that Renaissance English used 'salient' 'for what jutted out — a bastion, a point, an argument' — showing both physical and symbolic projection."
+      },
+      {
+        "century": "17",
+        "story_text": "By early modernity, the leap turned inward. Thinkers called an idea 'salient' when it sprang to the mind — prominence became cognition. The fortress became the mind's topography.",
+        "context": "Philosophical and rhetorical writing emphasizing clarity and mental distinctness.",
+        "sibling_words": ["conspicuous", "prominent"],
+        "question": "How did early modernity transform 'salient'?",
+        "options": [
+          "The physical leap became a mental leap — prominence became cognitive",
+          "It became purely about physical buildings",
+          "It lost all meaning",
+          "It became a synonym for 'hidden'"
+        ],
+        "correct_answer": "The physical leap became a mental leap — prominence became cognitive",
+        "explanation": "The text states that 'the leap turned inward' and 'Thinkers called an idea 'salient' when it sprang to the mind — prominence became cognition.'"
       },
       {
         "century": "19",
-        "story_text": "Modern psychology stripped away the leaping entirely. 'Salient' became what stood out from the background—not because it leaped, but because it contrasted. Attention was drawn by difference, not by movement. What was once active became passive; what was once leaping became standing.",
-        "context": "Modern psychology emphasized contrast and attention rather than active emergence.",
-        "sibling_words": ["salience", "contrast"],
-        "question": "How did modern psychology transform 'salient'?",
+        "story_text": "By the industrial and analytic age, Salient had stopped moving; he now marked data, facts, arguments. The leap became fixation — but within it still pulsed the old Latin spring.",
+        "context": "Scientific, analytic, and journalistic uses of 'salient' for central data or defining traits.",
+        "sibling_words": [],
+        "question": "What happened to 'salient' in the industrial and analytic age?",
         "options": [
-          "It made it more about active leaping",
-          "It made it about contrast and passive standing out",
-          "It made it purely physical",
-          "It made it about hidden meanings"
+          "It stopped being about physical motion but still marked what stood out in data and arguments",
+          "It became only about physical movement",
+          "It completely disappeared",
+          "It meant the opposite — being hidden or obscure"
         ],
-        "correct_answer": "It made it about contrast and passive standing out",
-        "explanation": "The text states that 'salient' became 'what stood out from the background—not because it leaped, but because it contrasted' and 'What was once active became passive; what was once leaping became standing.'"
+        "correct_answer": "It stopped being about physical motion but still marked what stood out in data and arguments",
+        "explanation": "The text states that 'Salient had stopped moving; he now marked data, facts, arguments' showing it stopped being physical while still marking prominence, 'but within it still pulsed the old Latin spring.'"
+      },
+      {
+        "century": "20-21",
+        "story_text": "In the age of cognition and code, Salient entered the mind and the machine alike. Psychologists mapped what the eye notices first; engineers taught algorithms to mimic the leap. Attention itself became measurable—visibility quantified. Yet even here, his essence endures: what springs into awareness, refusing to stay unseen.",
+        "context": "Cognitive psychology, linguistics, computer vision, and media theory treating salience as measurable prominence in perception and information.",
+        "sibling_words": ["attention", "noticeability", "prominence"],
+        "question": "How does 'salient' function in the age of cognition and code?",
+        "options": [
+          "It became measurable and quantifiable — attention and visibility are now mapped and algorithmically detected",
+          "It became purely aesthetic with no function",
+          "It lost all connection to prominence",
+          "It refers only to physical buildings"
+        ],
+        "correct_answer": "It became measurable and quantifiable — attention and visibility are now mapped and algorithmically detected",
+        "explanation": "The text explains that 'Attention itself became measurable—visibility quantified' and shows how 'Psychologists mapped what the eye notices first; engineers taught algorithms to mimic the leap' — making salience measurable and algorithmic."
       }
     ]
   },
@@ -349,19 +364,34 @@
         "explanation": "The text explicitly states that 'omittere' meant 'to let go' and emphasizes it was 'deliberate release, intentional abandonment' with examples of scribes and generals making strategic choices."
       },
       {
-        "century": "14",
-        "story_text": "Medieval scribes took this releasing word and made it more releasing. When they spoke of 'omitting' text, they meant leaving out what wasn't essential—not forgetting, but choosing. The essential remained; the unnecessary was let go. Omitting became editing; release became refinement.",
-        "context": "Medieval manuscript culture where editing was essential for clarity and brevity.",
-        "sibling_words": ["omissio", "editio"],
-        "question": "How did medieval scribes transform 'omit'?",
+        "century": "12",
+        "story_text": "In the age of confession, he was moralized. *Omettre* became a sin of silence—a thing not done when duty called. His neutrality vanished. To omit was to fail the soul, not the sentence.",
+        "context": "Medieval Christian theology: the opposition of commission and omission as moral binaries.",
+        "sibling_words": ["commettre", "soumettre"],
+        "question": "How did medieval theology transform 'omit'?",
         "options": [
-          "They made it about forgetting",
-          "They made it about careless mistakes",
-          "They made it about deliberate editing and choosing what to leave out",
-          "They made it purely about inclusion"
+          "It became a moral sin—failure to act when duty called",
+          "It became only about forgetting things",
+          "It lost all meaning",
+          "It became a positive virtue"
         ],
-        "correct_answer": "They made it about deliberate editing and choosing what to leave out",
-        "explanation": "The text states that 'omitting text' meant 'leaving out what wasn't essential—not forgetting, but choosing' and 'Omitting became editing; release became refinement.'"
+        "correct_answer": "It became a moral sin—failure to act when duty called",
+        "explanation": "The text states '*Omettre* became a sin of silence—a thing not done when duty called' and 'To omit was to fail the soul, not the sentence.'"
+      },
+      {
+        "century": "15",
+        "story_text": "When the monks became clerks and the parchment became proof, Omit found a new stage. He lived in records now, where what was left out could ruin fortunes. His sin became paperwork.",
+        "context": "Late medieval bureaucracy and recordkeeping linking omission to legal liability.",
+        "sibling_words": [],
+        "question": "How did late medieval bureaucracy transform 'omit'?",
+        "options": [
+          "What was a moral sin became a legal liability—omission in records could ruin fortunes",
+          "It became completely insignificant",
+          "It meant the same as in Rome",
+          "It became only about creative writing"
+        ],
+        "correct_answer": "What was a moral sin became a legal liability—omission in records could ruin fortunes",
+        "explanation": "The text shows 'where what was left out could ruin fortunes. His sin became paperwork' - moving from moral sin to legal bureaucratic risk."
       },
       {
         "century": "16",
@@ -379,19 +409,19 @@
         "explanation": "The text states that 'omitting' was 'what you did when you focused on the essential—not random exclusion, but purposeful selection' and gives examples of scholars and writers making focused choices."
       },
       {
-        "century": "19",
-        "story_text": "Modern efficiency stripped away the choice entirely. 'Omitting' became what happened when you ran out of space or time—not deliberate selection, but practical necessity. What was once choice became constraint; what was once focus became limitation. The deliberate became the accidental.",
-        "context": "Modern industrial culture emphasized efficiency and practical constraints over deliberate choice.",
-        "sibling_words": ["omission", "constraint"],
-        "question": "How did modern efficiency transform 'omit'?",
+        "century": "20",
+        "story_text": "Now he walks between worlds: neutral in documents, moral in sermons, rhetorical in debate. He survives in phrases like fossils—'sins of omission,' 'lies of omission'—ghosts of the age when absence was blame.",
+        "context": "Modern English separating moral, legal, and editorial discourses.",
+        "sibling_words": [],
+        "question": "How is 'omit' used in modern English?",
         "options": [
-          "It made it more deliberate",
-          "It made it about practical necessity and constraint rather than choice",
-          "It made it purely about forgetting",
-          "It made it about including everything"
+          "It functions across different discourses—neutral in documents, moral in sermons, with ancient phrases like 'sins of omission' surviving as fossils",
+          "It has only one consistent meaning across all contexts",
+          "It disappeared completely",
+          "It means the same thing in all contexts"
         ],
-        "correct_answer": "It made it about practical necessity and constraint rather than choice",
-        "explanation": "The text states that 'omitting' became 'what happened when you ran out of space or time—not deliberate selection, but practical necessity' and 'What was once choice became constraint.'"
+        "correct_answer": "It functions across different discourses—neutral in documents, moral in sermons, with ancient phrases like 'sins of omission' surviving as fossils",
+        "explanation": "The text shows 'Now he walks between worlds: neutral in documents, moral in sermons, rhetorical in debate. He survives in phrases like fossils—'sins of omission,' 'lies of omission'—ghosts of the age when absence was blame.'"
       }
     ]
   },
@@ -401,63 +431,78 @@
     "questions": [
       {
         "century": "1",
-        "story_text": "In Latin, *perfungi* meant 'to perform completely'—like finishing a task from start to finish, or completing a ritual from beginning to end. It was thorough execution, complete fulfillment. Roman priests performed their duties; soldiers performed their orders. Performance was completion, not partiality.",
-        "context": "Roman religious and military culture where performance meant complete fulfillment of duty.",
-        "sibling_words": ["perfectus", "completus"],
-        "question": "What was the original Latin meaning of 'perfungi'?",
+        "story_text": "In Rome, he was *perfungī*—'to do through.' A soldier's word, a clerk's word. He lived in the world of completion, not care. He finished what others feared to start, and thought that enough. His virtue was endurance, not tenderness.",
+        "context": "Roman civic and military discipline: the ethic of finishing as moral strength.",
+        "sibling_words": ["fungi", "function", "defunctus"],
+        "question": "What was the original Roman meaning of 'perfungī'?",
         "options": [
-          "To perform carelessly",
-          "To perform completely and thoroughly",
-          "To perform partially",
-          "To perform randomly"
+          "To do through completely, with endurance as a virtue",
+          "To perform with great emotional feeling",
+          "To do something halfway or partially",
+          "To avoid doing any work"
         ],
-        "correct_answer": "To perform completely and thoroughly",
-        "explanation": "The text explicitly states that 'perfungi' meant 'to perform completely' and emphasizes it was 'thorough execution, complete fulfillment' with examples of priests and soldiers completing their duties fully."
+        "correct_answer": "To do through completely, with endurance as a virtue",
+        "explanation": "The text states 'perfungī' meant 'to do through' and emphasizes 'He lived in the world of completion, not care' where 'His virtue was endurance, not tenderness.'"
       },
       {
-        "century": "14",
-        "story_text": "Medieval monks took this completing word and made it more completing. When they spoke of 'perfunctory' prayer, they meant prayer that fulfilled its purpose—not heartfelt devotion, but ritual completion. The form was satisfied; the duty was done. Performance became fulfillment; completion became obligation.",
-        "context": "Medieval monastic culture where ritual completion was more important than emotional engagement.",
-        "sibling_words": ["perfunctio", "completio"],
-        "question": "How did medieval monks transform 'perfunctory'?",
+        "century": "12",
+        "story_text": "When the empire gave way to prayer, he followed into the church. *Perfunctorius* began to mean a prayer said by habit. The form was right, but the heart was missing. He was no longer a soldier—he was a monk murmuring words he no longer felt.",
+        "context": "Medieval religious culture valuing inward sincerity over outward performance.",
+        "sibling_words": ["function", "defunct"],
+        "question": "How did the medieval church transform 'perfunctorius'?",
         "options": [
-          "They made it about heartfelt devotion",
-          "They made it about ritual completion and obligation rather than emotion",
-          "They made it purely about performance",
-          "They made it about partial completion"
+          "It began to describe habit-driven prayer where form was right but heart was missing",
+          "It became about full emotional engagement in prayer",
+          "It lost all meaning",
+          "It became only about military duties"
         ],
-        "correct_answer": "They made it about ritual completion and obligation rather than emotion",
-        "explanation": "The text states that 'perfunctory prayer' meant 'prayer that fulfilled its purpose—not heartfelt devotion, but ritual completion' and 'Performance became fulfillment; completion became obligation.'"
+        "correct_answer": "It began to describe habit-driven prayer where form was right but heart was missing",
+        "explanation": "The text shows '*Perfunctorius* began to mean a prayer said by habit. The form was right, but the heart was missing' and 'He was no longer a soldier—he was a monk murmuring words he no longer felt.'"
       },
       {
         "century": "16",
-        "story_text": "Renaissance bureaucrats refined the completion. They said 'perfunctory' work was what got the job done—not inspired effort, but adequate execution. A clerk performed his duties; a functionary performed his functions. The completion became the completion of requirement; the fulfillment became the fulfillment of expectation.",
-        "context": "Renaissance administrative culture emphasized adequate execution over inspired effort.",
-        "sibling_words": ["perfunctio", "executio"],
-        "question": "What changed about 'perfunctory' during the Renaissance?",
+        "story_text": "In the English tongue he found guilt waiting for him. Renaissance writers turned him into a warning: the worker of hollow deeds. The Reformation made him blush—the new world wanted feeling, and he had only form.",
+        "context": "Renaissance and Reformation humanism redefined moral value through authenticity.",
+        "sibling_words": [],
+        "question": "What happened to 'perfunctory' during the Renaissance and Reformation?",
         "options": [
-          "It became more inspired",
-          "It became about adequate execution rather than inspired effort",
-          "It became purely about emotion",
-          "It became about partial work"
+          "It became a negative term, a warning about hollow deeds without feeling",
+          "It became a positive term for efficiency",
+          "It was completely forgotten",
+          "It meant the same as it did in Rome"
         ],
-        "correct_answer": "It became about adequate execution rather than inspired effort",
-        "explanation": "The text states that 'perfunctory work' was 'what got the job done—not inspired effort, but adequate execution' and gives examples of clerks and functionaries meeting requirements."
+        "correct_answer": "It became a negative term, a warning about hollow deeds without feeling",
+        "explanation": "The text states 'Renaissance writers turned him into a warning: the worker of hollow deeds' and 'The Reformation made him blush—the new world wanted feeling, and he had only form.'"
       },
       {
         "century": "19",
-        "story_text": "Modern industry stripped away the completion entirely. 'Perfunctory' became what happened when you did just enough—not adequate execution, but minimal effort. What was once thorough became superficial; what was once complete became cursory. The adequate became the inadequate.",
-        "context": "Modern industrial culture emphasized efficiency and minimal effort over thorough completion.",
-        "sibling_words": ["perfunctory", "cursory"],
-        "question": "How did modern industry transform 'perfunctory'?",
+        "story_text": "Then came the factories. The machines welcomed him home. Every lever pulled, every stamp struck—done through, done well, done empty. The virtue of completion returned, but without pride. He had become the rhythm of repetition.",
+        "context": "Industrial revolution and the rise of mechanical labor and bureaucratic routine.",
+        "sibling_words": [],
+        "question": "How did the industrial revolution transform 'perfunctory'?",
         "options": [
-          "It made it more thorough",
-          "It made it about minimal effort rather than adequate execution",
-          "It made it purely about inspired effort",
-          "It made it about complete fulfillment"
+          "It became the rhythm of repetition—mechanical work done well but empty of pride or meaning",
+          "It became about inspired, creative labor",
+          "It disappeared from use",
+          "It became synonymous with excellence"
         ],
-        "correct_answer": "It made it about minimal effort rather than adequate execution",
-        "explanation": "The text states that 'perfunctory' became 'what happened when you did just enough—not adequate execution, but minimal effort' and 'What was once thorough became superficial.'"
+        "correct_answer": "It became the rhythm of repetition—mechanical work done well but empty of pride or meaning",
+        "explanation": "The text shows 'Every lever pulled, every stamp struck—done through, done well, done empty' and 'The virtue of completion returned, but without pride. He had become the rhythm of repetition.'"
+      },
+      {
+        "century": "21",
+        "story_text": "Now he lives in notifications and signatures. He sends the email, taps the emoji, finishes the task. Still functioning, still performing. The discipline of Rome survives—but the soul of it has gone missing.",
+        "context": "Digital-age communication and emotional automation.",
+        "sibling_words": [],
+        "question": "How is 'perfunctory' manifested in the digital age?",
+        "options": [
+          "In automated communication where the Roman discipline of completion survives but the soul is missing",
+          "In highly personalized, heartfelt digital interactions",
+          "In completely abandoned work",
+          "In artistic and creative digital expression"
+        ],
+        "correct_answer": "In automated communication where the Roman discipline of completion survives but the soul is missing",
+        "explanation": "The text shows 'he lives in notifications and signatures. He sends the email, taps the emoji, finishes the task. Still functioning, still performing. The discipline of Rome survives—but the soul of it has gone missing.'"
       }
     ]
   },
@@ -496,34 +541,64 @@
         "explanation": "The text states that 'verisimilar doctrine' meant 'teaching that looked like truth—not divine revelation, but human reasoning that resembled divine wisdom.'"
       },
       {
-        "century": "16",
-        "story_text": "Renaissance artists refined the resemblance. They said 'verisimilar' art was what looked like life—not life itself, but art that resembled reality. A painting was verisimilar if it looked like what it depicted; a story was verisimilar if it seemed like what it described. The resemblance became the resemblance of life; the semblance became the semblance of reality.",
-        "context": "Renaissance art emphasized realistic representation and lifelike appearance.",
-        "sibling_words": ["verisimilitudo", "realitas"],
-        "question": "What changed about 'verisimilar' during the Renaissance?",
+        "century": "17",
+        "story_text": "In England's coffee houses and theaters, she arrived as *verisimilitude*—French *vraisemblance* dressed in Latin gravity. Critics demanded it of playwrights; novelists studied it like scripture. Defoe and Richardson built worlds that breathed because of her. She had become the measure of art: not truth, but its convincing performance.",
+        "context": "Rise of the novel and neoclassical literary criticism valuing realistic representation.",
+        "sibling_words": ["plausibility", "probability"],
+        "question": "How did verisimilitude function in 17th century English literature?",
         "options": [
-          "It became more abstract",
-          "It became about art that resembled life and reality",
-          "It became purely about divine wisdom",
-          "It became about random appearance"
+          "It became the measure of art—critics and novelists used it to create convincing, lifelike worlds in plays and novels",
+          "It became completely irrelevant to art",
+          "It became only about divine revelation",
+          "It became synonymous with absolute truth"
         ],
-        "correct_answer": "It became about art that resembled life and reality",
-        "explanation": "The text states that 'verisimilar art' was 'what looked like life—not life itself, but art that resembled reality' and gives examples of paintings and stories creating lifelike appearance."
+        "correct_answer": "It became the measure of art—critics and novelists used it to create convincing, lifelike worlds in plays and novels",
+        "explanation": "The text shows 'Critics demanded it of playwrights; novelists studied it like scripture. Defoe and Richardson built worlds that breathed because of her. She had become the measure of art: not truth, but its convincing performance.'"
       },
       {
         "century": "19",
-        "story_text": "Modern realism stripped away the resemblance entirely. 'Verisimilar' became what was true to life—not the appearance of truth, but the accuracy of representation. What was once semblance became accuracy; what was once resemblance became reality. The like became the actual.",
-        "context": "Modern realism emphasized accurate representation over mere appearance of truth.",
-        "sibling_words": ["verisimilitude", "accuracy"],
-        "question": "How did modern realism transform 'verisimilar'?",
+        "story_text": "The realists took her seriously—Flaubert, Tolstoy, Eliot. Every detail mattered now. Verisimilitude demanded research, observation, the texture of lived life. She grew exacting, almost scientific. To write without her was to betray the reader. She had become the conscience of fiction.",
+        "context": "Realist and naturalist movements prioritizing documentary accuracy in literature.",
+        "sibling_words": ["realism", "naturalism"],
+        "question": "How did 19th century realists transform verisimilitude?",
         "options": [
-          "It made it more about appearance",
-          "It made it about accurate representation rather than mere appearance",
-          "It made it purely about semblance",
-          "It made it about random resemblance"
+          "They made it almost scientific, demanding research and observation to capture the texture of lived life",
+          "They abandoned it completely",
+          "They made it purely about fantasy",
+          "They made it irrelevant to literature"
         ],
-        "correct_answer": "It made it about accurate representation rather than mere appearance",
-        "explanation": "The text states that 'verisimilar' became 'what was true to life—not the appearance of truth, but the accuracy of representation' and 'What was once semblance became accuracy.'"
+        "correct_answer": "They made it almost scientific, demanding research and observation to capture the texture of lived life",
+        "explanation": "The text shows 'Every detail mattered now. Verisimilitude demanded research, observation, the texture of lived life. She grew exacting, almost scientific. To write without her was to betray the reader.'"
+      },
+      {
+        "century": "20",
+        "story_text": "In courtrooms she found work: forensic verisimilitude, the story that fits the evidence. In cinema she became spectacle: CGI that feels tangible, worlds that seem real enough to touch. Philosophers questioned her ethics—could a lie made lifelike be trusted? But she endures, untroubled: wherever truth is absent and belief is needed, she waits.",
+        "context": "Legal theory, film studies, and postmodern skepticism about representation and authenticity.",
+        "sibling_words": [],
+        "question": "How did verisimilitude function in 20th century contexts?",
+        "options": [
+          "In courtrooms as forensic verisimilitude fitting stories to evidence, and in cinema as CGI spectacle—raising ethical questions about trustworthiness",
+          "Only in ancient religious texts",
+          "Completely disappeared",
+          "Only meant literal truth"
+        ],
+        "correct_answer": "In courtrooms as forensic verisimilitude fitting stories to evidence, and in cinema as CGI spectacle—raising ethical questions about trustworthiness",
+        "explanation": "The text shows 'In courtrooms she found work: forensic verisimilitude, the story that fits the evidence. In cinema she became spectacle: CGI that feels tangible...' and 'Philosophers questioned her ethics—could a lie made lifelike be trusted?'"
+      },
+      {
+        "century": "21",
+        "story_text": "Now she moves through deepfakes and virtual worlds, through user experience design and narrative games. She's become a technology: algorithms that predict believability, interfaces that feel intuitive because they mimic the real. She no longer argues for truth—she engineers its feeling.",
+        "context": "Digital media, simulation theory, and UX design valuing intuitive realism.",
+        "sibling_words": [],
+        "question": "How does verisimilitude function in the 21st century digital age?",
+        "options": [
+          "As a technology—algorithms and interfaces that engineer the feeling of truth without arguing for it",
+          "It has completely disappeared",
+          "Only in books and literature",
+          "As a synonym for absolute truth"
+        ],
+        "correct_answer": "As a technology—algorithms and interfaces that engineer the feeling of truth without arguing for it",
+        "explanation": "The text shows 'She's become a technology: algorithms that predict believability, interfaces that feel intuitive because they mimic the real. She no longer argues for truth—she engineers its feeling.'"
       }
     ]
   }

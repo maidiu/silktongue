@@ -206,7 +206,7 @@ router.get('/profile/:userId', async (req, res) => {
     const { userId } = req.params;
 
     const userResult = await pool.query(
-      'SELECT id, username, silk_balance, health_points, last_health_reset FROM users WHERE id = $1',
+      'SELECT id, username, silk_balance, health_points, max_health_points, is_admin, avatar_config, last_health_reset FROM users WHERE id = $1',
       [userId]
     );
 
@@ -220,6 +220,17 @@ router.get('/profile/:userId', async (req, res) => {
       username: user.username,
       silkBalance: user.silk_balance,
       healthPoints: user.health_points,
+      maxHealthPoints: user.max_health_points || 3,
+      isAdmin: user.is_admin || false,
+      avatarConfig: user.avatar_config || {
+        body: 'hornet',
+        mask: 'hornet',
+        wings: 'silk',
+        weapon: 'needle',
+        primaryColor: '#2d1b2d',
+        accentColor: '#ff6b6b',
+        effects: []
+      },
       lastHealthReset: user.last_health_reset
     });
 

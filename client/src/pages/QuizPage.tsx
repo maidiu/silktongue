@@ -32,8 +32,15 @@ export default function QuizPage() {
   const [isLoadingQuestions, setIsLoadingQuestions] = useState(true);
   const [localLevel, setLocalLevel] = useState(1);
   
-  // Ensure wordId is always a valid number
-  const validWordId = parseInt(wordId || '0') || 0;
+  // Validate wordId exists and is a valid number
+  const validWordId = parseInt(wordId || '0', 10);
+  if (!wordId || wordId === 'null' || wordId === 'undefined' || isNaN(validWordId) || validWordId === 0) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-red-400 text-xl">Invalid word ID: {wordId}</div>
+      </div>
+    );
+  }
   
   const { level, health, silk, isComplete, isLoading, stats, advance, recordFailure } = useQuizProgress(validWordId);
 
@@ -216,12 +223,18 @@ export default function QuizPage() {
       );
     }
 
-    const currentQuestion = questions.find(q => q.level === localLevel);
+    // Get all questions for this level
+    const levelQuestions = questions.filter(q => q.level === localLevel);
     
     // If no question found, show error
-    if (!currentQuestion) {
+    if (levelQuestions.length === 0) {
       return <p className="text-gray-400">No question found for level {localLevel}</p>;
     }
+    
+    // If multiple questions at this level, pick one at random for variety
+    const currentQuestion = levelQuestions.length > 1 
+      ? levelQuestions[Math.floor(Math.random() * levelQuestions.length)]
+      : levelQuestions[0];
 
     // If we have a question, render it
     if (currentQuestion) {
@@ -273,11 +286,24 @@ export default function QuizPage() {
         );
       
       case 'synonym':
+      case 'syn_ant_sort':
+        // Parse options if it's a string
+        let synAntOptions = currentQuestion.options;
+        if (typeof synAntOptions === 'string') {
+          try {
+            synAntOptions = JSON.parse(synAntOptions);
+          } catch (e) {
+            console.error('Failed to parse syn_ant_sort options:', e);
+            synAntOptions = {};
+          }
+        }
+        
+        // Only use synonyms and antonyms, ignore red herrings
         return (
           <SynAntDuel
-            synonyms={currentQuestion.options?.synonyms || []}
-            antonyms={currentQuestion.options?.antonyms || []}
-            redHerrings={currentQuestion.options?.red_herrings || []}
+            synonyms={synAntOptions?.synonyms || []}
+            antonyms={synAntOptions?.antonyms || []}
+            redHerrings={[]}
             minCorrectToPass={currentQuestion.variant_data?.min_correct_to_pass || 6}
             onSuccess={handleSuccess}
             onFail={handleFail}
@@ -285,11 +311,13 @@ export default function QuizPage() {
         );
       
       case 'story':
+      case 'story_reorder':
         // Story questions are three-column sequencing
         const storyOptions = currentQuestion.options;
         const timePeriods = storyOptions?.time_periods || [];
+        // Handle both old format (settings + turns) and new simplified format (story_texts only)
         const settings = storyOptions?.settings || [];
-        const turns = storyOptions?.turns || [];
+        const turns = storyOptions?.turns || storyOptions?.story_texts || [];
         const redHerrings = storyOptions?.red_herrings || [];
         
         // Parse correct_answer - it might be a string or already parsed

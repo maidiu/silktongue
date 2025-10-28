@@ -16,8 +16,8 @@ export default function SortFilter({
       {/* Sort Dropdown */}
       <div className="flex items-center gap-3">
         <label htmlFor="sort" className="text-sm text-gray-400 uppercase tracking-widest">
-          Sort
-        </label>
+          Sort 
+        </label> 
         <select
           id="sort"
           value={sortBy}

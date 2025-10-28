@@ -316,7 +316,7 @@ export default function StorySequence({
 
         <DndContext sensors={sensors} onDragEnd={handleDragEnd}>
           <div className="w-full max-w-6xl">
-            <div className="grid grid-cols-3 gap-6">
+            <div className={`grid gap-6 ${settings.length > 0 ? 'grid-cols-3' : 'grid-cols-2'}`}>
               {/* Time Periods Column */}
               <div className="space-y-4">
                 <h3 className="text-center text-gray-400 font-display text-sm uppercase tracking-wider">
@@ -349,37 +349,39 @@ export default function StorySequence({
                 </SortableContext>
               </div>
 
-              {/* Settings Column */}
-              <div className="space-y-4">
-                <h3 className="text-center text-gray-400 font-display text-sm uppercase tracking-wider">
-                  Cultural Settings
-                </h3>
-                <SortableContext 
-                  items={settingItems.map(item => `setting-${item}`)} 
-                  strategy={verticalListSortingStrategy}
-                >
-                  <div className="space-y-3">
-                    {settingItems.map((item, idx) => (
-                      <div key={`setting-${item}`} className="flex items-center gap-3">
-                        <div className="text-gray-500 font-display text-sm w-6 text-right">
-                          {idx + 1}
+              {/* Settings Column - only show if we have settings */}
+              {settings.length > 0 && (
+                <div className="space-y-4">
+                  <h3 className="text-center text-gray-400 font-display text-sm uppercase tracking-wider">
+                    Cultural Settings
+                  </h3>
+                  <SortableContext 
+                    items={settingItems.map(item => `setting-${item}`)} 
+                    strategy={verticalListSortingStrategy}
+                  >
+                    <div className="space-y-3">
+                      {settingItems.map((item, idx) => (
+                        <div key={`setting-${item}`} className="flex items-center gap-3">
+                          <div className="text-gray-500 font-display text-sm w-6 text-right">
+                            {idx + 1}
+                          </div>
+                          <div className="flex-1">
+                            <SortableItem 
+                              id={`setting-${item}`} 
+                              content={item}
+                              isCorrect={isCorrectItem(item, 'setting')}
+                              isWrong={isWrongItem(item, 'setting')}
+                              isRedHerring={isRedHerring(item, 'setting')}
+                              isExcluded={excludedItems.has(`setting-${item}`)}
+                              onToggleExcluded={() => toggleExcluded(item, 'setting')}
+                            />
+                          </div>
                         </div>
-                        <div className="flex-1">
-                          <SortableItem 
-                            id={`setting-${item}`} 
-                            content={item}
-                            isCorrect={isCorrectItem(item, 'setting')}
-                            isWrong={isWrongItem(item, 'setting')}
-                            isRedHerring={isRedHerring(item, 'setting')}
-                            isExcluded={excludedItems.has(`setting-${item}`)}
-                            onToggleExcluded={() => toggleExcluded(item, 'setting')}
-                          />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </SortableContext>
-              </div>
+                      ))}
+                    </div>
+                  </SortableContext>
+                </div>
+              )}
 
               {/* Story Events Column */}
               <div className="space-y-4">

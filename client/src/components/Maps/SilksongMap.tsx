@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 interface SilksongMapProps {
@@ -17,6 +17,8 @@ interface SilksongMapProps {
       completed: boolean;
       silk_cost: number;
       silk_reward: number;
+      story_completed?: boolean;
+      quiz_completed?: boolean;
     }>;
   }>;
   currentFloor: number;
@@ -30,240 +32,222 @@ const SilksongMap: React.FC<SilksongMapProps> = ({
   onRoomClick,
   onFloorSelect
 }) => {
-  console.log('SilksongMap render:', { 
-    floorsLength: floors.length, 
-    currentFloor, 
-    rooms: floors[currentFloor - 1]?.rooms,
-    onRoomClick: typeof onRoomClick
-  });
+  const currentFloorData = floors.find(f => f.floor_number === currentFloor);
+  const totalRooms = currentFloorData?.rooms.length || 0;
+  
+  const [isDesktop, setIsDesktop] = useState(false);
+  
+  useEffect(() => {
+    const checkSize = () => setIsDesktop(window.innerWidth >= 1024);
+    checkSize();
+    window.addEventListener('resize', checkSize);
+    return () => window.removeEventListener('resize', checkSize);
+  }, []);
+  
+  // Calculate responsive layout: 2 cols mobile, 3 cols desktop
+  const cols = isDesktop ? 3 : 2;
+  const rows = Math.ceil(totalRooms / cols);
+  
+  // Card dimensions (bigger on mobile for better touch targets)
+  const cardWidth = isDesktop ? 160 : 180;
+  const cardHeight = isDesktop ? 140 : 160;
+  const gapX = isDesktop ? 60 : 40;  // Gap between cards
+  const gapY = isDesktop ? 30 : 30;
+  
+  // Calculate spacing (center to center)
+  const spacingX = cardWidth + gapX;
+  const spacingY = cardHeight + gapY;
+  
+  // Calculate SVG dimensions - ensure all cards fit
+  const totalWidth = cols * cardWidth + (cols - 1) * gapX + 80; // +80 for side padding
+  const totalHeight = rows * cardHeight + (rows - 1) * gapY + 100; // Extra height to prevent clipping
   
   return (
-    <div className="relative w-full h-full bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 overflow-hidden" style={{ pointerEvents: 'auto' }}>
-      {/* Enhanced atmospheric effects */}
-      <div className="absolute inset-0" style={{ pointerEvents: 'none' }}>
-        {/* Floating particles */}
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-cyan-400/60 rounded-full animate-pulse"></div>
-        <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-purple-400/60 rounded-full animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 w-3 h-3 bg-pink-400/40 rounded-full animate-pulse delay-2000"></div>
-        
-        {/* Glowing orbs */}
-        <div className="absolute top-20 left-20 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-48 h-48 bg-purple-500/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 w-32 h-32 bg-pink-500/15 rounded-full blur-xl animate-pulse delay-2000 transform -translate-x-16 -translate-y-16"></div>
-      </div>
-      
-      {/* Map container */}
-      <div className="relative z-10 p-8 h-full flex flex-col">
-        
-        {/* Enhanced floors navigation */}
-        <motion.div 
-          className="flex justify-center mb-8 space-x-4"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
+    <div className="relative w-full bg-stone-900" style={{ pointerEvents: 'auto' }}>
+      {/* Floor navigation */}
+      <div className="bg-stone-900/95 backdrop-blur-sm border-b border-stone-700" style={{ pointerEvents: 'auto'}}>
+        <div className="flex justify-center gap-4 p-4">
           {floors.map((floor) => (
             <motion.button
               key={floor.id}
               onClick={() => onFloorSelect(floor.id)}
-              className={`px-6 py-3 rounded-xl border-2 transition-all duration-300 font-bold ${
+              className={`px-6 py-2 rounded-lg border-2 font-bold uppercase text-sm ${
                 currentFloor === floor.floor_number
-                  ? 'border-cyan-400 bg-gradient-to-r from-cyan-500/30 to-purple-500/30 text-cyan-200 shadow-lg shadow-cyan-500/25'
-                  : 'border-purple-600/50 bg-purple-900/30 text-purple-200 hover:border-purple-400 hover:bg-purple-800/40'
+                  ? 'border-cyan-400 bg-cyan-900/20 text-cyan-200'
+                  : 'border-stone-700 bg-stone-800 text-stone-300 hover:border-stone-600'
               }`}
+              
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Floor {floor.floor_number}
             </motion.button>
           ))}
-          
-          {/* Floor 2 locked tab */}
-          <motion.div
-            className="px-6 py-3 rounded-xl border-2 border-gray-600/50 bg-gray-900/30 text-gray-400 cursor-not-allowed flex items-center gap-2"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          >
-            <span className="font-bold">Floor 2</span>
-            <span className="text-lg">🔒</span>
-          </motion.div>
-        </motion.div>
-        
-        {/* Enhanced current floor map */}
-        <div className="flex-1 flex justify-center items-center">
-          <motion.div 
-            className="relative"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.4 }}
-          >
-            {/* Enhanced floor background */}
-            <div className="w-[600px] h-[600px] bg-gradient-to-br from-gray-800/90 via-gray-900/90 to-black/90 rounded-3xl border-4 border-gradient-to-r from-cyan-500/50 to-purple-500/50 shadow-2xl backdrop-blur-sm">
-              {/* Room nodes */}
-              <div className="absolute inset-8">
-                {floors[currentFloor - 1]?.rooms.map((room, index) => {
-                  const totalRooms = floors[currentFloor - 1]?.rooms.length || 0;
-                  const angle = (index * 2 * Math.PI) / totalRooms;
-                  const radius = 180;
-                  const centerX = 280;
-                  const centerY = 280;
-                  
-                  const x = centerX + radius * Math.cos(angle);
-                  const y = centerY + radius * Math.sin(angle);
-                  
-                  return (
-                    <motion.div 
-                      key={room.id} 
-                      className="absolute"
-                      initial={{ opacity: 0, scale: 0 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
-                    >
-                      {/* Enhanced connection line to center */}
-                      <div
-                        className="absolute bg-gradient-to-r from-cyan-400/60 to-purple-400/60 shadow-lg"
-                        style={{
-                          left: centerX,
-                          top: centerY,
-                          width: Math.sqrt((x - centerX) ** 2 + (y - centerY) ** 2),
-                          height: 3,
-                          transform: `rotate(${(angle * 180) / Math.PI}deg)`,
-                          transformOrigin: 'left center',
-                          zIndex: 1
-                        }}
-                      ></div>
-                      
-                      {/* Room container with word and status info */}
-                      <motion.div
-                        className="absolute flex flex-col items-center gap-2"
-                        style={{ left: x - 80, top: y - 40, zIndex: 10 }}
-                      >
-                        {/* Word label */}
-                        <motion.div
-                          className="text-3xl font-bold text-white bg-gradient-to-r from-gray-900/90 to-black/90 px-6 py-4 rounded-xl border-2 border-gray-600/50 shadow-lg backdrop-blur-sm cursor-pointer transition-all duration-300 hover:bg-gradient-to-r hover:from-gray-800/90 hover:to-gray-900/90 hover:border-blue-400/50"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            e.preventDefault();
-                            console.log('Word clicked for room:', room.id, room.word);
-                            onRoomClick(room.id);
-                          }}
-                          whileHover={{ scale: 1.05 }}
-                          whileTap={{ scale: 0.95 }}
-                        >
-                          {room.word}
-                        </motion.div>
-                        
-                        {/* Lock/unlock status */}
-                        <motion.div
-                          className={`w-20 h-20 rounded-full border-2 cursor-pointer transition-all duration-300 flex items-center justify-center ${
-                            room.is_boss_room
-                              ? 'bg-gradient-to-br from-red-600 to-red-800 border-red-400 shadow-2xl shadow-red-500/50'
-                              : room.completed
-                              ? 'bg-gradient-to-br from-green-600 to-green-800 border-green-400 shadow-2xl shadow-green-500/50'
-                              : room.unlocked
-                              ? 'bg-gradient-to-br from-blue-600 to-blue-800 border-blue-400 shadow-2xl shadow-blue-500/50'
-                              : 'bg-gradient-to-br from-gray-600 to-gray-800 border-gray-400'
-                          }`}
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            e.preventDefault();
-                            console.log('🔒 Icon clicked for room:', room.id, room.word, 'unlocked:', room.unlocked);
-                            onRoomClick(room.id);
-                          }}
-                          whileHover={{ scale: 1.15, rotate: 5 }}
-                          whileTap={{ scale: 0.95 }}
-                        >
-                          {room.is_boss_room ? (
-                            <span className="text-red-200 text-4xl font-bold">👹</span>
-                          ) : room.completed ? (
-                            <span className="text-green-200 text-4xl font-bold">✓</span>
-                          ) : room.unlocked ? (
-                            <span className="text-blue-200 text-4xl">🔓</span>
-                          ) : (
-                            <span className="text-gray-300 text-4xl">🔒</span>
-                          )}
-                        </motion.div>
-                        
-                        {/* Progress icons row - only show if unlocked */}
-                        {room.unlocked && !room.is_boss_room && (
-                          <div className="flex gap-2 mt-2">
-                            {/* Story/Books icon - always available if unlocked */}
-                            <motion.button
-                              className="w-10 h-10 bg-yellow-600/80 rounded-full border-2 border-yellow-400 flex items-center justify-center cursor-pointer hover:bg-yellow-500/90 transition-all"
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                e.preventDefault();
-                                console.log('📚 Story clicked for word:', room.word_id);
-                                // Navigate to word exploration page
-                                window.location.href = `/word-exploration/${room.word_id}`;
-                              }}
-                              whileHover={{ scale: 1.15, rotate: 5 }}
-                              whileTap={{ scale: 0.95 }}
-                              title="Story Study"
-                            >
-                              <span className="text-xl">📚</span>
-                            </motion.button>
-                            
-                            {/* Battle/Swords icon - available if unlocked */}
-                            <motion.button
-                              className="w-10 h-10 bg-blue-600/80 rounded-full border-2 border-blue-400 flex items-center justify-center cursor-pointer hover:bg-blue-500/90 transition-all"
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                e.preventDefault();
-                                console.log('⚔️ Battle clicked for word:', room.word_id);
-                                // Navigate to quiz page
-                                window.location.href = `/quiz/${room.word_id}`;
-                              }}
-                              whileHover={{ scale: 1.15, rotate: -5 }}
-                              whileTap={{ scale: 0.95 }}
-                              title="Battle (Levels 1-5)"
-                            >
-                              <span className="text-xl">⚔️</span>
-                            </motion.button>
-                            
-                            {/* Beast Mode icon - only show if completed */}
-                            {room.completed && (
-                              <motion.button
-                                className="w-10 h-10 bg-purple-600/80 rounded-full border-2 border-purple-400 flex items-center justify-center cursor-pointer hover:bg-purple-500/90 transition-all"
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  e.preventDefault();
-                                  console.log('👾 Beast Mode clicked for word:', room.word_id);
-                                  // Navigate directly to Beast Mode quiz
-                                  window.location.href = `/quiz/${room.word_id}`;
-                                }}
-                                whileHover={{ scale: 1.15, rotate: 5 }}
-                                whileTap={{ scale: 0.95 }}
-                                title="Beast Mode"
-                              >
-                                <span className="text-xl">👾</span>
-                              </motion.button>
-                            )}
-                          </div>
-                        )}
-                      </motion.div>
-                    </motion.div>
-                  );
-                })}
-                
-                {/* Enhanced center hub */}
-                <motion.div 
-                  className="absolute w-32 h-32 bg-gradient-to-br from-cyan-500 via-purple-500 to-pink-500 rounded-full border-4 border-white shadow-2xl transform -translate-x-16 -translate-y-16"
-                  style={{ left: 280, top: 280 }}
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 1, delay: 0.8 }}
-                  whileHover={{ scale: 1.1, rotate: 360 }}
-                >
-                  <div className="flex items-center justify-center h-full">
-                    <span className="text-white text-3xl font-bold drop-shadow-lg">★</span>
-                  </div>
-                </motion.div>
-              </div>
-            </div>
-          </motion.div>
         </div>
+      </div>
+
+      {/* Map container - scrollable area */}
+      <div className="overflow-y-auto" style={{ padding: '8px', pointerEvents: 'auto', width: '100%', maxHeight: '80vh', display: 'flex', justifyContent: 'center', alignItems: 'flex-start'}}>
+        <svg 
+          width={totalWidth} 
+          height={totalHeight}
+          viewBox={`0 0 ${totalWidth} ${totalHeight}`}
+          style={{ display: 'block' }}
+        >
+          {/* Grid pattern background */}
+          <defs>
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#3a3a3a" strokeWidth="0.5"/>
+            </pattern>
+          </defs>
+          <rect width={totalWidth} height={totalHeight} fill="#2a2a2a" />
+          <rect width={totalWidth} height={totalHeight} fill="url(#grid)" />
+
+          {/* Simple grid of room cards */}
+          {currentFloorData?.rooms.map((room, index) => {
+            const row = Math.floor(index / cols);
+            const col = index % cols;
+            
+            // Center the grid within the padded area
+            const gridWidth = cols * cardWidth + (cols - 1) * gapX;
+            const startX = (totalWidth - gridWidth) / 2;
+            const startY = 50;
+            
+            const x = startX + col * spacingX;
+            const y = startY + row * spacingY;
+            
+            const bgColor = room.is_boss_room 
+              ? '#7f1d1d' 
+              : room.completed 
+              ? '#064e3b' 
+              : room.unlocked 
+              ? '#1e3a5f' 
+              : '#1f1f1f';
+            
+            const borderColor = room.is_boss_room 
+              ? '#991b1b' 
+              : room.completed 
+              ? '#065f46' 
+              : room.unlocked 
+              ? '#1e40af' 
+              : '#404040';
+
+            return (
+              <g key={room.id}>
+                {/* Room background */}
+                <motion.rect
+                  x={x}
+                  y={y}
+                  width={cardWidth}
+                  height={cardHeight}
+                  fill={bgColor}
+                  stroke={borderColor}
+                  strokeWidth="2"
+                  rx="4"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: room.unlocked ? 1 : 0.3 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  whileHover={{ scale: 1.05, filter: "brightness(1.2)" }}
+                  style={{ pointerEvents: 'none', transformOrigin: `${x + cardWidth/2}px ${y + cardHeight/2}px` }}
+                />
+                
+                {/* Room label */}
+                <text
+                  x={x + cardWidth/2}
+                  y={y + 28}
+                  textAnchor="middle"
+                  className="select-none"
+                  style={{
+                    fontSize: '16px',
+                    fontWeight: 'bold',
+                    fill: room.unlocked ? '#ffffff' : '#666666',
+                    pointerEvents: 'none'
+                  }}
+                >
+                  {room.word}
+                </text>
+
+                {/* Status icon */}
+                <text
+                  x={x + cardWidth/2}
+                  y={y + 68}
+                  textAnchor="middle"
+                  fontSize="32"
+                  className="select-none"
+                  style={{ pointerEvents: 'none' }}
+                >
+                  {room.is_boss_room ? '👹' : room.completed ? '✓' : room.unlocked ? '🔓' : '🔒'}
+                </text>
+
+                {/* Action buttons - only show if room is unlocked and NOT a boss room */}
+                {room.unlocked && !room.is_boss_room && (
+                  <g>
+                    {/* Story button (📚) - always visible when unlocked */}
+                    <g style={{ pointerEvents: 'auto' }}>
+                      <circle cx={x + 35} cy={y + 96} r="10" fill="#7c2d12" stroke="#9a3412" strokeWidth="1.5" 
+                        className="cursor-pointer"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          window.location.href = `/word-exploration/${room.word_id}`;
+                        }}
+                      />
+                      <text x={x + 35} y={y + 102} textAnchor="middle" fontSize="12" style={{ pointerEvents: 'none' }}>📚</text>
+                    </g>
+                    
+                    {/* Battle button (⚔️) - only show after story is completed (or if room is completed as fallback) */}
+                    {(room.story_completed || room.completed) && (
+                      <g style={{ pointerEvents: 'auto' }}>
+                        <circle cx={x + cardWidth/2} cy={y + 96} r="10" fill="#1e3a5f" stroke="#2563eb" strokeWidth="1.5"
+                          className="cursor-pointer"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            window.location.href = `/quiz/${room.word_id}`;
+                          }}
+                        />
+                        <text x={x + cardWidth/2} y={y + 102} textAnchor="middle" fontSize="12" style={{ pointerEvents: 'none' }}>⚔️</text>
+                      </g>
+                    )}
+                    
+                    {/* Beast Mode button (👾) - only show after battle/quiz is completed */}
+                    {room.completed && room.word_id && (
+                      <g style={{ pointerEvents: 'auto' }}>
+                        <circle cx={x + cardWidth - 35} cy={y + 96} r="10" fill="#581c87" stroke="#7c3aed" strokeWidth="1.5"
+                          className="cursor-pointer"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            // Navigate to level 6 quiz
+                            if (room.word_id) {
+                              window.location.href = `/quiz/${room.word_id}?level=6`;
+                            }
+                          }}
+                        />
+                        <text x={x + cardWidth - 35} y={y + 102} textAnchor="middle" fontSize="12" style={{ pointerEvents: 'none' }}>👾</text>
+                      </g>
+                    )}
+                  </g>
+                )}
+                
+                {/* Boss room - make the whole card clickable */}
+                {room.unlocked && room.is_boss_room && room.completed && (
+                  <motion.rect
+                    x={x}
+                    y={y}
+                    width={cardWidth}
+                    height={cardHeight}
+                    fill="transparent"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    style={{ pointerEvents: 'auto', cursor: 'pointer' }}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      onRoomClick(room.id);
+                    }}
+                  />
+                )}
+              </g>
+            );
+          })}
+        </svg>
       </div>
     </div>
   );
