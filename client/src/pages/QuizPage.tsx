@@ -203,8 +203,14 @@ export default function QuizPage() {
       );
     }
     
-    // If quiz is complete, show Beast mode option
-    if (isComplete && localLevel > 5) {
+    // If in review mode with valid level, render the quiz questions
+    if (isReviewMode && localLevel >= 1 && localLevel <= 5) {
+      // Skip the completion checks and go straight to rendering the question
+      // (handled below in the common question rendering logic)
+    }
+    
+    // If quiz is complete and NOT in review mode, show Beast mode option
+    if (!isReviewMode && isComplete && localLevel > 5) {
       return (
         <BeastModeChallenge
           wordId={parseInt(wordId || '0')}
@@ -221,8 +227,8 @@ export default function QuizPage() {
     }
 
 
-    // If quiz is complete, show completion screen
-    if (isComplete) {
+    // If quiz is complete and NOT in review mode, show completion screen
+    if (!isReviewMode && isComplete) {
       return (
         <div className="text-center py-16">
           <div className="text-green-400 text-6xl mb-6">✓</div>
