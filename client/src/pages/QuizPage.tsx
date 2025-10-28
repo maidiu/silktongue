@@ -73,18 +73,28 @@ export default function QuizPage() {
   const currentQuestion = questions.find(q => q.level === level);
 
   const handleSuccess = async () => {
-    await advance();
+    if (isReviewMode) {
+      // In review mode, just advance locally without backend calls
+      setLocalLevel(prev => Math.min(prev + 1, 6));
+    } else {
+      await advance();
+    }
   };
 
   const handleFail = async () => {
-    const healthLost = currentQuestion?.variant_data?.hard_mode_penalty?.health_loss_on_fail || 1;
-    await recordFailure(healthLost);
+    if (!isReviewMode) {
+      const healthLost = currentQuestion?.variant_data?.hard_mode_penalty?.health_loss_on_fail || 1;
+      await recordFailure(healthLost);
+    }
+    // In review mode, no health penalty - just let them try again (do nothing)
   };
 
-  // Sync local level with actual level
+  // Sync local level with actual level (but not in review mode)
   useEffect(() => {
-    setLocalLevel(level);
-  }, [level]);
+    if (!isReviewMode) {
+      setLocalLevel(level);
+    }
+  }, [level, isReviewMode]);
 
   // Handle loading and error states
   if (isLoading || isLoadingQuestions) {
@@ -144,6 +154,53 @@ export default function QuizPage() {
   }
 
   const renderLevel = () => {
+    // If in review mode and completed all levels, show review completion
+    if (isReviewMode && localLevel > 5) {
+      return (
+        <div className="text-center py-16">
+          <div className="text-blue-400 text-6xl mb-6">✓</div>
+          <h2 className="text-3xl font-display font-bold text-white mb-4">
+            Review Complete!
+          </h2>
+          <p className="text-gray-400 mb-8 max-w-md mx-auto">
+            You've reviewed all levels for this word.
+          </p>
+          
+          <div className="flex flex-col gap-4 max-w-md mx-auto">
+            <button
+              onClick={() => {
+                // Exit review mode and return to normal state
+                setIsReviewMode(false);
+                setLocalLevel(level);
+              }}
+              className="px-8 py-3 bg-blue-600 text-white rounded border-2 border-blue-500 hover:bg-blue-700 hover:border-blue-400 transition-all duration-300 font-display uppercase tracking-wider"
+            >
+              Exit Review Mode
+            </button>
+            
+            <button
+              onClick={() => {
+                // Review again from the beginning
+                setLocalLevel(1);
+              }}
+              className="px-8 py-3 bg-white/10 text-white rounded border-2 border-white/30 hover:bg-white/20 hover:border-white/50 transition-all duration-300 font-display uppercase tracking-wider"
+            >
+              Review Again
+            </button>
+            
+            <button
+              onClick={() => {
+                navigate('/maps');
+              }}
+              className="px-8 py-3 bg-purple-600 text-white rounded border-2 border-purple-500 hover:bg-purple-700 hover:border-purple-400 transition-all duration-300 font-display uppercase tracking-wider"
+            >
+              Back to Maps
+            </button>
+          </div>
+        </div>
+      );
+    }
+    
     // If quiz is complete, show Beast mode option
     if (isComplete && localLevel > 5) {
       return (
@@ -191,7 +248,8 @@ export default function QuizPage() {
             
             <button
               onClick={() => {
-                // Review quiz - restart from level 1 without penalties
+                // Review quiz - restart from level 1 in review mode (no health/silk changes)
+                setIsReviewMode(true);
                 setLocalLevel(1);
               }}
               className="px-8 py-3 bg-blue-600 text-white rounded border-2 border-blue-500 hover:bg-blue-700 hover:border-blue-400 transition-all duration-300 font-display uppercase tracking-wider"
@@ -363,6 +421,12 @@ export default function QuizPage() {
       {/* Stats HUD */}
       <div className="absolute top-4 right-4 z-10 text-white font-display">
         <br></br><br></br>
+        {isReviewMode && (
+          <div className="mb-4 px-3 py-2 bg-blue-600/30 border border-blue-500 rounded">
+            <div className="text-sm text-blue-200">📖 Review Mode</div>
+            <div className="text-xs text-blue-300">No health or silk changes</div>
+          </div>
+        )}
         <div className="mb-4">
           <div className="text-sm text-gray-400 mb-1">Health:</div>
           <div className="text-lg tracking-wider text-red-500">{'❤️'.repeat(health).split('').join(' ')}</div>
