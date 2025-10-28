@@ -247,33 +247,30 @@ export default function QuizPage() {
       
       case 'definition':
         // For definition questions, we need to generate options from incorrect_answers and correct_answers
-        const definitionOptions = currentQuestion.options;
-        let displayOptions: string[] = [];
-        let correctAnswers: string[] = [];
+        // Check if they're at the top level (new structure) or in options (old structure)
+        let incorrectAnswers: string[] = [];
+        let correctAnswersPool: string[] = [];
         
-        if (definitionOptions && typeof definitionOptions === 'object' && !Array.isArray(definitionOptions)) {
-          const incorrectAnswers = definitionOptions.incorrect_answers || [];
-          const correctAnswersPool = definitionOptions.correct_answers || [];
-          
-          // Select 3 random incorrect answers
-          const shuffledIncorrect = [...incorrectAnswers].sort(() => Math.random() - 0.5);
-          const selectedIncorrect = shuffledIncorrect.slice(0, 3);
-          
-          // Select 1 random correct answer
-          const shuffledCorrect = [...correctAnswersPool].sort(() => Math.random() - 0.5);
-          const selectedCorrect = shuffledCorrect.slice(0, 1);
-          
-          displayOptions = [...selectedIncorrect, ...selectedCorrect];
-          correctAnswers = selectedCorrect;
-        } else if (Array.isArray(definitionOptions)) {
-          // Fallback for simple array options
-          displayOptions = definitionOptions;
-          correctAnswers = currentQuestion.correct_answer ? [currentQuestion.correct_answer] : [];
-        } else {
-          // Fallback if options is not provided
-          displayOptions = [];
-          correctAnswers = currentQuestion.correct_answer ? [currentQuestion.correct_answer] : [];
+        if (currentQuestion.incorrect_answers && currentQuestion.correct_answers) {
+          // New structure: top-level incorrect_answers and correct_answers
+          incorrectAnswers = currentQuestion.incorrect_answers;
+          correctAnswersPool = currentQuestion.correct_answers;
+        } else if (currentQuestion.options && typeof currentQuestion.options === 'object') {
+          // Old structure: nested in options
+          incorrectAnswers = currentQuestion.options.incorrect_answers || [];
+          correctAnswersPool = currentQuestion.options.correct_answers || [];
         }
+        
+        // Select 3 random incorrect answers
+        const shuffledIncorrect = [...incorrectAnswers].sort(() => Math.random() - 0.5);
+        const selectedIncorrect = shuffledIncorrect.slice(0, 3);
+        
+        // Select 1 random correct answer
+        const shuffledCorrect = [...correctAnswersPool].sort(() => Math.random() - 0.5);
+        const selectedCorrect = shuffledCorrect.slice(0, 1);
+        
+        const displayOptions = [...selectedIncorrect, ...selectedCorrect];
+        const correctAnswers = selectedCorrect;
         
         return (
           <MeaningMatch
