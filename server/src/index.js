@@ -18,14 +18,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// API routes - support both /api and /silktongue/api
-app.use('/silktongue/api/vocab', vocabRoutes);
-app.use('/silktongue/api/explore', exploreRoutes);
-app.use('/silktongue/api/meta', metaRoutes);
-app.use('/silktongue/api/quiz', quizRoutes);
-app.use('/silktongue/api/auth', authRoutes);
-app.use('/silktongue/api/maps', mapsRoutes);
-
+// API routes
 app.use('/api/vocab', vocabRoutes);
 app.use('/api/explore', exploreRoutes);
 app.use('/api/meta', metaRoutes);
@@ -36,9 +29,8 @@ app.use('/api/maps', mapsRoutes);
 // Serve static files from React build in production
 const clientBuildPath = path.join(__dirname, '../../client/dist');
 
-// Serve static files at root and /silktongue
+// Serve static files
 app.use(express.static(clientBuildPath));
-app.use('/silktongue', express.static(clientBuildPath));
 
 // Serve React app for all routes not matched by previous middleware (catch-all)
 app.use((req, res) => {
