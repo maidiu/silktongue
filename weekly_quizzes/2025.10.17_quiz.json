@@ -26,9 +26,9 @@
     "reward_amount": 12,
     "difficulty": "medium",
     "incorrect_answers": [
-      "fragmented",
-      "disjointed",
-      "dispersed"
+      "broken into separate, disconnected pieces or parts.",
+      "lacking coherence or connection between elements.",
+      "scattered widely across different areas or directions."
     ],
     "correct_answers": [
       "forming a united whole; characterized by or causing cohesion."
@@ -202,9 +202,9 @@
     "reward_amount": 12,
     "difficulty": "medium",
     "incorrect_answers": [
-      "assist",
-      "facilitate",
-      "enable"
+      "to help or support someone in achieving a goal.",
+      "to make an action or process easier or smoother.",
+      "to provide the means or opportunity to do something."
     ],
     "correct_answers": [
       "to slow or block progress, movement, or development."
@@ -375,9 +375,9 @@
     "reward_amount": 12,
     "difficulty": "medium",
     "incorrect_answers": [
-      "external",
-      "acquired",
-      "extrinsic"
+      "coming from or existing outside of something.",
+      "gained or obtained through effort or experience.",
+      "not part of the essential nature of something."
     ],
     "correct_answers": [
       "existing as a permanent, essential, or characteristic attribute of something."
@@ -551,9 +551,9 @@
     "reward_amount": 12,
     "difficulty": "medium",
     "incorrect_answers": [
-      "include",
-      "retain",
-      "insert"
+      "to contain or incorporate as part of a whole.",
+      "to keep or continue to have something.",
+      "to place or add something into a position."
     ],
     "correct_answers": [
       "to leave out or exclude intentionally or accidentally."
@@ -729,9 +729,9 @@
     "reward_amount": 12,
     "difficulty": "medium",
     "incorrect_answers": [
-      "thorough",
-      "careful",
-      "deliberate"
+      "complete and comprehensive in every detail.",
+      "done with attention and caution to avoid mistakes.",
+      "done consciously and intentionally with purpose."
     ],
     "correct_answers": [
       "done quickly and without real interest, care, or effort."
@@ -912,9 +912,9 @@
     "reward_amount": 12,
     "difficulty": "medium",
     "incorrect_answers": [
-      "obscure",
-      "inconspicuous",
-      "hidden"
+      "not clearly expressed or easily understood.",
+      "not attracting attention or notice.",
+      "kept out of sight or concealed from view."
     ],
     "correct_answers": [
       "most noticeable or important; prominent or striking."
@@ -1092,9 +1092,9 @@
     "reward_amount": 12,
     "difficulty": "medium",
     "incorrect_answers": [
-      "targeted",
-      "systematic",
-      "methodical"
+      "directed toward a specific goal or objective.",
+      "done according to a fixed plan or method.",
+      "characterized by orderly and logical procedures."
     ],
     "correct_answers": [
       "lacking focus or organization; covering many things in a random or haphazard way."
@@ -1255,9 +1255,9 @@
     "reward_amount": 12,
     "difficulty": "medium",
     "incorrect_answers": [
-      "implausibility",
-      "incredibility",
-      "unreality"
+      "the quality of being unlikely or hard to believe.",
+      "the quality of being too extraordinary to be believed.",
+      "the quality of being imaginary or not real."
     ],
     "correct_answers": [
       "the appearance or quality of being true or real; the quality of seeming to be true."
