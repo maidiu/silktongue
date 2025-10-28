@@ -343,14 +343,12 @@ const MapsPage: React.FC = () => {
       
         {selectedMap && selectedFloor && (
           <>
-            <div style={{ pointerEvents: 'none' }}>
             <SilksongMap
               floors={selectedMap.floors}
               currentFloor={selectedFloor.floor_number}
               onRoomClick={handleRoomClick}
               onFloorSelect={handleFloorSelect}
             />
-          </div>
           
           {/* Floor Title and Description */}
           <div className="absolute bottom-10 sm:bottom-20 left-1/2 transform -translate-x-1/2 flex flex-col items-center justify-center pointer-events-none w-full">

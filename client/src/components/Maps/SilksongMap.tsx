@@ -151,6 +151,22 @@ const SilksongMap: React.FC<SilksongMapProps> = ({
                   style={{ pointerEvents: 'none', transformOrigin: `${x + cardWidth/2}px ${y + cardHeight/2}px` }}
                 />
                 
+                {/* Clickable overlay for ALL rooms (locked and unlocked, but not boss rooms with buttons) */}
+                {!room.is_boss_room && (
+                  <rect
+                    x={x}
+                    y={y}
+                    width={cardWidth}
+                    height={cardHeight - 30}
+                    fill="transparent"
+                    style={{ cursor: 'pointer', pointerEvents: 'auto' }}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      onRoomClick(room.id);
+                    }}
+                  />
+                )}
+                
                 {/* Room label */}
                 <text
                   x={x + cardWidth/2}
