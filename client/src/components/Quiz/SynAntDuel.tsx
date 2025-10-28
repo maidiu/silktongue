@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { DndContext, useSensor, useSensors, PointerSensor, useDraggable, useDroppable } from '@dnd-kit/core';
+import { DndContext, useSensor, useSensors, PointerSensor, TouchSensor, useDraggable, useDroppable } from '@dnd-kit/core';
 import { motion } from 'framer-motion';
 import LevelScene from './LevelScene';
 
@@ -28,8 +28,13 @@ function DraggableWord({ id, word, zone }: { id: string; word: string; zone: str
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: isDragging ? 0.5 : 1, scale: 1 }}
       className={`
-        px-4 py-2 rounded cursor-grab active:cursor-grabbing
+        px-5 py-3 sm:px-4 sm:py-2 
+        rounded cursor-grab active:cursor-grabbing
         select-none font-display transition-all duration-200
+        text-base sm:text-sm
+        touch-none
+        min-h-[48px] sm:min-h-[auto]
+        flex items-center justify-center
         ${zone === null ? 'bg-gray-800/80 text-gray-200 border-2 border-gray-700' : ''}
         ${zone === 'synonyms' ? 'bg-blue-900/40 text-blue-200 border-2 border-blue-600/50' : ''}
         ${zone === 'antonyms' ? 'bg-orange-900/40 text-orange-200 border-2 border-orange-600/50' : ''}
@@ -74,7 +79,19 @@ export default function SynAntDuel({
   const [submitted, setSubmitted] = useState(false);
   const [result, setResult] = useState<'correct' | 'wrong' | null>(null);
 
-  const sensors = useSensors(useSensor(PointerSensor));
+  const sensors = useSensors(
+    useSensor(PointerSensor, {
+      activationConstraint: {
+        distance: 8,
+      },
+    }),
+    useSensor(TouchSensor, {
+      activationConstraint: {
+        delay: 200,
+        tolerance: 8,
+      },
+    })
+  );
 
   useEffect(() => {
     // Combine and shuffle all words

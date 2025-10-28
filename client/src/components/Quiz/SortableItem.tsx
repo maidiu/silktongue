@@ -21,12 +21,15 @@ export function SortableItem({ id, isCorrect }: SortableItemProps) {
       {...attributes}
       {...listeners}
       className={`
-        w-14 h-14 flex items-center justify-center text-2xl font-display font-bold
+        w-16 h-16 sm:w-14 sm:h-14 
+        flex items-center justify-center 
+        text-3xl sm:text-2xl font-display font-bold
         rounded shadow-lg cursor-grab select-none
         transition-all duration-300
+        touch-none
         ${isCorrect 
           ? 'bg-white/20 text-white shadow-[0_0_20px_rgba(255,255,255,0.5)]' 
-          : 'bg-gray-800/70 text-gray-200 hover:bg-gray-700/70'
+          : 'bg-gray-800/70 text-gray-200 hover:bg-gray-700/70 active:bg-gray-600/70'
         }
       `}
     >
