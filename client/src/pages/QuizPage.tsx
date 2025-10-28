@@ -18,7 +18,8 @@ interface QuizQuestion {
   prompt: string;
   options: any;
   correct_answer: string | null;
-  correct_answers: string[] | null;
+  correct_answers?: string[] | null;
+  incorrect_answers?: string[] | null;
   variant_data: any;
   reward_amount: number;
   difficulty: string;
@@ -31,6 +32,7 @@ export default function QuizPage() {
   const [word, setWord] = useState('');
   const [isLoadingQuestions, setIsLoadingQuestions] = useState(true);
   const [localLevel, setLocalLevel] = useState(1);
+  const [isReviewMode, setIsReviewMode] = useState(false);
   
   // Validate wordId exists and is a valid number
   const validWordId = parseInt(wordId || '0', 10);
