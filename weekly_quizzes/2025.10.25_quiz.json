@@ -307,18 +307,24 @@
         "18th c.",
         "20th c."
       ],
-      "story_texts": [
-        "In Rome, he began as *lūcidus*—'bright, shining, clear.' His root was *lūx*, light itself. What was ...",
-        "When English scholars reached for Latin to name the act of making clear, they formed *ēlūcidātum*—'t...",
-        "In the Age of Enlightenment, Elucidate found his calling. Thinkers vowed to elucidate nature, histor...",
-        "Now he moves through classrooms and commentaries, through textbooks and analysis. To elucidate is st..."
+      "settings": [
+        "Rome",
+        "Renaissance",
+        "Scientific Age",
+        "Modern Era"
+      ],
+      "turns": [
+        "In Rome, he began as *lūcidus*—'bright, shining, clear.' His root was *lūx*, light itself. What was *lūcidus* shone with inner clarity—water you could see through, thoughts that had no shadows. He described what the eye could trust: transparent things, minds without disguise. His power was revelation through visibility.",
+        "When English scholars reached for Latin to name the act of making clear, they formed *ēlūcidātum*—'to make luminous.' To elucidate was to take what was dark and turn it bright. Philosophers elucidated arguments; poets elucidated mysteries. The word that had meant 'bright' became an action: the deliberate casting of light into obscurity.",
+        "In the Age of Enlightenment, Elucidate found his calling. Thinkers vowed to elucidate nature, history, the human mind. Reason was the lamp he carried. Every explanation removed one more shadow; every clarification opened another door. He became the verb of understanding—not faith but illumination, not mystery but method.",
+        "Now he moves through classrooms and commentaries, through textbooks and analysis. To elucidate is still to bring light, but the light itself has grown ordinary. In a world of footnotes and explanations, he no longer speaks of revelation—only of procedure, the workable task of making the obscure one shade less dark."
       ]
     },
     "correct_answer": [
-      "1th c.",
-      "16th c.",
-      "18th c.",
-      "20th c."
+      "1th c. — Rome → In Rome, he began as *lūcidus*—'bright, shining, clear.' His root was *lūx*, light itself. What was *lūcidus* shone with inner clarity—water you could see through, thoughts that had no shadows. He described what the eye could trust: transparent things, minds without disguise. His power was revelation through visibility.",
+      "16th c. — Renaissance → When English scholars reached for Latin to name the act of making clear, they formed *ēlūcidātum*—'to make luminous.' To elucidate was to take what was dark and turn it bright. Philosophers elucidated arguments; poets elucidated mysteries. The word that had meant 'bright' became an action: the deliberate casting of light into obscurity.",
+      "18th c. — Scientific Age → In the Age of Enlightenment, Elucidate found his calling. Thinkers vowed to elucidate nature, history, the human mind. Reason was the lamp he carried. Every explanation removed one more shadow; every clarification opened another door. He became the verb of understanding—not faith but illumination, not mystery but method.",
+      "20th c. — Modern Era → Now he moves through classrooms and commentaries, through textbooks and analysis. To elucidate is still to bring light, but the light itself has grown ordinary. In a world of footnotes and explanations, he no longer speaks of revelation—only of procedure, the workable task of making the obscure one shade less dark."
     ],
     "variant_data": {
       "shuffle_each_attempt": true,
@@ -900,18 +906,24 @@
         "19th c.",
         "20th c."
       ],
-      "story_texts": [
-        "In Rome, she was *plaudibilis*—'worthy of applause.' Born from *plaudere*, 'to clap hands,' she name...",
-        "When Enlightenment thinkers borrowed her, Plausible moved from theater to philosophy. She still aske...",
-        "Victorian society taught her politeness. To be plausible meant to seem respectable, to wear the mask...",
-        "Now she negotiates the space between truth and its convenient substitutes. In politics, in media, in..."
+      "settings": [
+        "Rome",
+        "Enlightenment",
+        "Victorian Era",
+        "Modern Era"
+      ],
+      "turns": [
+        "In Rome, she was *plaudibilis*—'worthy of applause.' Born from *plaudere*, 'to clap hands,' she named what audiences approved through sound. To be plausible was to earn the crowd's favor, to meet their standards for what deserved applause. She was theater's judgment: not truth but approval, not reality but acceptance.",
+        "When Enlightenment thinkers borrowed her, Plausible moved from theater to philosophy. She still asked for approval, but now from reason, not crowds. A plausible argument was one that reasonable minds could accept—not necessarily true, but not obviously false. The applause became internal: the quiet nod of recognition.",
+        "Victorian society taught her politeness. To be plausible meant to seem respectable, to wear the mask of propriety. She learned the language of appearances—what could be said in public, what could be defended in good company. Her truth became social acceptability, measured in frowns averted, suspicions eased.",
+        "Now she negotiates the space between truth and its convenient substitutes. In politics, in media, in everyday claims, plausibility has become currency: not lies, not certainty, but the middle ground of seeming reasonable. She has learned to serve whoever needs belief without proof—the master of appearances, still asking only for applause."
       ]
     },
     "correct_answer": [
-      "1th c.",
-      "17th c.",
-      "19th c.",
-      "20th c."
+      "1th c. — Rome → In Rome, she was *plaudibilis*—'worthy of applause.' Born from *plaudere*, 'to clap hands,' she named what audiences approved through sound. To be plausible was to earn the crowd's favor, to meet their standards for what deserved applause. She was theater's judgment: not truth but approval, not reality but acceptance.",
+      "17th c. — Enlightenment → When Enlightenment thinkers borrowed her, Plausible moved from theater to philosophy. She still asked for approval, but now from reason, not crowds. A plausible argument was one that reasonable minds could accept—not necessarily true, but not obviously false. The applause became internal: the quiet nod of recognition.",
+      "19th c. — Victorian Era → Victorian society taught her politeness. To be plausible meant to seem respectable, to wear the mask of propriety. She learned the language of appearances—what could be said in public, what could be defended in good company. Her truth became social acceptability, measured in frowns averted, suspicions eased.",
+      "20th c. — Modern Era → Now she negotiates the space between truth and its convenient substitutes. In politics, in media, in everyday claims, plausibility has become currency: not lies, not certainty, but the middle ground of seeming reasonable. She has learned to serve whoever needs belief without proof—the master of appearances, still asking only for applause."
     ],
     "variant_data": {
       "shuffle_each_attempt": true,
@@ -1492,18 +1504,24 @@
         "20th c.",
         "21th c."
       ],
-      "story_texts": [
-        "In the age of theology, he was born: *ubīque*, 'everywhere.' Latin reached for him when describing t...",
-        "Science borrowed him carefully. The ether was ubiquitous—filling all space without occupying it. Ele...",
-        "Then he learned replication. Brands became ubiquitous; advertisements, ubiquitous; technologies, ubi...",
-        "Now he is the air itself: the network that connects everyone, the platform that spans all spaces, th..."
+      "settings": [
+        "Theology",
+        "Scientific Age",
+        "Mass Media Era",
+        "Digital Age"
+      ],
+      "turns": [
+        "In the age of theology, he was born: *ubīque*, 'everywhere.' Latin reached for him when describing the divine—God's presence that filled all places simultaneously. He named what could not be contained: the being whose location was everywhere and nowhere. He was the word of impossibility made grammatical.",
+        "Science borrowed him carefully. The ether was ubiquitous—filling all space without occupying it. Electromagnetic waves were ubiquitous—present in every void. What began as divine attribute became physical property: the quality of being distributed across all points without being localized to any. He had stepped from metaphysics into matter.",
+        "Then he learned replication. Brands became ubiquitous; advertisements, ubiquitous; technologies, ubiquitous. He moved from the philosophical to the economic, from the metaphysical to the manufactured. What was everywhere was not divine or physical but commercial—the mark of success measured in total saturation.",
+        "Now he is the air itself: the network that connects everyone, the platform that spans all spaces, the digital that has no absence. Ubiquitous has become the adjective of our age—the word for what cannot be escaped because it has become the medium in which we breathe. His original mystery has been replaced by his accomplished fact."
       ]
     },
     "correct_answer": [
-      "17th c.",
-      "19th c.",
-      "20th c.",
-      "21th c."
+      "17th c. — Theology → In the age of theology, he was born: *ubīque*, 'everywhere.' Latin reached for him when describing the divine—God's presence that filled all places simultaneously. He named what could not be contained: the being whose location was everywhere and nowhere. He was the word of impossibility made grammatical.",
+      "19th c. — Scientific Age → Science borrowed him carefully. The ether was ubiquitous—filling all space without occupying it. Electromagnetic waves were ubiquitous—present in every void. What began as divine attribute became physical property: the quality of being distributed across all points without being localized to any. He had stepped from metaphysics into matter.",
+      "20th c. — Mass Media Era → Then he learned replication. Brands became ubiquitous; advertisements, ubiquitous; technologies, ubiquitous. He moved from the philosophical to the economic, from the metaphysical to the manufactured. What was everywhere was not divine or physical but commercial—the mark of success measured in total saturation.",
+      "21th c. — Digital Age → Now he is the air itself: the network that connects everyone, the platform that spans all spaces, the digital that has no absence. Ubiquitous has become the adjective of our age—the word for what cannot be escaped because it has become the medium in which we breathe. His original mystery has been replaced by his accomplished fact."
     ],
     "variant_data": {
       "shuffle_each_attempt": true,
