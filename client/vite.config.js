@@ -1,12 +1,9 @@
-
 // client/vite.config.js
 export default {
-    // Use / for development, /silktongue/ for production
-    base: process.env.NODE_ENV === 'production' ? '/silktongue/' : '/',
+    base: '/',
     server: {
       proxy: {
         '/api': 'http://localhost:3000',
-        '/silktongue/api': 'http://localhost:3000',
       },
     },
   };
