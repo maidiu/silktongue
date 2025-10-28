@@ -79,7 +79,12 @@ export default function SynAntDuel({
   useEffect(() => {
     // Combine and shuffle all words
     const combined = [...synonyms, ...antonyms, ...redHerrings];
-    const shuffled = combined.sort(() => Math.random() - 0.5);
+    // Use a more robust shuffle algorithm (Fisher-Yates)
+    const shuffled = [...combined];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
     setAllWords(shuffled);
     
     // Initialize all words in null zone (unsorted)
