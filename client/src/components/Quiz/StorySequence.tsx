@@ -48,9 +48,11 @@ function SortableItem({ id, content, isCorrect, isWrong, isRedHerring, isExclude
         onToggleExcluded?.();
       }}
       className={`
-        p-3 rounded border-2 cursor-grab active:cursor-grabbing
-        select-none transition-all duration-300 text-sm relative
-        ${isDragging ? 'opacity-50 shadow-2xl' : ''}
+        p-4 sm:p-3 rounded border-2 cursor-grab active:cursor-grabbing
+        select-none transition-all duration-300 text-base sm:text-sm relative
+        touch-none
+        min-h-[60px] sm:min-h-[auto]
+        ${isDragging ? 'opacity-50 shadow-2xl scale-105' : ''}
         ${isExcluded ? 'opacity-30 bg-red-900/20 border-red-600/50 line-through text-red-400' : ''}
         ${isCorrect ? 'bg-white/20 border-white/50 shadow-[0_0_20px_rgba(255,255,255,0.3)]' : ''}
         ${isWrong ? 'bg-red-900/40 border-red-500/50' : ''}
