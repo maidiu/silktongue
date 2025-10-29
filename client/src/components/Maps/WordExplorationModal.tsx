@@ -295,6 +295,37 @@ const WordExplorationModal: React.FC<WordExplorationModalProps> = ({
     }
   };
 
+  // Add Enter key support for each step
+  useEffect(() => {
+    const handleKeyPress = (e: KeyboardEvent) => {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        switch (step) {
+          case 1:
+            if (userDefinition.trim()) {
+              e.preventDefault();
+              saveUserDefinition();
+            }
+            break;
+          case 2:
+            // Skip - pronunciation requires button click
+            break;
+          case 3:
+            e.preventDefault();
+            setStep(4);
+            break;
+          case 4:
+            // Skip - story reading, no action needed
+            break;
+          default:
+            break;
+        }
+      }
+    };
+    
+    window.addEventListener('keypress', handleKeyPress);
+    return () => window.removeEventListener('keypress', handleKeyPress);
+  }, [step, userDefinition]);
+
   const renderStep = () => {
     switch (step) {
       case 1:
@@ -316,6 +347,15 @@ const WordExplorationModal: React.FC<WordExplorationModalProps> = ({
             <textarea
               value={userDefinition}
               onChange={(e) => setUserDefinition(e.target.value)}
+              onKeyDown={(e) => {
+                // Allow Shift+Enter for new lines, but prevent Enter from submitting
+                if (e.key === 'Enter' && !e.shiftKey) {
+                  e.preventDefault();
+                  if (userDefinition.trim()) {
+                    saveUserDefinition();
+                  }
+                }
+              }}
               placeholder="Write your definition here..."
               className="w-full p-4 bg-gray-800 text-white rounded-lg border-2 border-gray-600 focus:border-blue-500 focus:outline-none min-h-[120px]"
               rows={4}
@@ -325,13 +365,13 @@ const WordExplorationModal: React.FC<WordExplorationModalProps> = ({
               <button
                 onClick={saveUserDefinition}
                 disabled={!userDefinition.trim()}
-                className="flex-1 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="flex-1 px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-lg font-bold border-2 border-blue-500"
               >
-                Continue
+                Continue (Press Enter)
               </button>
               <button
                 onClick={onClose}
-                className="px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors"
+                className="px-8 py-4 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors text-lg font-bold border-2 border-gray-500"
               >
                 Cancel
               </button>
