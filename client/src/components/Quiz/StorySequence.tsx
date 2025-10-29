@@ -83,6 +83,17 @@ export default function StorySequence({
   const [result, setResult] = useState<'correct' | 'wrong' | null>(null);
   const [excludedItems, setExcludedItems] = useState<Set<string>>(new Set());
 
+  // Add Enter key support for submission
+  useEffect(() => {
+    const handleKeyPress = (e: KeyboardEvent) => {
+      if (e.key === 'Enter' && !submitted) {
+        handleSubmit();
+      }
+    };
+    window.addEventListener('keypress', handleKeyPress);
+    return () => window.removeEventListener('keypress', handleKeyPress);
+  }, [submitted]);
+
   const sensors = useSensors(
     useSensor(PointerSensor, {
       activationConstraint: {
@@ -435,11 +446,11 @@ export default function StorySequence({
         {!submitted && (
           <motion.button
             onClick={handleSubmit}
-            className="px-8 py-3 bg-white/10 text-white rounded border-2 border-white/30
+            className="px-10 py-4 bg-white/10 text-white rounded border-2 border-white/30
                      hover:bg-white/20 hover:border-white/50 transition-all duration-300
-                     font-display uppercase tracking-wider"
+                     font-display uppercase tracking-wider text-lg font-bold"
           >
-            Submit Sequence
+            Submit Sequence (Press Enter)
           </motion.button>
         )}
 

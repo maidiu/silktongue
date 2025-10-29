@@ -443,13 +443,13 @@ const WordExplorationModal: React.FC<WordExplorationModalProps> = ({
             <div className="flex gap-4">
               <button
                 onClick={() => setStep(4)}
-                className="flex-1 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                className="flex-1 px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-lg font-bold border-2 border-blue-500"
               >
                 Continue
               </button>
               <button
                 onClick={onClose}
-                className="px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors"
+                className="px-8 py-4 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors text-lg font-bold border-2 border-gray-500"
               >
                 Cancel
               </button>
@@ -740,7 +740,7 @@ const WordExplorationModal: React.FC<WordExplorationModalProps> = ({
             <div className="flex gap-4">
               <button
                 onClick={onClose}
-                className="px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors"
+                className="px-8 py-4 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors text-lg font-bold border-2 border-gray-500"
               >
                 Return to Map
               </button>

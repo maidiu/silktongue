@@ -79,6 +79,17 @@ export default function SynAntDuel({
   const [submitted, setSubmitted] = useState(false);
   const [result, setResult] = useState<'correct' | 'wrong' | null>(null);
 
+  // Add Enter key support for submission
+  useEffect(() => {
+    const handleKeyPress = (e: KeyboardEvent) => {
+      if (e.key === 'Enter' && !submitted && getWordsInZone(null).length === 0) {
+        handleSubmit();
+      }
+    };
+    window.addEventListener('keypress', handleKeyPress);
+    return () => window.removeEventListener('keypress', handleKeyPress);
+  }, [submitted, wordStates]);
+
   const sensors = useSensors(
     useSensor(PointerSensor, {
       activationConstraint: {
@@ -197,11 +208,11 @@ export default function SynAntDuel({
         {!submitted && getWordsInZone(null).length === 0 && (
           <motion.button
             onClick={handleSubmit}
-            className="px-8 py-3 bg-white/10 text-white rounded border-2 border-white/30
+            className="px-10 py-4 bg-white/10 text-white rounded border-2 border-white/30
                      hover:bg-white/20 hover:border-white/50 transition-all duration-300
-                     font-display uppercase tracking-wider"
+                     font-display uppercase tracking-wider text-lg font-bold"
           >
-            Submit
+            Submit (Press Enter)
           </motion.button>
         )}
 

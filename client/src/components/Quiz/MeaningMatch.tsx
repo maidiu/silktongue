@@ -129,9 +129,9 @@ export default function MeaningMatch({
           <motion.button
             onClick={handleSubmit}
             disabled={selected.size === 0}
-            className="px-8 py-3 bg-white/10 text-white rounded border-2 border-white/30
+            className="px-10 py-4 bg-white/10 text-white rounded border-2 border-white/30
                      hover:bg-white/20 hover:border-white/50 transition-all duration-300
-                     disabled:opacity-50 disabled:cursor-not-allowed font-display uppercase tracking-wider"
+                     disabled:opacity-50 disabled:cursor-not-allowed font-display uppercase tracking-wider text-lg font-bold"
           >
             Submit ({selected.size} selected)
           </motion.button>
@@ -158,9 +158,9 @@ export default function MeaningMatch({
                     setSelected(new Set());
                     setSubmitted(false);
                   }}
-                  className="px-6 py-2 bg-red-900/30 text-red-300 rounded border border-red-500/50
+                  className="px-8 py-3 bg-red-900/30 text-red-300 rounded border-2 border-red-500/50
                            hover:bg-red-900/50 hover:border-red-400/70 transition-all duration-300
-                           font-display uppercase tracking-wider text-sm"
+                           font-display uppercase tracking-wider text-base font-bold"
                 >
                   Try Again
                 </motion.button>
