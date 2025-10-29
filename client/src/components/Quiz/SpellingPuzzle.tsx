@@ -25,13 +25,13 @@ export default function SpellingPuzzle({ word, onSuccess }: SpellingPuzzleProps)
   const sensors = useSensors(
     useSensor(PointerSensor, {
       activationConstraint: {
-        distance: 5, // 5px of movement required before drag starts
+        distance: 3, // Minimal movement required
       },
     }),
     useSensor(TouchSensor, {
       activationConstraint: {
-        delay: 50, // 50ms press before drag starts (much faster response)
-        tolerance: 5, // Allow 5px of movement during the delay
+        delay: 0, // Instant response - no delay!
+        tolerance: 3,
       },
     }),
     useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates })

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { DndContext, useSensor, useSensors, PointerSensor } from '@dnd-kit/core';
+import { DndContext, useSensor, useSensors, PointerSensor, TouchSensor } from '@dnd-kit/core';
 import { arrayMove, SortableContext, verticalListSortingStrategy, useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { motion } from 'framer-motion';
@@ -81,7 +81,19 @@ export default function StorySequence({
   const [result, setResult] = useState<'correct' | 'wrong' | null>(null);
   const [excludedItems, setExcludedItems] = useState<Set<string>>(new Set());
 
-  const sensors = useSensors(useSensor(PointerSensor));
+  const sensors = useSensors(
+    useSensor(PointerSensor, {
+      activationConstraint: {
+        distance: 3,
+      },
+    }),
+    useSensor(TouchSensor, {
+      activationConstraint: {
+        delay: 0, // Instant response - no delay!
+        tolerance: 3,
+      },
+    })
+  );
 
   useEffect(() => {
     // Shuffle each column independently

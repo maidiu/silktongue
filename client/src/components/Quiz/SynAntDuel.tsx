@@ -82,13 +82,13 @@ export default function SynAntDuel({
   const sensors = useSensors(
     useSensor(PointerSensor, {
       activationConstraint: {
-        distance: 5,
+        distance: 3,
       },
     }),
     useSensor(TouchSensor, {
       activationConstraint: {
-        delay: 50, // 50ms press before drag starts (much faster response)
-        tolerance: 5,
+        delay: 0, // Instant response - no delay!
+        tolerance: 3,
       },
     })
   );
