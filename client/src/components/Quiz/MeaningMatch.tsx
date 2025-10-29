@@ -100,7 +100,7 @@ export default function MeaningMatch({
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.05 }}
                 className={`
-                  p-4 rounded text-left transition-all duration-300
+                  p-6 rounded text-left transition-all duration-300
                   ${!submitted && isSelected ? 'bg-white/20 border-2 border-white/40' : ''}
                   ${!submitted && !isSelected ? 'bg-gray-900/60 border-2 border-gray-700 hover:border-gray-600' : ''}
                   ${state === 'correct' ? 'bg-white/20 border-2 border-white/50 shadow-[0_0_20px_rgba(255,255,255,0.3)]' : ''}
@@ -110,15 +110,15 @@ export default function MeaningMatch({
                   cursor-pointer disabled:cursor-not-allowed
                 `}
               >
-                <div className="flex items-start gap-3">
+                <div className="flex items-start gap-4">
                   <div className={`
-                    w-5 h-5 rounded border-2 flex-shrink-0 mt-0.5
+                    w-7 h-7 rounded border-2 flex-shrink-0 mt-1
                     flex items-center justify-center transition-all duration-300
                     ${isSelected ? 'bg-white/20 border-white/60' : 'border-gray-600'}
                   `}>
-                    {isSelected && <span className="text-white text-xs">✓</span>}
+                    {isSelected && <span className="text-white text-sm">✓</span>}
                   </div>
-                  <span className="text-gray-200 leading-relaxed">{option}</span>
+                  <span className="text-gray-200 leading-relaxed text-lg">{option}</span>
                 </div>
               </motion.button>
             );
