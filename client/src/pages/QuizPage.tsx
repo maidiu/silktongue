@@ -249,7 +249,7 @@ export default function QuizPage() {
                 // Trigger Beast mode by setting level to 6
                 setLocalLevel(6);
               }}
-              className="px-8 py-3 bg-orange-600 text-white rounded border-2 border-orange-500 hover:bg-orange-700 hover:border-orange-400 transition-all duration-300 font-display uppercase tracking-wider"
+              className="px-10 py-5 bg-orange-600 text-white rounded border-2 border-orange-500 hover:bg-orange-700 hover:border-orange-400 transition-all duration-300 font-display uppercase tracking-wider text-xl font-bold"
             >
               Enter Beast Mode
             </button>
@@ -260,7 +260,7 @@ export default function QuizPage() {
                 setIsReviewMode(true);
                 setLocalLevel(1);
               }}
-              className="px-8 py-3 bg-blue-600 text-white rounded border-2 border-blue-500 hover:bg-blue-700 hover:border-blue-400 transition-all duration-300 font-display uppercase tracking-wider"
+              className="px-10 py-5 bg-blue-600 text-white rounded border-2 border-blue-500 hover:bg-blue-700 hover:border-blue-400 transition-all duration-300 font-display uppercase tracking-wider text-xl font-bold"
             >
               Review Quiz
             </button>
@@ -270,7 +270,7 @@ export default function QuizPage() {
                 // Return to main page
                 navigate('/');
               }}
-              className="px-8 py-3 bg-white/10 text-white rounded border-2 border-white/30 hover:bg-white/20 hover:border-white/50 transition-all duration-300 font-display uppercase tracking-wider"
+              className="px-10 py-5 bg-white/10 text-white rounded border-2 border-white/30 hover:bg-white/20 hover:border-white/50 transition-all duration-300 font-display uppercase tracking-wider text-xl font-bold"
             >
               Return to Main Page
             </button>
@@ -280,7 +280,7 @@ export default function QuizPage() {
                 // Return to maps
                 navigate('/maps');
               }}
-              className="px-8 py-3 bg-purple-600 text-white rounded border-2 border-purple-500 hover:bg-purple-700 hover:border-purple-400 transition-all duration-300 font-display uppercase tracking-wider"
+              className="px-10 py-5 bg-purple-600 text-white rounded border-2 border-purple-500 hover:bg-purple-700 hover:border-purple-400 transition-all duration-300 font-display uppercase tracking-wider text-xl font-bold"
             >
               Back to Maps
             </button>
